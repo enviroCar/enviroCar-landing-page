@@ -36,6 +36,7 @@ html, body {
 .nav-item {
     font-size: 18px;
     color: #0065A0 !important;
+    margin-left: 16px;
 }
 .nav-item>a {
     color: #0065A0 !important;
@@ -157,7 +158,6 @@ div.transbox p {
     }
 }
 
-
 .absolute-div {
     position: absolute;
     top: 0;
@@ -224,7 +224,7 @@ iframe {
 /* App Section */
 .sectionApp {
     /* The image used */
-    background-image: url("..//assets/gasoline.jpg");
+    /*background-image: url("..//assets/gasoline.jpg");*/
 
     /* Full height */
     height: auto; 
@@ -236,16 +236,21 @@ iframe {
     position: relative;
 }
 .section-heading {
-    color: #ffffff;
+    color: #000000;
     opacity: 1;
     z-index: 20;
+    /*font-weight: bold;*/
+    text-shadow: 1px 1px 2px #272e36;
 }
-.section-heading {
-    color: #ffffff;
-    opacity: 1;
+.section-heading-spacer {
+    border-top: 1px solid #ccc;
 }
 .section-lead {
-    color: #ffffff;
+    color: #333;
+    font-size: 18px;
+}
+.lead>li {
+        padding-bottom: 16px;
 }
 
 .services {
@@ -330,9 +335,4 @@ header {
 }
 
 .list-inline-item {
-
-}
-
-.intro-social-buttons i {
-    font-size: 80%;
 }

@@ -51,10 +51,13 @@
                         <a class="nav-link js-scroll-trigger" href="#products">Karten & Produkte</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#data">Daten</a>
+                        <a class="nav-link js-scroll-trigger" href="#press">Presse</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#contribute">Mitmachen</a>
+                        <a class="nav-link js-scroll-trigger" href="#documentation">Dokumentation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#partner">Partner</a>
                     </li>
                 </ul>
             </div>
@@ -115,16 +118,17 @@
             </div>
         </div>
 
+        <!-- Section Short Description APP ; ANALYSIS ; MAPS & PRODUCTS -->
         <section id="home">
             <div class="container">
                 <!-- Page Heading -->
                 <div class="row">
                     <div class="col-lg-4 col-md-4 col-sm-4 portfolio-item">
                         <div class="card h-100">
-                            <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+                            <a class="js-scroll-trigger" href="#app"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
                             <div class="card-body">
                                 <h4 class="card-title">
-                                    <a href="#">App</a>
+                                    <a class="js-scroll-trigger" href="#app">App</a>
                                 </h4>
                                 <p class="card-text">Erhebe Motordaten deiner Fahrten</p>
                             </div>
@@ -132,10 +136,10 @@
                     </div>
                     <div class="col-lg-4 col-md-4 col-sm-4 portfolio-item">
                         <div class="card h-100">
-                            <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+                            <a class="js-scroll-trigger" href="#analysis"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
                             <div class="card-body">
                                 <h4 class="card-title">
-                                    <a href="#">Analyse</a>
+                                    <a  class="js-scroll-trigger" href="#analysis">Analyse</a>
                                 </h4>
                                 <p class="card-text">Analysiere deine Fahrten</p>
                             </div>
@@ -143,10 +147,10 @@
                     </div>
                     <div class="col-lg-4 col-md-4 col-sm-4 portfolio-item">
                         <div class="card h-100">
-                            <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+                            <a  class="js-scroll-trigger" href="#products"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
                             <div class="card-body">
                                 <h4 class="card-title">
-                                    <a href="#">Karten & Produkte</a>
+                                    <a class="js-scroll-trigger" href="#products">Karten & Produkte</a>
                                 </h4>
                                 <p class="card-text">Betrachte Karten und Statistiken</p>
                             </div>
@@ -161,83 +165,129 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-5 ml-auto">
+                        <hr class="section-heading-spacer">
                         <div class="clearfix"></div>
                         <h2 class="section-heading">Die App</h2>
-                        <p class="section-lead">enviroCar ist eine Plattform für Citizen Science Projekte, 
-                            bei denen Bürger eingeladen sind, sich aktiv mit dem Thema Mobilität und Umwelt zu befassen.</p>
+                        <p class="section-lead">Mit der App kannst du echte Motorsensordaten deines Fahrzeugs während der Fahrt aufnehmen. 
+                        <ul class="lead" style="list-style-type: none;">
+                            <li>1. App starten</li>
+                            <li>2. Track starten</li>
+                            <li>3. Track beenden und hochladen</li>
+                        </ul>	
                     </div>
                     <div class="col-lg-5 mr-auto img-frame">
                         <span class="helper"></span>
-                        <img class="img-fluid" src="assets/de/enviroCar-architecture_de.png" alt="">
+                        <img class="img-fluid" src="assets/app_3.png" alt="">
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- analysis  -->
-        <section id="analysis" class="services bg-primary text-white">
+        <!-- Analysis -->
+        <section id="analysis" class="sectionAnalysis" style="background-color: #f3f3f3;">
             <div class="container">
-                <div class="row text-center">
-                    <div class="col-lg-10 mx-auto">
-                        <h2>Analysis</h2>
-                        <hr class="small">
-                        <div class="row">
-                            <div class="col-md-3 col-sm-6">
-                                <div class="service-item">
-                                    <span class="fa-stack fa-4x">
-                                        <i class="material-icons md-60">phone_android</i>
-                                    </span>
-                                    <h4>
-                                        <strong>Die App</strong>
-                                    </h4>
-                                    <p>Mit der enviroCar App kannst Du Sensordaten aus der Motorsteuerung auslesen und mehr über dein Fahrzeug und deinen Fahrstil erfahren.</p>
-                                    <a href="#" class="btn btn-light">Learn More</a>
-                                </div>
-                            </div>
-                            <div class="col-md-3 col-sm-6">
-                                <div class="service-item">
-                                    <span class="fa-stack fa-4x">
-                                        <i class="material-icons md-60">settings_input_composite</i>
-                                    </span>
-                                    <h4>
-                                        <strong>Die Plattform</strong>
-                                    </h4>
-                                    <p>Stell deine Daten anonymisiert als Open Data auf die enviroCar Internet Plattform zur Verfügung.</p>
-                                    <a href="#" class="btn btn-light">Learn More</a>
-                                </div>
-                            </div>
-                            <div class="col-md-3 col-sm-6">
-                                <div class="service-item">
-                                    <span class="fa-stack fa-4x">
-                                        <i class="material-icons md-60">people</i>
-                                    </span>
-                                    <h4>
-                                        <strong>Die Community</strong>
-                                    </h4>
-                                    <p>Werde Teil der enviroCar Community, eine Gemeinschaft von Bürgern, Forschern und Planer weltweit!</p>
-                                    <a href="#" class="btn btn-light">Learn More</a>
-                                </div>
-                            </div>
-                            <div class="col-md-3 col-sm-6">
-                                <div class="service-item">
-                                    <span class="fa-stack fa-4x">
-                                        <i class="material-icons md-60">code</i>
-                                    </span>
-                                    <h4>
-                                        <strong>Die Software</strong>
-                                    </h4>
-                                    <p>enviroCar Software ist Open Source.</p>
-                                    <a href="#" class="btn btn-light">Learn More</a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- /.row (nested) -->
+                <div class="row">
+                    <div class="col-lg-5 ml-auto img-frame">
+                        <span class="helper"></span>
+                        <img class="img-fluid" src="assets/app_4.png" alt="">
                     </div>
-                    <!-- /.col-lg-10 -->
+                    <div class="col-lg-5 mr-auto">
+                        <hr class="section-heading-spacer">
+                        <div class="clearfix"></div>
+                        <h2 class="section-heading">Analysis</h2>
+                        <p class="section-lead">Auf enviroCar.org kannst du dir die Sensordaten zu deinen Fahrten anschauen.
+                            Erfahre mehr über 
+                        </p>
+                        <ul class="lead">
+                            <li>Geschwindigkeiten</li>
+                            <li>Treibstoffverbrauch</li>
+                            <li>CO Emissionen</li>
+                            <li>Stop & Go's</li>
+                            <li>und vieles mehr</li>
+                        </ul>
+                    </div>
                 </div>
-                <!-- /.row -->
             </div>
-            <!-- /.container -->
+        </section>
+
+        <!-- Maps & Products -->
+        <section id="products" class="sectionProducts" style="background-color: #FFF;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5 ml-auto">
+                        <hr class="section-heading-spacer">
+                        <div class="clearfix"></div>
+                        <h2 class="section-heading">Karten & Produkte</h2>
+                        <p class="section-lead">Die enviroCar Plattform bietet Karten anonymisierter Community Daten. <br>
+                        <ul class="lead">
+                            <li>Aggregierte Karten</li>
+                            <li>Hot-Spot Analysen</li>
+                            <li>enviroCar Tracks analysieren mit R</li>
+                            <li>interaktive Karten mit ArcGIS online</li>
+                        </ul>	
+                    </div>
+                    <div class="col-lg-5 mr-auto img-frame">
+                        <span class="helper"></span>
+                        <img class="img-fluid" src="assets/app_3.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Image Background Divider -->
+        <div>
+
+        </div>
+
+
+        <!-- Press -->
+        <section id="partner" class="sectionPartner" style="background-color: #FFF;">
+            <div class="container">
+                <h2 class="section-heading" style="text-align: center; padding-bottom: 32px;">Partner</h2>
+                <div class="row">
+                    <div class="col-md-4 col-sm-4 mr-auto img-frame">
+                        <span class="helper"></span>
+                        <img class="img-fluid" style="width:100%;" src="assets/partner/wwu.png" alt="">
+                    </div>
+                    <div class="col-md-4 col-sm-4 mr-auto img-frame">
+                        <span class="helper"></span>
+                        <img class="img-fluid" style="width:100%;" src="assets/partner/52north.png" alt="">
+                    </div>
+                    <div class="col-md-4 col-sm-4 mr-auto img-frame">
+                        <span class="helper"></span>
+                        <img class="img-fluid" style="width:100%;" src="assets/partner/ifgi.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Clients -->
+        <section class="py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6">
+                        <a href="#">
+                            <img class="img-fluid d-block mx-auto" src="img/logos/envato.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <a href="#">
+                            <img class="img-fluid d-block mx-auto" src="img/logos/designmodo.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <a href="#">
+                            <img class="img-fluid d-block mx-auto" src="img/logos/themeforest.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <a href="#">
+                            <img class="img-fluid d-block mx-auto" src="img/logos/creative-market.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <section id="products" class="bg-light">
@@ -392,7 +442,7 @@
                             Sofern Du dich mit Fragen und Anregungen an alle enviroCar-Nutzer und Projektgruppen wenden wollen, nutz das englischsprachige <a href="http://envirocar-discuss.forum.52north.org/" target="_blank">Forum</a> der internationalen enviroCar Community.
                             <br/><br/>
                             Sofern Du besondere Anpassungen benötigst oder generell an gemeinsamen Aktivitäten mit 52°North interessiert bist, kannst du auch gern direkt <a href="mailto:enviroCar@52north.org">mit dem enviroCar Team bei 52°North</a> in Kontakt treten.
-                        </p></p>
+                        </p>
                     </div>
                 </div>
             </div>
