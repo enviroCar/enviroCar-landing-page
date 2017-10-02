@@ -38,8 +38,24 @@ html, body {
     color: #0065A0 !important;
     margin-left: 16px;
 }
+@media (min-width: 1300px) {
+    .nav-item {
+        font-size: 21px;
+        margin-left: 24px;
+    }
+}
+@media (max-width: 976px) and (min-width: 768px) {
+    .nav-item {
+        font-size: 15px;
+        margin-left: 2px;
+    }
+}
 .nav-item>a {
     color: #0065A0 !important;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+    background-color: rgba(0,101,160,0.7);
+    color: #FFF !important;
 }
 
 
@@ -209,6 +225,7 @@ img-frame>img {
     vertical-align: middle;
     max-height: 400px;
     max-width: 100%;
+    margin: auto;
 }
 
 iframe {
@@ -239,8 +256,8 @@ iframe {
     color: #000000;
     opacity: 1;
     z-index: 20;
-    /*font-weight: bold;*/
-    text-shadow: 1px 1px 2px #272e36;
+    /*    font-weight: bold;
+        text-shadow: 1px 1px 2px #272e36;*/
 }
 .section-heading-spacer {
     border-top: 1px solid #ccc;
@@ -250,7 +267,7 @@ iframe {
     font-size: 18px;
 }
 .lead>li {
-        padding-bottom: 16px;
+    padding-bottom: 16px;
 }
 
 .services {
@@ -323,6 +340,12 @@ header {
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 
+.full-width {
+    width: 95% !important;
+    max-width: 95% !important;
+    min-width: 95% !important;
+}
+
 .whitebox>h3 {
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
     color: #000;
@@ -335,4 +358,86 @@ header {
 }
 
 .list-inline-item {
+}
+
+/* IMAGE BACKGROUND DIVIDER */
+.wrapper1 {
+    width: 100%;
+    /* whatever width you want */
+    /*display: inline-block;*/
+    position: relative; }
+.wrapper1:after {
+    padding-top: 24.75%;
+    /* 16:9 ratio */
+    display: block;
+    content: ''; }
+.divider1 {
+    background-image: url("../assets/envCar_Foto06.jpg");
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    /* fill parent */
+    /*background-color: deepskyblue;*/
+    /* let's see it! */
+    display: inline-block; }
+
+/* Section PRESS */
+.nomargin {
+    margin: 0px !important;
+}
+@media (max-width: 575px) {
+    .noPaddingGtXs {
+        padding: 0px !important;
+    }
+}
+.posts {
+    margin-left: 2% !important;
+    margin-right: 2% !important;
+    margin-bottom: 5%;
+}
+.press-pic {
+    max-width: 100%;
+    height: auto;
+}
+.press-link {
+    font-size: 80%;
+}
+.authordiv {
+    float: right;
+}
+
+/* Section PARTNERS */
+.sectionPartner {
+    padding-bottom: 10%;
+}
+
+/* footer */
+.footerdiv {
+    margin-left: 2% !important;
+    margin-right: 2% !important;
+    padding: 0px;
+}
+.footerdiv>div{
+    margin: auto;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+.footer-item>ul {
+    list-style-type: none;
+    padding-left: 16px;
+}
+.footer-item>ul>li>a {
+    color: #fff;
+}
+.footer-item>h3 {
+    font-size: 16px;
+}
+.footer-logo {
+    max-width: 70%;
+    height: auto;
 }
