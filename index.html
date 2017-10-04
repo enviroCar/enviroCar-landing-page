@@ -10,7 +10,6 @@
         <meta name="author" content="52north GmbH">
         <link rel="icon" href="assets/app_logo.png">
 
-
         <title>enviroCar.org</title>
 
         <!-- Bootstrap core CSS -->
@@ -18,7 +17,7 @@
 
         <!-- Custom fonts for this template -->
         <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
-        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:200,300,400,700,200light,300light,400light,700light" rel="stylesheet">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <!-- Custom styles for this template -->
         <link href="css/style.css" rel="stylesheet">
@@ -31,11 +30,11 @@
     <body id="page-top" style="background-color: #f3f3f3;">
 
         <!-- Navigation Bar -->
-        <nav class="navbar fixed-top navbar-light navbar-expand-lg navbar-expand-md" style="position: fixed; top: 0; background-color: #fff; border-bottom: solid 1px #0065A0;" id="mainNav">
+        <nav class="navbar fixed-top navbar-dark bg-primary navbar-expand-lg navbar-expand-md" style="position: fixed; top: 0; border-bottom: solid 1px #0065A0;" id="mainNav">
             <a style="padding: 0;" class="navbar-brand js-scroll-trigger" href="#page-top">
-                <img style="height: 50px; width: auto;" alt="enviroCar logo" src="assets/final_envirocar_logo.png">
+                <img style="height: 26px; width: auto;" alt="enviroCar logo" src="assets/logo_white.png">
             </a>
-            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler ml-auto navbar-dark" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
@@ -64,7 +63,7 @@
                 </ul>
             </div>
         </nav>
-        <div class="placeholder" style="height: 62px;"></div>
+        <div class="placeholder" style="height: 50px;"></div>
 
 
         <!-- Header image gallery -->
@@ -163,59 +162,61 @@
         </section>
 
         <!-- App -->
-        <section id="app" class="sectionApp" style="background-color: #FFF;">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-5 col-md-6 col-sm-6 ml-auto">
-                        <hr class="section-heading-spacer">
-                        <div class="clearfix"></div>
-                        <h2 class="section-heading">Die App</h2>
-                        <p class="section-lead">Mit der App kannst du echte Motorsensordaten deines Fahrzeugs während der Fahrt aufnehmen. 
-                        <ul class="lead" style="list-style-type: none;">
-                            <li>1. App starten</li>
-                            <li>2. Track starten</li>
-                            <li>3. Track beenden und hochladen</li>
-                        </ul>	
+        <section id="app" class="sectionApp">
+            <div class="row col-12 noPadding nomargin">
+                <div class="col-lg-2 col-md-2 col-sm-2 noPadding"></div>
+                <div class="col-lg-4 col-md-10 col-sm-10 ml-auto">
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading">Die App</h2>
+                    <p class="section-lead nomargin">Mit der App kannst du echte Motorsensordaten deines Fahrzeugs während der Fahrt aufnehmen. </p>
+                    <div class="center-block" style="margin-top: 32px; ">
+                        <!-- apple store button -->
+                        <a style="display: block; margin: auto;" class="btn btn-lg big-btn android-btn" href="https://play.google.com/store/apps/details?id=org.envirocar.app&hl=de" target="_blank">
+                            <img width="80px" class="pull-left" src="http://www.userlogos.org/files/logos/jumpordie/google_play_04.png"><div class="btn-text"><small>GET IT ON</small><br><strong>Google Play</strong></div></a>
                     </div>
-                    <div class="col-lg-5 col-md-6 col-sm-6 col-8 mr-auto img-frame">
-                        <span class="helper"></span>
-                        <img class="img-fluid" src="assets/app_3.png" alt="">
-                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 mr-auto img-frame img-frame-1">
+                    <span class="helper"></span>
+                    <img class="img-fluid" src="assets/app_1.png" alt="">
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 mr-auto img-frame img-frame-2">
+                    <span class="helper"></span>
+                    <img class="img-fluid" src="assets/app_2.png" alt="">
                 </div>
             </div>
         </section>
 
         <!-- Analysis -->
-        <section id="analysis" class="sectionAnalysis" style="background-color: #f3f3f3;">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-5 col-md-6 col-sm-6 col-8 mr-auto img-frame">
-                        <hr class="section-heading-spacer ml-auto">
-                        <span class="helper"></span>
-                        <img class="img-fluid" src="assets/app_4.png" alt="">
-                    </div>
-                    <div class="col-lg-5 col-md-6 col-sm-6 ml-auto">
-                        <div class="clearfix"></div>
-                        <h2 class="section-heading">Analyse</h2>
-                        <p class="section-lead">Auf enviroCar.org kannst du dir die Sensordaten zu deinen Fahrten anschauen.</p>
-                        <p class="section-lead">Erfahre mehr über </p>
-                        <ul class="lead">
-                            <li>Geschwindigkeiten</li>
-                            <li>Treibstoffverbrauch</li>
-                            <li>CO Emissionen</li>
-                            <li>Stop & Go's</li>
-                            <li>und vieles mehr</li>
-                        </ul>
-                    </div>
+        <section id="analysis" class="sectionAnalysis">
+            <div class="row col-12 noPadding nomargin">
+                <div class="col-lg-5 col-md-6 col-sm-6 col-8 mr-auto img-frame">
+                    <span class="helper"></span>
+                    <img class="img-fluid" src="assets/app_4.png" alt="">
                 </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 ml-auto">
+                    <hr class="section-heading-spacer ml-auto">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading">Analyse</h2>
+                    <p class="section-lead">Auf enviroCar.org kannst du dir die Sensordaten zu deinen Fahrten anschauen.</p>
+                    <p class="section-lead">Erfahre mehr über </p>
+                    <ul class="lead">
+                        <li>Geschwindigkeiten</li>
+                        <li>Treibstoffverbrauch</li>
+                        <li>CO Emissionen</li>
+                        <li>Stop & Go's</li>
+                        <li>und vieles mehr</li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-2 ml-auto noPadding"></div>
             </div>
         </section>
 
         <!-- Maps & Products -->
-        <section id="products" class="sectionProducs" style="background-color: #FFF;">
-            <div class="container" style="min-width: 80% !important;">
-                <div class="col-12 ml-auto" style="padding-bottom: 10%;">
-                    <hr class="section-heading-spacer">
+        <section id="products" class="sectionProducts" style="background-color: #FFF;">
+            <div class="container" style="min-width: 70% !important;">
+                <div class="col-12 ml-auto" style="padding-bottom: 35px;">
+                    <hr class="col-6 section-heading-spacer" style="float:left;">
                     <div class="clearfix"></div>
                     <h2 class="section-heading">Karten & Produkte</h2>
                     <p class="section-lead">Die enviroCar Plattform bietet ausgewertete Karten aus anonymisierten Community Daten. <br>
@@ -226,8 +227,10 @@
                         <div class="col-12">
                             <p class="product-text">Aggregierte Karten</p>
                         </div>
-                        <div data-content="Klick um die Map zu öffnen" class="col-12 img-hover">
-                            <img class="img-responsive img-rounded" style="width:100%;height: auto;" src="assets/products/map_1.png">
+                        <div class="col-12 img-hover">
+                            <a href="http://52north.maps.arcgis.com/apps/webappviewer/index.html?id=602699b2f09340f6bd4086cacf2916d4" target="_blank">
+                                <img class="img-responsive" style="width:100%;height: auto;" src="assets/products/map_1.png">
+                            </a>
                         </div>
                     </div>
                     <div class="col-md-3 col-6 noPadding product">
@@ -235,7 +238,9 @@
                             <p class="product-text">Hot-Spot Analysen</p>
                         </div>
                         <div class="col-12 img-hover">
-                            <img class="img-responsive img-rounded" style="width:100%;height: auto;" src="assets/products/map_2.png">
+                            <a href="http://www.arcgis.com/home/webmap/viewer.html?webmap=5db4e1ea445e4b4b8612443e7ba76119" target="_blank">
+                                <img class="img-responsive" style="width:100%;height: auto;" src="assets/products/map_2.png">
+                            </a>
                         </div>
                     </div>
                     <div class="col-md-3 col-6 noPadding product">
@@ -243,7 +248,9 @@
                             <p class="product-text">enviroCar Tracks analysieren mit R</p>
                         </div>
                         <div class="col-12 img-hover">
-                            <img class="img-responsive img-rounded" style="width:100%;height: auto;" src="assets/products/map_3.png">
+                            <a href="http://rpubs.com/edzer/enviroCar" target="_blank">
+                                <img class="img-responsive" style="width:100%;height: auto;" src="assets/products/map_3.png">
+                            </a>
                         </div>
                     </div>
                     <div class="col-md-3 col-6 noPadding product">
@@ -251,7 +258,9 @@
                             <p class="product-text">interaktive Karten mit ArcGIS online</p>
                         </div>
                         <div class="col-12 img-hover">
-                            <img class="img-responsive img-rounded" style="width:100%;height: auto;" src="assets/products/map_4.png">
+                            <a href="http://52north.maps.arcgis.com/home/index.html" target="_blank">
+                                <img class="img-responsive" style="width:100%;height: auto;" src="assets/products/map_4.png">
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -278,7 +287,7 @@
                         </div>
                         <div class="col-sm-9 col-md-9 col-lg-9 col-12 noPaddingGtXs">
                             <div class="content section-lead">
-                                <h2 style="clear:both">Verkehrsplanung statt Fahrverbot?</h2>               
+                                <h2 class="press-heading" style="clear:both">Verkehrsplanung statt Fahrverbot?</h2>               
                                 <p class="section-lead">Die Stadt Mönchengladbach analysiert, wie der Verkehrsfluss 
                                     verbessert werden kann. Weil fließender Verkehr deutlich 
                                     weniger Schadstoffe verursacht als Stop-and-go, soll die 
@@ -288,7 +297,7 @@
                             </div>
                         </div>
                     </div>
-                    <hr class="clear nomargin">
+                    <hr class="clear nomargin section-heading-spacer">
                     <div class="authordiv">
                         <span class="date">04. September 2017</span> von <span class="author"> Lothar Becker </span>
                     </div>
@@ -306,7 +315,7 @@
                         </div>
                         <div class="col-sm-9 noPaddingGtXs">
                             <div class="content section-lead">
-                                <h2 style="clear:both">Daten für die Tempo-Debatte</h2>               
+                                <h2 class="press-heading" style="clear:both">Daten für die Tempo-Debatte</h2>               
                                 <p class="section-lead">Grüne Wellen, 30-Kilometer-Zonen - es gibt Themen in 
                                     der Welt des Stadtverkehrs, über die gern emotional 
                                     debattiert wird. Was oft fehlt: die Fakten. <br>Prof. 
@@ -316,7 +325,7 @@
                             </div>
                         </div>
                     </div>
-                    <hr class="clear nomargin">
+                    <hr class="clear nomargin section-heading-spacer">
                     <div class="authordiv">
                         <span class="date">17. August 2016</span> von <span class="author"> Günter Benning </span>
                     </div>
@@ -334,7 +343,7 @@
                         </div>
                         <div class="col-sm-9 noPaddingGtXs">
                             <div class="content section-lead">
-                                <h2 style="clear:both">Autofahrer machen Grüne Welle selbst</h2>               
+                                <h2 class="press-heading" style="clear:both">Autofahrer machen Grüne Welle selbst</h2>               
                                 <p class="section-lead">Ein Auto, ein Adapter und eine kostenfreie App für ein Android-
                                     Smartphone: Mehr braucht es nicht, um als freiwilliger Grüne-
                                     Welle-Tester unterwegs zu sein. Die Stadt wünscht sich viele 
@@ -343,7 +352,7 @@
                             </div>
                         </div>
                     </div>
-                    <hr class="clear nomargin">
+                    <hr class="clear nomargin section-heading-spacer">
                     <div class="authordiv">
                         <span class="date">27. Mai 2016</span> von <span class="author"> Dieter Weber </span>
                     </div>
@@ -403,8 +412,8 @@
 
         <!--Partner--> 
         <section id="partner" class="sectionPartner" style="background-color: #f3f3f3;">
-            <div class="container full-width">
-                <h2 class="section-heading" style="text-align: center; padding-bottom: 32px;">Partner</h2>
+            <div class="container full-width partner-padding">
+                <h2 class="partner-section-heading" style="text-align: center; padding-bottom: 32px;">Partner</h2>
                 <div class="row">
                     <div class="col-lg-2 col-md-4 col-sm-4 col-6 mr-auto img-frame">
                         <span class="helper"></span>
