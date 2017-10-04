@@ -79,7 +79,7 @@
 
                 <!-- Wrapper for slides -->
                 <div class="carousel-inner">
-                    <div class="item active">
+                    <div class="carousel-item item active">
                         <div class="backgroundTwo">
                             <!--<img src="" alt="App" style="width:100%; max-height: 600px;">-->
                             <div class="transbox">
@@ -88,7 +88,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="item">
+                    <div class="carousel-item item">
                         <div class="backgroundOne">
                             <!--<img src="" alt="App" style="width:100%; max-height: 600px;">-->
                             <div class="transbox">
@@ -97,7 +97,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="item">
+                    <div class="carousel-item item">
                         <div class="backgroundThree">
                             <!--<img src="" alt="App" style="width:100%; max-height: 600px;">-->
                             <div class="transbox">
@@ -166,7 +166,7 @@
         <section id="app" class="sectionApp" style="background-color: #FFF;">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-5 ml-auto">
+                    <div class="col-lg-5 col-md-6 col-sm-6 ml-auto">
                         <hr class="section-heading-spacer">
                         <div class="clearfix"></div>
                         <h2 class="section-heading">Die App</h2>
@@ -177,7 +177,7 @@
                             <li>3. Track beenden und hochladen</li>
                         </ul>	
                     </div>
-                    <div class="col-lg-5 mr-auto img-frame">
+                    <div class="col-lg-5 col-md-6 col-sm-6 col-8 mr-auto img-frame">
                         <span class="helper"></span>
                         <img class="img-fluid" src="assets/app_3.png" alt="">
                     </div>
@@ -189,12 +189,12 @@
         <section id="analysis" class="sectionAnalysis" style="background-color: #f3f3f3;">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-5 ml-auto img-frame">
+                    <div class="col-lg-5 col-md-6 col-sm-6 col-8 mr-auto img-frame">
+                        <hr class="section-heading-spacer ml-auto">
                         <span class="helper"></span>
                         <img class="img-fluid" src="assets/app_4.png" alt="">
                     </div>
-                    <div class="col-lg-5 mr-auto">
-                        <hr class="section-heading-spacer">
+                    <div class="col-lg-5 col-md-6 col-sm-6 ml-auto">
                         <div class="clearfix"></div>
                         <h2 class="section-heading">Analyse</h2>
                         <p class="section-lead">Auf enviroCar.org kannst du dir die Sensordaten zu deinen Fahrten anschauen.</p>
@@ -212,24 +212,47 @@
         </section>
 
         <!-- Maps & Products -->
-        <section id="products" class="sectionProducts" style="background-color: #FFF;">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-5 ml-auto">
-                        <hr class="section-heading-spacer">
-                        <div class="clearfix"></div>
-                        <h2 class="section-heading">Karten & Produkte</h2>
-                        <p class="section-lead">Die enviroCar Plattform bietet Karten anonymisierter Community Daten. <br>
-                        <ul class="lead">
-                            <li>Aggregierte Karten</li>
-                            <li>Hot-Spot Analysen</li>
-                            <li>enviroCar Tracks analysieren mit R</li>
-                            <li>interaktive Karten mit ArcGIS online</li>
-                        </ul>	
+        <section id="products" class="sectionProducs" style="background-color: #FFF;">
+            <div class="container" style="min-width: 80% !important;">
+                <div class="col-12 ml-auto" style="padding-bottom: 10%;">
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading">Karten & Produkte</h2>
+                    <p class="section-lead">Die enviroCar Plattform bietet ausgewertete Karten aus anonymisierten Community Daten. <br>
+                    </p>
+                </div>
+                <div class="row col-12 nomargin noPadding">
+                    <div class="col-md-3 col-6 noPadding product">
+                        <div class="col-12">
+                            <p class="product-text">Aggregierte Karten</p>
+                        </div>
+                        <div data-content="Klick um die Map zu öffnen" class="col-12 img-hover">
+                            <img class="img-responsive img-rounded" style="width:100%;height: auto;" src="assets/products/map_1.png">
+                        </div>
                     </div>
-                    <div class="col-lg-5 mr-auto img-frame">
-                        <span class="helper"></span>
-                        <img class="img-fluid" src="assets/products.png" alt="enviroCar products">
+                    <div class="col-md-3 col-6 noPadding product">
+                        <div class="col-12">
+                            <p class="product-text">Hot-Spot Analysen</p>
+                        </div>
+                        <div class="col-12 img-hover">
+                            <img class="img-responsive img-rounded" style="width:100%;height: auto;" src="assets/products/map_2.png">
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6 noPadding product">
+                        <div class="col-12">
+                            <p class="product-text">enviroCar Tracks analysieren mit R</p>
+                        </div>
+                        <div class="col-12 img-hover">
+                            <img class="img-responsive img-rounded" style="width:100%;height: auto;" src="assets/products/map_3.png">
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6 noPadding product">
+                        <div class="col-12">
+                            <p class="product-text">interaktive Karten mit ArcGIS online</p>
+                        </div>
+                        <div class="col-12 img-hover">
+                            <img class="img-responsive img-rounded" style="width:100%;height: auto;" src="assets/products/map_4.png">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -245,15 +268,18 @@
         <section id="press" class="sectionPress" style="background-color: #FFF;">
             <h2 class="section-heading" style="text-align: center; padding-bottom: 32px;">Presse</h2>
             <div class="posts row">
-                <div class="col-md-8 col-sm-10 col-12" style="margin: auto;">
+                <div class="col-xl-8 col-lg-10 col-md-11 col-sm-12 col-12" style="margin: auto;">
                     <div class="row col-12 nomargin noPaddingGtXs">
-                        <div class="col-sm-3 col-12 noPaddingGtXs">
+                        <div class="col-sm-3 col-12 noPaddingGtXs hidden-xs">
+                            <img class="press-pic-gtXS" src="assets/presse/zdf_short.png" alt="ZDF Heute Journal enviroCar Verkehrsplanung statt Fahrverbot?"/>
+                        </div>
+                        <div class="col-sm-3 col-12 hidden-sm hidden-md hidden-lg hidden-xl">
                             <img class="press-pic" src="assets/presse/heute_journal.png" alt="ZDF Heute Journal enviroCar Verkehrsplanung statt Fahrverbot?"/>
                         </div>
-                        <div class="col-sm-9 col-12 noPaddingGtXs">
+                        <div class="col-sm-9 col-md-9 col-lg-9 col-12 noPaddingGtXs">
                             <div class="content section-lead">
                                 <h2 style="clear:both">Verkehrsplanung statt Fahrverbot?</h2>               
-                                <p>Die Stadt Mönchengladbach analysiert, wie der Verkehrsfluss 
+                                <p class="section-lead">Die Stadt Mönchengladbach analysiert, wie der Verkehrsfluss 
                                     verbessert werden kann. Weil fließender Verkehr deutlich 
                                     weniger Schadstoffe verursacht als Stop-and-go, soll die 
                                     Optimierung des Verkehrs dazu beitragen, Diesel-Fahrverbote 
@@ -270,15 +296,18 @@
             </div>
 
             <div class="posts row">
-                <div class="col-md-8 col-sm-10 col-12" style="margin: auto;">
+                <div class="col-xl-8 col-lg-10 col-md-11 col-sm-12 col-12" style="margin: auto;">
                     <div class="row col-12 nomargin noPaddingGtXs">
-                        <div class="col-sm-3 noPaddingGtXs">
+                        <div class="col-sm-3 col-12 noPaddingGtXs hidden-xs">
+                            <img class="press-pic-gtXS" src="assets/presse/wn_short.png" alt="Westfälische Nachrichten enviroCar Daten für die Tempo-Debatte"/>
+                        </div>
+                        <div class="col-sm-3 col-12 hidden-sm hidden-md hidden-lg hidden-xl">
                             <img class="press-pic" src="assets/presse/westfaelische_nachrichten.png" alt="Westfälische Nachrichten enviroCar Daten für die Tempo-Debatte"/>
                         </div>
                         <div class="col-sm-9 noPaddingGtXs">
                             <div class="content section-lead">
                                 <h2 style="clear:both">Daten für die Tempo-Debatte</h2>               
-                                <p>Grüne Wellen, 30-Kilometer-Zonen - es gibt Themen in 
+                                <p class="section-lead">Grüne Wellen, 30-Kilometer-Zonen - es gibt Themen in 
                                     der Welt des Stadtverkehrs, über die gern emotional 
                                     debattiert wird. Was oft fehlt: die Fakten. <br>Prof. 
                                     Dr. Albert Remke steht in seinem Büro am Martin-Luther-
@@ -295,15 +324,18 @@
             </div>
 
             <div class="posts row">
-                <div class="col-md-8 col-sm-10 col-12" style="margin: auto;">
+                <div class="col-xl-8 col-lg-10 col-md-11 col-sm-12 col-12" style="margin: auto;">
                     <div class="row col-12 nomargin noPaddingGtXs">
-                        <div class="col-sm-3 noPaddingGtXs">
-                            <img class="press-pic" src="assets/presse/RP.jpg" alt="RP-Online Rheinische Post enviroCar mönchengladbach Autofahrer machen Grüne Welle selbst"/>
+                        <div class="col-sm-3 col-12 noPaddingGtXs hidden-xs">
+                            <img class="press-pic-gtXS" src="assets/presse/RP.jpg" alt="RP-Online Rheinische Post enviroCar mönchengladbach Autofahrer machen Grüne Welle selbst"/>
+                        </div>
+                        <div class="col-sm-3 col-12 hidden-sm hidden-md hidden-lg hidden-xl">
+                            <img class="press-pic" src="assets/presse/rheinische_post.png" alt="RP-Online Rheinische Post enviroCar mönchengladbach Autofahrer machen Grüne Welle selbst"/>
                         </div>
                         <div class="col-sm-9 noPaddingGtXs">
                             <div class="content section-lead">
                                 <h2 style="clear:both">Autofahrer machen Grüne Welle selbst</h2>               
-                                <p>Ein Auto, ein Adapter und eine kostenfreie App für ein Android-
+                                <p class="section-lead">Ein Auto, ein Adapter und eine kostenfreie App für ein Android-
                                     Smartphone: Mehr braucht es nicht, um als freiwilliger Grüne-
                                     Welle-Tester unterwegs zu sein. Die Stadt wünscht sich viele 
                                     Autofahrer, die mitmachen und Messdaten liefern...<br>
@@ -320,57 +352,57 @@
         </section>
 
         <!-- Dokumentation -->
-        <section id="documentation" style="background-color: #f3f3f3;">
-            <div class="container">
-                <h2 class="section-heading" style="text-align: center; padding-bottom: 32px;">Dokumentation</h2>
-                <div class="row">
-                    <div class="col-lg-12">
-                        <h4>API</h4>
-                        <p class="lead">Die API des enviroCar Servers unterstützt den selektiven Zugriff auf anonymisierte Messfahrten (Tracks). 
-                            Sie können per HTTP auf die Tracks, die Messungen und zugehörige Statistiken zugreifen. Für die Selektion können räumliche und zeitliche 
-                            Filter verwendet werden. Die Daten sind anonymisiert, d.h. eine Verbindung zu den Nutzerdaten kann nicht mehr hergestellt werden.  <br><br>
-                            Der Zugriff auf Nutzer-spezifische Daten ist nur durch den Nutzer selbst möglich, und erfordert ein Login über HTTP Authorisation. 
-                            Detaillierte <strong>Beschreibung der enviroCar API</strong>: 
-                            <a href="http://envirocar.github.io/enviroCar-server/api/">http://envirocar.github.io/enviroCar-server/api/</a></p>
+        <!--        <section id="documentation" style="background-color: #f3f3f3;">
+                    <div class="container">
+                        <h2 class="section-heading" style="text-align: center; padding-bottom: 32px;">Dokumentation</h2>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <h4>API</h4>
+                                <p class="lead">Die API des enviroCar Servers unterstützt den selektiven Zugriff auf anonymisierte Messfahrten (Tracks). 
+                                    Sie können per HTTP auf die Tracks, die Messungen und zugehörige Statistiken zugreifen. Für die Selektion können räumliche und zeitliche 
+                                    Filter verwendet werden. Die Daten sind anonymisiert, d.h. eine Verbindung zu den Nutzerdaten kann nicht mehr hergestellt werden.  <br><br>
+                                    Der Zugriff auf Nutzer-spezifische Daten ist nur durch den Nutzer selbst möglich, und erfordert ein Login über HTTP Authorisation. 
+                                    Detaillierte <strong>Beschreibung der enviroCar API</strong>: 
+                                    <a href="http://envirocar.github.io/enviroCar-server/api/">http://envirocar.github.io/enviroCar-server/api/</a></p>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <h4>API URLs</h4>
-                        <ul class="lead">
-                            <li>Stabile API: <a href="https://envirocar.org/api/stable/">https://envirocar.org/api/stable/</a></li>
-                            <li>Entwicklungs-API (bei Nutzung bitte GitHub repositories und Mailingliste verfolgen): <a href="https://envirocar.org/api/dev/">https://envirocar.org/api/dev/</a></li>
-                        </ul>	
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <h4>API URLs</h4>
+                                <ul class="lead">
+                                    <li>Stabile API: <a href="https://envirocar.org/api/stable/">https://envirocar.org/api/stable/</a></li>
+                                    <li>Entwicklungs-API (bei Nutzung bitte GitHub repositories und Mailingliste verfolgen): <a href="https://envirocar.org/api/dev/">https://envirocar.org/api/dev/</a></li>
+                                </ul>	
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <h4>Dateidownload</h4>
-                        <p class="lead">Nutzer können ihre eigenen Tracks in verschiedenen Formaten (z.B. GeoJSON) über die Menüs in der Trackansicht herunterladen 
-                            (klicken Sie in <a href="./dashboard.php">ihrem Profil</a> auf einen der Tracks in der Liste, um zur Trackansicht zu gelangen).
-                        </p>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <h4>Dateidownload</h4>
+                                <p class="lead">Nutzer können ihre eigenen Tracks in verschiedenen Formaten (z.B. GeoJSON) über die Menüs in der Trackansicht herunterladen 
+                                    (klicken Sie in <a href="./dashboard.php">ihrem Profil</a> auf einen der Tracks in der Liste, um zur Trackansicht zu gelangen).
+                                </p>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <h4>Lizenz</h4>
-                        <p class="lead">Die Daten auf dem enviroCar Server dürfen von nach Maßgabe der 
-                            <a href="http://opendatacommons.org/licenses/odbl/1.0/" target="_blank">Open Database License (ODbL)</a> 
-                            genutzt werden, siehe <a href="./terms.php#license">Nutzungsbedingungen</a>.
-                        </p>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <h4>Lizenz</h4>
+                                <p class="lead">Die Daten auf dem enviroCar Server dürfen von nach Maßgabe der 
+                                    <a href="http://opendatacommons.org/licenses/odbl/1.0/" target="_blank">Open Database License (ODbL)</a> 
+                                    genutzt werden, siehe <a href="./terms.php#license">Nutzungsbedingungen</a>.
+                                </p>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-        </section>
+                </section>-->
 
-        <!-- Partner -->
-        <section id="partner" class="sectionPartner" style="background-color: #fff;">
+        <!--Partner--> 
+        <section id="partner" class="sectionPartner" style="background-color: #f3f3f3;">
             <div class="container full-width">
                 <h2 class="section-heading" style="text-align: center; padding-bottom: 32px;">Partner</h2>
                 <div class="row">
