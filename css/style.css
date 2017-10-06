@@ -224,7 +224,11 @@ div.transbox p {
 
 /* Sections */
 section {
-    padding: 70px 0;
+    padding: 10% 0;
+}
+
+.sectionHome {
+    padding: 32px;
 }
 
 @media (max-width: 992px) {
@@ -232,7 +236,11 @@ section {
         padding: 24px 0;
     }
 }
-
+@media (max-width: 575px) {
+    .portfolio-item {
+        padding-bottom: 32px;
+    }
+}
 .card-body {
     background-color: #fff;
 }
@@ -241,9 +249,19 @@ section {
     display: inline-block;
     position: relative;
 }
+.card-img-step {
+    width: 20%;
+    height: 35%;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: -18%;
+    z-index: 500;
+    display: block;
+    margin: auto;
+}
 .card-1 {
     min-height: 222px;
-    margin-bottom: 10%;
     -webkit-transition: all .2s ease; /* Safari and Chrome */
     -moz-transition: all .2s ease; /* Firefox */
     -o-transition: all .2s ease; /* IE 9 */
@@ -275,18 +293,11 @@ section {
 }
 @media (max-width: 991px) {
     .img-frame-1 {
-        margin-top: 48px !important;
-        margin-bottom: 48px !important;
-        padding-left: 5% !important;
-        padding-right: 2% !important;
     }
     .img-frame-2 {
-        margin-top: 48px !important;
-        margin-bottom: 48px !important;
-        padding-left: 2% !important;
-        padding-right: 5% !important;
     }
 }
+
 
 .helper {
     max-height: 400px !important;
@@ -612,7 +623,22 @@ header {
     padding-top: 10%;
 }
 .partner {
-    padding-bottom: 16px;
+    padding-left: 48px !important;
+    padding-right: 48px !important;
+}
+@media (max-width: 768px) {
+    .partner {
+        padding-left: 8px !important;
+        padding-right: 8px !important;
+        padding-bottom: 16px;
+    }
+}
+@media (min-width: 769px) and (max-width: 1260px) {
+    .partner {
+        padding-left: 16px !important;
+        padding-right: 16px !important;
+        padding-bottom: 16px;
+    }
 }
 .partner-section-heading {
     margin-bottom: 0px;
@@ -706,22 +732,28 @@ header {
     padding-bottom: 36px !important;
 }
 
+#statistics {
+    padding: 5% 0;
+}
 .c-no{
-    height:auto;}
+    height:auto;
+}
 .counter-Txt{
     text-align:center; 
-    font-size:20px; 
-    font-weight:bold; 
-    text-transform:uppercase; 
-    margin-top:20px;}
+    font-size:26px; 
+    /*font-weight:bold;*/ 
+    /*text-transform:uppercase;*/ 
+}
 .counter-Txt span{
     display:block; 
-    font-size:36px}
+    font-size:36px;
+    font-weight: bold;
+    padding-bottom: 8px;
+}
 @media(min-width:320px) and (max-width:767px){ 
     .c-no{
         height:100%;}
     .counter-Txt{
-        margin-top:35px;
         font-size:16px;
     }
     .margin-bot-35{

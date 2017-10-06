@@ -43,6 +43,9 @@
                         <a class="nav-link js-scroll-trigger" href="#page-top">Home</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#platform">Plattform</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link js-scroll-trigger" href="#app">App</a>
                     </li>
                     <li class="nav-item">
@@ -53,9 +56,6 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link js-scroll-trigger" href="#press">Presse</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#documentation">Dokumentation</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link js-scroll-trigger" href="#partner">Partner</a>
@@ -119,33 +119,57 @@
             </div>
         </div>
 
-        <!-- Section Short Description APP ; ANALYSIS ; MAPS & PRODUCTS -->
-        <section id="home">
+
+        <!-- Section Short Description ADAPTER ; APP ; ANALYSIS  -->
+        <section id="platform" class="sectionHome">
             <div class="container">
                 <!-- Page Heading -->
                 <div class="row">
                     <div class="col-lg-4 col-md-4 col-sm-4 portfolio-item">
                         <div class="card card-1">
-                            <a class="js-scroll-trigger" href="#app"><img class="card-img-top" src="assets/home_1.png" alt=""></a>
+                            <a class="js-scroll-trigger" href="#Adapter"><div style="position:relative;"><img class="card-img-top" src="assets/home_0.png" alt="">
+                                    <img class="card-img-step" src="assets/step_1.png"></div></a>
                             <div class="card-body">
                                 <h4 class="card-title">
-                                    <a class="js-scroll-trigger" href="#app">App</a>
+                                    <a class="js-scroll-trigger" href="#Adapter">Adapter</a>
                                 </h4>
-                                <p class="card-text">Erhebe Motordaten deiner Fahrten</p>
+                                <p class="card-text">Stecke den ODB Adapter in dein Auto</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-4 col-sm-4 portfolio-item">
                         <div class="card card-1">
-                            <a class="js-scroll-trigger" href="#analysis"><img class="card-img-top" src="assets/home_2.png" alt=""></a>
+                            <a class="js-scroll-trigger" href="#app"><div style="position:relative;"><img class="card-img-top" src="assets/home_1.png" alt="">
+                                    <img class="card-img-step" src="assets/step_2.png"></div></a>
+                            <div class="card-body">
+                                <h4 class="card-title">
+                                    <a class="js-scroll-trigger" href="#app">App</a>
+                                </h4>
+                                <p class="card-text">Lass die enviroCar App Daten sammeln</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-4 portfolio-item">
+                        <div class="card card-1">
+                            <a class="js-scroll-trigger" href="#app"><div style="position:relative;"><img class="card-img-top" src="assets/home_2.png" alt="">
+                                    <img class="card-img-step" src="assets/step_3.png"></div></a>
                             <div class="card-body">
                                 <h4 class="card-title">
                                     <a  class="js-scroll-trigger" href="#analysis">Analyse</a>
                                 </h4>
-                                <p class="card-text">Analysiere deine Fahrten</p>
+                                <p class="card-text">Teile und analysiere deine Fahrten</p>
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Short Description MAPS & PRODUCTS -->
+        <section class="sectionHome">
+            <div class="container">
+                <!-- Page Heading -->
+                <div class="row">
                     <div class="col-lg-4 col-md-4 col-sm-4 portfolio-item">
                         <div class="card card-1">
                             <a  class="js-scroll-trigger" href="#products"><img class="card-img-top" src="assets/home_3.png" alt=""></a>
@@ -160,61 +184,86 @@
                 </div>
             </div>
         </section>
+        
+        
+        <!-- enviroCar numbers -->
+        <section id="statistics" class="bg-primary">
+            <div class="c-no container-fluid">
+                <div class="container">
+                    <div class="row" id="counter">
+                        <div class="col-4 counter-Txt">
+                            <i class="material-icons md-60">people</i>
+                            <span class="counter-users" data-count="">0</span> Mitglieder </div>
+                        <div class="col-4 counter-Txt">
+                            <i class="material-icons md-60">airport_shuttle</i>
+                            <span class="counter-tracks" data-count="">0</span> Fahrten </div>
+                        <div class="col-4 counter-Txt margin-bot-35">
+                            <i class="material-icons md-60">slow_motion_video</i>
+                            <span class="counter-measurements" data-count="">0</span> Messungen </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
 
         <!-- App -->
         <section id="app" class="sectionApp">
-            <div class="row col-12 noPadding nomargin">
-                <div class="col-lg-1 col-md-1 col-sm-2 noPadding"></div>
-                <div class="col-lg-5 col-md-10 col-sm-8 ml-auto">
-                    <hr class="section-heading-spacer">
-                    <div class="clearfix"></div>
-                    <h2 class="section-heading">Die App</h2>
-                    <p class="section-lead nomargin">Die App kann echte Motorsensordaten deines Fahrzeugs während der Fahrt aufnehmen. </p>
-                    <!-- apple store button -->
-                    <div class="spaceholder" style="height: 5%;"></div>
-                    <a style="display: block ; margin: auto;" class="btn btn-lg big-btn android-btn" href="https://play.google.com/store/apps/details?id=org.envirocar.app&hl=de" target="_blank">
-                        <img width="60" class="pull-left" src="http://www.userlogos.org/files/logos/jumpordie/google_play_04.png"><div class="btn-text"><small>GET IT ON</small><br><strong>Google Play</strong></div></a>
-
+            <div class="container-fluid row col-12 noPadding nomargin">
+                <div class="row container-fluid col-lg-6 col-md-6 col-sm-12 col-12 noPadding nomargin">
+                    <div class="col-lg-3 col-md-2 col-sm-2 col-2 noPadding"></div>
+                    <div class="col-lg-9 col-md-10 col-sm-8 col-8 mr-auto noPadding">
+                        <hr class="section-heading-spacer">
+                        <div class="clearfix"></div>
+                        <h2 class="section-heading">Die App</h2>
+                        <p class="section-lead nomargin">Die App sammelt echte Motorsensordaten deines Fahrzeugs während du fährst. </p>
+                        <!-- apple store button -->
+                        <div class="spaceholder" style="height: 5%;"></div>
+                        <a style="display: block ; margin: auto;" class="btn btn-lg big-btn android-btn" href="https://play.google.com/store/apps/details?id=org.envirocar.app&hl=de" target="_blank">
+                            <img width="60" class="pull-left" src="http://www.userlogos.org/files/logos/jumpordie/google_play_04.png"><div class="btn-text"><small>GET IT ON</small><br><strong>Google Play</strong></div></a>
+                        <div class="spaceholder" style="height: 5%; margin-bottom: 32px;"></div>
+                    </div>
+                    <div class="hidden-lg hidden-md col-sm-2 col-2 noPadding"></div>
                 </div>
-                <div class="hidden-lg hidden-md col-sm-2 noPadding"></div>
-                <!--                <div class="col-lg-3 col-md-6 col-sm-6 mr-auto img-frame img-frame-1">
-                                    <span class="helper"></span>
-                                    <img class="img-fluid" src="assets/app_1.png" alt="">
-                                </div>-->
-                <div class="col-lg-1 col-md-1 col-sm-2 noPadding"></div>
-                <div class="col-lg-4 col-md-4 col-sm-8 mr-auto img-frame img-frame-2">
-                    <span class="helper"></span>
-                    <img class="img-fluid" src="assets/app_2.png" alt="">
+                <div class="row container-fluid  col-lg-6 col-md-6 col-sm-12 col-12 noPadding nomargin">
+                    <div class="col-lg-2 col-md-2 col-sm-2 col-2 noPadding"></div>
+                    <div class="col-lg-7 col-md-8 col-sm-8 col-8 ml-auto img-frame img-frame-2 noPadding">
+                        <span class="helper"></span>
+                        <img class="img-fluid" src="assets/app_2.png" alt="">
+                    </div>
+                    <div class="col-lg-3 col-md-2 col-sm-2 col-2 noPadding"></div>
                 </div>
-                <div class="col-lg-1 col-md-1 col-sm-2 noPadding"></div>
             </div>
         </section>
 
         <!-- Analysis -->
         <section id="analysis" class="sectionAnalysis">
-            <div class="row col-12 noPadding nomargin">
-                <div class="col-lg-1 col-md-1 col-sm-2 noPadding"></div>
-                <div class="col-lg-4 col-md-4 col-sm-8 mr-auto img-frame">
-                    <span class="helper"></span>
-                    <img class="img-fluid" src="assets/app_4.png" alt="">
+            <div class="row container-fluid col-12 noPadding nomargin">
+                <div class="row container-fluid col-lg-6 col-md-6 col-sm-12 col-12 noPadding nomargin">
+                    <div class="col-lg-3 col-md-2 col-sm-2 col-2 noPadding"></div>
+                    <div class="col-lg-7 col-md-8 col-sm-8 col-8 mr-auto img-frame img-frame-1 noPadding">
+                        <span class="helper"></span>
+                        <img class="img-fluid" src="assets/app_4.png" alt="">
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-2 col-2 noPadding"></div>
                 </div>
-                <div class="col-lg-1 col-md-1 col-sm-2 noPadding"></div>
-                <div class="hidden-lg hidden-md col-sm-2 noPadding"></div>
-                <div class="col-lg-5 col-md-10 col-sm-8 ml-auto">
-                    <hr class="section-heading-spacer ml-auto">
-                    <div class="clearfix"></div>
-                    <h2 class="section-heading">Analyse</h2>
-                    <p class="section-lead">Auf enviroCar.org kannst du dir die Sensordaten zu deinen Fahrten anschauen.</p>
-                    <p class="section-lead">Erfahre mehr über </p>
-                    <ul class="lead ec-feature-list" style="list-style-type: none;">
-                        <li><i class="ec-features material-icons md-36 ">network_check</i>Geschwindigkeiten</li>
-                        <li><i class="ec-features material-icons md-36 ">local_gas_station</i>Treibstoffverbrauch</li>
-                        <li><i class="ec-features material-icons md-36 ">cloud_circle</i>CO2 Emissionen</li>
-                        <li><i class="ec-features material-icons md-36 ">traffic</i>Stop & Go's</li>
-                        <li><i class="ec-features material-icons md-36 ">more_vert</i>und vieles mehr</li>
-                    </ul>
+                <div class="row container-fluid col-lg-6 col-md-6 col-sm-12 col-12 noPadding nomargin">
+                    <div class="hidden-lg hidden-md col-sm-2 col-2 noPadding"></div>
+                    <div class="col-lg-9 col-md-10 col-sm-8 col-8 mr-auto noPadding nomargin">
+                        <hr class="section-heading-spacer ml-auto">
+                        <div class="clearfix"></div>
+                        <h2 class="section-heading">Analyse</h2>
+                        <p class="section-lead">Auf enviroCar.org kannst du dir die Sensordaten zu deinen Fahrten anschauen.</p>
+                        <p class="section-lead">Erfahre mehr über </p>
+                        <ul class="lead ec-feature-list" style="list-style-type: none;">
+                            <li><i class="ec-features material-icons md-36 ">network_check</i>Geschwindigkeiten</li>
+                            <li><i class="ec-features material-icons md-36 ">local_gas_station</i>Treibstoffverbrauch</li>
+                            <li><i class="ec-features material-icons md-36 ">cloud_circle</i>CO2 Emissionen</li>
+                            <li><i class="ec-features material-icons md-36 ">traffic</i>Stop & Go's</li>
+                            <li><i class="ec-features material-icons md-36 ">more_vert</i>und vieles mehr</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-2 col-sm-2 col-2 noPadding"></div>
                 </div>
-                <div class="col-lg-1 col-md-1 col-sm-2 noPadding"></div>
             </div>
         </section>
 
@@ -361,26 +410,6 @@
                     <hr class="clear nomargin section-heading-spacer">
                     <div class="authordiv">
                         <span class="date">27. Mai 2016</span> von <span class="author"> Dieter Weber </span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        
-        <!-- enviroCar numbers -->
-        <section id="statistics" class="bg-primary">
-            <div class="c-no container-fluid">
-                <div class="container">
-                    <div class="row" id="counter">
-                        <div class="col-4 counter-Txt">
-                            <i class="material-icons md-60">people</i>
-                            <span class="counter-users" data-count="">0</span> Mitglieder </div>
-                        <div class="col-4 counter-Txt">
-                            <i class="material-icons md-60">airport_shuttle</i>
-                            <span class="counter-tracks" data-count="">0</span> Fahrten </div>
-                        <div class="col-4 counter-Txt margin-bot-35">
-                            <i class="material-icons md-60">slow_motion_video</i>
-                            <span class="counter-measurements" data-count="">0</span> Messungen </div>
                     </div>
                 </div>
             </div>
