@@ -19,10 +19,10 @@
 .bg-primary {
     background-color:#0065A0 !important;
 }
-enviroCar-one {
+.enviroCar-one {
     background-color:#0065A0;
 }
-enviroCar-two {
+.enviroCar-two {
     background-color:#8CBF3F;
 }
 
@@ -389,6 +389,19 @@ iframe {
     background-color: #f3f3f3; 
     padding-bottom: 10%; 
     padding-top: 10%;
+}
+.ec-feature-list {
+    color: #0065A0;
+}
+.ec-feature-list>li {
+    padding-bottom: 8px;
+}
+.ec-features {
+    position: relative;
+    bottom: -8px;
+    left: -8px;
+    color: #0065A0;
+    padding-right: 16px;
 }
 /* Analysis Section */
 .sectionProducts { 
