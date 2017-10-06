@@ -13,7 +13,7 @@ $(window).scroll(function () {
             },
                     {
 
-                        duration: 5000,
+                        duration: 4000,
                         easing: 'swing',
                         step: function () {
                             $this.text(Math.floor(this.countNum));
@@ -45,7 +45,7 @@ $(window).scroll(function () {
             },
                     {
 
-                        duration: 5000,
+                        duration: 5500,
                         easing: 'swing',
                         step: function () {
                             $this.text(Math.floor(this.countNum));
@@ -77,7 +77,7 @@ $(window).scroll(function () {
             },
                     {
 
-                        duration: 5000,
+                        duration: 7000,
                         easing: 'swing',
                         step: function () {
                             $this.text(Math.floor(this.countNum));
