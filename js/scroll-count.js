@@ -2,7 +2,11 @@ var a = 0;
 $(window).scroll(function () {
 
     var oTop = $('#counter').offset().top - window.innerHeight;
-    if (a == 0 && $(window).scrollTop() > oTop) {
+    if (numberUsers > 0 
+            && numberTracks > 0
+            && numberMeasurements > 0
+            && a == 0 
+            && $(window).scrollTop() > oTop) {
         $('.counter-users').each(function () {
             var $this = $(this),
                     countTo = numberUsers;
