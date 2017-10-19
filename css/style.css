@@ -226,9 +226,69 @@ div.transbox p {
 section {
     padding: 10% 0;
 }
-
-.sectionHome {
-    padding: 32px;
+.overview-items h2 a {
+    font-size: 26px;
+    color: #0065A0 !important;
+}
+.overview-item-one {
+    padding-left:5%;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    float: left;
+}
+.overview-item-two {
+    padding-right: 40px;
+    display: inline-block;
+    position: relative;
+    /*float: inside;*/
+}
+.overview-item-three {
+    padding-right:6%;
+    display: inline-block;
+    position: relative;
+    float: right;
+    text-align: center;
+}
+@media (max-width: 480px) {
+    .overview-items h2 a {
+        font-size: 18px;
+    }
+    .overview-item-one {
+        padding-top: 12px;
+    }
+    .overview-item-two {
+        padding-right: 0px;
+    }
+    .overview-item-three {
+        padding-top: 12px;
+    }
+}
+.sectionOverview {
+    padding: 0px;
+    padding-top: 15px;
+    max-width: 96%;
+    margin: auto;
+}
+@media (min-width: 1080px) {
+    .sectionOverview {
+        max-width: 74%;
+    }
+    .sectionOverview div {
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+    }
+}
+@media (max-width: 460px) {
+    .sectionOverview {
+    }
+    .sectionOverview div {
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+    }
+}
+.sectionOverview div {
+    margin: auto;
 }
 
 @media (max-width: 992px) {
@@ -260,18 +320,20 @@ section {
     display: block;
     margin: auto;
 }
-.card-1 {
-    min-height: 222px;
+.card-anim {
     -webkit-transition: all .2s ease; /* Safari and Chrome */
     -moz-transition: all .2s ease; /* Firefox */
     -o-transition: all .2s ease; /* IE 9 */
     -ms-transition: all .2s ease; /* Opera */
     transition: all .2s ease;
+}
+.card-1 {
+    min-height: 222px;
     z-index: 50;
     position: relative;
     box-shadow: 0 2px 4px rgba(0,0,0,0.12), 0 2px 4px rgba(0,0,0,0.24);
 }
-.card-1:hover {
+.card-anim:hover {
     box-shadow: 0 4px 8px rgba(0,0,0,0.25), 0 4px 8px rgba(0,0,0,0.22);
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
@@ -701,7 +763,9 @@ header {
 }
 
 .product-text {
-    font-size: 18px;
+    color: #0065A0;
+    font-size: 21px;
+    font-weight: 300;
     text-align: center;
     height: 50px;
 }
