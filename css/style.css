@@ -123,7 +123,8 @@ html, body {
     height: 100%;
 }
 .backgroundThree {
-    background-image: url("..//assets/pexels2.jpeg");
+    /*background-image: url("..//assets/pexels2.jpeg");*/
+    background-image: url("..//assets/planning.jpg");
     background-repeat: no-repeat;
     background-position: right top;
     background-size: 100% 100%;
@@ -133,13 +134,15 @@ html, body {
 div.transbox {
     max-height: 70%;
     max-width: 50%;
+    width: 50%;
     background-color: rgba(0,0,0,0.0);
     color: #ffffff;
     position: absolute;
     top: 10%;
-    left: 15%;
+    left: 12%;
 }
 div.transbox h2 {
+    font-size: 46px;
     text-align: center;
     color: #fff;
     margin: 5%;
@@ -147,9 +150,19 @@ div.transbox h2 {
     text-shadow: 1px 1px 2px #272e36;
     padding-bottom: 16px;
 }
+div.transbox img {
+    display: block;
+    position: relative;
+    text-align: center;
+    margin:auto;
+    padding-bottom: 16px;
+    width: 60%;
+    height: auto;
+}
 div.transbox p {
     text-align: center;
-    font-size: 18px;
+    font-size: 30px;
+    /*font-size: 2rem;*/
     margin: 5%;
     text-shadow: 1px 1px 2px #272e36;
     /*color: #ffffff;*/
@@ -181,7 +194,7 @@ div.transbox p {
         background-size: 100% 100%;
     }
     .backgroundThree {
-        background-image: url("..//assets/pexels2.jpeg");
+        background-image: url("..//assets/planning.jpg");
         background-repeat: no-repeat;
         background-position: right top;
         background-size: 100% 100%;
@@ -226,6 +239,10 @@ div.transbox p {
 section {
     padding: 10% 0;
 }
+.sectionHome {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
 .overview-items h2 a {
     font-size: 26px;
     color: #0065A0 !important;
@@ -264,12 +281,31 @@ section {
         padding-top: 12px;
     }
 }
-.sectionOverview {
-    padding: 0px;
-    padding-top: 15px;
-    max-width: 96%;
-    margin: auto;
+.sectionFeatures {
+    background-color: #fff;
 }
+/* simple "from > to" */
+@keyframes move {
+    from {
+    width: 10%;
+    height: auto;
+    bottom: 21%;
+    right: -10%;
+    }
+    to {
+    width: 10%;
+    height: auto;
+    bottom: 21%;
+    right: 100%;
+    }
+}
+.car {
+    position: absolute;
+    animation: 4s move linear infinite;
+    -webkit-animation: 4s move linear infinite; /* Safari 4.0 - 8.0 */
+}
+
+
 @media (min-width: 1080px) {
     .sectionOverview {
         max-width: 74%;
@@ -310,12 +346,12 @@ section {
     position: relative;
 }
 .card-img-step {
-    width: 20%;
-    height: 35%;
+    width: 15%;
+    height: 27%;
     position: absolute;
     right: 0;
     left: 0;
-    bottom: -18%;
+    bottom: -13%;
     z-index: 500;
     display: block;
     margin: auto;
@@ -365,7 +401,7 @@ section {
     max-height: 400px !important;
     display: inline-block;
     height: 100%;
-    vertical-align: middle;
+    /*vertical-align: middle;*/
 }
 
 img-frame>img {
@@ -381,6 +417,12 @@ iframe {
     vertical-align: middle;
     max-height: 400px;
     max-width: 100%;
+}
+
+.overview-platform-img {
+    width: 50%;
+    margin: auto;
+    display: block;
 }
 
 
