@@ -25,6 +25,10 @@
 .enviroCar-two {
     background-color:#8CBF3F;
 }
+.btn-moreinfo {
+    margin-top: 32px;
+    margin-right: 13%;
+}
 
 html, body {
     height: 100%;
@@ -63,19 +67,27 @@ html, body {
 }
 @media (max-width: 976px) and (min-width: 768px) {
     .nav-item {
-        font-size: 15px;
+        font-size: 14px;
         margin-left: 2px;
     }
 }
 .nav-link {
     padding-bottom: 5px !important;
 }
-.nav-item>a {
-    color: #FFF !important;
+.nav-onSelected>a {
+    background-color: #8CBF3F !important;
+    color: rgba(0,101,160,0.7) !important;
 }
-.navbar-dark .navbar-nav .nav-link:hover {
+.nav-onSelected>a:hover {
+    background-color: #8CBF3F !important;
+    color: rgba(0,101,160,0.7) !important;
+}
+.nav-item>a:hover {
     background-color: #F3F3F3 !important;
     color: rgba(0,101,160,0.7) !important;
+}
+.nav-item>a {
+    color: #FFF !important;
 }
 .navbar-nav {
     /*    position: relative;
@@ -239,10 +251,6 @@ div.transbox p {
 section {
     padding: 10% 0;
 }
-.sectionHome {
-    padding-top: 30px;
-    padding-bottom: 30px;
-}
 .overview-items h2 a {
     font-size: 26px;
     color: #0065A0 !important;
@@ -283,6 +291,8 @@ section {
 }
 .sectionFeatures {
     background-color: #fff;
+    padding-top: 5%;
+    padding-bottom: 5%;
 }
 /* simple "from > to" */
 @keyframes move {
@@ -396,6 +406,11 @@ section {
     }
 }
 
+.sectionHome {
+    background-color: #fff;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
 
 .helper {
     max-height: 400px !important;
@@ -518,6 +533,12 @@ iframe {
     color: #0065A0;
     padding-right: 16px;
 }
+
+.ec-features-list-item > i {
+    padding-bottom: 16px;
+        color: #0065A0;
+}
+
 /* Analysis Section */
 .sectionProducts { 
     background-color: #fff; 
@@ -759,8 +780,8 @@ header {
 }
 .footerdiv>div{
     margin: auto;
-    padding-top: 40px;
-    padding-bottom: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 .footer-item>ul {
     list-style-type: none;
