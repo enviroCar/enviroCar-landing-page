@@ -94,6 +94,33 @@ html, body {
         bottom: -6px;*/
 }
 
+/** ######################## HEADER IMAGE ##################### */
+/* IMAGE BACKGROUND DIVIDER */
+.wrapperHeader {
+    width: 100%;
+    /* whatever width you want */
+    /*display: inline-block;*/
+    position: relative; }
+.wrapperHeader:after {
+    padding-top: 33.75%;
+    /* 16:9 ratio */
+    display: block;
+    content: ''; }
+.dividerHeader {
+    background-image:  url("..//assets/pexels3.jpg");
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    /* fill parent */
+    /*background-color: deepskyblue;*/
+    /* let's see it! */
+    display: inline-block; }
+
 
 /* Carousal Image gallery */
 .headergallery {
@@ -167,7 +194,7 @@ div.transbox img {
     position: relative;
     text-align: center;
     margin:auto;
-    padding-bottom: 16px;
+    padding-bottom: 10%;
     width: 60%;
     height: auto;
 }
@@ -297,22 +324,39 @@ section {
 /* simple "from > to" */
 @keyframes move {
     from {
-    width: 10%;
-    height: auto;
-    bottom: 21%;
-    right: -10%;
+        width: 10%;
+        height: auto;
+        right: -10%;
     }
     to {
-    width: 10%;
-    height: auto;
-    bottom: 21%;
-    right: 100%;
+        width: 10%;
+        height: auto;
+        right: 100%;
     }
 }
 .car {
     position: absolute;
     animation: 4s move linear infinite;
-    -webkit-animation: 4s move linear infinite; /* Safari 4.0 - 8.0 */
+    -webkit-animation: 4s move linear infinite; /* Safari 4.0 - 8.0 */    
+    bottom: 5%;
+    z-index:500;
+
+}
+.traffic-light {
+    position: absolute;
+    bottom: 10%;
+    width: 5%;
+    height: auto;
+
+}
+.traffic_light_1 {
+    right: 55%;
+}
+.traffic_light_2 {
+    right: 31.5%;
+}
+.traffic_light_3 {
+    right: 3.5%;
 }
 
 
@@ -366,6 +410,32 @@ section {
     display: block;
     margin: auto;
 }
+.card-step-title {
+    font-size: 26px;
+}
+.card-step-text {
+    font-size: 18px;
+}
+.card-step {
+    height: 100%;
+}
+@media (min-width: 576px) and (max-width: 1024px) {
+    .card-step-title {
+        font-size: 18px;
+    }
+    .card-step-text {
+        font-size: 16px;
+    }
+}
+@media (max-width: 575px) {
+    .card-step-title {
+        font-size: 16px;
+    }
+    .card-step-text {
+        font-size: 16px;
+    }
+}
+
 .card-anim {
     -webkit-transition: all .2s ease; /* Safari and Chrome */
     -moz-transition: all .2s ease; /* Firefox */
@@ -407,9 +477,9 @@ section {
 }
 
 .sectionHome {
-    background-color: #fff;
-    padding-top: 10%;
-    padding-bottom: 10%;
+    background-color: #f3f3f3;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .helper {
@@ -432,6 +502,10 @@ iframe {
     vertical-align: middle;
     max-height: 400px;
     max-width: 100%;
+}
+
+.sectionPlatform {
+    background-color: #fff;
 }
 
 .overview-platform-img {
@@ -536,11 +610,11 @@ iframe {
 
 .ec-features-list-item > i {
     padding-bottom: 16px;
-        color: #0065A0;
+    color: #0065A0;
 }
 
 /* Analysis Section */
-.sectionProducts { 
+.sectionResearch { 
     background-color: #fff; 
     padding-bottom: 10%; 
     padding-top: 10%;
@@ -679,6 +753,7 @@ header {
     display: block;
     content: ''; }
 .divider1 {
+    /*background-image: url("../assets/pixabay1.jpg");*/
     background-image: url("../assets/envCar_Foto06.jpg");
     background-size: cover;
     width: 100%;
@@ -747,6 +822,17 @@ header {
     padding-bottom: 10%;
     padding-top: 10%;
 }
+.img-partner {
+    display: block;
+    height: 60px;
+    width: auto;
+    margin: auto;
+    margin-top: 0;
+    margin-bottom: 32px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
 .partner {
     padding-left: 48px !important;
     padding-right: 48px !important;
@@ -794,7 +880,7 @@ header {
     font-size: 16px;
 }
 .footer-logo {
-    max-width: 70%;
+    width: 100%;
     height: auto;
 }
 
