@@ -29,6 +29,46 @@
     margin-top: 32px;
     margin-right: 13%;
 }
+.parallax-one { 
+    /* The image used */
+    background-image: url("../assets/pixabay1.jpg");
+
+    /* Set a specific height */
+    height: 50%; 
+    max-height: 500px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallax-two { 
+    /* The image used */
+    background-image: url("../assets/envCar_Foto06.jpg");
+
+    /* Set a specific height */
+    height: 50%; 
+    max-height: 500px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* Turn off parallax scrolling for tablets and phones. Increase/decrease the pixels if needed */
+@media only screen and (max-device-width: 720px) {
+    .parallax-one {
+        height: 33%;
+        background-attachment: scroll;
+    }
+    .parallax-one {
+        height: 33%;
+        background-attachment: scroll;
+        padding-top: 13%;
+    }
+}
 
 html, body {
     height: 100%;
@@ -469,7 +509,7 @@ section {
 
 @media (max-width: 992px) {
     section {
-        padding: 24px 0;
+        padding: 10%
     }
 }
 @media (max-width: 575px) {
@@ -545,7 +585,7 @@ section {
     -o-transform:translatZ(0) scale(1.05); /* Opera */
     transform:translateZ(0) scale(1.05);
     /*    box-shadow: 8px 8px 4px -4px #888888;  shadow */
-    z-index: 1000;
+    z-index: 100;
 }
 
 .img-frame {
@@ -748,9 +788,8 @@ iframe {
 
 /* Research Section */
 .sectionResearch { 
-    background-color: #fff; 
     padding-bottom: 10%; 
-    padding-top: 10%;
+    padding-top: 0px;
 }
 .section-heading {
     font-size: 40px;
