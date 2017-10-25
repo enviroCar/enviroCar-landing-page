@@ -37,6 +37,15 @@ html, body {
 }
 
 /* navigation bar */
+#toolbar {
+    z-index: 1000;
+}
+#navbarResponsive {
+    z-index: 800;
+}
+#navbar-two {
+    z-index: 500;
+}
 .navbar {
     height: 30px;
     border-radius: 0px !important;
@@ -65,9 +74,37 @@ html, body {
         margin-left: 24px;
     }
 }
-@media (max-width: 976px) and (min-width: 768px) {
+@media (max-width: 976px) and (min-width: 321px) {
     .nav-item {
         font-size: 14px;
+        margin-left: 2px;
+    }
+}
+@media (max-width: 320px) {
+    .nav-item {
+        font-size: 12px;
+        margin-left: 2px;
+    }
+}
+.nav-item-2 {
+    font-size: 16px;
+    margin-left: 16px;
+}
+@media (min-width: 1300px) {
+    .nav-item-2 {
+        font-size: 18px;
+        margin-left: 24px;
+    }
+}
+@media (max-width: 976px) and (min-width: 321px) {
+    .nav-item-2 {
+        font-size: 14px;
+        margin-left: 2px;
+    }
+}
+@media (max-width: 320px) {
+    .nav-item-2 {
+        font-size: 12px;
         margin-left: 2px;
     }
 }
@@ -109,6 +146,34 @@ html, body {
 }
 .nav-item>a {
     color: #FFF !important;
+}
+.nav-item-2>a:hover {
+    background-color: #F3F3F3 !important;
+    color: rgba(0,101,160,0.7) !important;
+}
+.nav-item-2>a>img {
+    width: 0px; 
+    height: 0px; 
+    margin-top: -2px; 
+    margin-right: 8px; 
+    padding-bottom: 2px; 
+    padding-top: 24px; 
+    padding-left: 24px;
+    z-index: 1000;
+    background: url("..//assets/login_white.png");
+}
+.nav-item-2>a:hover>img {
+    width: 0px; 
+    height: 0px; 
+    margin-top: -2px; 
+    margin-right: 8px; 
+    padding-bottom: 2px; 
+    padding-top: 24px; 
+    padding-left: 24px;
+    background: url("..//assets/login_blue.png");
+}
+.nav-item-2>a {
+    color: #0064A0 !important;
 }
 .navbar-nav {
     /*    position: relative;
@@ -628,6 +693,11 @@ iframe {
     color: #0065A0;
     padding-right: 16px;
 }
+.ec-features-2 {
+    position: relative;
+    left: -8px;
+    padding-right: 16px;
+}
 
 .ec-features-list-item > i {
     padding-bottom: 16px;
@@ -639,6 +709,41 @@ iframe {
     background-color: #fff; 
     padding-bottom: 10%; 
     padding-top: 5%;
+}
+.pageOverview {
+    background-color: #fff;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+#dashboard {
+    background-color: #e6e6e6;
+}
+#dashboard_img {
+    z-index:100;
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+}
+.dashboard_item:hover {
+    font-weight: bold;
+}
+#calendar_img {
+    z-index:100;
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+}
+.calendar_item:hover {
+    font-weight: bold;
+}
+#track_img {
+    z-index:100;
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+}
+.track_item:hover {
+    font-weight: bold;
 }
 
 /* Research Section */

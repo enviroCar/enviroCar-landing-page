@@ -8,8 +8,8 @@ function getStatistics() {
     var xmlHttp = new XMLHttpRequest();
     xmlHttp.open("GET", "https://enviroCar.org/api/stable/users?limit=1", true);
     xmlHttp.setRequestHeader('contentType', 'application/json');
-    xmlHttp.setRequestHeader('X-User', 'naveen-gsoc');
-    xmlHttp.setRequestHeader('X-Token', 'naveen-gsoc123');
+    xmlHttp.setRequestHeader('X-User', 'deleteMe');
+    xmlHttp.setRequestHeader('X-Token', '1');
     xmlHttp.onreadystatechange = function () {
         if (xmlHttp.readyState === 4 && xmlHttp.status === 200) {
             numberUsers = this.getResponseHeader('Content-Range').split('/')[1];
