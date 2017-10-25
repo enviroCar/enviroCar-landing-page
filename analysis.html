@@ -43,9 +43,6 @@
                         <a class="nav-link js-scroll-trigger" href="index.html#analysis">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="index.html#howto">So geht's</a>
-                    </li>
-                    <li class="nav-item">
                         <a class="nav-link js-scroll-trigger" href="index.html#platform">Plattform</a>
                     </li>
                     <li class="nav-item nav-onSelected">
@@ -61,21 +58,22 @@
                         <a class="nav-link js-scroll-trigger" href="index.html#partner">Partner</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="index.html#login">Anmelden</a>
+                        <a class="nav-link js-scroll-trigger" href="http://tukopia.lan.int.52north.org:4014/#!/login">
+                            <img src="..//assets/login_white.png"/>Anmelden</a>
                     </li>
                 </ul>
             </div>
         </nav>
         <div class="placeholder" style="height: 50px;"></div>
 
-        <!-- Platform -->
-        <section id="platform" class="sectionPlatform">
+         <!-- Analysis -->
+        <section id="analysis" class="pageAnalysis">
             <div class="row container-fluid col-12 noPadding nomargin">
                 <div class="row container-fluid col-lg-6 col-md-6 col-sm-12 col-12 noPadding nomargin">
                     <div class="col-lg-3 col-md-2 col-sm-2 col-2 noPadding"></div>
                     <div class="col-lg-7 col-md-8 col-sm-8 col-8 mr-auto img-frame img-frame-1 noPadding">
                         <span class="helper"></span>
-                        <img class="img-fluid" src="assets/ec_platform_overview.png" alt="">
+                        <img class="img-fluid" src="assets/app_4.png" alt="">
                     </div>
                     <div class="col-lg-2 col-md-2 col-sm-2 col-2 noPadding"></div>
                 </div>
@@ -84,116 +82,18 @@
                     <div class="col-lg-9 col-md-10 col-sm-8 col-8 mr-auto noPadding nomargin">
                         <hr class="section-heading-spacer ml-auto">
                         <div class="clearfix"></div>
-                        <h2 class="section-heading">Plattform</h2>
-                        <p class="section-lead">enviroCar ist eine <strong>offene Citizen Science Plattform</strong> für den Themenbereich Auto & Umwelt.</p>
-                        <p class="section-lead">Die Plattform umfasst</p>
-                        <div class='row'>
-                            <div class='col-2 features-list-item'>
-                                <i class="ec-features material-icons md-36 ">check_circle</i>
-                            </div>
-                            <div class='col-10 lead'>
-                                <p class='ec-features'>Sammlung von Sensordaten aus Deinem Fahrzeug während der Fahrt</p>
-                            </div>
-                        </div>
-                        <div class='row'>
-                            <div class='col-2 features-list-item'>
-                                <i class="ec-features material-icons md-36 ">check_circle</i>
-                            </div>
-                            <div class='col-10 lead'>
-                                <p class='ec-features'>Speicherung, Verwaltung und Analyse der eigenen Fahrten</p>
-                            </div>
-                        </div>
-                        <div class='row'>
-                            <div class='col-2 features-list-item'>
-                                <i class="ec-features material-icons md-36 ">check_circle</i>
-                            </div>
-                            <div class='col-10 lead'>
-                                <p class='ec-features'>Zugriff auf den Gesamtdatensatz aller Fahrer als anonymisierte offene Daten</p>
-                            </div>
-                        </div>
-                        <div class='row'>
-                            <div class='col-2 features-list-item'>
-                                <i class="ec-features material-icons md-36 ">check_circle</i>
-                            </div>
-                            <div class='col-10 lead'>
-                                <p class='ec-features'>Unterschiedliche Karten und Informationsprodukte zur weiteren Analyse</p>
-                            </div>
-                        </div>
+                        <h2 class="section-heading">Analyse</h2>
+                        <p class="section-lead">Sobald du eine Fahrt aufgenommen hast, erhälst du im Dashboard eine Übersicht über deine Fahrten und Statistiken.</p>
+                        <p class="section-lead">Erfahre mehr über </p>
+                        <ul class="lead ec-feature-list" style="list-style-type: none;">
+                            <li><i class="ec-features material-icons md-36 ">network_check</i>Geschwindigkeiten</li>
+                            <li><i class="ec-features material-icons md-36 ">local_gas_station</i>Treibstoffverbrauch</li>
+                            <li><i class="ec-features material-icons md-36 ">cloud_circle</i>CO2 Emissionen</li>
+                            <li><i class="ec-features material-icons md-36 ">traffic</i>Stop & Go's</li>
+                            <li><i class="ec-features material-icons md-36 ">more_vert</i>und vieles mehr</li>
+                        </ul>
                     </div>
                     <div class="col-lg-3 col-md-2 col-sm-2 col-2 noPadding"></div>
-
-                </div>
-            </div>
-
-            <div class="container" style="min-width: 70% !important;">
-                <div class="col-12 ml-auto" style="padding-bottom: 35px;">
-                    <hr class="col-6 section-heading-spacer" style="float:left;">
-                    <div class="clearfix"></div>
-                    <h2 class="section-heading">Datensammlung</h2>
-                    <p class="section-lead">Mit Hilfe eines <strong>Bluetooth OBD-II-Adapters</strong>, 
-                        deinem <strong>Android Smartphone</strong> und der <strong>enviroCar App</strong> 
-                        greifst du auf die Daten der Sensorik deines Fahrzeugs zu. <br><br>
-                        enviroCar nutzt marktübliche <strong>Bluetooth OBD-II Adapter</strong>, wie den 
-                        Cartrend 80290 Bluetooth OBD-II Car Controller. Du kannst diese Adapter auf die 
-                        entsprechende Schnittstelle in deinem Fahrzeug stecken und per Bluetooth mit dem
-                        Android Smartphone verbinden, die App starten und losfahren.<br><br>
-                        Die <strong>enviroCar App</strong> ist dann in der Lage, deine Route aufzunehmen, eine Vielzahl an
-                        Daten aus dem Fahrzeug auszulesen und weitere Informationen wie den Kraftstoffverbrauch
-                        oder die CO2 Emission daraus zu berechnen. Eine ausführliche Beschreibung der 
-                        enviroCar App findet sich <a href="https://play.google.com/store/apps/details?id=org.envirocar.app&hl=de">auf dem Google Play Eintrag der App</a>.<br>
-                    </p>
-                    <a style="display: block ; margin: auto;" class="btn btn-lg big-btn android-btn" href="https://play.google.com/store/apps/details?id=org.envirocar.app&hl=de" target="_blank">
-                        <img width="60" class="pull-left" src="http://www.userlogos.org/files/logos/jumpordie/google_play_04.png"><div class="btn-text"><small>GET IT ON</small><br><strong>Google Play</strong></div></a>
-                </div>
-            </div>
-
-            <div class="container" style="min-width: 70% !important;">
-                <div class="col-12 mr-auto" style="padding-bottom: 35px;">
-                    <hr class="col-6 section-heading-spacer" style="float:right;">
-                    <div class="clearfix"></div>
-                    <h2 class="section-heading mr-auto" style="text-align: end;">Datenspeicherung und -zugriff</h2>
-                    <p class="section-lead">Mittels der enviroCar Plattform kannst Du Deine Tracks dauerhaft
-                        server-seitig speichern, verwalten und mit Anderen als anonymisierte offene Daten 
-                        teilen und gemeinsam analysieren. Deine eigenen Fahrten werden Dir in der <strong>
-                            enviroCar Webapp</strong> angezeigt.<br><br>
-                        Mittels der <a href="https://envirocar.org/api/stable/">enviroCar API</a> kannst Du 
-                        die Daten anderer Fahrer herunterladen und analysieren. Eine detaillierte Beschreibung 
-                        der API findest Du <a href="http://envirocar.org.github.io/enviroCar-server/api/">hier</a>.
-                        <br><br>
-                        Die Daten sind anonymisiert, d.h. eine Verbindung zu den Nutzerdaten kann nicht mehr 
-                        hergestellt werden. Der Zugriff auf Nutzer-spezifische Daten ist nur durch den Nutzer 
-                        selbst möglich, und erfordert ein Login über HTTP Authorisation.<br><br>
-                        Die offenen Daten der enviroCar API dürfen nach Maßgabe der 
-                        <a href="https://opendatacommons.org/licenses/odbl/1.0/">Open Database License (ODbL)</a>
-                        genutzt werden, siehe Nutzungsbedingungen.<br><br>
-                    </p>
-                </div>
-            </div>
-
-            <div class="container" style="min-width: 70% !important;">
-                <div class="col-12 ml-auto" style="padding-bottom: 35px;">
-                    <hr class="col-6 section-heading-spacer" style="float:left;">
-                    <div class="clearfix"></div>
-                    <h2 class="section-heading">Karten und Analysen</h2>
-                    <p class="section-lead">Die <strong>enviroCar Webapp</strong> bietet unterschiedliche Sichten 
-                        auf und Statistiken über Deine eigenen Fahrten. In unterschiedlichen <strong>Karten</strong>,
-                        die den Gesamtdatensatz oder einen Teilbereich aller Daten zeigt, kannst Du die Daten weiter 
-                        explorieren und analysieren. Zur weiteren Analyse stehen unterschiedliche 
-                        <a href="https://github.com/envirocar">Bibliotheken und Tools in Github</a> zur Verfügung, z.B.
-                        ein Paket um die Daten in die Statistiksoftware R zu laden.
-                    </p>
-                </div>
-            </div>
-
-            <div class="container" style="min-width: 70% !important;">
-                <div class="col-12 mr-auto" style="padding-bottom: 35px;">
-                    <hr class="col-6 section-heading-spacer" style="float:right;">
-                    <div class="clearfix"></div>
-                    <h2 class="section-heading mr-auto" style="text-align: end;">enviroCar Source Code</h2>
-                    <p class="section-lead">Alle Komponenten der enviroCar Plattform sind als 
-                        <a href="https://github.com/envirocar">Open Source auf Github</a> verfügbar und können genutzt 
-                        und erweitert werden.
-                    </p>
                 </div>
             </div>
         </section>
