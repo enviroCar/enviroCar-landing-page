@@ -1,11 +1,42 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,600);
 
-@media (max-width: 425px) {
+/* ### EXTRA SMALL ### */
+@media (max-width: 767px) {
     .col-xs-12 {
         flex: 0 0 100%;
         max-width: 100%;
-    }s
+    }
+};
+/* ### SMALL ### */
+@media (min-width: 768px) and (max-width: 991px) {
+    .col-sm-12 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .col-sm-10 {
+        flex: 0 0 83.3%;
+        max-width: 83.3%;
+    }
+    .col-sm-2 {
+        flex: 0 0 16.6%;
+        max-width: 16.6%;
+    }
+    .hidden-xs {
+        display: block !important;
+    }
+};
+/* ### MEDIUM ### */
+@media (min-width: 992px) and (max-width: 1199px) {
+
 }
+
+@media (min-width: 1300px) {
+    .hidden-lg {
+        width: 0px;
+        max-width: 0px;
+    }
+}
+@media
 /* material design icons */
 .material-icons.md-18 { font-size: 18px; }
 .material-icons.md-24 { font-size: 24px; }
@@ -51,35 +82,23 @@
     background-size: cover; 
 }
 .parallax-one { 
-    /* The image used */
     background-image: url("../assets/pixabay1.jpg");
 }
 .parallax-two { 
-    /* The image used */
     background-image: url("../assets/envCar_Foto06.jpg");
 }
 .parallax-three { 
-    /* The image used */
     background-image: url("../assets/pexels4.jpeg");
 }
 .parallax-faq { 
-    /* The image used */
     background-image: url("../assets/faq.jpg");
-    height: 60%;
+}
+.parallax-research { 
+    background-image: url("../assets/rocket.jpg");
 }
 /* Turn off parallax scrolling for tablets and phones. Increase/decrease the pixels if needed */
 @media only screen and (max-device-width: 720px) {
-    .parallax-one {
-        height: 33%;
-        background-attachment: scroll;
-        padding-top: 13%;
-    }
-    .parallax-two {
-        height: 33%;
-        background-attachment: scroll;
-        padding-top: 13%;
-    }
-    .parallax-three {
+    .parallax {
         height: 33%;
         background-attachment: scroll;
         padding-top: 13%;
@@ -124,6 +143,22 @@ html, body {
     font-size: 16px;
     margin-left: 16px;
 }
+.dropdown-nav-item {
+    margin-left: 0px !important;
+}
+.menu-top-item {
+    border-bottom: 1px #0065A0 dashed;
+    text-align: center;
+}
+@media (max-width: 767px) {
+    .menu-top-item {
+        color: #fff !important;
+    }
+    .menu-mid-item {
+        color: #f1f1f1 !important;
+        margin-left: 20%;
+    }
+}
 @media (min-width: 1300px) {
     .nav-item {
         font-size: 18px;
@@ -166,6 +201,9 @@ html, body {
 }
 .nav-link {
     padding-bottom: 5px !important;
+    padding-left: 2px !important;
+    padding-right: 2px !important;
+    margin-left: 24px !important;
 }
 .nav-onSelected>a {
     background-color: #8CBF3F !important;
@@ -680,12 +718,6 @@ iframe {
     background-size: cover;
     position: relative;
 }
-@media (min-width: 1300px) {
-    .hidden-lg {
-        width: 0px;
-        max-width: 0px;
-    }
-}
 .btn-lg {
     padding: 0px -1px 0 0 !important;
 }
@@ -749,7 +781,6 @@ iframe {
 .ec-features {
     position: relative;
     bottom: -8px;
-    left: -8px;
     color: #0065A0;
     padding-right: 16px;
 }
@@ -764,6 +795,9 @@ iframe {
     color: #0065A0;
 }
 
+.pagePlatform {
+    background-color: #fff;
+}
 /* Analysis page Section */
 .pageAnalysis { 
     background-color: #fff; 
@@ -823,6 +857,11 @@ iframe {
 .section-heading-spacer {
     border-top: 1px solid #ccc;
 }
+.publication-spacer {
+    border-top: 1px solid #ccc;
+    margin-top: 0px !important;
+    margin-bottom: 10%;
+}
 .section-lead {
     color: #555555;
     font-size: 21px;
@@ -831,7 +870,7 @@ iframe {
 }
 @media (max-width : 460px ) {
     .section-heading {
-        text-align: center;
+        text-align: center !important;
         font-size: 24px;
     }
     .section-lead {
@@ -976,6 +1015,11 @@ header {
     display: inline-block; }
 
 /* Section PRESS */
+.sectionPress { 
+    background-color: #f3f3f3; 
+    padding-bottom: 10%; 
+    padding-top: 10%;
+}
 .nomargin {
     margin: 0px !important;
 }
@@ -1037,16 +1081,32 @@ header {
     padding-left: 8px;
     padding-right: 8px;
 }
+.conterra {
+    height: 34px!important;
+    margin-top: 28px!important;
+}
+.esri {
+    height: 65px !important;
+    margin-top: 9px!important;
+}
 @media (max-width: 540px) {
     .img-partner {
         display: block;
-        height: 30px;
+        height: 40px;
         width: auto;
         margin: auto;
         margin-top: 0;
         margin-bottom: 8px;
         padding-left: 4px;
         padding-right: 4px;
+    }
+    .conterra {
+        height: 21px;
+        margin-top: 28px;
+    }
+    .esri {
+        height: 43px !important;
+        margin-top: 9px !important;
     }
 }
 
@@ -1202,6 +1262,10 @@ header {
 }
 .catch-phrase3 {
     color: #F44336;
+    font-weight: bold;
+}
+.catch-phrase4 {
+    color: #ffffbb;
     font-weight: bold;
 }
 .row {

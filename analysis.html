@@ -30,7 +30,7 @@
     <body id="page-top" style="background-color: #e6e6e6;">
 
         <!-- Navigation Bar -->
-        <nav id="toolbar" class="navbar fixed-top navbar-dark bg-primary navbar-expand-lg navbar-expand-md" style="position: fixed; top: 0; border-bottom: solid 1px #0065A0;" id="mainNav">
+        <nav class="navbar fixed-top navbar-dark bg-primary navbar-expand-lg navbar-expand-md" style="position: fixed; top: 0; border-bottom: solid 1px #0065A0;" id="mainNav">
             <a style="padding: 0;" class="navbar-brand js-scroll-trigger" href="#page-top">
                 <img style="height: 26px; width: auto;" alt="enviroCar logo" src="assets/logo_white.png">
             </a>
@@ -40,19 +40,39 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav mr-auto navbar-right">
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="index.html#analysis">Home</a>
+                        <a class="nav-link js-scroll-trigger" href="index.html#page-top">Home</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="platform.html">Plattform</a>
+                    <li class="nav-item dropdown">
+                        <a href="enviroCar.org"  data-toggle="dropdown" class="nav-link dropdown-toggle">Plattform</a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a class="menu-top-item js-scroll-trigger" href="platform.html#platform">Plattform</a></li>
+                            <li><a class="menu-mid-item js-scroll-trigger"  href="platform.html#collect">Daten Sammeln</a></li>
+                            <li><a class="menu-mid-item js-scroll-trigger"  href="platform.html#access">Daten Zugriff</a></li>
+                            <li><a class="menu-mid-item js-scroll-trigger"  href="platform.html#products">Karten & Produkte</a></li>
+                        </ul>
                     </li>
-                    <li class="nav-item nav-onSelected">
-                        <a class="nav-link js-scroll-trigger">Analyse</a>
+                    <li class="nav-item dropdown nav-onSelected">
+                        <a href="enviroCar.org" data-toggle="dropdown" class="nav-link dropdown-toggle">Analyse</a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a class="menu-top-item js-scroll-trigger" href="analysis.html#features">Analyse</a></li>
+                            <li><a class="menu-mid-item js-scroll-trigger"  href="analysis.html#dashboard">Dashboard</a></li>
+                            <li><a class="menu-mid-item js-scroll-trigger"  href="analysis.html#calendar">Fahrtenkalender</a></li>
+                            <li><a class="menu-mid-item js-scroll-trigger"  href="analysis.html#analysis">Fahrtanalyse</a></li>
+                        </ul>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="research.html">Forschung</a>
+                    <li class="nav-item dropdown">
+                        <a href="enviroCar.org"  data-toggle="dropdown" class="nav-link dropdown-toggle">Forschung</a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a class="menu-top-item js-scroll-trigger" href="research.html#research">Forschung</a></li>
+                            <li><a class="menu-mid-item js-scroll-trigger" href="research.html#publications">Publikationen</a></li>
+                        </ul>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="press.html">Presse</a>
+                    <li class="nav-item dropdown">
+                        <a href="enviroCar.org"  data-toggle="dropdown" class="nav-link dropdown-toggle">Presse</a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a class="menu-top-item js-scroll-trigger" href="press.html#press">Presse</a></li>
+                            <li><a class="menu-mid-item js-scroll-trigger"  href="press.html#press">Alle Berichte</a></li>
+                        </ul>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link js-scroll-trigger" href="index.html#partner">Partner</a>
@@ -64,22 +84,7 @@
                 </ul>
             </div>
         </nav>
-        <nav id="navbar-two" class="navbar fixed-top enviroCar-two" style="margin-top:50px; position: fixed;">
-            <div class="navbar-inner">
-                <ul class="nav">
-                    <li class="nav-item-2">
-                        <a class="nav-link js-scroll-trigger" href="#dashboard">Dashboard</a>
-                    </li>
-                    <li class="nav-item-2">
-                        <a class="nav-link js-scroll-trigger" href="#calendar">Kalender</a>
-                    </li>
-                    <li class="nav-item-2">
-                        <a class="nav-link js-scroll-trigger" href="#analysis">Fahrtanalyse</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-        <div class="placeholder" style="height: 100px;"></div>
+        <div class="placeholder" style="height: 50px;"></div>
 
         <section id="features" class="pageAnalysis">
             <h2 class="section-heading" style="text-align: center;">Analyse</h2>
@@ -92,7 +97,7 @@
                         <!-- Page Heading -->
                         <div class="row">
                             <div class="col-lg-4 col-md-4 col-sm-4 portfolio-item">
-                                <div class="card card-1 card-anim card-ste">
+                                <div class="card card-1 card-anim card-step">
                                     <a class="js-scroll-trigger" href="#dashboard"><div style="position:relative;"><img class="card-img-top" src="assets/webapp/analysis_1.png" alt="">
                                             </div></a>
                                     <div class="card-body">
@@ -100,8 +105,7 @@
                                             <a class="js-scroll-trigger" href="#dashboard">Dashboard</a>
                                         </h4>
                                         <p class="card-text card-step-text">
-                                            Zusammengefasste Statistiken über deine Fahrten.
-                                            <br>Wie fährst du im Vergleich zur enviroCar Gemeinschaft?
+                                            Zusammengefasste Statistiken deiner gesamten Fahrten.
                                         </p>
                                     </div>
                                 </div>
@@ -115,7 +119,7 @@
                                             <a  class="js-scroll-trigger" href="#calendar">Fahrtenkalender</a>
                                         </h4>
                                         <p class="card-text card-step-text">
-                                            Nutze den Kalender und zahlreiche Filtermöglichkeiten um die Fahrt zu finden, nach der du suchst
+                                            Kalenderübersicht deiner Fahrten und Filtereinstellungen
                                         </p>
                                     </div>
                                 </div>
@@ -234,27 +238,27 @@
 
         <footer class="bg-primary">
             <div class="row footerdiv">
-                <div class="row col-md-10 col-sm-10 col-12" style="margin: auto;">
+                <div class="row col-12" style="margin: auto;">
 
-                    <div class="row col-sm-12 col-md-2 col-lg-2 col-4">
+                    <div class="row col-xs-12 col-sm-12 col-md-4 col-lg-2 col-4">
                         <span class="helper"></span>
                         <a class="js-scroll-trigger col-md-12 col-10 noPadding" href="#page-top" style="margin:auto;width: 100%; height: auto;">
                             <img class="footer-logo" style="width: 100%; display: block; margin: 0;" src="assets/logo_white.png" alt="enviroCar logo white inverse"/>
                         </a>
                     </div>
                     <div class="spaceholder col-lg-2 col-md-2 hidden-sm hidden-xs"></div>
-                    <div class="footer-item col-sm-6 col-md-2 col-lg-4 col-4">
+                    <div class="footer-item col-xs-6 col-sm-6 col-md-4 col-lg-4">
                         <h3>Hintergrund</h3>
                         <ul>
-                            <li><a href="about.html">Über enviroCar</a></li>
-                            <li><a href="research.html">Forschung</a></li>
-                            <li><a href="press.html">Presse</a></li>
+                            <li><a href="about.html" >Über enviroCar</a></li>
+                            <li><a href="research.html" >Forschung</a></li>
+                            <li><a href="press.html" >Presse</a></li>
                             <li><a href="faq.html">Häufig gestellte Fragen</a></li>
-                            <li><a href="imprint.html">Impressum</a></li>
-                            <li><a href="conditions.html">Nutzungsbedingungen</a></li>
+                            <li><a href="imprint.html" >Impressum</a></li>
+                            <li><a href="conditions.html" >Nutzungsbedingungen</a></li>
                         </ul>
                     </div>
-                    <div class="footer-item col-sm-6 col-md-4 col-lg-4 col-4">
+                    <div class="footer-item col-xs-6 col-sm-6 col-md-4 col-lg-4">
                         <h3>Folge Uns</h3>
                         <ul>
                             <li><a href="https://twitter.com/enviroCar_org?ref_src=twsrc%5Etfw&ref_url=https%3A%2F%2Fenvirocar.org%2Findex.php" target="_blank">Twitter</a></li>
