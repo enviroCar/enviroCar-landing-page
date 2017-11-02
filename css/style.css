@@ -36,7 +36,7 @@
         max-width: 0px;
     }
 }
-@media
+
 /* material design icons */
 .material-icons.md-18 { font-size: 18px; }
 .material-icons.md-24 { font-size: 24px; }
@@ -204,13 +204,14 @@ html, body {
     padding-left: 2px !important;
     padding-right: 2px !important;
     margin-left: 24px !important;
+    height: 100%;
 }
 .nav-onSelected>a {
-    background-color: #8CBF3F !important;
-    color: rgba(0,101,160,0.7) !important;
+    background-color: #F3F3F3 !important;
+    color: rgba(0,101,160,1) !important;
 }
 .nav-onSelected>a:hover {
-    background-color: #8CBF3F !important;
+    background-color: #F3F3F3 !important;
     color: rgba(0,101,160,0.7) !important;
 }
 .nav-item>a:hover {
@@ -238,8 +239,11 @@ html, body {
     padding-left: 24px;
     background: url("..//assets/login_blue.png");
 }
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff;
+}
 .nav-item>a {
-    color: #FFF !important;
+    color: #FFF;
 }
 .nav-item-2>a:hover {
     background-color: #F3F3F3 !important;
@@ -456,7 +460,8 @@ div.transbox p {
 
 /* Sections */
 section {
-    padding: 10% 0;
+    padding-top: 64px;
+    padding-bottom: 64px;
 }
 .overview-items h2 a {
     font-size: 26px;
@@ -498,8 +503,6 @@ section {
 }
 .sectionFeatures {
     background-color: #fff;
-    padding-top: 5%;
-    padding-bottom: 5%;
 }
 /* simple "from > to" */
 @keyframes move {
@@ -523,12 +526,23 @@ section {
     bottom: 5%;
     z-index:500;
 }
+@keyframes appear {
+    from {
+        z-index: -100;
+    }
+    to {
+        z-index: 100;
+    }
+}
+.traffic_light_anim {
+    animation: 4s appear ease-in-out infinite;
+    -webkit-animation: 4s appear ease-in-out infinite; /* Safari 4.0 - 8.0 */ 
+}
 .traffic-light {
     position: absolute;
     bottom: 10%;
     width: 5%;
     height: auto;
-
 }
 .traffic_light_1 {
     right: 55%;
@@ -538,6 +552,9 @@ section {
 }
 .traffic_light_3 {
     right: 3.5%;
+}
+.traffic_light_green {
+    z-index: -100;
 }
 
 
@@ -564,7 +581,7 @@ section {
 
 @media (min-width: 576px) and (max-width: 992px) {
     section {
-        padding: 10%;
+        padding: 0;
     }
 }
 @media (max-width: 575px) {
@@ -662,8 +679,6 @@ section {
 
 .sectionHome {
     background-color: #f3f3f3;
-    padding-top: 30px;
-    padding-bottom: 30px;
 }
 
 .helper {
@@ -709,8 +724,6 @@ iframe {
     /* Full height */
     height: auto; 
     background-color: #FFF !important;
-    padding-bottom: 10%; 
-    padding-top: 10%;
 
     /* Center and scale the image nicely */
     background-position: center;
@@ -768,9 +781,7 @@ iframe {
 
 /* Analysis Section */
 .sectionAnalysis { 
-    background-color: #f3f3f3; 
-    padding-bottom: 10%; 
-    padding-top: 10%;
+    background-color: #fff; 
 }
 .ec-feature-list {
     color: #0065A0;
@@ -801,8 +812,6 @@ iframe {
 /* Analysis page Section */
 .pageAnalysis { 
     background-color: #fff; 
-    padding-bottom: 10%; 
-    padding-top: 5%;
 }
 .pageOverview {
     background-color: #fff;
@@ -842,8 +851,6 @@ iframe {
 
 /* Research Section */
 .sectionResearch { 
-    padding-bottom: 10%; 
-    padding-top: 0px;
 }
 .section-heading {
     font-size: 40px;
@@ -1017,8 +1024,6 @@ header {
 /* Section PRESS */
 .sectionPress { 
     background-color: #f3f3f3; 
-    padding-bottom: 10%; 
-    padding-top: 10%;
 }
 .nomargin {
     margin: 0px !important;
@@ -1070,6 +1075,8 @@ header {
 
 /* Section PARTNERS */
 .sectionPartner {
+    padding-top: 0px;
+    padding-bottom: 0px;
 }
 .img-partner {
     display: block;
