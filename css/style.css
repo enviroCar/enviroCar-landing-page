@@ -96,6 +96,15 @@
 .parallax-research { 
     background-image: url("../assets/rocket.jpg");
 }
+.parallax-ana1 { 
+    background-image: url("../assets/pexels1.jpeg");
+}
+.parallax-ana2 { 
+    background-image: url("../assets/gasoline.jpg");
+}
+.parallax-ana3 { 
+    background-image: url("../assets/pexels3.jpeg");
+}
 /* Turn off parallax scrolling for tablets and phones. Increase/decrease the pixels if needed */
 @media only screen and (max-device-width: 720px) {
     .parallax {
@@ -798,7 +807,17 @@ iframe {
 .ec-features-2 {
     position: relative;
     left: -8px;
-    padding-right: 16px;
+    margin-right: 16px;
+    margin-bottom: 8px;
+    margin-left: 0px;
+    transition: all 0.2s;
+}
+@media (max-width: 460px) {
+    .ec-features-2 {
+        width: 24px;
+        height: 24px;
+        margin-right: 16px;
+    }
 }
 
 .ec-features-list-item > i {
@@ -827,8 +846,40 @@ iframe {
     width: 100%;
     height: auto;
 }
-.dashboard_item:hover {
+.dashboard_item {
+    height: 60px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    transition: all 0.2s;
+}
+.dashboard-item-hover {
     font-weight: bold;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    transition: all 0.2s;
+    padding-bottom: 1px !important;
+}
+.dashboard-item-hover img {
+    margin-right: 8px  !important;
+    width: 48px !important;
+    height: 48px !important;
+    margin-left: 8px !important;
+    margin-bottom: 8px;
+    transition: all 0.2s;
+}
+@media (max-width: 460px) {
+    .dashboard_item {
+        height: 40px;
+        margin-top: 8px;
+        margin-bottom: 8px;
+        transition: all 0.2s;
+    }
+    #dashboard_1 {
+        height: 80px !important;
+    }
+    #track_1 {
+        height: 80px !important;
+    }
 }
 #calendar_img {
     z-index:100;
@@ -1108,8 +1159,8 @@ header {
         padding-right: 4px;
     }
     .conterra {
-        height: 21px;
-        margin-top: 28px;
+        height: 21px !important;
+        margin-top: 22px !important;
     }
     .esri {
         height: 43px !important;
@@ -1177,7 +1228,6 @@ header {
     z-index: 50;
     position: relative;
     box-shadow: 0 2px 4px rgba(0,0,0,0.12), 0 2px 4px rgba(0,0,0,0.24);
-
 }
 .img-hover img:hover {
     -webkit-backface-visibility: hidden;
@@ -1196,14 +1246,15 @@ header {
 
 .product-text {
     color: #0065A0;
-    font-size: 21px;
+    font-size: 22px;
     font-weight: 300;
     text-align: center;
     height: 50px;
+    font-weight: bold;
 }
 @media (min-width: 1300px) {
     .product-text {
-        font-size: 18px;
+        font-size: 22px;
         height: 75px;
     }
 }
@@ -1278,4 +1329,29 @@ header {
 .row {
     margin-left: 0px !important;
     margin-right: 0px !important;
+}
+
+#webapp_img {
+    max-width: 50%;
+    max-height: 476px;
+    opacity: 0.5;
+    -webkit-transition: all 0.3s; /* Safari */
+    transition: all 0.3s;
+}
+.webapp-hover {
+    max-height: 476px;
+    max-width: 100% !important;
+    opacity: 1 !important;
+    -webkit-transition: all 0.3s; /* Safari */
+    transition: all 0.3s;
+}
+.card-tool {
+    width: 100%;
+    height: 100%;
+}
+.card-tool-img {
+    width: 100%;
+    padding-left: 5%;
+    padding-top: 5%;
+    padding-right: 5%;
 }
