@@ -63,8 +63,8 @@ $(function () {
         removeAllHover();
         $('#webapp_img').removeClass('webapp-hover');
         setTimeout(function () {
-            i18next.t('key')
-            $("#webapp_img").attr("src", "assets/webapp/dashboard_1_de.png");
+            var imgsrc = i18nextify.i18next.t('ana.webapp.img1');
+            $("#webapp_img").attr("src", imgsrc);
             $('#webapp_img').addClass('webapp-hover');
             $('#dashboard_1').addClass('dashboard-item-hover');
         }, 150);
@@ -79,7 +79,8 @@ $(function () {
         removeAllHover();
         $('#webapp_img').removeClass('webapp-hover');
         setTimeout(function () {
-            $("#webapp_img").attr("src", "assets/webapp/dashboard_2_en.png");
+            var imgsrc = i18nextify.i18next.t('ana.webapp.img2');
+            $("#webapp_img").attr("src", imgsrc);
             $('#webapp_img').addClass('webapp-hover');
             $('#dashboard_2').addClass('dashboard-item-hover');
         }, 150);
@@ -94,7 +95,8 @@ $(function () {
         removeAllHover();
         $('#webapp_img').removeClass('webapp-hover');
         setTimeout(function () {
-            $("#webapp_img").attr("src", "assets/webapp/dashboard_3_de.png");
+            var imgsrc = i18nextify.i18next.t('ana.webapp.img3');
+            $("#webapp_img").attr("src", imgsrc);
             $('#webapp_img').addClass('webapp-hover');
             $('#dashboard_3').addClass('dashboard-item-hover');
         }, 150);
@@ -109,7 +111,8 @@ $(function () {
         removeAllHover();
         $('#webapp_img').removeClass('webapp-hover');
         setTimeout(function () {
-            $("#webapp_img").attr("src", "assets/webapp/dashboard_4_de.png");
+            var imgsrc = i18nextify.i18next.t('ana.webapp.img4');
+            $("#webapp_img").attr("src", imgsrc);
             $('#webapp_img').addClass('webapp-hover');
             $('#dashboard_4').addClass('dashboard-item-hover');
         }, 150);
@@ -124,7 +127,8 @@ $(function () {
         removeAllHover();
         $('#webapp_img').removeClass('webapp-hover');
         setTimeout(function () {
-            $("#webapp_img").attr("src", "assets/webapp/dashboard_5_de.png");
+            var imgsrc = i18nextify.i18next.t('ana.webapp.img5');
+            $("#webapp_img").attr("src", imgsrc);
             $('#webapp_img').addClass('webapp-hover');
             $('#dashboard_5').addClass('dashboard-item-hover');
         }, 150);
@@ -139,7 +143,8 @@ $(function () {
         removeAllHover();
         $('#webapp_img').removeClass('webapp-hover');
         setTimeout(function () {
-            $("#webapp_img").attr("src", "assets/webapp/caldendar_1_de.png");
+            var imgsrc = i18nextify.i18next.t('ana.webapp.img6');
+            $("#webapp_img").attr("src", imgsrc);
             $('#webapp_img').addClass('webapp-hover');
             $('#calendar_1').addClass('dashboard-item-hover');
         }, 150);
@@ -154,7 +159,8 @@ $(function () {
         removeAllHover();
         $('#webapp_img').removeClass('webapp-hover');
         setTimeout(function () {
-            $("#webapp_img").attr("src", "assets/webapp/caldendar_2_de.png");
+            var imgsrc = i18nextify.i18next.t('ana.webapp.img7');
+            $("#webapp_img").attr("src", imgsrc);
             $('#webapp_img').addClass('webapp-hover');
             $('#calendar_2').addClass('dashboard-item-hover');
         }, 150);
@@ -169,7 +175,8 @@ $(function () {
         removeAllHover();
         $('#webapp_img').removeClass('webapp-hover');
         setTimeout(function () {
-            $("#webapp_img").attr("src", "assets/webapp/track_1_de.png");
+            var imgsrc = i18nextify.i18next.t('ana.webapp.img8');
+            $("#webapp_img").attr("src", imgsrc);
             $('#webapp_img').addClass('webapp-hover');
             $('#track_1').addClass('dashboard-item-hover');
         }, 150);
@@ -184,7 +191,8 @@ $(function () {
         removeAllHover();
         $('#webapp_img').removeClass('webapp-hover');
         setTimeout(function () {
-            $("#webapp_img").attr("src", "assets/webapp/track_2_de.png");
+            var imgsrc = i18nextify.i18next.t('ana.webapp.img9');
+            $("#webapp_img").attr("src", imgsrc);
             $('#webapp_img').addClass('webapp-hover');
             $('#track_2').addClass('dashboard-item-hover');
         }, 150);

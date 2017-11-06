@@ -14,5 +14,17 @@
     "analyse_data" :    "Analysis",
     "analyse_data2":    "Analyse your tracks",
     "research_data":    "Research",
-    "research_data2":   "Join science together with experts"
+    "research_data2":   "Join science together with experts",
+    
+    
+    "ana.webapp.img" : "assets/webapp/dashboard_1_en.PNG",
+    "ana.webapp.img1" : "assets/webapp/dashboard_1_en.PNG",
+    "ana.webapp.img2": "assets/webapp/dashboard_2_de.png",
+    "ana.webapp.img3": "assets/webapp/dashboard_3_en.png",
+    "ana.webapp.img4": "assets/webapp/dashboard_4_en.png",
+    "ana.webapp.img5": "assets/webapp/dashboard_5_en.png",
+    "ana.webapp.img6": "assets/webapp/caldendar_1_en.png",
+    "ana.webapp.img7": "assets/webapp/caldendar_2_en.png",
+    "ana.webapp.img8": "assets/webapp/track_1_en.png",
+    "ana.webapp.img9": "assets/webapp/track_2_en.png"
 }

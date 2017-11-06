@@ -126,6 +126,8 @@ html, body {
 }
 #navbarResponsive {
     z-index: 800;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
 }
 #navbar-two {
     z-index: 500;
