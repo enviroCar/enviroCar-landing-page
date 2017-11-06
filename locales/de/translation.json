@@ -101,7 +101,13 @@
     "api8": "Lizenz",
     "api9": "Die Daten auf dem enviroCar Server dürfen von nach Maßgabe der ",
     "api10": "genutzt werden, siehe ",
-    "api11": "Nutzungsbedingungen"
+    "api11": "Nutzungsbedingungen",
     
-    
+    "ana.wa1" : "Mit der Webapp hast du deine Daten und Statistiken im Überblick",
+    "ana.wa2" : "Karten",
+    "ana.wa3" : "Aggregierte Karten zeigen analysierte Community Fahrtdaten",
+    "ana.wa4" : "Analysetools",
+    "ana.wa5" : "Freie Tools zur weiteren Analyse",
+    "ana.wa6" : "Die WebApp bietet umfangreiche Features um dir eine Sicht auf deine gesammelten Daten zu bieten",
+    "ana.webapp.img" : "assets/webapp/dashboard_1_de.PNG"
 }       

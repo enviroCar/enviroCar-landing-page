@@ -369,7 +369,7 @@ body {
     display: block;
     content: ''; }
 .dividerHeader {
-    background-image:  url("..//assets/pexels3.jpg");
+    background-image:  url("..//assets/pexels3b.jpg");
     background-size: cover;
     width: 100%;
     height: auto;
@@ -382,66 +382,20 @@ body {
     /*background-color: deepskyblue;*/
     /* let's see it! */
     display: inline-block; }
-
-
-/* Carousal Image gallery */
-.headergallery {
-    width: 100%; 
-    height: 66%;
-}
-#myCarousel {
-    height:100%;
-}
-.carousel-inner {
-    height: 100%;
-}
-.carousel-item {
-    height: 100%;
-}
-.carousel-content {
-    position: absolute;
-    bottom: 10%;
-    left: 5%;
-    z-index: 20;
-    color: #fff;
-    text-shadow: 1px 1px 2px #272e36;
-}
-
-.backgroundOne {
-    background-image: url("..//assets/pexels3.jpg");
-    background-repeat: no-repeat;
-    background-position: right top;
-    background-size: 100% 100%;
-    width:100%; 
-    height: 100%;
-}
-.backgroundTwo {
-    background-image: url("..//assets/pexels1.jpg");
-    background-repeat: no-repeat;
-    background-position: right top;
-    background-size: 100% 100%;
-    width:100%; 
-    height: 100%;
-}
-.backgroundThree {
-    /*background-image: url("..//assets/pexels2.jpeg");*/
-    background-image: url("..//assets/planning.jpg");
-    background-repeat: no-repeat;
-    background-position: right top;
-    background-size: 100% 100%;
-    width:100%; 
-    height: 100%;
+@media (max-width: 700px) {
+    #mainbanner {
+        content:url("..//assets/pexels3.jpg");
+    }
 }
 div.transbox {
-    max-height: 70%;
-    max-width: 50%;
-    /*width: 50%;*/
-    background-color: rgba(0,0,0,0.7);
-    color: #ffffff;
+    height: 45%;
     position: absolute;
-    top: 24px;
-    left: 24px;
-    bottom: 24px;
+    top: 0; 
+    left: 0; 
+    right: 0;
+    max-width: 55%;
+    color: #ffffff;
+    /*bottom: 24px;*/
 }
 div.transbox h2 {
     font-size: 46px;
@@ -456,9 +410,8 @@ div.transbox img {
     display: block;
     position: relative;
     text-align: center;
-    margin:auto;
-    padding-bottom: 10%;
-    width: 60%;
+    padding-bottom: 0px;
+    width: 100%;
     height: auto;
 }
 div.transbox p {
@@ -474,32 +427,31 @@ div.transbox p {
         width: 100%; 
     }
     div.transbox {
-        background-color: rgba(0,0,0,0.7);
+        background: rgba(0,0,0,0.7);  For browsers that do not support gradients 
+        background: -webkit-linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0)); /* For Safari 5.1 to 6.0 */
+        background: -o-linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0)); /* For Opera 11.1 to 12.0 */
+        background: -moz-linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0)); /* For Firefox 3.6 to 15 */
+        background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0)); /* Standard syntax */
+        /*background-color: rgba(0,0,0,0.7);*/
         color: #ffffff;
         position: absolute;
-        top: 10%;
-        left: 10%;
-        right: 10%;
+        top: 50px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        max-width: 100%;
+        height: 75%;
+    }
+    div.transbox img {
+        padding-top:24px;
+        display: block;
+        position: relative;
+        text-align: center;
+        margin:auto;
+        padding-bottom: 0px;
         width: 80%;
-        max-width: 80%;
-    }
-    .backgroundOne {
-        background-image: url("..//assets/pexels3.jpg");
-        background-repeat: no-repeat;
-        background-position: right top;
-        background-size: 100% 100%;
-    }
-    .backgroundTwo {
-        background-image: url("..//assets/pexels1.jpg");
-        background-repeat: no-repeat;
-        background-position: right top;
-        background-size: 100% 100%;
-    }
-    .backgroundThree {
-        background-image: url("..//assets/planning.jpg");
-        background-repeat: no-repeat;
-        background-position: right top;
-        background-size: 100% 100%;
+        height: auto;
     }
     div.transbox h2 {
         text-align: center;
@@ -512,11 +464,40 @@ div.transbox p {
     }
     div.transbox p {
         text-align: center;
-        font-size: 16px;
+        font-size: 18px;
         margin: 5%;
         text-shadow: 1px 1px 2px #272e36;
         /*color: #ffffff;*/
     }
+}
+@media (min-width: 701px) {
+    .transbox {
+        display: none;
+    }
+}
+@media (max-width: 700px) {
+    .transsbox {
+        display: none;
+    }
+}
+.transsbox {
+    position: absolute;
+    left: 5%;
+    top: 17%;
+    width: 40%;
+    height: 45%;
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+    /*font-size: 2rem;*/
+    text-shadow: 1px 1px 2px #272e36;
+}
+.transsbox img {
+    display: block;
+    width: 100%;
+    margin: auto;
+    height: auto;
+    margin-bottom: 32px;
 }
 
 .absolute-div {
@@ -765,14 +746,6 @@ section {
     display: inline-block;
     height: 100%;
     /*vertical-align: middle;*/
-}
-
-img-frame>img {
-    background: #3A6F9A;
-    vertical-align: middle;
-    max-height: 400px !important;
-    max-width: 100%;
-    margin: auto;
 }
 
 iframe {

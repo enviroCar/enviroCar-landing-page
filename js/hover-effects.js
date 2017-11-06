@@ -63,6 +63,7 @@ $(function () {
         removeAllHover();
         $('#webapp_img').removeClass('webapp-hover');
         setTimeout(function () {
+            i18next.t('key')
             $("#webapp_img").attr("src", "assets/webapp/dashboard_1_de.png");
             $('#webapp_img').addClass('webapp-hover');
             $('#dashboard_1').addClass('dashboard-item-hover');
