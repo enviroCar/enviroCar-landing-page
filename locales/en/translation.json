@@ -1,0 +1,18 @@
+{
+    "nav.home":         "Home",
+    "nav.platform":     "Platform",
+    "nav.analysis":     "Analysis",
+    "nav.research":     "Research",
+    "nav.partner":      "Partner",
+    "nav.login":        "Login",
+    "nav.language":     "English",
+    "Die":              "The",
+    "Citizen-Science":  "Citizen-Science",
+    "cs.text":          "community to collect, share, and analyse real car data",
+    "collect_data" :    "Collect Data",
+    "collect_data2":    "Let the app collect your track data",
+    "analyse_data" :    "Analysis",
+    "analyse_data2":    "Analyse your tracks",
+    "research_data":    "Research",
+    "research_data2":   "Join science together with experts"
+}

@@ -23,11 +23,13 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        <script src="https://unpkg.com/i18next/i18next.min.js"></script>
 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next/8.1.0/i18next.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-i18next/1.2.0/jquery-i18next.min.js"></script>
+        <script src="js/i18nextify.min.js"></script>
     </head>
 
-    <body id="page-top" style="background-color: #f3f3f3; overflow-x: hidden;">
+    <body id="page-top" style="display: none; background-color: #f3f3f3; overflow-x: hidden;">
 
         <!-- Navigation Bar -->
         <nav class="navbar fixed-top navbar-dark bg-primary navbar-expand-lg navbar-expand-md" style="position: fixed; top: 0; border-bottom: solid 1px #0065A0;" id="mainNav">
@@ -40,40 +42,46 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav mr-auto navbar-right">
                     <li class="nav-item nav-onSelected">
-                        <a class="nav-link js-scroll-trigger" href="index.html#page-top">Home</a>
+                        <a class="nav-link js-scroll-trigger" href="#page-top">nav.home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="platform.html">Plattform</a>
+                        <a class="nav-link js-scroll-trigger" onclick="openSubpage('platform.html')">nav.platform</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="analysis.html">Analyse</a>
+                        <a class="nav-link js-scroll-trigger" onclick="openSubpage('analysis.html')">nav.analysis</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="research.html">Forschung</a>
+                        <a class="nav-link js-scroll-trigger"  onclick="openSubpage('research.html')">nav.research</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#partner">Partner</a>
+                        <a class="nav-link js-scroll-trigger" href="#partner">nav.partner</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link js-scroll-trigger" href="http://tukopia.lan.int.52north.org:4014/#!/login">
-                            <img src="..//assets/login_white.png"/>Anmelden</a>
+                            <img src="..//assets/login_white.png"/>nav.login</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">nav.language</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="lngOption" onclick="changeLanguage('en')">English</a></li>
+                            <li><a class="lngOption" onclick="changeLanguage('de')">Deutsch</a></li>
+                        </ul>
                     </li>
                 </ul>
             </div>
         </nav>
         <div class="placeholder" style="height: 50px;"></div>
 
-
         <!-- Image Background Divider -->
         <div style="width: 100%; height: 75%;">
             <img src="assets/pexels3.jpg" style="width: 100%; height: 100%;">
             <div class="transbox">
-                <img alt="enviroCar logo" src="assets/logo_white.png">
-                <p>Die <strong style="color: #ffffbb;">Citizen-Science</strong> Community zum Sammeln, Teilen und Analysieren von echten Fahrtdaten</p>
+                <img alt="enviroCar logo" src = "assets/logo_white.png" >
+                <p>Die <strong style="color: #ffffbb;">Citizen-Science</strong> cs.text</p>
             </div>
         </div>
 
-        <!-- Section Short Description ADAPTER ; APP ; ANALYSIS  -->
+        <!-- Section Short Description ADAPTER ; APP ; ANALYSIS-->
         <section id="howto" class="sectionHome">
             <div class="container-fluid">
                 <!-- Page Heading -->
@@ -84,10 +92,10 @@
                                     <img class="card-img-step" src="assets/step_1.png"></div></a>
                             <div class="card-body">
                                 <h4 class="card-title card-step-title">
-                                    <a class="js-scroll-trigger" href="#platform">Daten sammeln</a>
+                                    <a class="js-scroll-trigger" href="#platform">collect_data</a>
                                 </h4>
                                 <p class="card-text card-step-text">
-                                    Lass die App Deine Fahrtdaten sammeln</p>
+                                    collect_data2</p>
                             </div>
                         </div>
                     </div>
@@ -97,10 +105,10 @@
                                     <img class="card-img-step" src="assets/step_2.png"></div></a>
                             <div class="card-body">
                                 <h4 class="card-title card-step-title">
-                                    <a  class="js-scroll-trigger" href="#analysis">Analyse</a>
+                                    <a class="js-scroll-trigger" href="#analysis">analyse_data</a>
                                 </h4>
                                 <p class="card-text card-step-text">
-                                    Analysiere Deine Fahrten
+                                    analyse_data2
                                 </p>
                             </div>
                         </div>
@@ -111,10 +119,10 @@
                                     <img class="card-img-step" src="assets/step_3.png"></div></a>
                             <div class="card-body">
                                 <h4 class="card-title card-step-title">
-                                    <a class="js-scroll-trigger" href="#research">Forschung</a>
+                                    <a class="js-scroll-trigger" href="#research">research_data</a>
                                 </h4>
                                 <p class="card-text card-step-text">
-                                    Beteilige Dich an der Forschung mit Experten
+                                    research_data2
                                 </p>
                             </div>
                         </div>
@@ -125,7 +133,7 @@
 
         <!-- Platform -->
         <section id="platform" class="sectionPlatform">
-            <h2 class="section-heading" style="text-align: center;">Plattform</h2>
+            <h2 class="section-heading" style="text-align: center;">nav.platform</h2>
             <hr class="col-2 section-heading-spacer" style="padding-bottom: 32px;">
             <div class="row container-fluid col-12 noPadding nomargin">
                 <div class="row container-fluid col-lg-6 col-md-6 col-sm-12 col-12 noPadding nomargin">
@@ -140,14 +148,14 @@
                     <div class="hidden-lg hidden-md col-sm-2 hidden-xs col-2 noPadding"></div>
                     <div class="col-lg-9 col-md-10 col-sm-8 col-xs-12 col-8 mr-auto noPadding nomargin">
                         <div class="clearfix"></div>
-                        <p class="section-lead">enviroCar ist eine <strong>offene Citizen Science Plattform</strong> für den Themenbereich Auto & Umwelt.</p>
-                        <p class="section-lead">Die Plattform umfasst</p>
+                        <p class="section-lead">platform.txt1 <strong>platform.txt2</strong> platform.txt3</p>
+                        <p class="section-lead">platform.contains</p>
                         <div class='row'>
                             <div class='col-2 features-list-item'>
                                 <i class="ec-features material-icons md-36 ">check_circle</i>
                             </div>
                             <div class='col-10 lead'>
-                                <p class='ec-features'>Android App zur Sammlung von Sensordaten Deines Fahrzeugs</p>
+                                <p class='ec-features'>platform.one</p>
                             </div>
                         </div>
                         <div class='row'>
@@ -155,7 +163,15 @@
                                 <i class="ec-features material-icons md-36 ">check_circle</i>
                             </div>
                             <div class='col-10 lead'>
-                                <p class='ec-features'>Werkzeuge zur Analyse Deiner Fahrten</p>
+                                <p class='ec-features'>platform.two</p>
+                            </div>
+                        </div>
+                        <div class='row'>
+                            <div class='col-2 features-list-item'>
+                                <i class ="ec-features material-icons md-36 ">check_circle</i>
+                            </div>
+                            <div class='col-10 lead'>
+                                <p class='ec-features'>platform.three</p>
                             </div>
                         </div>
                         <div class='row'>
@@ -163,15 +179,7 @@
                                 <i class="ec-features material-icons md-36 ">check_circle</i>
                             </div>
                             <div class='col-10 lead'>
-                                <p class='ec-features'>Anonymisierten Zugriff auf alle Fahrten der Community</p>
-                            </div>
-                        </div>
-                        <div class='row'>
-                            <div class='col-2 features-list-item'>
-                                <i class="ec-features material-icons md-36 ">check_circle</i>
-                            </div>
-                            <div class='col-10 lead'>
-                                <p class='ec-features'>Vielfalt von Karten und Informationsprodukten</p>
+                                <p class='ec-features'>platform.four</p>
                             </div>
                         </div>
                     </div>
@@ -179,7 +187,7 @@
                 </div>
             </div>
         </section>
-        
+
         <section style="background-color: #f3f3f3;">
             <div class="container-fluid row col-12 noPadding nomargin">
                 <div class="row container-fluid col-lg-6 col-md-6 col-sm-12 col-12 noPadding nomargin">
@@ -187,8 +195,8 @@
                     <div class="col-lg-9 col-md-10 col-sm-8 col-xs-12 col-8 mr-auto noPadding">
                         <hr class="section-heading-spacer">
                         <div class="clearfix"></div>
-                        <h2 class="section-heading">Die App</h2>
-                        <p class="section-lead nomargin">Die enviroCar App sammelt echte Motorsensordaten deines Fahrzeugs während du fährst. </p>
+                        <h2 class="section-heading">platform.app</h2>
+                        <p class="section-lead nomargin">platform.app1</p>
                         <!-- apple store button -->
 
                         <div style="height: 300px;">
@@ -198,7 +206,7 @@
                     </div>
                     <div class="hidden-lg hidden-md col-sm-2 hidden-xs col-2 noPadding"></div>
                 </div>
-                <div class="row container-fluid  col-lg-6 col-md-6 col-sm-12 col-12 noPadding nomargin">
+                <div class="row container-fluid col-lg-6 col-md-6 col-sm-12 col-12 noPadding nomargin">
                     <div class="col-lg-2 col-md-2 col-sm-2 col-2 noPadding"></div>
                     <div class="col-lg-7 col-md-8 col-sm-8 col-8 ml-auto img-frame img-frame-2 noPadding">
                         <span class="helper"></span>
@@ -209,10 +217,10 @@
             </div>
         </section>
 
-        <!-- Image Background Divider parallax -->
+        <!-- Image Background Divider parall ax -->
         <div class="parallax parallax-two"></div>
 
-        <!-- Analysis -->
+        <!--Analysis -->
         <section id="analysis" class="sectionAnalysis">
             <div class="row container-fluid col-12 noPadding nomargin">
                 <div class="row container-fluid col-lg-6 col-md-6 col-sm-12 col-12 noPadding nomargin">
@@ -228,16 +236,16 @@
                     <div class="col-lg-9 col-md-10 col-sm-8 col-xs-12 col-8 mr-auto noPadding nomargin">
                         <hr class="section-heading-spacer ml-auto">
                         <div class="clearfix"></div>
-                        <h2 class="section-heading">Analyse</h2>
+                        <h2 class="section-heading">ana1</h2>
                         <!-- TODO: FIX LINK: -->
-                        <p class="section-lead">In der <a href="http://tukopia.lan.int.52north.org:4014">enviroCar Webapp</a> kannst Du Dir die Sensordaten zu Deinen Fahrten anschauen.</p>
-                        <p class="section-lead">Erfahre mehr über </p>
+                        <p class="section-lead">ana.txt1<a href="http://tukopia.lan.int.52north.org:4014">enviroCar Webapp</a>ana.txt2</p>
+                        <p class="section-lead">ana2</p>
                         <ul class="lead ec-feature-list" style="list-style-type: none;">
-                            <li><i class="ec-features material-icons md-36 ">network_check</i>Geschwindigkeiten</li>
-                            <li><i class="ec-features material-icons md-36 ">local_gas_station</i>Treibstoffverbrauch</li>
-                            <li><i class="ec-features material-icons md-36 ">cloud_circle</i>CO2 Emissionen</li>
-                            <li><i class="ec-features material-icons md-36 ">traffic</i>Stop & Go's</li>
-                            <li><i class="ec-features material-icons md-36 ">more_vert</i>und vieles mehr</li>
+                            <li><i class="ec-features material-icons md-36 ">network_check</i>ana.speeds</li>
+                            <li><i class="ec-features material-icons md-36 ">local_gas_station</i>ana.fuels</li>
+                            <li><i class="ec-features material-icons md-36 ">cloud_circle</i>ana.co2</li>
+                            <li><i class="ec-features material-icons md-36 ">traffic</i>ana.stops</li>
+                            <li><i class="ec-features material-icons md-36 ">more_vert</i>ana.more</li>
                         </ul>
                     </div>
                     <div class="col-lg-3 col-md-2 col-sm-2 hidden-xs col-2 noPadding"></div>
@@ -245,20 +253,20 @@
             </div>
         </section>
 
-        <!-- Image Background Divider parallax -->
+        <!-- Image Background Divider parall ax -->
         <div class="parallax parallax-three"></div>
 
         <!-- Forschung -->
-        <section id="research" class="sectionResearch" style="background-color: #FFF;">
+        <section id="research" class= "sectionResearch" style="background-color: #FFF;">
             <div class="container-fluid row col-12 noPadding nomargin">
-                <div class="row container-fluid col-lg-12 col-md-12 col-sm-12 col-12 noPadding nomargin">
+                <div class="row container-fluid col-lg-12 col-md -12 col-sm-12 col-12 noPadding nomargin">
                     <div class="col-lg-2 col-md-2 col-sm-1 hidden-xs col-2 noPadding"></div>
                     <div class="col-lg-8 col-md-8 col-sm-10 col-xs-12 col-8 mr-auto noPadding">
                         <hr class="section-heading-spacer col-6">
                         <div class="clearfix"></div>
-                        <h2 class="section-heading">Forschung</h2>
-                        <p class="section-lead nomargin">Stelle Forschern und Planern Daten aus der Sensorik Deines Fahrzeuges zur Verfügung und helfe, gemeinsam mit Ihnen
-                            den <span class="catch-phrase2">Straßenverkehr</span> zu <span class="catch-phrase2">optimieren</span> und ihn umweltfreundlicher zu gestalten.</p>
+                        <h2 class="section-heading" style="text-align: center;">nav.research</h2>
+                        <p class="section-lead nomargin">
+                            rsc.txt1<span class="catch-phrase2">rsc.txt2</span>rsc.txt3<span class="catch-phrase2">rsc.txt4</span>rsc.txt5</p>
                     </div>
                     <div class="col-lg-2 col-md-2 col-sm-1 hidden-xs col-2 noPadding"></div>
                 </div>
@@ -282,149 +290,147 @@
 
         <!-- enviroCar numbers -->
         <section id="statistics" class="bg-primary">
-            <div class="c-no container-fluid">
-                <div class="container">
-                    <div class="row" id="counter">
-                        <div class="col-4 counter-Txt">
-                            <i class="material-icons md-60">people</i>
-                            <span class="counter-users" data-count="">0</span> Mitglieder </div>
-                        <div class="col-4 counter-Txt">
-                            <i class="material-icons md-60">airport_shuttle</i>
-                            <span class="counter-tracks" data-count="">0</span> Fahrten </div>
-                        <div class="col-4 counter-Txt margin-bot-35">
-                            <i class="material-icons md-60">slow_motion_video</i>
-                            <span class="counter-measurements" data-count="">0</span> Messungen </div>
-                    </div>
+        <div class="c-no container-fluid">
+            <div class="container">
+                <div class="row" id="counter">
+                    <div class="col-4 counter-Txt">
+                        <i class="material-icons md-60">people</i>
+                        <span class="counter-users" data-count="">0</span> rsc.members </div>
+                    <div class="col-4 counter-Txt">
+                        <i class="material-icons md-60">airport_shuttle</i>
+                        <span class="counter-tracks" data-count="">0</span> rsc.tracks </div>
+                    <div class="col-4 counter-Txt margin-bot-35">
+                        <i class="material-icons md-60">slow_motion_video</i>
+                        <span class="counter-measurements" data-count="">0</span> rsc.measures </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
 
-        <!-- Press -->
-        <section id="press" class="sectionPress" style="background-color: #FFF;">
-            <h2 class="section-heading" style="text-align: center;">Presse</h2>
-            <hr class="col-2 section-heading-spacer" style="padding-bottom: 32px;">
+    <!-- Press -->
+    <section id= "press" class="sectionPress" style="background-color: #FFF;">
+        <h2 class="section-heading" style="text-align: center;">press</h2>
+        <hr class="col-2 section-heading-spacer" style="padding-bottom: 32px;">
 
-            <div class="posts row">
-                <div class="col-xl-8 col-lg-10 col-md-11 col-sm-12 col-12" style="margin: auto;">
-                    <div class="row col-12 nomargin noPaddingGtXs">
-                        <div class="col-sm-3 col-12 noPadding">
-                            <img class="press-pic" src="assets/presse/rheinische_post.png" alt="Rheinische Post RP-online enviroCar Die Lehren des grüne-Welle-Experiments"/>
-                        </div>
-                        <div class="col-sm-9 noPaddingGtXs">
-                            <div class="content section-lead">
-                                <h2 class="press-heading" style="clear:both">Die Lehren des Grüne-Welle-Experiments</h2>               
-                                <p class="section-lead">Mönchengladbach als europaweites Vorbild - dazu gehörte bis vor einigen 
-                                    Jahren fast viel Fantasie. Die Untersuchung der Grünen Welle in der Stadt mit Hilfe von 150 
-                                    Autofahrern im vergangenen Jahr ist aber europaweit neu. "Das hat auch schon zu Anfragen aus 
-                                    anderen Städten geführt", sagte der zuständige Technische...<br>
-                                    <a class="press-link" href="http://www.rp-online.de/nrw/staedte/moenchengladbach/die-lehren-des-gruene-welle-experiments-aid-1.7092548" target="_blank">Andreas Gruhn in “RP-online” Blogeintrag vom 20.09.2017</a></p>
-                            </div>
-                        </div>
+        <div class="posts row">
+            <div class="col-xl-8 col-lg-10 col-md-11 col-sm-12 col-12" style="margin: auto;">
+                <div class="row col-12 nomargin noPaddingGtXs">
+                    <div class="col-sm-3 col-12 noPadding">
+                        <img class="press-pic" src="assets/presse/rheinische_post.png" alt="Rheinische Post RP-online enviroCar Die Lehren des grüne-Welle-Experiments"/>
                     </div>
-                    <hr class="clear nomargin section-heading-spacer">
-                    <div class="authordiv">
-                        <span class="date">20. September 2017</span> von <span class="author">Andreas Gruhn </span>
-                    </div>
+                    <div class="col-sm-9 noPaddingGtXs">
+                        <div class="content section-lead">
+                            <h2 class="press-heading" style="clear:both">Die Lehren des Grüne-Welle-Experiments</h2>
+                            <p class="section-lead">Mönchengladbach als europaweites Vorbild - dazu gehörte bis vor einigen 
+                                Jahren fast viel Fantasie. Die Untersuchung der Grünen Welle in der Stadt mit Hilfe von 150 
+                                Autofahrern im vergangenen Jahr ist aber europaweit neu. "Das hat auch schon zu Anfragen aus 
+                                anderen Städten geführt", sagte der zuständige Technische...<br>
+                                <a class="press-link" href=" http://www.rp-online.de/nrw/staedte/moenchengladbach/die-lehren-des-gruene-welle-experiments-aid-1.7092548" target="_blank">Andreas Gruhn in “RP-online” Blogeintrag vom 20.09.2017</a></p>
+                        </div>
+                    </div >
+                </div>
+                <hr class="clear nomargin section-heading-spacer">
+                <div class="authordiv">
+                    <span class="date">20. September 2017</span> von <span class="author">Andreas Gruhn </span>
                 </div>
             </div>
+        </div>
 
-            <div class="posts row">
-                <div class="col-xl-8 col-lg-10 col-md-11 col-sm-12 col-12" style="margin: auto;">
-                    <div class="row col-12 nomargin noPaddingGtXs">
-                        <div class="col-sm-3 col-12 noPadding">
-                            <img class="press-pic" src="assets/presse/wdr.png" alt="WDR Westdeutscher Rundfund Lokalzeit enviroCar Mönchengladbach "/>
-                        </div>
-                        <div class="col-sm-9 noPaddingGtXs">
-                            <div class="content section-lead">
-                                <h2 class="press-heading" style="clear:both">Mönchengladbach plant Grüne Welle</h2>  
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/2RUUGFoh2zI?start=1107&end=1290" frameborder="0" allowfullscreen></iframe><br>
-                                <a class="press-link" href="https://www.youtube.com/watch?time_continue=1313&v=2RUUGFoh2zI#t=18m27s" target="_blank">Andreas Turnsek in “WDR Lokalzeit Düsseldorf” Bericht vom 19.09.2017</a>
-                            </div>
+        <div class="posts row">
+            <div class="col-xl-8 col-lg-10 col-md-11 col-sm- 12 col-12" style="margin: auto;">
+                <div class="row col-12 nomargin noPaddingGtXs">
+                    <div class="col-sm-3 col-12 noPadding">
+                        <img class="press-pic" src="assets/presse/wdr.png" alt="WDR Westdeutscher Rundfund Lokalzeit enviroCar Mönchengladbach "/>
+                    </div>
+                    <div class="col-sm-9 noPaddingGtXs">
+                        <div class="content section-lead">
+                            <h2 class="press-heading" style="clear:both">Mönchengladbach plant Grüne Welle</h2>
+                            <iframe width="560" height="315"src="https://www.youtube.com/embed/2RUUGFoh2zI?start=1107&end=1290" frameborder="0" allowfullscreen></iframe><br>
+                            <a class="press-link" href="https://www.youtube.com/watch?time_continue=1313&v=2RUUGFoh2zI#t=18m27s" target="_blank">Andreas Turnsek in “WDR Lokalzeit Düsseldorf” Bericht vom 19.09.2017</a>
                         </div>
                     </div>
-                    <hr class="clear nomargin section-heading-spacer">
-                    <div class="authordiv">
-                        <span class="date">19. September 2017</span> von <span class="author">Andreas Turnsek </span>
-                    </div>
+                </div>
+                <hr class="clear nomargin section-heading-spacer">
+                <div class="authordiv">
+                    <span class="date">19. September 2017</span> von <span class="author">Andreas Turnsek </span>
                 </div>
             </div>
+        </div>
 
-            <div class="posts row">
-                <div class="col-xl-8 col-lg-10 col-md-11 col-sm-12 col-12" style="margin: auto;">
-                    <div class="row col-12 nomargin noPaddingGtXs">
-                        <div class="col-sm-3 col-12 noPadding">
-                            <img class="press-pic" src="assets/presse/heute_journal.png" alt="ZDF Heute Journal enviroCar Verkehrsplanung statt Fahrverbot?"/>
-                        </div>
-                        <div class="col-sm-9 col-md-9 col-lg-9 col-12 noPaddingGtXs">
-                            <div class="content section-lead">
-                                <h2 class="press-heading" style="clear:both">Verkehrsplanung statt Fahrverbot?</h2>               
-                                <p class="section-lead">Die Stadt Mönchengladbach analysiert, wie der Verkehrsfluss 
-                                    verbessert werden kann. Weil fließender Verkehr deutlich 
-                                    weniger Schadstoffe verursacht als Stop-and-go, soll die 
-                                    Optimierung des Verkehrs dazu beitragen, Diesel-Fahrverbote 
-                                    zu verhindern...<br>
-                                    <a class="press-link" href="https://www.zdf.de/nachrichten/heute-journal/verkehrsplanung-statt-fahrverbot-100.html" target="_blank">Lothar Becker im “heute journal” Ausgabe vom 04.09.2017</a></p>
-                            </div>
+        <div class="posts row">
+            <div class="col-xl-8 col-lg-10 col-md-11 col-sm-12 col-12" style="margin: auto;">
+                <div class="row col-12 nomargin noPaddingGtXs">
+                    <div class="col-sm-3 col-12 noPadding">
+                        <img class="press-pic" src="assets/presse/heute_journal.png" alt="ZDF Heute Journal enviroCar Verkehrsplanung statt Fahrverbot?"/>
+                    </div>
+                    <div class="col-sm-9 col-md-9 col-lg-9 col-12 noPaddingGtXs">
+                        <div class="content section-lead">
+                            <h2 class="press-heading" style="clear:both">Verkehrsplanung statt Fahrverbot?</h2>
+                            <p class="section-lead">Die Stadt Mönchengladbach analysiert, wie der Verkehrsfluss 
+                                verbessert werden kann. Weil fließender Verkehr deutlich 
+                                weniger Schadstoffe verursacht als Stop-and-go, soll die 
+                                Optimierung des Verkehrs dazu beitragen, Diesel-Fahrverbote 
+                                zu verhindern...<br>
+                                <a class="press-link" href=" https://www.zdf.de/nachrichten/heute-journal/verkehrsplanung-statt-fahrverbot-100.html" target="_blank">Lothar Becker im “heute journal” Ausgabe vom 04.09.2017</a></p>
                         </div>
                     </div>
-                    <hr class="clear nomargin section-heading-spacer">
-                    <div class="authordiv">
-                        <span class="date">04. September 2017</span> von <span class="author"> Lothar Becker </span>
-                    </div>
                 </div>
-                <div class='col-12 float-right'> 
-                    <a href="press.html" id="code" type="submit" class="section-lead btn btn-primary float-right btn-moreinfo" >Zeige alle Presseberichte</a>
+                <hr class="clear nomargin section-heading-spacer">
+                <div class="authordiv">
+                    <span class="date">04. September 2017</span> von <span class="author"> Lothar Becker </span>
                 </div>
             </div>
-
-
-        </section>
-
-        <!-- Image Background Divider parallax -->
-        <div class="parallax parallax-one"></div>
-
-        <!--Partner--> 
-        <section id="partner" class="sectionPartner" style="background-color: #fff;">
-            <div class="container col-12">
-                <h2 class="section-heading" style="text-align: center;">Partner</h2>
-                <hr class="col-3 section-heading-spacer">
-                <div class="row col-12">
-                    <img class="img-partner conterra" src="assets/partner/conterra.png" alt="enviroCar Partner Conterra">
-                    <img class="img-partner esri" src="assets/partner/esri.png" alt="enviroCar Partner Esri">
-                    <img class="img-partner" src="assets/partner/wwu.png" alt="enviroCar Partner Westfälische Wilhelms Universität Münster">
-                    <img class="img-partner" src="assets/partner/ifgi.png" alt="enviroCar Partner Institut für Geoinformatik Münster">
-                    <img class="img-partner" src="assets/partner/BochumHS.png" alt="enviroCar Partner Hochschule Bochum">
-                    <img class="img-partner" src="assets/partner/DresdenTU.png" alt="enviroCar Partner Technische Universität Dresden">
-                    <img class="img-partner" src="assets/presse/tsc_website.png" alt="enviroCar Partner Tsc Beratende Ingenieure für Verkehrswesen">
-                </div>
+            <div class='col-12 float- right'> 
+                <a href="press.html" id="code" type="submit"class="section-lead btn btn-primary float-right btn-moreinfo" >press.showall</a>
             </div>
-        </section>
+        </div>
 
-        <div data-include="footer"></div>
 
-        <!-- Bootstrap core JavaScript -->
-        <!--<script src="js/jquery.min.js"></script>-->
-        <script src="js/jquery.easing.1.3.min.js"></script>
-        <script src="js/popper.min.js"></script>
-        <script src="js/scrolling-nav.js"></script>
-        <script src="js/enviroCar-statistics.js"></script>
-        <script src="js/traffic_light_change.js"></script>
-        <script src="js/scroll-count.js"></script>
-        <script src="js/language-url.js"></script>
+    </section>
 
-        <script>
-            $(function () {
-                var includes = $('[data-include]');
-                jQuery.each(includes, function () {
-                    var file = '' + $(this).data('include') + '.html';
-                    $(this).load(file);
-                });
+    <!-- Image Background Divider parall ax -->
+    <div class="parallax parallax-one"></div>
+
+    <!--Partner--> 
+    <section id="partner" class="sectionPartner" style="background-color: #fff;">
+        <div class="container col-12">
+            <h2 class="section-heading" style="text-align: center;">Partner</h2>
+            <hr class="col-3 section-heading-spacer">
+            <div class="row col-12">
+                <img class="img-partner conterra" src="assets/partner/conterra.png" alt="enviroCar Partner Conterra">
+                <img class="img-partner esri" src="assets/partner/esri.png" alt="enviroCar Partner Esri">
+                <img class="img-partner" src="assets/partner/wwu.png" alt="enviroCar Partner Westfälische Wilhelms Universität Münster">
+                <img class="img-partner" src="assets/partner/ifgi.png" alt="enviroCar Partner Institut für Geoinformatik Münster">
+                <img class="img-partner" src="assets/partner/BochumHS.png" alt="enviroCar Partner Hochschule Bochum">
+                <img class="img-partner" src="assets/partner/DresdenTU.png" alt="enviroCar Partner Technische Universität Dresden">
+                <img class="img-partner" src="assets/presse/tsc_website.png" alt="enviroCar Partner Tsc Beratende Ingenieure für Verkehrswesen">
+            </div>
+        </div>
+    </section>
+
+    <div data-include="footer"></div>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="js/jquery.easing.1.3.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/scrolling-nav.js"></script>
+    <script src="js/enviroCar-statistics.js"></script>
+    <script src="js/traffic_light_change.js"></script>
+    <script src="js/scroll-count.js"></script>
+
+    <script>
+        $(function () {
+            var includes = $('[data-include]');
+            jQuery.each(includes, function () {
+                var file = '' + $(this).data('include') + '.html';
+                $(this).load(file);
             });
-        </script>
+       });
+    </script>
+        
+    <script src="js/language-url.js"></script>
 
     </body>
-
+    
 </html>
-
-

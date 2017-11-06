@@ -208,12 +208,19 @@ html, body {
         margin-left: 2px;
     }
 }
+nav {
+    margin-bottom: 0px !important;
+}
 .nav-link {
     padding-bottom: 5px !important;
     padding-left: 2px !important;
     padding-right: 2px !important;
     margin-left: 24px !important;
     height: 100%;
+    cursor: pointer;
+}
+.lngOption {
+    cursor: pointer;
 }
 .nav-onSelected>a {
     background-color: #F3F3F3 !important;
@@ -285,6 +292,68 @@ html, body {
 .navbar-nav {
     /*    position: relative;
         bottom: -6px;*/
+}
+* {
+    font-family: arial;
+}
+
+body {
+    background-color: #333;
+}
+
+.languagepicker {
+    background-color: #FFF;
+    display: inline-block;
+    padding: 0;
+    height: 40px;
+    overflow: hidden;
+    transition: all .3s ease;
+    margin: 0 50px 10px 0;
+    vertical-align: top;
+    float: left;
+}
+
+.languagepicker:hover {
+    /* don't forget the 1px border */
+    height: 81px;
+}
+
+.languagepicker a{
+    color: #000;
+    text-decoration: none;
+}
+
+.languagepicker li {
+    display: block;
+    padding: 0px 20px;
+    line-height: 40px;
+    border-top: 1px solid #EEE;
+}
+
+.languagepicker li:hover{
+    background-color: #EEE;
+}
+
+.languagepicker a:first-child li {
+    border: none;
+    background: #FFF !important;
+}
+
+.languagepicker li img {
+    margin-right: 5px;
+}
+
+.roundborders {
+    border-radius: 5px;
+}
+
+.large:hover {
+    /* 
+    don't forget the 1px border!
+    The first language is 40px heigh, 
+    the others are 41px
+    */
+    height: 245px;
 }
 
 /** ######################## HEADER IMAGE ##################### */
@@ -366,12 +435,13 @@ html, body {
 div.transbox {
     max-height: 70%;
     max-width: 50%;
-    width: 50%;
-    background-color: rgba(0,0,0,0.0);
+    /*width: 50%;*/
+    background-color: rgba(0,0,0,0.7);
     color: #ffffff;
     position: absolute;
-    top: 10%;
-    left: 12%;
+    top: 24px;
+    left: 24px;
+    bottom: 24px;
 }
 div.transbox h2 {
     font-size: 46px;
@@ -590,7 +660,7 @@ section {
 
 @media (min-width: 576px) and (max-width: 992px) {
     section {
-        padding: 0;
+        padding: 32px;
     }
 }
 @media (max-width: 575px) {

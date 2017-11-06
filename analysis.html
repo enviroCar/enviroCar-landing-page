@@ -24,7 +24,7 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
+        <script src="js/i18nextify.min.js"></script>
     </head>
 
     <body id="page-top" style="background-color: #e6e6e6;">
@@ -40,23 +40,30 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav mr-auto navbar-right">
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="index.html#page-top">Home</a>
+                        <a class="nav-link js-scroll-trigger" onclick="openSubpage('index.html')">nav.home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="platform.html">Plattform</a>
+                        <a class="nav-link js-scroll-trigger" onclick="openSubpage('platform.html')">nav.platform</a>
                     </li>
                     <li class="nav-item nav-onSelected">
-                        <a class="nav-link js-scroll-trigger" href="#features">Analyse</a>
+                        <a class="nav-link js-scroll-trigger" href="#page-top">nav.analysis</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="research.html">Forschung</a>
+                        <a class="nav-link js-scroll-trigger" onclick="openSubpage('research.html')">nav.research</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="index.html#partner">Partner</a>
+                        <a class="nav-link js-scroll-trigger" onclick="openPartnerSection()">nav.partner</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link js-scroll-trigger" href="http://tukopia.lan.int.52north.org:4014/#!/login">
-                            <img src="..//assets/login_white.png"/>Anmelden</a>
+                            <img src="..//assets/login_white.png"/>nav.login</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">nav.language</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="lngOption" onclick="changeLanguage('en')">English</a></li>
+                            <li><a class="lngOption" onclick="changeLanguage('de')">Deutsch</a></li>
+                        </ul>
                     </li>
                 </ul>
             </div>
@@ -296,15 +303,16 @@
         <script src="js/hover-effects.js"></script>
 
         <script>
-            $(function () {
-                var includes = $('[data-include]');
-                jQuery.each(includes, function () {
-                    var file = '' + $(this).data('include') + '.html';
-                    $(this).load(file);
-                });
-            });
+                                $(function () {
+                                    var includes = $('[data-include]');
+                                    jQuery.each(includes, function () {
+                                        var file = '' + $(this).data('include') + '.html';
+                                        $(this).load(file);
+                                    });
+                                });
         </script>
 
+        <script src="js/language-url.js"></script>
     </body>
 
 </html>
