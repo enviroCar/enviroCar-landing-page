@@ -23,10 +23,11 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
+        <script src="js/i18nextify.min.js"></script>
+        
     </head>
 
-    <body id="page-top" style="background-color: #f3f3f3;">
+    <body id="page-top" style="display: none; background-color: #f3f3f3;">
 
         <!-- Navigation Bar -->
         <nav class="navbar fixed-top navbar-dark bg-primary navbar-expand-lg navbar-expand-md" style="position: fixed; top: 0; border-bottom: solid 1px #0065A0;" id="mainNav">
@@ -39,46 +40,30 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav mr-auto navbar-right">
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="index.html#page-top">Home</a>
+                        <a class="nav-link js-scroll-trigger" onclick="openSubpage('index.html')">nav.home</a>
                     </li>
-                    <li class="nav-item dropdown nav-onSelected">
-                        <a href="enviroCar.org"  data-toggle="dropdown" class="nav-link dropdown-toggle">Plattform</a>
-                        <ul class="dropdown-menu" role="menu">
-                            <li><a class="menu-top-item js-scroll-trigger" href="platform.html#platform">Plattform</a></li>
-                            <li><a class="js-scroll-trigger menu-mid-item"  href="platform.html#collect">Daten Sammeln</a></li>
-                            <li><a class="js-scroll-trigger menu-mid-item"  href="platform.html#access">Daten Zugriff</a></li>
-                            <li><a class="js-scroll-trigger menu-mid-item"  href="platform.html#products">Karten & Produkte</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a href="enviroCar.org" data-toggle="dropdown" class="nav-link dropdown-toggle">Analyse</a>
-                        <ul class="dropdown-menu" role="menu">
-                            <li><a class="menu-top-item js-scroll-trigger" href="analysis.html#features">Analyse</a></li>
-                            <li><a class="js-scroll-trigger menu-mid-item"  href="analysis.html#dashboard">Dashboard</a></li>
-                            <li><a class="js-scroll-trigger menu-mid-item"  href="analysis.html#calendar">Fahrtenkalender</a></li>
-                            <li><a class="js-scroll-trigger menu-mid-item"  href="analysis.html#analysis">Fahrtanalyse</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a href="enviroCar.org"  data-toggle="dropdown" class="nav-link dropdown-toggle">Forschung</a>
-                        <ul class="dropdown-menu" role="menu">
-                            <li><a class="menu-top-item js-scroll-trigger" href="research.html#research">Forschung</a></li>
-                            <li><a class="menu-mid-item js-scroll-trigger" href="research.html#publications">Publikationen</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a href="enviroCar.org"  data-toggle="dropdown" class="nav-link dropdown-toggle">Presse</a>
-                        <ul class="dropdown-menu" role="menu">
-                            <li><a class="menu-top-item js-scroll-trigger" href="press.html#press">Presse</a></li>
-                            <li><a class="js-scroll-trigger menu-mid-item"  href="press.html#press">Alle Berichte</a></li>
-                        </ul>
+                    <li class="nav-item nav-onSelected">
+                        <a class="nav-link js-scroll-trigger" href="#page-top">nav.platform</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="index.html#partner">Partner</a>
+                        <a class="nav-link js-scroll-trigger" onclick="openSubpage('analysis.html')">nav.analysis</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" onclick="openSubpage('research.html')">nav.research</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" onclick="openPartnerSection()">nav.partner</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link js-scroll-trigger" href="http://tukopia.lan.int.52north.org:4014/#!/login">
-                            <img src="..//assets/login_white.png"/>Anmelden</a>
+                            <img src="..//assets/login_white.png"/>nav.login</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">nav.language</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="lngOption" onclick="changeLanguage('en')">English</a></li>
+                            <li><a class="lngOption" onclick="changeLanguage('de')">Deutsch</a></li>
+                        </ul>
                     </li>
                 </ul>
             </div>
@@ -86,30 +71,30 @@
         <div class="placeholder" style="height: 50px;"></div>
 
         <!-- Platform -->
-        <section id="platform" class="sectionPlatform" style="background-color: #fff;">
+        <section id="platform" class="sectionPlatform">
+            <h2 class="section-heading" style="text-align: center;">nav.platform</h2>
+            <hr class="col-2 section-heading-spacer" style="padding-bottom: 32px;">
             <div class="row container-fluid col-12 noPadding nomargin">
-                <div class="row container-fluid col-lg-6 col-md-6 col-sm-12 col-xs-12 noPadding nomargin">
-                    <div class="col-lg-3 col-md-2 col-sm-2 hidden-xs noPadding"></div>
-                    <div class="col-lg-7 col-md-8 col-sm-8 col-xs-12 mr-auto img-frame img-frame-1 noPadding">
+                <div class="row container-fluid col-lg-6 col-md-6 col-sm-12 col-12 noPadding nomargin">
+                    <div class="col-lg-3 col-md-2 col-sm-2 hidden-xs col-2 noPadding"></div>
+                    <div class="col-lg-7 col-md-8 col-sm-8 col-xs-12 col-8 mr-auto img-frame img-frame-1 noPadding">
                         <span class="helper"></span>
                         <img class="img-fluid" src="assets/ec_platform_overview.png" alt="">
                     </div>
-                    <div class="col-lg-2 col-md-2 col-sm-2 hidden-xs noPadding"></div>
+                    <div class="col-lg-2 col-md-2 col-sm-2 hidden-xs col-2 noPadding"></div>
                 </div>
-                <div class="row container-fluid col-lg-6 col-md-6 col-sm-12 col-xs-12 noPadding nomargin">
-                    <div class="hidden-lg hidden-md col-sm-2 hidden-xs noPadding"></div>
-                    <div class="col-lg-9 col-md-10 col-sm-8 col-xs-12 mr-auto noPadding nomargin">
-                        <hr class="section-heading-spacer ml-auto">
+                <div class="row container-fluid col-lg-6 col-md-6 col-sm-12 col-12 noPadding nomargin">
+                    <div class="hidden-lg hidden-md col-sm-2 hidden-xs col-2 noPadding"></div>
+                    <div class="col-lg-9 col-md-10 col-sm-8 col-xs-12 col-8 mr-auto noPadding nomargin">
                         <div class="clearfix"></div>
-                        <h2 class="section-heading">Plattform</h2>
-                        <p class="section-lead">enviroCar ist eine <strong>offene Citizen Science Plattform</strong> für den Themenbereich Auto & Umwelt.</p>
-                        <p class="section-lead">Die Plattform umfasst</p>
+                        <p class="section-lead">platform.txt1 <strong>platform.txt2</strong> platform.txt3</p>
+                        <p class="section-lead">platform.contains</p>
                         <div class='row'>
                             <div class='col-2 features-list-item'>
                                 <i class="ec-features material-icons md-36 ">check_circle</i>
                             </div>
                             <div class='col-10 lead'>
-                                <p class='ec-features'>Sammlung von Sensordaten aus Deinem Fahrzeug während der Fahrt</p>
+                                <p class='ec-features'>platform.one</p>
                             </div>
                         </div>
                         <div class='row'>
@@ -117,7 +102,15 @@
                                 <i class="ec-features material-icons md-36 ">check_circle</i>
                             </div>
                             <div class='col-10 lead'>
-                                <p class='ec-features'>Speicherung, Verwaltung und Analyse der eigenen Fahrten</p>
+                                <p class='ec-features'>platform.two</p>
+                            </div>
+                        </div>
+                        <div class='row'>
+                            <div class='col-2 features-list-item'>
+                                <i class ="ec-features material-icons md-36 ">check_circle</i>
+                            </div>
+                            <div class='col-10 lead'>
+                                <p class='ec-features'>platform.three</p>
                             </div>
                         </div>
                         <div class='row'>
@@ -125,20 +118,11 @@
                                 <i class="ec-features material-icons md-36 ">check_circle</i>
                             </div>
                             <div class='col-10 lead'>
-                                <p class='ec-features'>Zugriff auf den Gesamtdatensatz aller Fahrer als anonymisierte offene Daten</p>
-                            </div>
-                        </div>
-                        <div class='row'>
-                            <div class='col-2 features-list-item'>
-                                <i class="ec-features material-icons md-36 ">check_circle</i>
-                            </div>
-                            <div class='col-10 lead'>
-                                <p class='ec-features'>Unterschiedliche Karten und Informationsprodukte zur weiteren Analyse</p>
+                                <p class='ec-features'>platform.four</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-2 col-sm-2  hidden-xs noPadding"></div>
-
+                    <div class="col-lg-3 col-md-2 col-sm-2 hidden-xs col-2 noPadding"></div>
                 </div>
             </div>
         </section>
@@ -146,23 +130,15 @@
         <section style="background-color:#e6e6e6;">
             <div id="collect" class="container" style="min-width: 70% !important;">
                 <div class="col-12 ml-auto" style="padding-bottom: 35px;">
-                    <hr class="col-6 section-heading-spacer" style="float:left;">
+                    <hr class="col-6 section-heading-spacer">
                     <div class="clearfix"></div>
-                    <h2 class="section-heading">Datensammlung</h2>
-                    <p class="section-lead">Mit Hilfe eines <strong>Bluetooth OBD-II-Adapters</strong>, 
-                        deinem <strong>Android Smartphone</strong> und der <strong>enviroCar App</strong> 
-                        greifst du auf die Daten der Sensorik deines Fahrzeugs zu. <br><br>
-                        enviroCar nutzt marktübliche <strong>Bluetooth OBD-II Adapter</strong>, wie den 
-                        Cartrend 80290 Bluetooth OBD-II Car Controller. Du kannst diese Adapter auf die 
-                        entsprechende Schnittstelle in deinem Fahrzeug stecken und per Bluetooth mit dem
-                        Android Smartphone verbinden, die App starten und losfahren.<br><br>
-                        Die <strong>enviroCar App</strong> ist dann in der Lage, deine Route aufzunehmen, eine Vielzahl an
-                        Daten aus dem Fahrzeug auszulesen und weitere Informationen wie den Kraftstoffverbrauch
-                        oder die CO2 Emission daraus zu berechnen. Eine ausführliche Beschreibung der 
-                        enviroCar App findet sich <a href="https://play.google.com/store/apps/details?id=org.envirocar.app&hl=de">auf dem Google Play Eintrag der App</a>.<br>
-                    </p>
-                    <a style="display: block ; margin: auto;" class="btn btn-lg big-btn android-btn" href="https://play.google.com/store/apps/details?id=org.envirocar.app&hl=de" target="_blank">
-                        <img width="60" class="pull-left" src="http://www.userlogos.org/files/logos/jumpordie/google_play_04.png"><div class="btn-text"><small>GET IT ON</small><br><strong>Google Play</strong></div></a>
+                    <h2 class="section-heading" style="padding-bottom: 24px;">pf.datacoll</h2>
+                    <p class="section-lead">pf.dtc1<strong>pf.dtc2</strong>pf.dtc3
+                        <strong>pf.dtc4</strong>pf.dtc5<strong>enviroCar App</strong> 
+                        pf.dtc6<br><br>
+                        pf.dtc7<strong>pf.dtc8</strong>pf.dtc9<br><br>
+                        pf.dtc10<strong>enviroCar App</strong>pf.dtc11<a href="https://play.google.com/store/apps/details?id=org.envirocar.app&hl=de">pf.dtc12</a>.<br>
+                    </p> 
                 </div>
             </div>
         </section>
@@ -170,23 +146,18 @@
         <section style="background-color:#fff;">
             <div id="access" class="container" style="min-width: 70% !important;">
                 <div class="col-12 mr-auto" style="padding-bottom: 35px;">
-                    <hr class="col-6 section-heading-spacer" style="float:right;">
+                    <hr class="col-6 section-heading-spacer">
                     <div class="clearfix"></div>
-                    <h2 class="section-heading mr-auto" style="text-align: end;">Datenspeicherung und -zugriff</h2>
-                    <p class="section-lead">Mittels der enviroCar Plattform kannst Du Deine Tracks dauerhaft
-                        server-seitig speichern, verwalten und mit Anderen als anonymisierte offene Daten 
-                        teilen und gemeinsam analysieren. Deine eigenen Fahrten werden Dir in der <strong>
-                            enviroCar Webapp</strong> angezeigt.<br><br>
-                        Mittels der <a href="https://envirocar.org/api/stable/">enviroCar API</a> kannst Du 
-                        die Daten anderer Fahrer herunterladen und analysieren. Eine detaillierte Beschreibung 
-                        der API findest Du <a href="http://envirocar.org.github.io/enviroCar-server/api/">hier</a>.
+                    <h2 class="section-heading mr-auto"  style="padding-bottom: 24px;">pf.da1</h2>
+                    <p class="section-lead">pf.da2<strong>
+                            enviroCar Webapp</strong>pf.da3<br><br>
+                        pf.da4<a href="https://envirocar.org/api/stable/">enviroCar API</a>pf.da5
+                        <a href="http://envirocar.org.github.io/enviroCar-server/api/">pf.da6</a>.
                         <br><br>
-                        Die Daten sind anonymisiert, d.h. eine Verbindung zu den Nutzerdaten kann nicht mehr 
-                        hergestellt werden. Der Zugriff auf Nutzer-spezifische Daten ist nur durch den Nutzer 
-                        selbst möglich, und erfordert ein Login über HTTP Authorisation.<br><br>
-                        Die offenen Daten der enviroCar API dürfen nach Maßgabe der 
+                        pf.da7<br><br>
+                        pf.da8
                         <a href="https://opendatacommons.org/licenses/odbl/1.0/">Open Database License (ODbL)</a>
-                        genutzt werden, siehe Nutzungsbedingungen.<br><br>
+                        pf.da9<br><br>
                     </p>
                 </div>
             </div>
@@ -195,170 +166,139 @@
         <section style="background-color:#e6e6e6;">
             <div id="products" class="container" style="min-width: 70% !important;">
                 <div class="col-12 ml-auto" style="padding-bottom: 35px;">
-                    <hr class="col-6 section-heading-spacer" style="float:left;">
+                    <hr class="col-6 section-heading-spacer">
                     <div class="clearfix"></div>
-                    <h2 class="section-heading">Karten und Analysen</h2>
-                    <p class="section-lead">Die <strong>enviroCar Webapp</strong> bietet unterschiedliche Sichten 
-                        auf und Statistiken über Deine eigenen Fahrten. In unterschiedlichen <strong>Karten</strong>,
-                        die den Gesamtdatensatz oder einen Teilbereich aller Daten zeigt, kannst Du die Daten weiter 
-                        explorieren und analysieren. Zur weiteren Analyse stehen unterschiedliche 
-                        <a href="https://github.com/envirocar">Bibliotheken und Tools in Github</a> zur Verfügung, z.B.
-                        ein Paket um die Daten in die Statistiksoftware R zu laden.
+                    <h2 class="section-heading" style="padding-bottom: 24px;">maps1</h2>
+                    <p class="section-lead">pf.dtc10<strong>enviroCar Webapp</strong>maps2<strong>maps3</strong>,
+                        maps4
+                        <a href="https://github.com/envirocar">maps5</a>maps6
                     </p>
                 </div>
             </div>
-            <section id="research" class="sectionResearch">
-                <div class="container" style="min-width: 70% !important;">
-                    <div class="row col-12 nomargin noPadding">
-                        <div class="col-md-3 col-6 noPadding product">
-                            <div class="col-12">
-                                <p class="product-text">Aggregierte Karten</p>
-                            </div>
-                            <div class="col-12 img-hover">
-                                <a href="http://52north.maps.arcgis.com/apps/webappviewer/index.html?id=602699b2f09340f6bd4086cacf2916d4" target="_blank">
-                                    <img class="img-responsive" style="width:100%;height: auto;" src="assets/products/map_1.png">
-                                </a>
-                            </div>
+            <div class="container" style="min-width: 70% !important;">
+                <div class="row col-12 nomargin noPadding">
+                    <div class="col-md-3 col-6 noPadding product">
+                        <div class="col-12">
+                            <p class="product-text">map1</p>
                         </div>
-                        <div class="col-md-3 col-6 noPadding product">
-                            <div class="col-12">
-                                <p class="product-text">Hot-Spot Analysen</p>
-                            </div>
-                            <div class="col-12 img-hover">
-                                <a href="http://www.arcgis.com/home/webmap/viewer.html?webmap=5db4e1ea445e4b4b8612443e7ba76119" target="_blank">
-                                    <img class="img-responsive" style="width:100%;height: auto;" src="assets/products/map_2.png">
-                                </a>
-                            </div>
+                        <div class="col-12 img-hover">
+                            <a href="http://52north.maps.arcgis.com/apps/webappviewer/index.html?id=602699b2f09340f6bd4086cacf2916d4" target="_blank">
+                                <img class="img-responsive" style="width:100%;height: auto;" src="assets/products/map_1.png">
+                            </a>
                         </div>
-                        <div class="col-md-3 col-6 noPadding product">
-                            <div class="col-12">
-                                <p class="product-text">enviroCar Tracks analysieren mit R</p>
-                            </div>
-                            <div class="col-12 img-hover">
-                                <a href="http://rpubs.com/edzer/enviroCar" target="_blank">
-                                    <img class="img-responsive" style="width:100%;height: auto;" src="assets/products/map_3.png">
-                                </a>
-                            </div>
+                    </div>
+                    <div class="col-md-3 col-6 noPadding product">
+                        <div class="col-12">
+                            <p class="product-text">map2</p>
                         </div>
-                        <div class="col-md-3 col-6 noPadding product">
-                            <div class="col-12">
-                                <p class="product-text">interaktive Karten mit ArcGIS online</p>
-                            </div>
-                            <div class="col-12 img-hover">
-                                <a href="http://52north.maps.arcgis.com/home/index.html" target="_blank">
-                                    <img class="img-responsive" style="width:100%;height: auto;" src="assets/products/map_4.png">
-                                </a>
-                            </div>
+                        <div class="col-12 img-hover">
+                            <a href="http://www.arcgis.com/home/webmap/viewer.html?webmap=5db4e1ea445e4b4b8612443e7ba76119" target="_blank">
+                                <img class="img-responsive" style="width:100%;height: auto;" src="assets/products/map_2.png">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6 noPadding product">
+                        <div class="col-12">
+                            <p class="product-text">map3</p>
+                        </div>
+                        <div class="col-12 img-hover">
+                            <a href="http://rpubs.com/edzer/enviroCar" target="_blank">
+                                <img class="img-responsive" style="width:100%;height: auto;" src="assets/products/map_3.png">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6 noPadding product">
+                        <div class="col-12">
+                            <p class="product-text">map4</p>
+                        </div>
+                        <div class="col-12 img-hover">
+                            <a href="http://52north.maps.arcgis.com/home/index.html" target="_blank">
+                                <img class="img-responsive" style="width:100%;height: auto;" src="assets/products/map_4.png">
+                            </a>
                         </div>
                     </div>
                 </div>
-                <div class='col-12 noPadding noMargin float-right'> 
-                    <a href="platform.html" id="code" type="submit" class="section-lead btn btn-primary float-right btn-moreinfo" >Erfahre mehr</a>
-                </div>
-            </section>
+            </div>
+        </section>
 
+        <section id="research" class="sectionResearch" style=" background-color: #fff;">
             <div class="container" style="min-width: 70% !important;"> 
                 <div class="col-12 mr-auto" style="padding-bottom: 35px;">
-                    <hr class="col-6 section-heading-spacer" style="float:right;">
+                    <hr class="col-6 section-heading-spacer">
                     <div class="clearfix"></div>
-                    <h2 class="section-heading mr-auto" style="text-align: end;">enviroCar Source Code</h2>
+                    <h2 class="section-heading mr-auto" style="padding-bottom: 24px;">enviroCar Source Code</h2>
                     <p class="section-lead">Alle Komponenten der enviroCar Plattform sind als 
                         <a href="https://github.com/envirocar">Open Source auf Github</a> verfügbar und können genutzt 
                         und erweitert werden.
                     </p>
                 </div>
             </div>
-            <!-- Dokumentation -->
-            <section id="documentation">
-                <div class="container">
-                    <h2 class="section-heading" style="text-align: center; padding-bottom: 32px;">Dokumentation</h2>
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <h4>API</h4>
-                            <p class="lead">Die API des enviroCar Servers unterstützt den selektiven Zugriff auf anonymisierte Messfahrten (Tracks). 
-                                Sie können per HTTP auf die Tracks, die Messungen und zugehörige Statistiken zugreifen. Für die Selektion können räumliche und zeitliche 
-                                Filter verwendet werden. Die Daten sind anonymisiert, d.h. eine Verbindung zu den Nutzerdaten kann nicht mehr hergestellt werden.  <br><br>
-                                Der Zugriff auf Nutzer-spezifische Daten ist nur durch den Nutzer selbst möglich, und erfordert ein Login über HTTP Authorisation. 
-                                Detaillierte <strong>Beschreibung der enviroCar API</strong>: 
-                                <a href="http://envirocar.github.io/enviroCar-server/api/">http://envirocar.github.io/enviroCar-server/api/</a></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <h4>API URLs</h4>
-                            <ul class="lead">
-                                <li>Stabile API: <a href="https://envirocar.org/api/stable/">https://envirocar.org/api/stable/</a></li>
-                                <li>Entwicklungs-API (bei Nutzung bitte GitHub repositories und Mailingliste verfolgen): <a href="https://envirocar.org/api/dev/">https://envirocar.org/api/dev/</a></li>
-                            </ul>	
-                        </div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <h4>Dateidownload</h4>
-                            <p class="lead">Nutzer können ihre eigenen Tracks in verschiedenen Formaten (z.B. GeoJSON) über die Menüs in der Trackansicht herunterladen 
-                                (klicken Sie in <a href="./dashboard.php">ihrem Profil</a> auf einen der Tracks in der Liste, um zur Trackansicht zu gelangen).
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <h4>Lizenz</h4>
-                            <p class="lead">Die Daten auf dem enviroCar Server dürfen von nach Maßgabe der 
-                                <a href="http://opendatacommons.org/licenses/odbl/1.0/" target="_blank">Open Database License (ODbL)</a> 
-                                genutzt werden, siehe <a href="./terms.php#license">Nutzungsbedingungen</a>.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </section>
         </section>
 
-        <footer class="bg-primary">
-            <div class="row footerdiv">
-                <div class="row col-12" style="margin: auto;">
-
-                    <div class="row col-xs-12 col-sm-12 col-md-4 col-lg-2 col-4">
-                        <span class="helper"></span>
-                        <a class="js-scroll-trigger col-md-12 col-10 noPadding" href="#page-top" style="margin:auto;width: 100%; height: auto;">
-                            <img class="footer-logo" style="width: 100%; display: block; margin: 0;" src="assets/logo_white.png" alt="enviroCar logo white inverse"/>
-                        </a>
-                    </div>
-                    <div class="spaceholder col-lg-2 col-md-2 hidden-sm hidden-xs"></div>
-                    <div class="footer-item col-xs-6 col-sm-6 col-md-4 col-lg-4">
-                        <h3>Hintergrund</h3>
-                        <ul>
-                            <li><a href="about.html" >Über enviroCar</a></li>
-                            <li><a href="research.html" >Forschung</a></li>
-                            <li><a href="press.html" >Presse</a></li>
-                            <li><a href="faq.html">Häufig gestellte Fragen</a></li>
-                            <li><a href="imprint.html" >Impressum</a></li>
-                            <li><a href="conditions.html" >Nutzungsbedingungen</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-item col-xs-6 col-sm-6 col-md-4 col-lg-4">
-                        <h3>Folge Uns</h3>
-                        <ul>
-                            <li><a href="https://twitter.com/enviroCar_org?ref_src=twsrc%5Etfw&ref_url=https%3A%2F%2Fenvirocar.org%2Findex.php" target="_blank">Twitter</a></li>
-                            <li><a href="https://www.facebook.com/enviroCar/" target="_blank">Facebook</a></li>
-                            <li><a href="https://github.com/enviroCar" target="_blank">GitHub</a></li>
-                        </ul>
+        <!-- Dokumentation -->
+        <section id="documentation">
+            <div class="container">
+                <h2 class="section-heading" style="text-align: center; padding-bottom: 32px;">Dokumentation</h2>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h4>API</h4>
+                        <p class="lead">api1<br><br>
+                            api2<strong>api3</strong>: 
+                            <a href="http://envirocar.github.io/enviroCar-server/api/">http://envirocar.github.io/enviroCar-server/api/</a></p>
                     </div>
                 </div>
             </div>
-        </footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h4>API URLs</h4>
+                        <ul class="lead">
+                            <li>api4<a href="https://envirocar.org/api/stable/">https://envirocar.org/api/stable/</a></li>
+                            <li>api5<a href="https://envirocar.org/api/dev/">https://envirocar.org/api/dev/</a></li>
+                        </ul>	
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h4>api6</h4>
+                        <p class="lead">api7
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h4>api8</h4>
+                        <p class="lead">api9
+                            <a href="http://opendatacommons.org/licenses/odbl/1.0/" target="_blank">Open Database License (ODbL)</a> 
+                            api10<a href="./terms.php#license">api11</a>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div data-include="footer"></div>
 
         <!-- Bootstrap core JavaScript -->
         <!--<script src="js/jquery.min.js"></script>-->
         <script src="js/jquery.easing.1.3.min.js"></script>
         <script src="js/popper.min.js"></script>
         <script src="js/scrolling-nav.js"></script>
-        <script src="js/scroll-count.js"></script>
+        <script src="js/language-url.js"></script>
+
+        <script>
+            $(function () {
+                var includes = $('[data-include]');
+                jQuery.each(includes, function () {
+                    var file = '' + $(this).data('include') + '.html';
+                    $(this).load(file);
+                });
+            });
+        </script>
 
     </body>
 

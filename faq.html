@@ -24,11 +24,10 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
+        <script src="js/i18nextify.min.js"></script>
     </head>
 
     <body id="page-top" style="background-color: #f3f3f3;">
-
         <!-- Navigation Bar -->
         <nav class="navbar fixed-top navbar-dark bg-primary navbar-expand-lg navbar-expand-md" style="position: fixed; top: 0; border-bottom: solid 1px #0065A0;" id="mainNav">
             <a style="padding: 0;" class="navbar-brand js-scroll-trigger" href="#page-top">
@@ -39,47 +38,31 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav mr-auto navbar-right">
-                    <li class="nav-item nav-onSelected">
-                        <a class="nav-link js-scroll-trigger" href="index.html#page-top">Home</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a href="enviroCar.org"  data-toggle="dropdown" class="nav-link dropdown-toggle">Plattform</a>
-                        <ul class="dropdown-menu" role="menu">
-                            <li><a class="js-scroll-trigger" href="platform.html#platform">Plattform</a></li>
-                            <li><a class="js-scroll-trigger"  href="platform.html#collect">Daten Sammeln</a></li>
-                            <li><a class="js-scroll-trigger"  href="platform.html#access">Daten Zugriff</a></li>
-                            <li><a class="js-scroll-trigger"  href="platform.html#products">Karten & Produkte</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a href="enviroCar.org" data-toggle="dropdown" class="nav-link dropdown-toggle">Analyse</a>
-                        <ul class="dropdown-menu" role="menu">
-                            <li><a class="js-scroll-trigger" href="analysis.html#features">Analyse</a></li>
-                            <li><a class="js-scroll-trigger"  href="analysis.html#dashboard">Dashboard</a></li>
-                            <li><a class="js-scroll-trigger"  href="analysis.html#calendar">Fahrtenkalender</a></li>
-                            <li><a class="js-scroll-trigger"  href="analysis.html#analysis">Fahrtanalyse</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a href="enviroCar.org"  data-toggle="dropdown" class="nav-link dropdown-toggle">Forschung</a>
-                        <ul class="dropdown-menu" role="menu">
-                            <li><a class="menu-top-item js-scroll-trigger" href="research.html#research">Forschung</a></li>
-                            <li><a class="menu-mid-item js-scroll-trigger" href="research.html#publications">Publikationen</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a href="enviroCar.org"  data-toggle="dropdown" class="nav-link dropdown-toggle">Presse</a>
-                        <ul class="dropdown-menu" role="menu">
-                            <li><a class="js-scroll-trigger" href="press.html#press">Presse</a></li>
-                            <li><a class="js-scroll-trigger"  href="press.html#press">Alle Berichte</a></li>
-                        </ul>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" onclick="openSubpage('index.html')">nav.home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="index.html#partner">Partner</a>
+                        <a class="nav-link js-scroll-trigger" onclick="openSubpage('platform.html')">nav.platform</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" onclick="openSubpage('analysis.html')">nav.analysis</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger"  onclick="openSubpage('research.html')">nav.research</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" onclick="openPartnerSection()">nav.partner</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link js-scroll-trigger" href="http://tukopia.lan.int.52north.org:4014/#!/login">
-                            <img src="..//assets/login_white.png"/>Anmelden</a>
+                            <img src="..//assets/login_white.png"/>nav.login</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">nav.language</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="lngOption" onclick="changeLanguage('en')">English</a></li>
+                            <li><a class="lngOption" onclick="changeLanguage('de')">Deutsch</a></li>
+                        </ul>
                     </li>
                 </ul>
             </div>
@@ -92,14 +75,13 @@
                     <div class="col-lg-4 col-md-2 col-sm-2 hidden-xs noPadding"></div>
                     <div class="col-lg-4 col-md-8 col-sm-8 col-xs-12 col-12 mr-auto noPadding">
                         <div class="clearfix"></div>
-                        <h2 class="section-heading" style="text-align: center;">Häufig gestellte Fragen</h2>
+                        <h2 class="section-heading" style="text-align: center;">faq.q1</h2>
                         <hr class="col-3 section-heading-spacer" style="padding-bottom: 32px;">
                         <ul class="lead">
-                            <li><a class="js-scroll-trigger" href="#faqAdapter">Wo bekomme ich einen OBD-II Adapter?</a></li>
-                            <li><a class="js-scroll-trigger" href="#faqCar">Wird mein Auto unterstützt?</a></li>
-                            <li><a class="js-scroll-trigger" href="#faqPrivacy">Wie wird der Datenschutz berücksichtigt?</a></li>
-                            <li><a class="js-scroll-trigger" href="#faqContribute">Wie kann ich als Entwickler zu enviroCar beitragen?</a></li>
-                            <li><a class="js-scroll-trigger" href="#faqStatus">Was ist der Entwicklungsstatus von enviroCar?</a></li>
+                            <li><a class="js-scroll-trigger" href="#faqAdapter">faq.q2</a></li>
+                            <li><a class="js-scroll-trigger" href="#faqCar">faq.q3</a></li>
+                            <li><a class="js-scroll-trigger" href="#faqPrivacy">faq.q4</a></li>
+                            <li><a class="js-scroll-trigger" href="#faqContribute">faq.q5</a></li>
                         </ul>
                     </div>
                     <div class="col-lg-4 col-md-2 col-sm-2 hidden-xs noPadding"></div>
@@ -116,21 +98,18 @@
                     <div class="col-lg-2 col-md-2 col-sm-1 hidden-xs noPadding"></div>
                     <div class="col-lg-8 col-md-8 col-sm-10 col-xs-12 col-12 mr-auto noPadding">
                         <div class="clearfix"></div>
-                        <h2 class="section-heading">Wo bekomme ich einen OBD-II Adapter?</h2>
+                        <h2 class="section-heading">faq.q2</h2>
                         <p class="section-lead nomargin">
-                            Es gibt viele ODB-II-Adapter im Handel. Der Preis liegt zwischen 15 Euro für China-Importe bei eBay und Amazon und ca. 
-                            90-200 Euro für sehr hochwertige Systeme aus dem Fachhandel. <br><br>
+                            faq.qo1<br><br>
 
-                            Zu beachten ist, dass in Europa bestimmte Zertifikate für den Handel von Systemen (EC) und für den Betrieb im fahrenden 
-                            Fahrzeug (ECE) gesetzlich vorgeschrieben sind. Derzeit scheint unter den handelsüblichen Systemen lediglich der DriveDeck
-                            Sport Adapter (W4) mit allen erforderlichen Zertifikaten ausgestattet zu sein.  <br><br>
+                            faq.qo2<br><br>
 
-                            Bitte beachte, dass wir das Funktionieren beliebiger Smartphone/Adapter-Kombinationen nicht garantieren können. Die 
-                            enviroCar Community hat begonnen, eine <a href="https://wiki.52north.org/Projects/EnviroCar#App_Compatibility">Liste 
-                                getesteter Kombinationen</a> im enviroCar wiki zu dokumentieren. Um diese Matrix weiter zu pflegen, bitten wir dich, 
-                            im <a href="http://envirocar-discuss.forum.52north.org/">enviroCar Forum</a> über deine Erfahrungen zu berichten. 
-                            Du kannst diesbezüglich auch gern eine Info an das <a href="mailto:enviroCar@52north.org">enviroCar Team bei 52°North</a>
-                            senden. <br><br>
+                            faq.qo3<a href="https://wiki.52north.org/Projects/EnviroCar#App_Compatibility">faq.qo4
+                            </a>faq.qo5 <a href="http://envirocar-discuss.forum.52north.org/">
+                                enviroCar Forum
+                            </a>faq.qo6
+                            <a href="mailto:enviroCar@52north.org">faq.qo7</a>
+                            faq.qo8<br><br>
                         </p>
                         <hr class="clear nomargin section-heading-spacer">
                     </div>
@@ -140,20 +119,21 @@
                     <div class="col-lg-2 col-md-2 col-sm-1 hidden-xs noPadding"></div>
                     <div class="col-lg-8 col-md-8 col-sm-10 col-xs-12 col-12 mr-auto noPadding">
                         <div class="clearfix"></div>
-                        <h2 class="section-heading">Wird mein Auto unterstützt?</h2>
+                        <h2 class="section-heading">faq.q2</h2>
                         <p class="section-lead nomargin">
-                            Das Vorhandensein der OBD-II Schnittstelle in Fahrzeugen ist gesetzlich vorgeschrieben.<br><br>
+                            faq.qo9
+                            <br><br>
 
-                            In den USA:<br></p>
+                            faq.qo10<br></p>
                         <ul class="lead">
-                            <li>ab dem Baujahr 01.01.1996</li>
+                            <li>faq.qo11</li>
                         </ul> 
                         <p class="section-lead nomargin">
-                            <br>In Europa:<br></p>
+                            <br>faq.qo12<br></p>
                         <ul class="lead">
-                            <li>Benzinfahrzeuge ab Baujahr 01.01.2001 und EURO-3 Norm (oder besser)</li>
-                            <li>Dieselfahrzeuge ab Baujahr 01.01.2003</li>
-                            <li>LKWs ab Baujahr 01.01.2005</li>
+                            <li>faq.qo13</li>
+                            <li>faq.qo14</li>
+                            <li>faq.qo15</li>
                         </ul>
                         <br><br>
                         <hr class="clear nomargin section-heading-spacer">
@@ -164,21 +144,13 @@
                     <div class="col-lg-2 col-md-2 col-sm-1 hidden-xs noPadding"></div>
                     <div class="col-lg-8 col-md-8 col-sm-10 col-xs-12 col-12 mr-auto noPadding">
                         <div class="clearfix"></div>
-                        <h2 class="section-heading">Wie wird der Datenschutz berücksichtigt?</h2>
+                        <h2 class="section-heading">faq.qo16</h2>
                         <p class="section-lead nomargin">
-                            Die zum enviroCar Server hochgeladenen Daten sind durch eine Reihe von Maßnahmen vor unbefugten Zugriffen gesichert. Nur du 
-                            und die von dir als “Freunde” hinzugefügten Nutzer erhalten Zugriff auf deine Track-Daten. Dies setzt voraus, dass du dich 
-                            per Passwort authentifizieren kannst. <br><br>
+                            faq.qo17<br><br>
 
-                            Um die Analyse der Daten zu ermöglichen, können die Tracks auch von anderen in anonymisierter Form heruntergeladen werden. 
-                            Verweise auf den Autor sind hierbei nicht mehr enthalten, d.h. es ist später nicht mehr möglich festzustellen, ob zwei 
-                            Messfahrten vom selben Nutzer stammen. Die Kommunikation zwischen Website/App und dem enviroCar Server erfolgt in verschlüsselter 
-                            Form. <br><br>
+                            faq.qo18<br><br>
 
-                            Weiterhin unterstützt die App die Verschleierung von Start und Ziel Ihrer Messfahrten. Sofern du diese Funktion in der App nicht 
-                            explizit deaktivierst, werden die ersten und letzten 250 Meter einer jeden Messfahrt abgeschnitten - mindestens aber die Strecken,
-                            die in der ersten und letzten Minute des jeweiligen Messvorganges gefahren wurden. So können sie verhindern, dass Messfahrten mit 
-                            häufig angefahrenen Privat- oder Geschäftsadressen in Verbindung gebracht werden.
+                            faq.qo19
                             <br><br>
                         </p>
                         <hr class="clear nomargin section-heading-spacer">
@@ -189,78 +161,43 @@
                     <div class="col-lg-2 col-md-2 col-sm-1 hidden-xs noPadding"></div>
                     <div class="col-lg-8 col-md-8 col-sm-10 col-xs-12 col-12 mr-auto noPadding">
                         <div class="clearfix"></div>
-                        <h2 class="section-heading">Wie kann ich als Entwickler zu enviroCar beitragen?</h2>
+                        <h2 class="section-heading">faq.q5</h2>
                         <p class="section-lead nomargin">
-                            enviroCar ist ein Community-basiertes Vorhaben. Jeder ist herzlich eingeladen beizutragen! enviroCar ist vollständig open source - 
-                            alle Komponenten sind über unser <a href="https://github.com/enviroCar">Github Repository</a> verfügbar.<br><br>
+                            faq.qo20<a href="https://github.com/enviroCar">Github Repository</a>
+                            faq.qo21<br><br>
 
-                            Die offene <a href="http://envirocar.github.io/enviroCar-server/api/">Web API</a> unterstützt den einfachen Zugriff auf Messfahrten 
-                            im JSON-Format und als Linked Data. Die ODBL-lizensierten Daten sind öffentlich zugänglich und können frei genutzt werden, um 
-                            Informationsprodukte wie Karten oder statistische Analysen zu erzeugen.<br><br>
+                            faq.qo22<a href="http://envirocar.github.io/enviroCar-server/api/">Web API</a>
+                            faq.qo23<br><br>
 
-                            Gerne kannst du das <a href="mailto:enviroCar@52north.org">enviroCar Team bei 52°North</a> kontaktieren, um weitere Fragen zu klären.
+                            faq.qo24<a href="mailto:enviroCar@52north.org">faq.qo7</a>faq.qo25
                             <br><br>
                         </p>
                         <hr class="clear nomargin section-heading-spacer">
                     </div>
                     <div class="col-lg-2 col-md-2 col-sm-1 hidden-xs noPadding"></div>
                 </div>
-                <div id="faqStatus" class="row container-fluid col-lg-12 col-md-12 col-sm-12 col-xs-12 col-12 noPadding nomargin">
-                    <div class="col-lg-2 col-md-2 col-sm-1 hidden-xs noPadding"></div>
-                    <div class="col-lg-8 col-md-8 col-sm-10 col-xs-12 col-12 mr-auto noPadding">
-                        <div class="clearfix"></div>
-                        <h2 class="section-heading">Was ist der Entwicklungsstatus von enviroCar?</h2>
-                        <p class="section-lead nomargin">
-                            Derzeit befindet sich enviroCar in einer offenen Beta Phase. Mit den Teilnehmern an dieser Phase sind wir dabei, die Software für die 
-                            breite Anwendung fit zu machen. Wir suchen nach Nutzern, die bereit sind, die Software zu testen und uns ihr Feedback mitzuteilen. 
-                            Bitte kontaktier das <a href="mailto:enviroCar@52north.org">enviroCar Team bei 52°North</a>, falls du als Beta Tester teilnehmen möchtest!
-                            <br><br>
-                        </p>
-                    </div>
-                    <div class="col-lg-2 col-md-2 col-sm-1 hidden-xs noPadding"></div>
-                </div>
             </div>
         </section>
 
-        <footer class="bg-primary">
-            <div class="row footerdiv">
-                <div class="row col-12" style="margin: auto;">
-
-                    <div class="row col-xs-12 col-sm-12 col-md-4 col-lg-2 col-4">
-                        <span class="helper"></span>
-                        <a class="js-scroll-trigger col-md-12 col-10 noPadding" href="#page-top" style="margin:auto;width: 100%; height: auto;">
-                            <img class="footer-logo" style="width: 100%; display: block; margin: 0;" src="assets/logo_white.png" alt="enviroCar logo white inverse"/>
-                        </a>
-                    </div>
-                    <div class="spaceholder col-lg-2 col-md-2 hidden-sm hidden-xs"></div>
-                    <div class="footer-item col-xs-6 col-sm-6 col-md-4 col-lg-4">
-                        <h3>Hintergrund</h3>
-                        <ul>
-                            <li><a href="about.html" >Über enviroCar</a></li>
-                            <li><a href="research.html" >Forschung</a></li>
-                            <li><a href="press.html" >Presse</a></li>
-                            <li><a href="faq.html">Häufig gestellte Fragen</a></li>
-                            <li><a href="imprint.html" >Impressum</a></li>
-                            <li><a href="conditions.html" >Nutzungsbedingungen</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-item col-xs-6 col-sm-6 col-md-4 col-lg-4">
-                        <h3>Folge Uns</h3>
-                        <ul>
-                            <li><a href="https://twitter.com/enviroCar_org?ref_src=twsrc%5Etfw&ref_url=https%3A%2F%2Fenvirocar.org%2Findex.php" target="_blank">Twitter</a></li>
-                            <li><a href="https://www.facebook.com/enviroCar/" target="_blank">Facebook</a></li>
-                            <li><a href="https://github.com/enviroCar" target="_blank">GitHub</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </footer>
+        <div data-include="footer"></div>
 
         <!-- Bootstrap core JavaScript -->
         <!--<script src="js/jquery.min.js"></script>-->
         <script src="js/jquery.easing.1.3.min.js"></script>
         <script src="js/popper.min.js"></script>
         <script src="js/scrolling-nav.js"></script>
+
+        <script>
+            $(function () {
+                var includes = $('[data-include]');
+                jQuery.each(includes, function () {
+                    var file = '' + $(this).data('include') + '.html';
+                    $(this).load(file);
+                });
+            });
+        </script>
+
+        <script src="js/language-url.js"></script>
 
     </body>
 

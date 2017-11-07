@@ -24,7 +24,7 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
+        <script src="js/i18nextify.min.js"></script>
     </head>
 
     <body id="page-top" style="background-color: #f3f3f3;">
@@ -40,46 +40,30 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav mr-auto navbar-right">
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="index.html#page-top">Home</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a href="enviroCar.org"  data-toggle="dropdown" class="nav-link dropdown-toggle">Plattform</a>
-                        <ul class="dropdown-menu" role="menu">
-                            <li><a class="menu-top-item js-scroll-trigger" href="platform.html#platform">Plattform</a></li>
-                            <li><a class="menu-mid-item" href="platform.html#collect">Daten Sammeln</a></li>
-                            <li><a class="menu-mid-item" href="platform.html#access">Daten Zugriff</a></li>
-                            <li><a class="menu-mid-item" href="platform.html#products">Karten & Produkte</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a href="enviroCar.org" data-toggle="dropdown" class="nav-link dropdown-toggle">Analyse</a>
-                        <ul class="dropdown-menu" role="menu">
-                            <li><a class="menu-top-item js-scroll-trigger" href="analysis.html#features">Analyse</a></li>
-                            <li><a class="menu-mid-item" href="analysis.html#dashboard">Dashboard</a></li>
-                            <li><a class="menu-mid-item" href="analysis.html#calendar">Fahrtenkalender</a></li>
-                            <li><a class="menu-mid-item" href="analysis.html#analysis">Fahrtanalyse</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown nav-onSelected">
-                        <a href="enviroCar.org"  data-toggle="dropdown" class="nav-link dropdown-toggle">Forschung</a>
-                        <ul class="dropdown-menu" role="menu">
-                            <li><a class="menu-top-item js-scroll-trigger" href="research.html#research">Forschung</a></li>
-                            <li><a class="menu-mid-item js-scroll-trigger" href="research.html#publications">Publikationen</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a href="enviroCar.org"  data-toggle="dropdown" class="nav-link dropdown-toggle">Presse</a>
-                        <ul class="dropdown-menu" role="menu">
-                            <li><a class="menu-top-item js-scroll-trigger" href="press.html#press">Presse</a></li>
-                            <li><a class="menu-mid-item js-scroll-trigger" href="press.html#press">Alle Berichte</a></li>
-                        </ul>
+                        <a class="nav-link js-scroll-trigger" onclick="openSubpage('index.html')">nav.home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="index.html#partner">Partner</a>
+                        <a class="nav-link js-scroll-trigger" onclick="openSubpage('platform.html')">nav.platform</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" onclick="openSubpage('analysis.html')">nav.analysis</a>
+                    </li>
+                    <li class="nav-item nav-onSelected">
+                        <a class="nav-link js-scroll-trigger" href="#page-top">nav.research</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" onclick="openPartnerSection()">nav.partner</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link js-scroll-trigger" href="http://tukopia.lan.int.52north.org:4014/#!/login">
-                            <img src="..//assets/login_white.png"/>Anmelden</a>
+                            <img src="..//assets/login_white.png"/>nav.login</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">nav.language</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="lngOption" onclick="changeLanguage('en')">English</a></li>
+                            <li><a class="lngOption" onclick="changeLanguage('de')">Deutsch</a></li>
+                        </ul>
                     </li>
                 </ul>
             </div>
@@ -95,19 +79,19 @@
                         <h2 class="section-heading" style="text-align: center;">Forschung</h2>
                         <hr class="col-3 section-heading-spacer" style="padding-bottom: 32px;">
                         <p class="section-lead">
-                            Als private Forschungseinrichtung dient die enviroCar Plattform für 52°North und ihre Forschungspartner auch als Testbed für unterschiedliche Forschungsthemen. Unsere aktuelle Forschungsagenda sieht folgende Themen vor:
+                            rsc1
                             <br><br></p>
                         <ul class="section-lead">
-                            <li style="margin-bottom: 8px;">Entwicklung und Erprobung neuartiger ICT Tools zur Unterstützung von Citizen Science Prozessen</li>
-                            <li style="margin-bottom: 8px;">Entwicklung neuer Methoden zur Analyse von Extended Floating Car Data (X-FCD)</li>
-                            <li style="margin-bottom: 8px;">Incentivierung von Beitragenden</li>
-                            <li style="margin-bottom: 8px;">Reproduzierbarkeit der Analysen</li>
-                            <li style="margin-bottom: 8px;">Austausch/Wiederverwendung von Analysewerkzeugen</li>
-                            <li style="margin-bottom: 8px;">Speicherung und Zusammenführung großer Datenmengen mit unterschiedlicher räumlicher und zeitlicher Auflösung</li>
+                            <li style="margin-bottom: 8px;">rsc2</li>
+                            <li style="margin-bottom: 8px;">rsc3</li>
+                            <li style="margin-bottom: 8px;">rsc4</li>
+                            <li style="margin-bottom: 8px;">rsc5</li>
+                            <li style="margin-bottom: 8px;">rsc6</li>
+                            <li style="margin-bottom: 8px;">rsc7</li>
                         </ul>
                         <p class="section-lead">
                             <br><br>
-                            Wir sind immer offen für neue Forschungskooperationen. Interesse? Kontakt: <a href="mailto:enviroCar@52north.org">envirocar@52north.org</a>
+                            rsc8<a href="mailto:enviroCar@52north.org">envirocar@52north.org</a>
                         </p>
                     </div>
                     <div class="col-lg-2 col-md-2 col-sm-1 hidden-xs noPadding"></div>
@@ -124,7 +108,7 @@
                     <div class="col-lg-2 col-md-2 col-sm-1 hidden-xs noPadding"></div>
                     <div class="col-lg-8 col-md-8 col-sm-10 col-xs-12 col-12 mr-auto noPadding">
                         <div class="clearfix"></div>
-                        <h2 class="section-heading" style="text-align: center;">Publikationen</h2>
+                        <h2 class="section-heading" style="text-align: center;">rsc.pb1</h2>
                         <hr class="col-3 section-heading-spacer" style="padding-bottom: 32px;">
                         <div class="col-12 publications">
                             <p class="authors section-lead">
@@ -188,45 +172,25 @@
             </div>
         </section>
 
-        <footer class="bg-primary">
-            <div class="row footerdiv">
-                <div class="row col-12" style="margin: auto;">
-
-                    <div class="row col-xs-12 col-sm-12 col-md-4 col-lg-2 col-4">
-                        <span class="helper"></span>
-                        <a class="js-scroll-trigger col-md-12 col-10 noPadding" href="#page-top" style="margin:auto;width: 100%; height: auto;">
-                            <img class="footer-logo" style="width: 100%; display: block; margin: 0;" src="assets/logo_white.png" alt="enviroCar logo white inverse"/>
-                        </a>
-                    </div>
-                    <div class="spaceholder col-lg-2 col-md-2 hidden-sm hidden-xs"></div>
-                    <div class="footer-item col-xs-6 col-sm-6 col-md-4 col-lg-4">
-                        <h3>Hintergrund</h3>
-                        <ul>
-                            <li><a href="about.html" >Über enviroCar</a></li>
-                            <li><a href="research.html" >Forschung</a></li>
-                            <li><a href="press.html" >Presse</a></li>
-                            <li><a href="faq.html">Häufig gestellte Fragen</a></li>
-                            <li><a href="imprint.html" >Impressum</a></li>
-                            <li><a href="conditions.html" >Nutzungsbedingungen</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-item col-xs-6 col-sm-6 col-md-4 col-lg-4">
-                        <h3>Folge Uns</h3>
-                        <ul>
-                            <li><a href="https://twitter.com/enviroCar_org?ref_src=twsrc%5Etfw&ref_url=https%3A%2F%2Fenvirocar.org%2Findex.php" target="_blank">Twitter</a></li>
-                            <li><a href="https://www.facebook.com/enviroCar/" target="_blank">Facebook</a></li>
-                            <li><a href="https://github.com/enviroCar" target="_blank">GitHub</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </footer>
+        <div data-include="footer" ></div>
 
         <!-- Bootstrap core JavaScript -->
         <!--<script src="js/jquery.min.js"></script>-->
         <script src="js/jquery.easing.1.3.min.js"></script>
         <script src="js/popper.min.js"></script>
         <script src="js/scrolling-nav.js"></script>
+
+        <script>
+            $(function () {
+                var includes = $('[data-include]');
+                jQuery.each(includes, function () {
+                    var file = '' + $(this).data('include') + '.html';
+                    $(this).load(file);
+                });
+            });
+        </script>
+
+        <script src="js/language-url.js"></script>
 
     </body>
 

@@ -24,7 +24,7 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
+        <script src="js/i18nextify.min.js"></script>
     </head>
 
     <body id="page-top" style="background-color: #e6e6e6;">
@@ -40,46 +40,30 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav mr-auto navbar-right">
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="index.html#page-top">Home</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a href="enviroCar.org"  data-toggle="dropdown" class="nav-link dropdown-toggle">Plattform</a>
-                        <ul class="dropdown-menu" role="menu">
-                            <li><a class="menu-top-item js-scroll-trigger" href="platform.html#platform">Plattform</a></li>
-                            <li><a class="menu-mid-item js-scroll-trigger"  href="platform.html#collect">Daten Sammeln</a></li>
-                            <li><a class="menu-mid-item js-scroll-trigger"  href="platform.html#access">Daten Zugriff</a></li>
-                            <li><a class="menu-mid-item js-scroll-trigger"  href="platform.html#products">Karten & Produkte</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown nav-onSelected">
-                        <a href="enviroCar.org" data-toggle="dropdown" class="nav-link dropdown-toggle">Analyse</a>
-                        <ul class="dropdown-menu" role="menu">
-                            <li><a class="menu-top-item js-scroll-trigger" href="analysis.html#features">Analyse</a></li>
-                            <li><a class="menu-mid-item js-scroll-trigger"  href="analysis.html#dashboard">Dashboard</a></li>
-                            <li><a class="menu-mid-item js-scroll-trigger"  href="analysis.html#calendar">Fahrtenkalender</a></li>
-                            <li><a class="menu-mid-item js-scroll-trigger"  href="analysis.html#analysis">Fahrtanalyse</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a href="enviroCar.org"  data-toggle="dropdown" class="nav-link dropdown-toggle">Forschung</a>
-                        <ul class="dropdown-menu" role="menu">
-                            <li><a class="menu-top-item js-scroll-trigger" href="research.html#research">Forschung</a></li>
-                            <li><a class="menu-mid-item js-scroll-trigger" href="research.html#publications">Publikationen</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a href="enviroCar.org"  data-toggle="dropdown" class="nav-link dropdown-toggle">Presse</a>
-                        <ul class="dropdown-menu" role="menu">
-                            <li><a class="menu-top-item js-scroll-trigger" href="press.html#press">Presse</a></li>
-                            <li><a class="menu-mid-item js-scroll-trigger"  href="press.html#press">Alle Berichte</a></li>
-                        </ul>
+                        <a class="nav-link js-scroll-trigger" onclick="openSubpage('index.html')">nav.home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="index.html#partner">Partner</a>
+                        <a class="nav-link js-scroll-trigger" onclick="openSubpage('platform.html')">nav.platform</a>
+                    </li>
+                    <li class="nav-item nav-onSelected">
+                        <a class="nav-link js-scroll-trigger" href="#page-top">nav.analysis</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" onclick="openSubpage('research.html')">nav.research</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" onclick="openPartnerSection()">nav.partner</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link js-scroll-trigger" href="http://tukopia.lan.int.52north.org:4014/#!/login">
-                            <img src="..//assets/login_white.png"/>Anmelden</a>
+                            <img src="..//assets/login_white.png"/>nav.login</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">nav.language</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="lngOption" onclick="changeLanguage('en')">English</a></li>
+                            <li><a class="lngOption" onclick="changeLanguage('de')">Deutsch</a></li>
+                        </ul>
                     </li>
                 </ul>
             </div>
@@ -87,7 +71,7 @@
         <div class="placeholder" style="height: 50px;"></div>
 
         <section id="features" class="pageAnalysis">
-            <h2 class="section-heading" style="text-align: center;">Analyse</h2>
+            <h2 class="section-heading" style="text-align: center;">nav.analysis</h2>
             <hr class="col-3 section-heading-spacer" style="padding-bottom: 32px;">
             <div class="row container-fluid col-12 noPadding nomargin">
 
@@ -98,43 +82,42 @@
                         <div class="row">
                             <div class="col-lg-4 col-md-4 col-sm-4 portfolio-item">
                                 <div class="card card-1 card-anim card-step">
-                                    <a class="js-scroll-trigger" href="#dashboard"><div style="position:relative;"><img class="card-img-top" src="assets/webapp/analysis_1.png" alt="">
-                                            </div></a>
+                                    <a class="js-scroll-trigger" href="#webapp"><div style="position:relative;"><img class="card-img-top" src="assets/webapp/analysis_1.png" alt="">
+                                        </div></a>
                                     <div class="card-body">
                                         <h4 class="card-title card-step-title">
-                                            <a class="js-scroll-trigger" href="#dashboard">Dashboard</a>
+                                            <a class="js-scroll-trigger" href="#webapp">WebApp</a>
                                         </h4>
                                         <p class="card-text card-step-text">
-                                            Zusammengefasste Statistiken deiner gesamten Fahrten.
+                                            ana.wa1
                                         </p>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-lg-4 col-md-4 col-sm-4 portfolio-item">
                                 <div class="card card-1 card-anim card-step">
-                                    <a class="js-scroll-trigger" href="#calendar"><div style="position:relative;"><img class="card-img-top"  src="assets/webapp/analysis_2.png" alt="">
-                                            </div></a>
+                                    <a class="js-scroll-trigger" href="#maps"><div style="position:relative;"><img class="card-img-top"  src="assets/home_3.png" alt="">
+                                        </div></a>
                                     <div class="card-body">
                                         <h4 class="card-title card-step-title">
-                                            <a  class="js-scroll-trigger" href="#calendar">Fahrtenkalender</a>
+                                            <a  class="js-scroll-trigger" href="#maps">ana.wa2</a>
                                         </h4>
                                         <p class="card-text card-step-text">
-                                            Kalenderübersicht deiner Fahrten und Filtereinstellungen
+                                            ana.wa3
                                         </p>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-lg-4 col-md-4 col-sm-4 portfolio-item">
                                 <div class="card card-1 card-anim card-step">
-                                    <a class="js-scroll-trigger" href="#analysis"><div style="position:relative;"><img class="card-img-top" src="assets/home_2.png" alt="">
-                                            </div></a>
+                                    <a class="js-scroll-trigger" href="#tools"><div style="position:relative;"><img class="card-img-top" src="assets/home_2.png" alt="">
+                                        </div></a>
                                     <div class="card-body">
                                         <h4 class="card-title card-step-title">
-                                            <a class="js-scroll-trigger" href="#analysis">Fahrtanalyse</a>
+                                            <a class="js-scroll-trigger" href="#tools">ana.wa4</a>
                                         </h4>
                                         <p class="card-text card-step-text">
-                                            Analysiere eine Fahrt genau: 
-                                            <br>Geschwindigkeit, Treibstoffverbrauch, CO2 Emission, Stop n' Go's
+                                            ana.wa5
                                         </p>
                                     </div>
                                 </div>
@@ -144,131 +127,172 @@
                 </section>
             </div>
         </section>
-        
-        <!-- Dashboard -->
-        <section id="dashboard" class="pageAnalysis">
-            <div class="row container-fluid col-12 noPadding nomargin dashboard_container">
-                <div class="row container-fluid col-lg-6 col-md-6 col-sm-12 col-12 noPadding nomargin">
-                    <div class="col-lg-3 col-md-0 col-sm-0 col-2 noPadding"></div>
-                    <div class="col-lg-7 col-md-10 col-sm-10 col-8 mr-auto img-frame img-frame-1 noPadding">
-                        <span class="helper"></span>
-                        <img id="dashboard_img" src="assets/webapp/dashboard_1_de.PNG" alt="">
-                    </div>
-                    <div class="col-lg-2 col-md-2 col-sm-2 col-2 noPadding"></div>
-                </div>
-                <div class="row container-fluid col-lg-6 col-md-6 col-sm-12 col-12 noPadding nomargin">
-                    <div class="hidden-lg hidden-md col-sm-2 col-2 noPadding"></div>
-                    <div class="col-lg-9 col-md-10 col-sm-8 col-8 mr-auto noPadding nomargin">
-                        <hr class="section-heading-spacer ml-auto">
-                        <div class="clearfix"></div>
-                        <h2 class="section-heading">Dashboard</h2>
-                        <p class="section-lead">Im Dashboard werden Dir allgemeine Statistiken deiner ganzen Fahrten zusammengefasst</p>
-                        <ul class="lead ec-feature-list" style="list-style-type: none; padding-left: 0px;">
-                            <li class="dashboard_item" id="dashboard_1"><img class='ec-features-2' src="assets/people.png">Vergleiche dich mit der enviroCar Gemeinschaft</li>
-                            <li class="dashboard_item" id="dashboard_2"><img class='ec-features-2' src="assets/map.png">Deine neusten Fahrten</li>
-                            <li class="dashboard_item" id="dashboard_3"><img class='ec-features-2' src="assets/world_map.png">Dein Einflussbereich</li>
-                            <li class="dashboard_item" id="dashboard_4"><img class='ec-features-2' src="assets/weekday.png">Wochentagsübersicht</li>
-                            <li class="dashboard_item" id="dashboard_5"><img class='ec-features-2' src="assets/speed.png">Geschwindigkeitszonen</li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-3 col-md-2 col-sm-2 col-2 noPadding"></div>
-                </div>
-            </div>
-        </section>
-        
-        <!-- Calendar -->
-        <section id="calendar" class="sectionResearch" style="background-color: #FFF;">
-            <div class="container-fluid row col-12 noPadding nomargin">
-                <div class="row container-fluid col-lg-12 col-md-12 col-sm-12 col-12 noPadding nomargin">
-                    <div class="col-lg-2 col-md-2 col-sm-2 col-2 noPadding"></div>
-                    <div class="col-lg-8 col-md-10 col-sm-8 col-8 mr-auto noPadding">
-                        <hr class="section-heading-spacer">
-                        <div class="clearfix"></div>
-                        <h2 class="section-heading">Fahrtenkalender</h2>
-                        <p class="section-lead">In der Kalenderübersicht findest du deine Fahrten sortiert nach Datum. <br>
-                        In der Liste aller Fahrten kannst du die angezeigten Fahrten filtern.</p>
-                        <ul class="lead ec-feature-list" style="list-style-type: none; padding-left: 0px;">
-                            <li class="calendar_item" id="calendar_1"><img class='ec-features-2' src="assets/calendar.png">Kalenderübersicht</li>
-                            <li class="calendar_item" id="calendar_2"><img class='ec-features-2' src="assets/filter.png">Liste mit Filtern</li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-2 col-md-2 col-sm-2 col-2 noPadding"></div>
-                </div>
 
-                <div class="row container-fluid col-lg-12 col-md-12 col-sm-12 col-12 noPadding nomargin">
-                    <div class="col-lg-2 col-md-2 col-sm-1 col-1 noPadding"></div>
-                    <div class="col-lg-8 col-md-8 col-sm-10 col-10 mr-auto img-frame img-frame-1 noPadding">
-                        <img id="calendar_img" class="calendar_img img-fluid" src="assets/webapp/caldendar_1_de.png" alt="">
-                    </div>
-                    <div class="col-lg-2 col-md-2 col-sm-1 col-1 noPadding"></div>
-                </div>
-            </div>
-        </section>
-        
-        <!-- Forschung -->
-        <section id="analysis" class="sectionResearch" style="background-color: #e6e6e6;">
+        <!-- Image Background Divider parallax -->
+        <div class="parallax parallax-ana1"></div>
+
+        <!-- WebApp -->
+        <section id="webapp" class="sectionWebApp" style="background-color: #fff;">
             <div class="container-fluid row col-12 noPadding nomargin">
                 <div class="row container-fluid col-lg-12 col-md-12 col-sm-12 col-12 noPadding nomargin">
-                    <div class="col-lg-2 col-md-2 col-sm-2 col-2 noPadding"></div>
-                    <div class="col-lg-8 col-md-10 col-sm-8 col-8 mr-auto noPadding">
-                        <hr class="section-heading-spacer">
+                    <div class="col-lg-2 col-md-2 col-sm-1 col-0 noPadding"></div>
+                    <div class="col-lg-8 col-md-10 col-sm-10 col-12 mr-auto noPadding">
+                        <hr class="section-heading-spacer col-3">
                         <div class="clearfix"></div>
-                        <h2 class="section-heading">Fahrtanalyse</h2>
-                        <p class="section-lead">Die Fahrt wird die auf einer Karte angezeigt. Dazu siehst du ein Zeitreiehendiagramm, das dir ausgewählte Phänomene anzeigt. <br>
-                            Erfahre Dauer, Treibstoffverbrauch, Strecke, Stop-and-go's, Geschwindigkeit, CO2 Emission, u.v.m.<br>
-                            Du kannst dir eine Teilstrecke deiner Fahrt auswählen und alle angezeigten Informationen passen sich an.
+                        <h2 class="section-heading">WebApp</h2>
+                        <p class="section-lead" style="margin-bottom: 36px;">ana.wa6<br>
                         </p>
-                        <ul class="lead ec-feature-list" style="list-style-type: none; padding-left: 0px;">
-                            <li class="track_item" id="track_1"><img class='ec-features-2' src="assets/anal1.png">Karte und Zeitreihendiagramm</li>
-                            <li class="track_item" id="track_2"><img class='ec-features-2' src="assets/anal2.png">Streckendetails</li>
-                        </ul>
                     </div>
-                    <div class="col-lg-2 col-md-2 col-sm-2 col-2 noPadding"></div>
+                    <div class="col-lg-2 col-md-2 col-sm-1 col-0 noPadding"></div>
                 </div>
-
                 <div class="row container-fluid col-lg-12 col-md-12 col-sm-12 col-12 noPadding nomargin">
-                    <div class="col-lg-2 col-md-2 col-sm-1 col-1 noPadding"></div>
-                    <div class="col-lg-8 col-md-8 col-sm-10 col-10 mr-auto img-frame img-frame-1 noPadding">
-                        <img id="track_img" class="calendar_img img-fluid" src="assets/webapp/track_1_de.png" alt="">
+                    <div class="row container-fluid col-lg-7 col-md-7 col-sm-12 col-12 noPadding nomargin">
+                        <div class="col-lg-1 col-md-0 col-sm-0 col-1 noPadding"></div>
+                        <div class="col-lg-10 col-md-11 col-sm-11 col-10 mr-auto img-frame img-frame-1 noPadding">
+                            <span class="helper"></span>
+                            <img id="webapp_img" src="{{ana.webapp.img}}" alt="">
+                        </div>
+                        <div class="col-lg-1 col-md-1 col-sm-1 col-1 noPadding"></div>
                     </div>
-                    <div class="col-lg-2 col-md-2 col-sm-1 col-1 noPadding"></div>
+                    <div class="row container-fluid col-lg-5 col-md-5 col-sm-12 col-12 noPadding nomargin">
+                        <div class="hidden-lg hidden-md col-sm-1 col-1 noPadding"></div>
+                        <div class="col-lg-11 col-md-11 col-sm-10 col-10 mr-auto noPadding nomargin">
+                            <ul class="lead ec-feature-list" style="list-style-type: none; padding-left: 0px;">
+                                <li class="dashboard_item" id="dashboard_1"><img id="db_1" class='ec-features-2' src="assets/people.png">ana.wp1</li>
+                                <li class="dashboard_item" id="dashboard_2"><img id="db_2" class='ec-features-2' src="assets/map.png">ana.wp2</li>
+                                <li class="dashboard_item" id="dashboard_3"><img id="db_3" class='ec-features-2' src="assets/world_map.png">ana.wp3</li>
+                                <li class="dashboard_item" id="dashboard_4"><img id="db_4" class='ec-features-2' src="assets/weekday.png">ana.wp4</li>
+                                <li class="dashboard_item" id="dashboard_5"><img id="db_5" class='ec-features-2' src="assets/speed.png">ana.wp5</li>
+                                <li class="dashboard_item" id="calendar_1"><img id="db_6" class='ec-features-2' src="assets/calendar.png">ana.wp6</li>
+                                <li class="dashboard_item" id="calendar_2"><img id="db_7" class='ec-features-2' src="assets/filter.png">ana.wp7</li>
+                                <li class="dashboard_item" id="track_1"><img id="db_8" class='ec-features-2' src="assets/anal1.png">ana.wp8</li>
+                                <li class="dashboard_item" id="track_2"><img id="db_9" class='ec-features-2' src="assets/anal2.png">ana.wp9</li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-1 col-md-1 col-sm-1 col-1 noPadding"></div>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <footer class="bg-primary">
-            <div class="row footerdiv">
-                <div class="row col-12" style="margin: auto;">
+        <!-- Image Background Divider parallax -->
+        <div class="parallax parallax-ana2"></div>
 
-                    <div class="row col-xs-12 col-sm-12 col-md-4 col-lg-2 col-4">
-                        <span class="helper"></span>
-                        <a class="js-scroll-trigger col-md-12 col-10 noPadding" href="#page-top" style="margin:auto;width: 100%; height: auto;">
-                            <img class="footer-logo" style="width: 100%; display: block; margin: 0;" src="assets/logo_white.png" alt="enviroCar logo white inverse"/>
-                        </a>
+        <!-- Maps -->
+        <section style="background-color:#fff;">
+            <div id="maps" class="container" style="min-width: 70% !important;">
+                <div class="col-12 ml-auto" style="padding-bottom: 35px;">
+                    <hr class="col-3 section-heading-spacer">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading" style="padding-bottom: 24px;">ana.mp1</h2>
+                    <p class="section-lead"><strong>enviroCar</strong>ana.mp2<br>
+                        ana.mp3<strong>ana.mp4</strong>,
+                        ana.mp5
+                    </p>
+                </div>
+            </div>
+            <div class="container" style="min-width: 70% !important;">
+                <div class="row col-12 nomargin noPadding">
+                    <div class="col-4 noPadding product">
+                        <div class="col-12">
+                            <p class="product-text">ana.mp6</p>
+                        </div>
+                        <div class="col-12 img-hover">
+                            <a href="http://52north.maps.arcgis.com/apps/webappviewer/index.html?id=602699b2f09340f6bd4086cacf2916d4" target="_blank">
+                                <img class="img-responsive" style="width:100%;height: auto;" src="assets/products/map_1.png">
+                            </a>
+                        </div>
                     </div>
-                    <div class="spaceholder col-lg-2 col-md-2 hidden-sm hidden-xs"></div>
-                    <div class="footer-item col-xs-6 col-sm-6 col-md-4 col-lg-4">
-                        <h3>Hintergrund</h3>
-                        <ul>
-                            <li><a href="about.html" >Über enviroCar</a></li>
-                            <li><a href="research.html" >Forschung</a></li>
-                            <li><a href="press.html" >Presse</a></li>
-                            <li><a href="faq.html">Häufig gestellte Fragen</a></li>
-                            <li><a href="imprint.html" >Impressum</a></li>
-                            <li><a href="conditions.html" >Nutzungsbedingungen</a></li>
-                        </ul>
+                    <div class="col-4 noPadding product">
+                        <div class="col-12">
+                            <p class="product-text">ana.mp7</p>
+                        </div>
+                        <div class="col-12 img-hover">
+                            <a href="http://www.arcgis.com/home/webmap/viewer.html?webmap=5db4e1ea445e4b4b8612443e7ba76119" target="_blank">
+                                <img class="img-responsive" style="width:100%;height: auto;" src="assets/products/map_2.png">
+                            </a>
+                        </div>
                     </div>
-                    <div class="footer-item col-xs-6 col-sm-6 col-md-4 col-lg-4">
-                        <h3>Folge Uns</h3>
-                        <ul>
-                            <li><a href="https://twitter.com/enviroCar_org?ref_src=twsrc%5Etfw&ref_url=https%3A%2F%2Fenvirocar.org%2Findex.php" target="_blank">Twitter</a></li>
-                            <li><a href="https://www.facebook.com/enviroCar/" target="_blank">Facebook</a></li>
-                            <li><a href="https://github.com/enviroCar" target="_blank">GitHub</a></li>
-                        </ul>
+                    <div class="col-4 noPadding product">
+                        <div class="col-12">
+                            <p class="product-text">ana.mp8</p>
+                        </div>
+                        <div class="col-12 img-hover">
+                            <a href="http://52north.maps.arcgis.com/apps/webappviewer/index.html?id=999b265162c34e69b3e88b309f7c9f18" target="_blank">
+                                <img class="img-responsive" style="width:100%;height: auto;" src="assets/products/map_4.png">
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </footer>
+        </section>
+
+        <!-- Image Background Divider parallax -->
+        <div class="parallax parallax-ana3"></div>
+
+        <!-- Maps -->
+        <section style="background-color:#fff;">
+            <div id="tools" class="container" style="min-width: 70% !important;">
+                <div class="col-12 ml-auto" style="padding-bottom: 35px;">
+                    <hr class="col-3 section-heading-spacer">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading" style="padding-bottom: 24px;">ana.at1</h2>
+                    <p class="section-lead">ana.at2
+                        <a href="https://github.com/envirocar"><strong>Bibliotheken und Tools in Github</strong></a> zur Verfügung.
+                    </p>
+                </div>
+            </div>
+            <div class="container" style="min-width: 70% !important;">
+                <div class="row col-12 nomargin noPadding">
+                    <div class="col-6 noPadding product row">
+                        <div class="col-lg-3 col-md-4 hidden-xs col-2"></div>
+                        <div class="col-lg-6 col-md-7 col-xs-12 col-8" style="padding-left: 0px;">
+                            <div class="portfolio-item" style="height: 100%;">
+                                <div class="card card-1 card-anim card-step card-tool">
+                                    <a href="https://github.com/enviroCar/enviroCaR" target="_blank">
+                                        <div style="position:relative;">
+                                            <img class="card-tool-img" src="assets/products/GitHub-Mark.png" alt="">
+                                        </div></a>
+                                    <div class="card-body">
+                                        <h4 class="card-title card-step-title">
+                                            <a class="js-scroll-trigger" href="#webapp">enviroCa<strong>R</strong></a>
+                                        </h4>
+                                        <p class="card-text card-step-text">
+                                            ana.at3<strong>R</strong>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 hidden-xs col-2"></div>
+                    </div>
+                    <div class="col-6 noPadding product row">
+                        <div class="col-lg-3 col-md-4 hidden-xs col-2"></div>
+                        <div class="col-lg-6 col-md-7 col-xs-12 col-8" style="padding-right: 0px;">
+                            <div class="portfolio-item" style="height: 100%;">
+                                <div class="card card-1 card-anim card-step card-tool">
+                                    <a href="https://github.com/enviroCar/tsc" target="_blank">
+                                        <div style="position:relative;">
+                                            <img class="card-tool-img" src="assets/products/GitHub-Mark.png" alt="">
+                                        </div></a>
+                                    <div class="card-body">
+                                        <h4 class="card-title card-step-title">
+                                            <a class="js-scroll-trigger" href="#webapp">enviroCar/tsc</a>
+                                        </h4>
+                                        <p class="card-text card-step-text">
+                                            ana.at4
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 hidden-xs col-2"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div data-include="footer"></div>
 
         <!-- Bootstrap core JavaScript -->
         <script src="js/jquery.easing.1.3.min.js"></script>
@@ -276,6 +300,17 @@
         <script src="js/scrolling-nav.js"></script>
         <script src="js/hover-effects.js"></script>
 
+        <script>
+                                $(function () {
+                                    var includes = $('[data-include]');
+                                    jQuery.each(includes, function () {
+                                        var file = '' + $(this).data('include') + '.html';
+                                        $(this).load(file);
+                                    });
+                                });
+        </script>
+
+        <script src="js/language-url.js"></script>
     </body>
 
 </html>

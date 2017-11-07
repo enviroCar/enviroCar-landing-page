@@ -24,11 +24,10 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
+        <script src="js/i18nextify.min.js"></script>
     </head>
 
     <body id="page-top" style="background-color: #f3f3f3;">
-
         <!-- Navigation Bar -->
         <nav class="navbar fixed-top navbar-dark bg-primary navbar-expand-lg navbar-expand-md" style="position: fixed; top: 0; border-bottom: solid 1px #0065A0;" id="mainNav">
             <a style="padding: 0;" class="navbar-brand js-scroll-trigger" href="#page-top">
@@ -39,47 +38,31 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav mr-auto navbar-right">
-                    <li class="nav-item nav-onSelected">
-                        <a class="nav-link js-scroll-trigger" href="index.html#page-top">Home</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a href="enviroCar.org"  data-toggle="dropdown" class="nav-link dropdown-toggle">Plattform</a>
-                        <ul class="dropdown-menu" role="menu">
-                            <li><a class="js-scroll-trigger" href="platform.html#platform">Plattform</a></li>
-                            <li><a class="js-scroll-trigger"  href="platform.html#collect">Daten Sammeln</a></li>
-                            <li><a class="js-scroll-trigger"  href="platform.html#access">Daten Zugriff</a></li>
-                            <li><a class="js-scroll-trigger"  href="platform.html#products">Karten & Produkte</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a href="enviroCar.org" data-toggle="dropdown" class="nav-link dropdown-toggle">Analyse</a>
-                        <ul class="dropdown-menu" role="menu">
-                            <li><a class="js-scroll-trigger" href="analysis.html#features">Analyse</a></li>
-                            <li><a class="js-scroll-trigger"  href="analysis.html#dashboard">Dashboard</a></li>
-                            <li><a class="js-scroll-trigger"  href="analysis.html#calendar">Fahrtenkalender</a></li>
-                            <li><a class="js-scroll-trigger"  href="analysis.html#analysis">Fahrtanalyse</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a href="enviroCar.org"  data-toggle="dropdown" class="nav-link dropdown-toggle">Forschung</a>
-                        <ul class="dropdown-menu" role="menu">
-                            <li><a class="menu-top-item js-scroll-trigger" href="research.html#research">Forschung</a></li>
-                            <li><a class="menu-mid-item js-scroll-trigger" href="research.html#publications">Publikationen</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a href="enviroCar.org"  data-toggle="dropdown" class="nav-link dropdown-toggle">Presse</a>
-                        <ul class="dropdown-menu" role="menu">
-                            <li><a class="js-scroll-trigger" href="press.html#press">Presse</a></li>
-                            <li><a class="js-scroll-trigger"  href="press.html#press">Alle Berichte</a></li>
-                        </ul>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" onclick="openSubpage('index.html')">nav.home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="index.html#partner">Partner</a>
+                        <a class="nav-link js-scroll-trigger" onclick="openSubpage('platform.html')">nav.platform</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" onclick="openSubpage('analysis.html')">nav.analysis</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger"  onclick="openSubpage('research.html')">nav.research</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" onclick="openPartnerSection()">nav.partner</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link js-scroll-trigger" href="http://tukopia.lan.int.52north.org:4014/#!/login">
-                            <img src="..//assets/login_white.png"/>Anmelden</a>
+                            <img src="..//assets/login_white.png"/>nav.login</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">nav.language</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="lngOption" onclick="changeLanguage('en')">English</a></li>
+                            <li><a class="lngOption" onclick="changeLanguage('de')">Deutsch</a></li>
+                        </ul>
                     </li>
                 </ul>
             </div>
@@ -92,22 +75,22 @@
                     <div class="col-lg-2 col-md-2 col-sm-1 hidden-xs noPadding"></div>
                     <div class="col-lg-8 col-md-8 col-sm-10 col-xs-12 col-12 mr-auto noPadding">
                         <div class="clearfix"></div>
-                        <h2 class="section-heading"><strong>Impressum</strong></h2>
+                        <h2 class="section-heading"><strong>ipt1</strong></h2>
                         <p class="section-lead nomargin">
-                            52° North Initiative for Geospatial Open Source Software GmbH<br>
-                            Martin-Luther-King-Weg 24<br>
-                            48155 Münster, Germany<br>
+                            ipt2<br>
+                            ipt3<br>
+                            ipt4<br>
                             <br>
-                            Telefon: +49 (0)251 396371-0<br>
-                            Telefax: +49 (0)251 396371-11<br>
-                            E-Mail: <a href="mailto:info@52north.org?Subject=" target="_top">info@52north.org</a><br>
+                            ipt5<br>
+                            ipt6<br>
+                            ipt7<a href="mailto:info@52north.org?Subject=" target="_top">info@52north.org</a><br>
                             <a href="htttp://52north.org">http://www.52north.org</a><br>
                             <br>
-                            Geschäftsführer: Dr. Albert Remke, Dr. Andreas Wytzisk<br>
+                            ipt8<br>
                             <br>
-                            USt.-ID-Nr. DE253303206<br>
+                            ipt9<br>
                             <br>
-                            Handelsregister: Amtsgericht Münster HRB 10849<br>
+                            ipt10<br>
                             <br><br>
                         </p>
                     </div>
@@ -117,13 +100,10 @@
                     <div class="col-lg-2 col-md-2 col-sm-1 hidden-xs noPadding"></div>
                     <div class="col-lg-8 col-md-8 col-sm-10 col-xs-12 col-12 mr-auto noPadding">
                         <div class="clearfix"></div>
-                        <h2 class="section-heading"><strong>Inhalt</strong></h2>
+                        <h2 class="section-heading"><strong>ipt11</strong></h2>
                         <p class="section-lead nomargin">
-                            Das Projektteam von enviroCar versucht mit bestem Wissen und Gewissen die Inhalte dieser Website aktuell, 
-                            vollständig und korrekt zu halten. Trotzdem sind Fehler nicht auszuschließen. Das enviroCar Projekt übernimmt 
-                            keinerlei Verantwortung für Aktualität, Genauigkeit oder Vollständigkeit der auf dieser Webseite dargestellen 
-                            Inhalte, es sei denn der Fehler sei unter Absicht oder aufgrund grober Fahrlässigkeit entstanden.<br>
-                            <br><br>
+                            ipt12
+                            <br><br><br>
                         </p>
                     </div>
                     <div class="col-lg-2 col-md-2 col-sm-1 hidden-xs noPadding"></div>
@@ -132,12 +112,11 @@
                     <div class="col-lg-2 col-md-2 col-sm-1 hidden-xs noPadding"></div>
                     <div class="col-lg-8 col-md-8 col-sm-10 col-xs-12 col-12 mr-auto noPadding">
                         <div class="clearfix"></div>
-                        <h2 class="section-heading"><strong>Urheberrecht</strong></h2>
+                        <h2 class="section-heading"><strong>ipt13</strong></h2>
                         <p class="section-lead nomargin">
-                            Alle Grafiken dieser Webseite sind lizenziert als <a href="https://creativecommons.org/licenses/by/3.0/legalcode">CC-BY</a>, 
-                            es sei denn eine andere Lizenz wurde genannt. Alle Texte dieser Website sind lizenziert als 
-                            <a href="https://creativecommons.org/licenses/by/3.0/legalcode">CC-BY</a>, es sei denn eine andere Lizenz wurde genannt. 
-                            Alle Daten die über die enviroCar API abrufbar sind, sind lizenziert unter der <a href="http://opendatacommons.org/licenses/odbl/1.0/">ODbL</a>.
+                            ipt14<a href="https://creativecommons.org/licenses/by/3.0/legalcode">CC-BY</a>, 
+                            ipt15
+                            <a href="https://creativecommons.org/licenses/by/3.0/legalcode">CC-BY</a>ipt16<a href="http://opendatacommons.org/licenses/odbl/1.0/">ODbL</a>.
                         </p>
                     </div>
                     <div class="col-lg-2 col-md-2 col-sm-1 hidden-xs noPadding"></div>
@@ -145,45 +124,25 @@
             </div>
         </section>
 
-        <footer class="bg-primary">
-            <div class="row footerdiv">
-                <div class="row col-12" style="margin: auto;">
-
-                    <div class="row col-xs-12 col-sm-12 col-md-4 col-lg-2 col-4">
-                        <span class="helper"></span>
-                        <a class="js-scroll-trigger col-md-12 col-10 noPadding" href="#page-top" style="margin:auto;width: 100%; height: auto;">
-                            <img class="footer-logo" style="width: 100%; display: block; margin: 0;" src="assets/logo_white.png" alt="enviroCar logo white inverse"/>
-                        </a>
-                    </div>
-                    <div class="spaceholder col-lg-2 col-md-2 hidden-sm hidden-xs"></div>
-                    <div class="footer-item col-xs-6 col-sm-6 col-md-4 col-lg-4">
-                        <h3>Hintergrund</h3>
-                        <ul>
-                            <li><a href="about.html" >Über enviroCar</a></li>
-                            <li><a href="research.html" >Forschung</a></li>
-                            <li><a href="press.html" >Presse</a></li>
-                            <li><a href="faq.html">Häufig gestellte Fragen</a></li>
-                            <li><a href="imprint.html" >Impressum</a></li>
-                            <li><a href="conditions.html" >Nutzungsbedingungen</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-item col-xs-6 col-sm-6 col-md-4 col-lg-4">
-                        <h3>Folge Uns</h3>
-                        <ul>
-                            <li><a href="https://twitter.com/enviroCar_org?ref_src=twsrc%5Etfw&ref_url=https%3A%2F%2Fenvirocar.org%2Findex.php" target="_blank">Twitter</a></li>
-                            <li><a href="https://www.facebook.com/enviroCar/" target="_blank">Facebook</a></li>
-                            <li><a href="https://github.com/enviroCar" target="_blank">GitHub</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </footer>
+        <div data-include="footer"></div>
 
         <!-- Bootstrap core JavaScript -->
         <!--<script src="js/jquery.min.js"></script>-->
         <script src="js/jquery.easing.1.3.min.js"></script>
         <script src="js/popper.min.js"></script>
         <script src="js/scrolling-nav.js"></script>
+
+        <script>
+            $(function () {
+                var includes = $('[data-include]');
+                jQuery.each(includes, function () {
+                    var file = '' + $(this).data('include') + '.html';
+                    $(this).load(file);
+                });
+            });
+        </script>
+
+        <script src="js/language-url.js"></script>
 
     </body>
 
