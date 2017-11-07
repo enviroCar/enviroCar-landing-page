@@ -224,6 +224,10 @@ nav {
 .lngOption {
     cursor: pointer;
 }
+.footerLink:hover { 
+    cursor: pointer;
+    border-bottom: 1px solid rgb(255,255,255);
+}
 .nav-onSelected>a {
     background-color: #F3F3F3 !important;
     color: rgba(0,101,160,1) !important;
@@ -919,9 +923,6 @@ iframe {
         margin-bottom: 8px;
         transition: all 0.2s;
     }
-    #dashboard_1 {
-        height: 80px !important;
-    }
     #track_1 {
         height: 80px !important;
     }
@@ -1138,6 +1139,9 @@ header {
     margin-bottom: 5%;
 }
 .press-heading {
+    /*text-align: center;*/
+    color: rgb(70,70,70);
+    font-weight: bold;
     margin-top: 0px;
     font-size: 22px;
 }

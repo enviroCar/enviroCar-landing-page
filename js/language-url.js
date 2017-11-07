@@ -102,6 +102,31 @@ function openSubpage(subpage) {
     location.href = subpage+lngParam;
 };
 
+function gotoSubpageSection(subpage, section) {
+    var query = window.location.search.substring(1);
+    var qs = parse_query_string(query);
+    var lngParam = "?lng=";
+    if (qs.lng) {
+        qs.lng = qs.lng.toLowerCase();
+        if (qs.lng == "de") {
+            // set content to german
+            lngParam += "de";
+        } else if (qs.lng == "en") {
+            // set content to english
+            lngParam += "en";
+        } else {
+            // language not supported...
+            lngParam += "en";
+            insertParam("lng", "en");
+        }
+    } else {
+        // no lnguage param found
+            lngParam += "en";
+        insertParam("lng", "en");
+    }
+    location.href = subpage+lngParam+'#'+section;
+}
+
 function openPartnerSection() {
     var query = window.location.search.substring(1);
     var qs = parse_query_string(query);
