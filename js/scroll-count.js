@@ -2,10 +2,10 @@ var a = 0;
 $(window).scroll(function () {
 
     var oTop = $('#counter').offset().top - window.innerHeight;
-    if (numberUsers > 0 
+    if (numberUsers > 0
             && numberTracks > 0
             && numberMeasurements > 0
-            && a == 0 
+            && a == 0
             && $(window).scrollTop() > oTop) {
         $('.counter-users').each(function () {
             var $this = $(this),
@@ -23,10 +23,10 @@ $(window).scroll(function () {
                             $this.text(Math.floor(this.countNum));
                         },
                         complete: function () {
-                            var str = this.countNum+"";
-                            var hundreds = str.substring(str.length-3,str.length);
-                            var thousands = str.substring(str.length-6,str.length-3);
-                            var millions = str.substring(str.length-9,str.length-6);
+                            var str = this.countNum + "";
+                            var hundreds = str.substring(str.length - 3, str.length);
+                            var thousands = str.substring(str.length - 6, str.length - 3);
+                            var millions = str.substring(str.length - 9, str.length - 6);
                             if (millions.length > 0)
                                 millions = millions + ".";
                             else {
@@ -55,10 +55,10 @@ $(window).scroll(function () {
                             $this.text(Math.floor(this.countNum));
                         },
                         complete: function () {
-                            var str = this.countNum+"";
-                            var hundreds = str.substring(str.length-3,str.length);
-                            var thousands = str.substring(str.length-6,str.length-3);
-                            var millions = str.substring(str.length-9,str.length-6);
+                            var str = this.countNum + "";
+                            var hundreds = str.substring(str.length - 3, str.length);
+                            var thousands = str.substring(str.length - 6, str.length - 3);
+                            var millions = str.substring(str.length - 9, str.length - 6);
                             if (millions.length > 0)
                                 millions = millions + ".";
                             else {
@@ -87,10 +87,10 @@ $(window).scroll(function () {
                             $this.text(Math.floor(this.countNum));
                         },
                         complete: function () {
-                            var str = this.countNum+"";
-                            var hundreds = str.substring(str.length-3,str.length);
-                            var thousands = str.substring(str.length-6,str.length-3);
-                            var millions = str.substring(str.length-9,str.length-6);
+                            var str = this.countNum + "";
+                            var hundreds = str.substring(str.length - 3, str.length);
+                            var thousands = str.substring(str.length - 6, str.length - 3);
+                            var millions = str.substring(str.length - 9, str.length - 6);
                             var text = millions + "." + thousands + "." + hundreds;
                             $this.text(text);
                         }
