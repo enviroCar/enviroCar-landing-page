@@ -83,12 +83,16 @@
 }
 .parallax-one { 
     background-image: url("../assets/pixabay1.jpg");
+    height: 140%; 
+    max-height: 1400px;
+    width: auto;
+    position: relative;
 }
 .parallax-two { 
     background-image: url("../assets/envCar_Foto06.jpg");
 }
 .parallax-three { 
-    background-image: url("../assets/pexels4.jpeg");
+    background-image: url("../assets/pexels4.jpg");
 }
 .parallax-faq { 
     background-image: url("../assets/faq.jpg");
@@ -111,6 +115,11 @@
         height: 33%;
         background-attachment: scroll;
         padding-top: 13%;
+    }
+    .parallax-one { 
+        background-image: url("../assets/pixabay1.jpg");
+        height: 110%; 
+        max-height: 1000px;
     }
 }
 
@@ -761,6 +770,10 @@ iframe {
     max-width: 100%;
 }
 
+.sectionPartner {
+    padding: 0px;
+}
+
 .sectionPlatform {
     background-color: #fff;
 }
@@ -1128,7 +1141,7 @@ header {
 .noPadding {
     padding: 0px !important;
 }
-@media (max-width: 575px) {
+@media (min-width: 575px) {
     .noPaddingGtXs {
         padding: 0px !important;
     }
@@ -1174,9 +1187,27 @@ header {
 }
 
 /* Section PARTNERS */
-.sectionPartner {
-    padding-top: 0px;
-    padding-bottom: 0px;
+.sectionFunding {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+}
+@media (min-width: 722px) and (max-width: 12800px) {
+    .sectionFunding {
+        width: 80%;
+    }
+}
+@media (max-width:721px) {
+    .sectionFunding {
+        width: 100%;
+    }
+}
+@media (min-width: 1281px) {
+    .sectionFunding {
+        width: 60%;
+    }
 }
 .img-partner {
     display: block;

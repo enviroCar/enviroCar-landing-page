@@ -24,6 +24,7 @@
     "platform.two": "Werkzeuge zur Analyse Deiner Fahrten",
     "platform.three": "Anonymisierten Zugriff auf alle Fahrten der Community",
     "platform.four": "Vielfalt von Karten und Informationsprodukten",
+    "envirocar_platform" : "assets/enviroCar-de.png",
 
     "platform.app": "Die App",
     "platform.app1": "Die enviroCar App sammelt echte Motorsensordaten deines Fahrzeugs während du fährst.",
