@@ -4,7 +4,6 @@
   "description": "enviroCar website",
   "main": "index.html",
   "dependencies": {
-    "jquery-i18next": "^1.2.1"
   },
   "devDependencies": {},
   "scripts": {
