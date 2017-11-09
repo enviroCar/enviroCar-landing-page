@@ -24,6 +24,14 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <script src="js/i18nextify.min.js"></script>
+        <script src="js/i18nextXHRBackend.min.js"></script>
+        <script>
+            window.i18nextify
+                    .init({
+                            backend: {
+                                loadPath: '/dev/locales/{{lng}}/translation.json'
+                            } });
+        </script>
 
     </head>
 
@@ -56,7 +64,7 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link js-scroll-trigger" href="http://tukopia.lan.int.52north.org:4014/#!/login">
-                            <img src="..//assets/login_white.png"/>nav.login</a>
+                            <img src="assets/login_white.png"/>nav.login</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">nav.language</a>

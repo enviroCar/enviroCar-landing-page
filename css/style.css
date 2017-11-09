@@ -82,32 +82,32 @@
     background-size: cover; 
 }
 .parallax-one { 
-    background-image: url("../assets/pixabay1.jpg");
+    background-image: url("..//assets/pixabay1.jpg");
     height: 1200px; 
     max-height: 1400px;
     width: auto;
     position: relative;
 }
 .parallax-two { 
-    background-image: url("../assets/envCar_Foto06.jpg");
+    background-image: url("..//assets/envCar_Foto06.jpg");
 }
 .parallax-three { 
-    background-image: url("../assets/pexels4.jpg");
+    background-image: url("..//assets/pexels4.jpg");
 }
 .parallax-faq { 
-    background-image: url("../assets/faq.jpg");
+    background-image: url("..//assets/faq.jpg");
 }
 .parallax-research { 
-    background-image: url("../assets/rocket.jpg");
+    background-image: url("..//assets/rocket.jpg");
 }
 .parallax-ana1 { 
-    background-image: url("../assets/pexels1.jpeg");
+    background-image: url("..//assets/pexels1.jpeg");
 }
 .parallax-ana2 { 
-    background-image: url("../assets/gasoline.jpg");
+    background-image: url("..//assets/gasoline.jpg");
 }
 .parallax-ana3 { 
-    background-image: url("../assets/pexels3.jpeg");
+    background-image: url("..//assets/pexels3.jpeg");
 }
 /* Turn off parallax scrolling for tablets and phones. Increase/decrease the pixels if needed */
 @media only screen and (max-device-width: 720px) {
@@ -117,7 +117,7 @@
         padding-top: 13%;
     }
     .parallax-one { 
-        background-image: url("../assets/pixabay1.jpg");
+        background-image: url("..//assets/pixabay1.jpg");
         height: 1400px; 
         max-height: 1400px;
     }
@@ -258,7 +258,7 @@ nav {
     padding-top: 24px; 
     padding-left: 24px;
     z-index: 1000;
-    background: url("..//assets/login_white.png");
+    background: url("/assets/login_white.png");
 }
 .nav-item>a:hover>img {
     width: 0px; 
@@ -268,7 +268,7 @@ nav {
     padding-bottom: 2px; 
     padding-top: 24px; 
     padding-left: 24px;
-    background: url("..//assets/login_blue.png");
+    background: url("/assets/login_blue.png");
 }
 .navbar-dark .navbar-nav .nav-link {
     color: #fff;
@@ -289,7 +289,7 @@ nav {
     padding-top: 24px; 
     padding-left: 24px;
     z-index: 1000;
-    background: url("..//assets/login_white.png");
+    background: url("/assets/login_white.png");
 }
 .nav-item-2>a:hover>img {
     width: 0px; 
@@ -299,7 +299,7 @@ nav {
     padding-bottom: 2px; 
     padding-top: 24px; 
     padding-left: 24px;
-    background: url("..//assets/login_blue.png");
+    background: url("/assets/login_blue.png");
 }
 .nav-item-2>a {
     color: #0064A0 !important;
@@ -384,7 +384,7 @@ body {
     display: block;
     content: ''; }
 .dividerHeader {
-    background-image:  url("..//assets/pexels3b.jpg");
+    background-image:  url("/assets/pexels3b.jpg");
     background-size: cover;
     width: 100%;
     height: auto;
@@ -399,7 +399,7 @@ body {
     display: inline-block; }
 @media (max-width: 700px) {
     #mainbanner {
-        content:url("..//assets/pexels3.jpg");
+        content:url("..///assets/pexels3.jpg");
     }
 }
 div.transbox {
@@ -790,7 +790,7 @@ iframe {
 /* App Section */
 .sectionApp {
     /* The image used */
-    /*background-image: url("..//assets/gasoline.jpg");*/
+    /*background-image: url("..///assets/gasoline.jpg");*/
 
     /* Full height */
     height: auto; 
@@ -1031,7 +1031,7 @@ header {
     padding-bottom: 50px;
     text-align: center;
     color: #f8f8f8;
-    background: url(../assets/envCar_Foto06.jpg) no-repeat center center;
+    background: url(..//assets/envCar_Foto06.jpg) no-repeat center center;
     background-size: cover;
 }
 
@@ -1102,8 +1102,8 @@ header {
     display: block;
     content: ''; }
 .divider1 {
-    /*background-image: url("../assets/pixabay1.jpg");*/
-    background-image: url("../assets/envCar_Foto06.jpg");
+    /*background-image: url("..//assets/pixabay1.jpg");*/
+    background-image: url("..//assets/envCar_Foto06.jpg");
     background-size: cover;
     width: 100%;
     height: auto;
@@ -1117,7 +1117,7 @@ header {
     /* let's see it! */
     display: inline-block; }
 .divider2 {
-    background-image: url("../assets/pixabay1.jpg");
+    background-image: url("..//assets/pixabay1.jpg");
     background-size: cover;
     width: 100%;
     height: auto;
