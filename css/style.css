@@ -258,7 +258,7 @@ nav {
     padding-top: 24px; 
     padding-left: 24px;
     z-index: 1000;
-    background: url("/assets/login_white.png");
+    background: url("assets/login_white.png");
 }
 .nav-item>a:hover>img {
     width: 0px; 
@@ -268,7 +268,7 @@ nav {
     padding-bottom: 2px; 
     padding-top: 24px; 
     padding-left: 24px;
-    background: url("/assets/login_blue.png");
+    background: url("assets/login_blue.png");
 }
 .navbar-dark .navbar-nav .nav-link {
     color: #fff;
@@ -289,7 +289,7 @@ nav {
     padding-top: 24px; 
     padding-left: 24px;
     z-index: 1000;
-    background: url("/assets/login_white.png");
+    background: url("assets/login_white.png");
 }
 .nav-item-2>a:hover>img {
     width: 0px; 
@@ -299,7 +299,7 @@ nav {
     padding-bottom: 2px; 
     padding-top: 24px; 
     padding-left: 24px;
-    background: url("/assets/login_blue.png");
+    background: url("assets/login_blue.png");
 }
 .nav-item-2>a {
     color: #0064A0 !important;
@@ -371,37 +371,6 @@ body {
     height: 245px;
 }
 
-/** ######################## HEADER IMAGE ##################### */
-/* IMAGE BACKGROUND DIVIDER */
-.wrapperHeader {
-    width: 100%;
-    /* whatever width you want */
-    /*display: inline-block;*/
-    position: relative; }
-.wrapperHeader:after {
-    padding-top: 33.75%;
-    /* 16:9 ratio */
-    display: block;
-    content: ''; }
-.dividerHeader {
-    background-image:  url("/assets/pexels3b.jpg");
-    background-size: cover;
-    width: 100%;
-    height: auto;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    /* fill parent */
-    /*background-color: deepskyblue;*/
-    /* let's see it! */
-    display: inline-block; }
-@media (max-width: 700px) {
-    #mainbanner {
-        content:url("..///assets/pexels3.jpg");
-    }
-}
 div.transbox {
     height: 45%;
     position: absolute;
