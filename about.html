@@ -28,9 +28,9 @@
         <script>
             window.i18nextify
                     .init({
-                            backend: {
-                                loadPath: '/dev/locales/{{lng}}/translation.json'
-                            } });
+                        backend: {
+                            loadPath: '/dev/locales/{{lng}}/translation.json'
+                        }});
         </script>
     </head>
 
@@ -149,7 +149,38 @@
             </div>
         </section>
 
-        <div style="margin-top: 100px;" data-include="footer"></div>
+        <footer class="bg-primary">
+            <div class="row footerdiv">
+                <div class="row col-12" style="margin: auto;">
+
+                    <div class="row col-xs-12 col-sm-12 col-md-4 col-lg-2 col-4">
+                        <span class="helper"></span>
+                        <a class="js-scroll-trigger col-md-12 col-10 noPadding" href="#page-top" style="margin:auto;width: 100%; height: auto;">
+                            <img class="footer-logo" style="width: 100%; display: block; margin: 0;" src="assets/logo_white.png" alt="enviroCar logo white inverse"/>
+                        </a>
+                    </div>
+                    <div class="spaceholder col-lg-2 col-md-2 hidden-sm hidden-xs"></div>
+                    <div class="footer-item col-xs-6 col-sm-6 col-md-4 col-lg-4">
+                        <h3>ft.background</h3>
+                        <ul>
+                            <li><a class="footerLink"onclick="openSubpage('about.html')">ft.about</a></li>
+                            <li><a class="footerLink" onclick="openSubpage('press.html')">ft.press</a></li>
+                            <li><a class="footerLink" onclick="openSubpage('faq.html')">ft.faq</a></li>
+                            <li><a class="footerLink" onclick="openSubpage('imprint.html')">ft.imprint</a></li>
+                            <li><a class="footerLink" onclick="openSubpage('conditions.html')">ft.terms</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-item col-xs-6 col-sm-6 col-md-4 col-lg-4">
+                        <h3>ft.follow</h3>
+                        <ul>
+                            <li><a href="https://twitter.com/enviroCar_org?ref_src=twsrc%5Etfw&ref_url=https%3A%2F%2Fenvirocar.org%2Findex.php" target="_blank">Twitter</a></li>
+                            <li><a href="https://www.facebook.com/enviroCar/" target="_blank">Facebook</a></li>
+                            <li><a href="https://github.com/enviroCar" target="_blank">GitHub</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
 
         <!-- Bootstrap core JavaScript -->
         <!--<script src="js/jquery.min.js"></script>-->
