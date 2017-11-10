@@ -25,17 +25,6 @@
         display: block !important;
     }
 };
-/* ### MEDIUM ### */
-@media (min-width: 992px) and (max-width: 1199px) {
-
-}
-
-@media (min-width: 1300px) {
-    .hidden-lg {
-        width: 0px;
-        max-width: 0px;
-    }
-}
 
 /* material design icons */
 .material-icons.md-18 { font-size: 18px; }
@@ -73,7 +62,6 @@
 .parallax {
     /* Set a specific height */
     height: 50%; 
-    max-height: 500px;
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -83,8 +71,6 @@
 }
 .parallax-one { 
     background-image: url("..//assets/pixabay1.jpg");
-    height: 1200px; 
-    max-height: 1400px;
     width: auto;
     position: relative;
 }
@@ -142,14 +128,17 @@ html, body {
     z-index: 500;
 }
 .navbar {
-    height: 30px;
     border-radius: 0px !important;
     box-shadow: 0 4px 8px rgba(0,0,0,0.24);
 }
 .navbar-brand {
-    height: 26px !important;
+    height: 100% !important;
     padding-left: 16px !important;
     margin-right: 0px !important;
+}
+.navbar-brand > img {
+    margin-top: 5%;
+    height: 80%;
 }
 .navbar-collapse {
     background-color: #0065A0;
@@ -160,7 +149,6 @@ html, body {
     box-shadow: 0 4px 8px rgba(0,0,0,0.12), 0 8px 16px rgba(0,0,0,0.24);
 }
 .nav-item {
-    font-size: 16px;
     margin-left: 16px;
 }
 .dropdown-nav-item {
@@ -181,19 +169,16 @@ html, body {
 }
 @media (min-width: 1300px) {
     .nav-item {
-        font-size: 18px;
         margin-left: 24px;
     }
 }
 @media (max-width: 976px) and (min-width: 321px) {
     .nav-item {
-        font-size: 14px;
         margin-left: 2px;
     }
 }
 @media (max-width: 320px) {
     .nav-item {
-        font-size: 12px;
         margin-left: 2px;
     }
 }
@@ -472,7 +457,6 @@ div.transbox p {
     height: 45%;
     text-align: center;
     color: #fff;
-    font-size: 30px;
     /*font-size: 2rem;*/
     text-shadow: 1px 1px 2px #272e36;
 }
@@ -503,10 +487,6 @@ div.transbox p {
 }
 
 /* Sections */
-section {
-    padding-top: 64px;
-    padding-bottom: 64px;
-}
 .overview-items h2 a {
     font-size: 26px;
     color: #0065A0 !important;
@@ -601,28 +581,6 @@ section {
     z-index: -100;
 }
 
-
-@media (min-width: 1080px) {
-    .sectionOverview {
-        max-width: 74%;
-    }
-    .sectionOverview div {
-        padding-left: 0px !important;
-        padding-right: 0px !important;
-    }
-}
-@media (max-width: 460px) {
-    .sectionOverview {
-    }
-    .sectionOverview div {
-        padding-left: 0px !important;
-        padding-right: 0px !important;
-    }
-}
-.sectionOverview div {
-    margin: auto;
-}
-
 @media (min-width: 576px) and (max-width: 992px) {
     section {
         padding: 32px;
@@ -649,14 +607,14 @@ section {
     height: 27%;
     position: absolute;
     right: 0;
-    left: 0;
+    /*left: 0;*/
+    left: 43%;
     bottom: -13%;
     z-index: 500;
     display: block;
-    margin: auto;
+    /*margin: auto;*/
 }
 .card-step-title {
-    font-size: 26px;
 }
 .card-step-text {
     font-size: 18px;
@@ -664,20 +622,368 @@ section {
 .card-step {
     height: 100%;
 }
+@media (min-width: 4097px) {
+    .navbar {
+        height: 102px;
+    }
+    .nav-item {
+        font-size: 48px;
+    }
+    .lngOption {
+        font-size: 36px;
+    }
+    .transsbox {
+        font-size: 86px;
+    }
+    .features-list-item > i {
+        font-size: 96px !important;
+    }
+    .lead {
+        font-size: 48px !important;
+        margin-bottom: 92px !important;
+    }
+    .section-heading {
+        font-size: 64px;
+    }
+    .section-lead {
+        font-size: 48px;
+    }
+    .container-fluid {
+        padding-left: 20% !important;
+        padding-right: 20% !important;
+    }
+    .card-step-title {
+        font-size: 36px;
+    }
+    .card-step-text {
+        font-size: 28px;
+    }
+    .counter-Txt {
+        font-size: 64px;
+    }
+    .counter-Txt span {
+        font-size: 64px;
+    }
+    .counter-Txt i {
+        font-size: 92px !important;
+    }
+    .parallax-one {
+        height: 100%; 
+        max-height: 2200px;
+    }
+    .footer-item > h3{
+        font-size: 48px;
+    }
+    .footer-item > ul {
+        font-size: 32px;
+    }
+    .press-heading {
+        font-size: 64px;
+    }
+    .eu-funding-text {
+        font-size: 32px;
+    }
+    iframe {
+        height: 1153px;
+    }
+    section {
+        padding-top: 180px;
+        padding-bottom: 180px;
+    }
+    .sourceCode-text, .authordiv {
+        font-size: 32px;
+    }
+}
+@media (min-width: 2049px) and (max-width: 4096px) {
+    .navbar {
+        height: 84px;
+    }
+    .nav-item {
+        font-size: 36px;
+    }
+    .lngOption {
+        font-size: 32px;
+    }
+    .transsbox {
+        font-size: 64px;
+    }
+    .features-list-item > i {
+        font-size: 64px !important;
+    }
+    .lead {
+        font-size: 36px !important;
+        margin-bottom: 78px !important;
+    }
+    .section-heading {
+        font-size: 48px;
+    }
+    .section-lead {
+        font-size: 36px;
+    }
+    .container-fluid {
+        padding-left: 20% !important;
+        padding-right: 20% !important;
+    }
+    .card-step-title {
+        font-size: 36px;
+    }
+    .card-step-text {
+        font-size: 28px;
+    }
+    .counter-Txt {
+        font-size: 48px;
+    }
+    .counter-Txt span {
+        font-size:48px;
+    }
+    .counter-Txt i {
+        font-size: 64px !important;
+    }
+    .parallax-one {
+        height: 100%; 
+        max-height: 1800px;
+    }
+    .footer-item > h3{
+        font-size: 28px;
+    }
+    .footer-item > ul {
+        font-size: 21px;
+    }
+    .press-heading {
+        font-size: 42px;
+    }
+    .eu-funding-text {
+        font-size: 21px;
+    }
+    iframe {
+        max-height: 920px;
+    }
+    section {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+    .sourceCode-text, .authordiv {
+        font-size: 21px;
+    }
+}
+iframe {
+    height: 1153px;
+    width: 2048px;
+}
+@media (min-width: 1025px) and (max-width: 2048px) {
+    .navbar {
+        height: 64px;
+    }
+    .nav-item {
+        font-size: 21px;
+    }
+    .lngOption {
+        font-size: 18px;
+    }
+    .transsbox {
+        font-size: 36px;
+    }
+    .features-list-item > i {
+        font-size: 48px !important;
+    }
+    .lead {
+        font-size: 24px !important;
+        margin-bottom: 64px !important;
+    }
+    .section-heading {
+        font-size: 36px;
+    }
+    .section-lead {
+        font-size: 24px;
+    }
+    .container-fluid {
+        padding-left: 10% !important;
+        padding-right: 10% !important;
+    }
+    .card-step-title {
+        font-size: 28px;
+    }
+    .card-step-text {
+        font-size: 24px;
+    }
+    .counter-Txt {
+        font-size: 32px;
+    }
+    .counter-Txt span {
+        font-size: 32px;
+    }
+    .counter-Txt i {
+        font-size: 60px !important;
+    }
+    .parallax-one {
+        height: 200%; 
+        max-height: 1400px;
+    }
+    .footer-item > h3{
+        font-size: 21px;
+    }
+    .footer-item > ul {
+        font-size: 16px;
+    }
+    .press-heading {
+        font-size: 32px;
+    }
+    .eu-funding-text {
+        font-size: 16px;
+    }
+    iframe {
+        max-height: 520px;
+    }
+    section {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+    .sourceCode-text, .authordiv {
+        font-size: 16px;
+    }
+}
 @media (min-width: 576px) and (max-width: 1024px) {
+    .navbar {
+        height: 50px;
+    }
+    .nav-item {
+        font-size: 15px;
+    }
+    .lngOption {
+        font-size: 14px;
+    }
+    .transsbox {
+        font-size: 24px;
+    }
+    .lead {
+        font-size: 18px !important;
+        margin-bottom: 36px !important;
+    }
+    .section-heading {
+        font-size: 21px;
+    }
+    .section-lead {
+        font-size: 18px;
+    }
+    .container-fluid {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .card-step-title {
+        font-size: 21px;
+    }
+    .card-step-text {
+        font-size: 16px;
+    }
+    .counter-Txt {
+        font-size: 24px;
+    }
+    .counter-Txt span {
+        font-size: 24px;
+    }
+    .counter-Txt i {
+        font-size: 60px !important;
+    }
+    .parallax-one {
+        height: 200%; 
+        max-height: 1400px;
+    }
+    .footer-item > h3{
+        font-size: 16px;
+    }
+    .footer-item > ul {
+        font-size: 14px;
+    }
+    .press-heading {
+        font-size: 24px;
+    }
+    .eu-funding-text {
+        font-size: 14px;
+    }
+    iframe {
+        max-height: 320px;
+    }
+    section {
+        padding-top: 36px;
+        padding-bottom: 36px;
+    }
+    .sourceCode-text, .authordiv {
+        font-size: 16px;
+    }
+}
+@media (max-width: 575px) {
+    .navbar {
+        height: 50px;
+    }
+    .nav-item {
+        font-size: 21px;
+    }
+    .transsbox {
+        font-size: 21px;
+    }
+    .lead {
+        font-size: 16px !important;
+        margin-bottom: 24px !important;
+    }
+    .section-heading {
+        text-align: center !important;
+        font-size: 18px;
+    }
+    .section-lead {
+        font-size: 16px;
+        text-align: center;
+    }
+    .container-fluid {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
     .card-step-title {
         font-size: 18px;
     }
     .card-step-text {
         font-size: 16px;
     }
-}
-@media (max-width: 575px) {
-    .card-step-title {
+    .counter-Txt {
+        font-size: 18px;
+    }
+    .counter-Txt span {
+        font-size: 18px;
+        font-weight: bold;
+    }
+    .counter-Txt i {
+        font-size: 36px !important;
+    }
+    .parallax-one {
+        height: 300%; 
+        max-height: 1800px;
+    }
+    .footer-item > h3{
         font-size: 16px;
     }
-    .card-step-text {
-        font-size: 16px;
+    .footer-item > ul {
+        font-size: 14px;
+    }
+    .press-heading {
+        font-size: 18px;
+    }
+    .eu-funding-text {
+        font-size: 14px;
+    }
+    iframe {
+        max-height: 240px;
+    }
+    section {
+        padding-top: 36px;
+        padding-bottom: 36px;
+    }
+    .sourceCode-text, .authordiv {
+        font-size: 14px;
+    }
+    .content {
+        margin-left: 0px !important;
+    }
+    .fundingdiv {
+        margin-left: 0px !important;
     }
 }
 
@@ -689,6 +995,7 @@ section {
     transition: all .2s ease;
 }
 .card-1 {
+    width: 100%;
     min-height: 222px;
     z-index: 50;
     position: relative;
@@ -714,11 +1021,11 @@ section {
     text-align: center; 
     margin: auto;
 }
-@media (max-width: 991px) {
-    .img-frame-1 {
-    }
-    .img-frame-2 {
-    }
+#street {
+    width: 100%;
+}
+.img-fluid {
+    width: 100%;
 }
 
 .sectionHome {
@@ -735,7 +1042,6 @@ section {
 iframe {
     background: #3A6F9A;
     vertical-align: middle;
-    max-height: 400px;
     max-width: 100%;
 }
 
@@ -799,6 +1105,12 @@ iframe {
     font-size: 75%;
 }
 .android-btn{
+    height: 60px; 
+    position: absolute; 
+    top: 50%; 
+    margin-top: 45px; 
+    left: 50%; 
+    margin-left: -120px;
     width: 240px;
     background-color: #000;
     border-color: #000;
@@ -932,7 +1244,6 @@ iframe {
 .sectionResearch { 
 }
 .section-heading {
-    font-size: 40px;
     color: #000000;
     opacity: 1;
     z-index: 20;
@@ -942,6 +1253,7 @@ iframe {
 }
 .section-heading-spacer {
     border-top: 1px solid #ccc;
+    margin-bottom: 3%;
 }
 .publication-spacer {
     border-top: 1px solid #ccc;
@@ -950,19 +1262,8 @@ iframe {
 }
 .section-lead {
     color: #555555;
-    font-size: 21px;
     font-weight: 200;
-    line-height: 1.4;
-}
-@media (max-width : 460px ) {
-    .section-heading {
-        text-align: center !important;
-        font-size: 24px;
-    }
-    .section-lead {
-        font-size: 16px;
-        text-align: center;
-    }
+    line-height: 1.3;
 }
 
 
@@ -1125,7 +1426,6 @@ header {
     color: rgb(70,70,70);
     font-weight: bold;
     margin-top: 0px;
-    font-size: 22px;
 }
 @media (max-width: 575px) {
     .press-heading {
@@ -1270,9 +1570,6 @@ header {
 .footer-item>ul>li>a {
     color: #fff;
 }
-.footer-item>h3 {
-    font-size: 16px;
-}
 .footer-logo {
     width: 100%;
     height: auto;
@@ -1347,13 +1644,11 @@ header {
 }
 .counter-Txt{
     text-align:center; 
-    font-size:26px; 
-    /*font-weight:bold;*/ 
+    font-weight:bold; 
     /*text-transform:uppercase;*/ 
 }
 .counter-Txt span{
     display:block; 
-    font-size:36px;
     font-weight: bold;
     padding-bottom: 8px;
 }

@@ -1,27 +1,31 @@
 allLoaded = function () {
 
-    var traffic_light1 = document.getElementById("traffic_light_three_g");
-    traffic_light1.className += " traffic_light_anim";
     setTimeout(function () {
-        // trigger car:
-        var car = document.getElementById("car");
-        car.className += " car";
 
-    }, 2200);
+        var traffic_light1 = document.getElementById("traffic_light_three_g");
+        traffic_light1.className += " traffic_light_anim";
+        setTimeout(function () {
+            // trigger car:
+            var car = document.getElementById("car");
+            car.className += " car";
 
-    setTimeout(function () {
-        
-        var traffic_light2 = document.getElementById("traffic_light_two_g");
-        traffic_light2.className += " traffic_light_anim";
-        
-    }, 1000);
+        }, 2200);
 
-    setTimeout(function () {
-        
-        var traffic_light3 = document.getElementById("traffic_light_one_g");
-        traffic_light3.className += " traffic_light_anim";
-        
-    }, 1700);
+        setTimeout(function () {
+
+            var traffic_light2 = document.getElementById("traffic_light_two_g");
+            traffic_light2.className += " traffic_light_anim";
+
+        }, 1000);
+
+        setTimeout(function () {
+
+            var traffic_light3 = document.getElementById("traffic_light_one_g");
+            traffic_light3.className += " traffic_light_anim";
+
+        }, 1700);
+
+    }, 6000);
 };
 
 
