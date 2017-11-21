@@ -63,7 +63,13 @@ $(function () {
         removeAllHover();
         $('#webapp_img').removeClass('webapp-hover');
         setTimeout(function () {
-            var imgsrc = i18nextify.i18next.t('ana.webapp.img1');
+            var lng = i18nextify.i18next.language;
+            var imgsrc = "";
+            if (lng === 'de') {
+                imgsrc = "assets/webapp/dashboard_1_de.PNG";
+            } else {
+                imgsrc = "assets/webapp/dashboard_1_en.PNG";
+            }
             $("#webapp_img").attr("src", imgsrc);
             $('#webapp_img').addClass('webapp-hover');
             $('#dashboard_1').addClass('dashboard-item-hover');
@@ -79,7 +85,13 @@ $(function () {
         removeAllHover();
         $('#webapp_img').removeClass('webapp-hover');
         setTimeout(function () {
-            var imgsrc = i18nextify.i18next.t('ana.webapp.img2');
+            var lng = i18nextify.i18next.language;
+            var imgsrc = "";
+            if (lng === 'de') {
+                imgsrc = "assets/webapp/dashboard_2_en.png";
+            } else {
+                imgsrc = "assets/webapp/dashboard_2_de.png";
+            }
             $("#webapp_img").attr("src", imgsrc);
             $('#webapp_img').addClass('webapp-hover');
             $('#dashboard_2').addClass('dashboard-item-hover');
@@ -95,7 +107,13 @@ $(function () {
         removeAllHover();
         $('#webapp_img').removeClass('webapp-hover');
         setTimeout(function () {
-            var imgsrc = i18nextify.i18next.t('ana.webapp.img3');
+            var lng = i18nextify.i18next.language;
+            var imgsrc = "";
+            if (lng === 'de') {
+                imgsrc = "assets/webapp/dashboard_3_de.png";
+            } else {
+                imgsrc = "assets/webapp/dashboard_3_en.png";
+            }
             $("#webapp_img").attr("src", imgsrc);
             $('#webapp_img').addClass('webapp-hover');
             $('#dashboard_3').addClass('dashboard-item-hover');
@@ -111,7 +129,13 @@ $(function () {
         removeAllHover();
         $('#webapp_img').removeClass('webapp-hover');
         setTimeout(function () {
-            var imgsrc = i18nextify.i18next.t('ana.webapp.img4');
+            var lng = i18nextify.i18next.language;
+            var imgsrc = "";
+            if (lng === 'de') {
+                imgsrc = "assets/webapp/dashboard_4_de.png";
+            } else {
+                imgsrc = "assets/webapp/dashboard_4_en.png";
+            }
             $("#webapp_img").attr("src", imgsrc);
             $('#webapp_img').addClass('webapp-hover');
             $('#dashboard_4').addClass('dashboard-item-hover');
@@ -127,7 +151,13 @@ $(function () {
         removeAllHover();
         $('#webapp_img').removeClass('webapp-hover');
         setTimeout(function () {
-            var imgsrc = i18nextify.i18next.t('ana.webapp.img5');
+            var lng = i18nextify.i18next.language;
+            var imgsrc = "";
+            if (lng === 'de') {
+                imgsrc = "assets/webapp/dashboard_5_de.png";
+            } else {
+                imgsrc = "assets/webapp/dashboard_5_en.png";
+            }
             $("#webapp_img").attr("src", imgsrc);
             $('#webapp_img').addClass('webapp-hover');
             $('#dashboard_5').addClass('dashboard-item-hover');
@@ -143,7 +173,13 @@ $(function () {
         removeAllHover();
         $('#webapp_img').removeClass('webapp-hover');
         setTimeout(function () {
-            var imgsrc = i18nextify.i18next.t('ana.webapp.img6');
+            var lng = i18nextify.i18next.language;
+            var imgsrc = "";
+            if (lng === 'de') {
+                imgsrc = "assets/webapp/caldendar_1_de.png";
+            } else {
+                imgsrc = "assets/webapp/caldendar_1_en.png";
+            }
             $("#webapp_img").attr("src", imgsrc);
             $('#webapp_img').addClass('webapp-hover');
             $('#calendar_1').addClass('dashboard-item-hover');
@@ -159,7 +195,13 @@ $(function () {
         removeAllHover();
         $('#webapp_img').removeClass('webapp-hover');
         setTimeout(function () {
-            var imgsrc = i18nextify.i18next.t('ana.webapp.img7');
+            var lng = i18nextify.i18next.language;
+            var imgsrc = "";
+            if (lng === 'de') {
+                imgsrc = "assets/webapp/caldendar_2_de.png";
+            } else {
+                imgsrc = "assets/webapp/caldendar_2_en.png";
+            }
             $("#webapp_img").attr("src", imgsrc);
             $('#webapp_img').addClass('webapp-hover');
             $('#calendar_2').addClass('dashboard-item-hover');
@@ -175,7 +217,13 @@ $(function () {
         removeAllHover();
         $('#webapp_img').removeClass('webapp-hover');
         setTimeout(function () {
-            var imgsrc = i18nextify.i18next.t('ana.webapp.img8');
+            var lng = i18nextify.i18next.language;
+            var imgsrc = "";
+            if (lng === 'de') {
+                imgsrc = "assets/webapp/track_1_de.png";
+            } else {
+                imgsrc = "assets/webapp/track_1_en.png";
+            }
             $("#webapp_img").attr("src", imgsrc);
             $('#webapp_img').addClass('webapp-hover');
             $('#track_1').addClass('dashboard-item-hover');
@@ -191,7 +239,13 @@ $(function () {
         removeAllHover();
         $('#webapp_img').removeClass('webapp-hover');
         setTimeout(function () {
-            var imgsrc = i18nextify.i18next.t('ana.webapp.img9');
+            var lng = i18nextify.i18next.language;
+            var imgsrc = "";
+            if (lng === 'de') {
+                imgsrc = "assets/webapp/track_2_de.png";
+            } else {
+                imgsrc = "assets/webapp/track_2_en.png";
+            }
             $("#webapp_img").attr("src", imgsrc);
             $('#webapp_img').addClass('webapp-hover');
             $('#track_2').addClass('dashboard-item-hover');
