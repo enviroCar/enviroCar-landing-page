@@ -80,11 +80,70 @@
         <div class="placeholder" style="height: 50px;"></div>
 
         <!-- Image Background Divider -->
-        <div style="width: 100%; height: 75%;">
-            <img id="mainbanner" src="assets/pexels3b.jpg" style="width: 100%; height: 100%;">
+        <!--        <div style="width: 100%; height: 75%;">
+                    <img id="mainbanner" src="assets/pexels3b.jpg" style="width: 100%; height: 100%;">
+                    <div class="transbox">
+                        <img alt="enviroCar logo" src="assets/logo_white.png">
+                        <p>Die <strong style="color: #ffffbb;">Citizen-Science</strong> cs.text</p>
+                    </div>
+                </div>-->
+        <!-- Image Background Divider -->
+        <div style="
+             width: 100%; 
+             height: 75%; 
+             position: relative;
+             overflow: hidden;">
+            <img id="mainbanner" src="assets/pixabay1.jpg" alt="enviroCar" style="
+                 height: auto;
+                 width: auto; 
+                 position: absolute; 
+                 left: -9999px; 
+                 right: -9999px; 
+                 bottom: 0;
+                 margin: auto;">
+            <div style="
+                 z-index: 300;
+                 height: 500px;
+                 max-height: 100%;
+                 width: 275px;
+                 max-width: 40%;
+                 position: absolute;
+                 right: 53%;
+                 bottom: 0;
+                 overflow:hidden;
+                 ">
+                <img id="banner-phone" src="assets/banner-phone.png" style="
+                     position: relative;
+                     height: 100%;
+                     width: 100%;
+                     z-index: 300;">
+                <img class="screenshot1" src="assets/screenshot1.png" alt="">
+                <img class="screenshot2" src="assets/screenshot2.png" alt="">
+                <img class="screenshot3" src="assets/screenshot3.png" alt="">
+                <img class="screenshot4" src="assets/screenshot4.png" alt="">
+                <img class="screenshot5" src="assets/screenshot5.png" alt="">
+            </div>
+            <!--            <img id="banner-phone" src="assets/banner-phone.png" style="
+                             z-index: 200;
+                             height: 90%;
+                             width: auto;
+                             position: absolute;
+                             right: 53%;
+                             bottom: -4%;">-->
             <div class="transbox">
                 <img alt="enviroCar logo" src="assets/logo_white.png">
                 <p>Die <strong style="color: #ffffbb;">Citizen-Science</strong> cs.text</p>
+            </div>
+            <div style="
+                 position: absolute;
+                 z-index: 100;
+                 width: 100%;
+                 height: 100%;
+                 background: red; /* For browsers that do not support gradients */
+                 background: -webkit-linear-gradient(left,rgba(255,0,0,0),rgba(0,0,0,0.4)); /*Safari 5.1-6*/
+                 background: -o-linear-gradient(right,rgba(255,0,0,0),rgba(0,0,0,0.4)); /*Opera 11.1-12*/
+                 background: -moz-linear-gradient(right,rgba(255,0,0,0),rgba(0,0,0,0.4)); /*Fx 3.6-15*/
+                 background: linear-gradient(to right, rgba(255,0,0,0), rgba(0,0,0,0.4)); /*Standard*/">
             </div>
         </div>
         <div class="transsbox">

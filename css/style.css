@@ -26,6 +26,7 @@
     }
 };
 
+
 /* material design icons */
 .material-icons.md-18 { font-size: 18px; }
 .material-icons.md-24 { font-size: 24px; }
@@ -396,7 +397,7 @@ div.transbox p {
         width: 100%; 
     }
     div.transbox {
-        background: rgba(0,0,0,0.7);  For browsers that do not support gradients 
+        background: rgba(0,0,0,0.7);  /*For browsers that do not support gradients */
         background: -webkit-linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0)); /* For Safari 5.1 to 6.0 */
         background: -o-linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0)); /* For Opera 11.1 to 12.0 */
         background: -moz-linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0)); /* For Firefox 3.6 to 15 */
@@ -450,10 +451,11 @@ div.transbox p {
     }
 }
 .transsbox {
+    z-index: 200;
     position: absolute;
-    left: 5%;
+    right: 15%;
     top: 17%;
-    width: 40%;
+    width: 35%;
     height: 45%;
     text-align: center;
     color: #fff;
@@ -1709,4 +1711,156 @@ header {
     padding-left: 5%;
     padding-top: 5%;
     padding-right: 5%;
+}
+
+
+.screenshot1 {
+    animation: 25s swipe1 linear infinite;
+    -webkit-animation: 25s swipe1 linear infinite;
+    position: absolute;
+    right: 2.4%;
+    bottom: 10.6%;
+    z-index: 199;
+    width: 95%;
+    height: 81.5%;
+}
+@keyframes swipe1 {
+    0% {
+        right: 2.4%;
+    }
+    18% {
+        right: 2.4%;
+    }
+    20% {
+        right: 96.7%;
+    }
+    97.99% {
+        right: 96.7%;
+    }
+    98% {
+        right: -90%;
+    }
+    99.9% {
+        right: 2.4%;
+    }
+    100% {
+        right: 2.4%;
+    }
+}
+.screenshot2 {
+    animation: 25s swipe2 linear infinite;
+    -webkit-animation: 25s swipe2 linear infinite;
+    position: absolute;
+    right: 2.4%;
+    bottom: 10.6%;
+    z-index: 198;
+    width: 95%;
+    height: 81.5%;
+}
+@keyframes swipe2 {
+    0% {
+        right: -90%;
+    }
+    18% {
+        right: -90%;
+    }
+    19.9% {
+        right: 2.4%;
+    }
+    38% {
+        right: 2.4%;
+    }
+    40% {
+        right: 96.7%;
+    }
+    100% {
+        right: 96.7%;
+    }
+}
+.screenshot3 {
+    animation: 25s swipe3 linear infinite;
+    -webkit-animation: 25s swipe3 linear infinite;
+    position: absolute;
+    right: 2.4%;
+    bottom: 10.6%;
+    z-index: 197;
+    width: 95%;
+    height: 81.5%;
+}
+@keyframes swipe3 {
+    0% {
+        right: -90%;
+    }
+    38% {
+        right: -90%;
+    }
+    39.9% {
+        right: 2.4%;
+    }
+    58% {
+        right: 2.4%;
+    }
+    60% {
+        right: 96.7%;
+    }
+    100% {
+        right: 96.7%;
+    }
+}
+.screenshot4 {
+    animation: 25s swipe4 linear infinite;
+    -webkit-animation: 25s swipe4 linear infinite;
+    position: absolute;
+    right: 2.4%;
+    bottom: 10.6%;
+    z-index: 196;
+    width: 95%;
+    height: 81.5%;
+}
+@keyframes swipe4 {
+    0% {
+        right: -90%;
+    }
+    58% {
+        right: -90%;
+    }
+    59.9% {
+        right: 2.4%;
+    }
+    78% {
+        right: 2.4%;
+    }
+    80% {
+        right: 96.7%;
+    }
+    100% {
+        right: 96.7%;
+    }
+}
+.screenshot5 {
+    animation: 25s swipe5 linear infinite;
+    -webkit-animation: 25s swipe5 linear infinite;
+    position: absolute;
+    right: 2.4%;
+    bottom: 10.6%;
+    z-index: 195;
+    width: 95%;
+    height: 81.5%;
+}
+@keyframes swipe5 {
+    0% {
+        right: -90%;
+    }
+    78% {
+        right: -90%;
+    }
+    79.9% {
+        right: 2.4%;
+    }
+    98% {
+        right: 2.4%;
+    }
+    100% {
+        right: 96.7%;
+    }
 }
