@@ -1713,37 +1713,37 @@ header {
 }
 
 #mainbannerXL{
-   display: block;
+    display: block;
 }
 #mainbannerMD{
-   display: block;
+    display: block;
 }
 
 @media only screen and (max-width: 1530px){ 
-   #mainbannerXS{
-     display: block !important;
-   }
+    #mainbannerXS{
+        display: block !important;
+    }
 
-   #mainbannerMD{
-     display: none !important;
-   }
-   
-   #mainbannerXL{
-     display: none !important;
-   }
+    #mainbannerMD{
+        display: none !important;
+    }
+
+    #mainbannerXL{
+        display: none !important;
+    }
 }
 @media only screen and (min-width: 1531px) and (max-width: 3000px){ 
-   #mainbannerXS{
-     display: none !important;
-   }
+    #mainbannerXS{
+        display: none !important;
+    }
 
-   #mainbannerMD{
-     display: block !important;
-   }
-   
-   #mainbannerXL{
-     display: none !important;
-   }
+    #mainbannerMD{
+        display: block !important;
+    }
+
+    #mainbannerXL{
+        display: none !important;
+    }
 }
 
 .screenshot1 {
@@ -1778,6 +1778,215 @@ header {
     100% {
         right: 2.4%;
     }
+}
+
+.scr2speed {
+    animation: swipe2spd 25s linear infinite;
+    -webkit-animation: swipe2spd 25s linear infinite;
+    display: flex;
+    align-items: flex-end;
+    justify-content:flex-end;
+    font-size: 50px;
+    color: #fff;
+    /*background-color: red;*/
+    position: absolute;
+    right: 38%;
+    bottom: 37%;
+    z-index: 198;
+    width: 30%;
+    height: 10%;
+    margin: auto;
+}
+.scr2speed:after {
+    animation: scr2spd 25s linear infinite;
+    -webkit-animation: scr2spd 25s linear infinite;
+    display: block;
+    font-size: 50px;
+    color: #fff;
+    z-index: 199;
+    content: "39";
+}
+@keyframes swipe2spd {
+    0% {
+        right: -60%;
+    }
+    18% {
+        right: -60%;
+    }
+    19.9% {
+        right: 38%;
+    }
+    38% {
+        right: 38%;
+    }
+    40% {
+        right: 126.7%;
+    }
+    100% {
+        right: 126.7%;
+    }
+}
+@keyframes scr2spd {
+    0% {
+        content: "39";
+    }
+    19.9% {
+        content: "39";
+    }
+    22% {
+        content: "50";
+    }
+    24% {
+        content: "71";
+    }
+    26% {
+        content: "98";
+    }
+    28% {
+        content: "129";
+    }
+    30% {
+        content: "123";
+    }
+    32% {
+        content: "118";
+    }
+    34% {
+        content: "100";
+    }
+    36% {
+        content: "84";
+    }
+    38% {
+        content: "62";
+    }
+    40% {
+        content: "39";
+    }
+    100% {
+        content: "39";
+    }
+}
+
+.scr2time {
+    animation: swipe2time 25s linear infinite;
+    -webkit-animation: swipe2time 25s linear infinite;
+    display: flex;
+    align-items: flex-end;
+    justify-content:flex-end;
+    font-size: 50px;
+    color: #fff;
+    /*background-color: red;*/
+    position: absolute;
+    right: 35%;
+    bottom: 71%;
+    z-index: 198;
+    width: 30%;
+    height: 10%;
+    margin: auto;
+}
+.scr2time:after {
+    animation: scr2time 25s linear infinite;
+    -webkit-animation: scr2time 25s linear infinite;
+    display: block;
+    font-size: 31px;
+    color: #0488bd;
+    z-index: 199;
+    content: "08:20";
+}
+@keyframes scr2time {
+    0% {
+        content: "08:20";
+    }
+    19.9% {
+        content: "08:20";
+    }
+    24% {
+        content: "08:21";
+    }
+    28% {
+        content: "08:22";
+    }
+    32% {
+        content: "08:23";
+    }
+    36% {
+        content: "08:24";
+    }
+    40% {
+        content: "08:25";
+    }
+    100% {
+        content: "08:25";
+    }
+}
+@keyframes swipe2time {
+    0% {
+        right: -60%;
+    }
+    18% {
+        right: -60%;
+    }
+    19.9% {
+        right: 38%;
+    }
+    38% {
+        right: 38%;
+    }
+    40% {
+        right: 126.7%;
+    }
+    100% {
+        right: 126.7%;
+    }
+}
+@keyframes tempomat {
+    0% {
+        right: -90%;
+        -webkit-transform: rotate(-90deg);
+    }
+    18% {
+        right: -90%;
+        -webkit-transform: rotate(-90deg);
+    }
+    19.9% {
+        right: 47%;
+        -webkit-transform: rotate(-80deg);
+    }
+    22% {
+        -webkit-transform: rotate(-57deg);
+    }
+    28% {
+        -webkit-transform: rotate(55deg);
+    }
+    28.5% {
+        -webkit-transform: rotate(25deg);
+    }
+    30% {
+        -webkit-transform: rotate(40deg);
+    }
+    38% {
+        right: 47%;
+        -webkit-transform: rotate(-60deg);
+    }
+    40% {
+        right: 96.7%;
+        -webkit-transform: rotate(-90deg);
+    }
+    100% {
+        right: 96.7%;
+        -webkit-transform: rotate(-90deg);
+    }
+}
+.scr2arrow {
+    animation: 25s tempomat linear infinite;
+    -webkit-animation: 25s tempomat linear infinite;
+    position: absolute;
+    right: 47%;
+    bottom: 23%;
+    z-index: 2000;
+    width: auto;
+    height: 37%;
 }
 .screenshot2 {
     animation: 25s swipe2 linear infinite;
