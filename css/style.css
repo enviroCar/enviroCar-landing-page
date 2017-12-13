@@ -455,7 +455,8 @@ div.transbox p {
     position: absolute;
     right: 15%;
     top: 17%;
-    width: 35%;
+    width: 30%;
+    max-width:700px;
     height: 45%;
     text-align: center;
     color: #fff;
@@ -629,26 +630,23 @@ div.transbox p {
         height: 102px;
     }
     .nav-item {
-        font-size: 48px;
+        font-size: 21px;
     }
     .lngOption {
-        font-size: 36px;
+        font-size: 18px;
     }
     .transsbox {
-        font-size: 86px;
+        font-size: 36px;
+        right: 30% !important;
     }
     .features-list-item > i {
-        font-size: 96px !important;
-    }
-    .lead {
         font-size: 48px !important;
-        margin-bottom: 92px !important;
     }
     .section-heading {
-        font-size: 64px;
+        font-size: 36px;
     }
     .section-lead {
-        font-size: 48px;
+        font-size: 24px;
     }
     .container-fluid {
         padding-left: 20% !important;
@@ -701,26 +699,27 @@ div.transbox p {
         height: 84px;
     }
     .nav-item {
-        font-size: 36px;
+        font-size: 21px;
     }
     .lngOption {
-        font-size: 32px;
+        font-size: 18px;
     }
     .transsbox {
-        font-size: 64px;
+        font-size: 36px;
+        right: 20% !important;
     }
     .features-list-item > i {
-        font-size: 64px !important;
+        font-size: 48px !important;
+    }
+    .section-heading {
+        font-size: 36px;
+    }
+    .section-lead {
+        font-size: 24px;
     }
     .lead {
         font-size: 36px !important;
         margin-bottom: 78px !important;
-    }
-    .section-heading {
-        font-size: 48px;
-    }
-    .section-lead {
-        font-size: 36px;
     }
     .container-fluid {
         padding-left: 20% !important;
@@ -783,20 +782,20 @@ iframe {
         font-size: 18px;
     }
     .transsbox {
-        font-size: 36px;
+        font-size: 28px;
     }
     .features-list-item > i {
         font-size: 48px !important;
-    }
-    .lead {
-        font-size: 24px !important;
-        margin-bottom: 64px !important;
     }
     .section-heading {
         font-size: 36px;
     }
     .section-lead {
         font-size: 24px;
+    }
+    .lead {
+        font-size: 24px !important;
+        margin-bottom: 64px !important;
     }
     .container-fluid {
         padding-left: 10% !important;
@@ -1713,6 +1712,39 @@ header {
     padding-right: 5%;
 }
 
+#mainbannerXL{
+   display: block;
+}
+#mainbannerMD{
+   display: block;
+}
+
+@media only screen and (max-width: 1530px){ 
+   #mainbannerXS{
+     display: block !important;
+   }
+
+   #mainbannerMD{
+     display: none !important;
+   }
+   
+   #mainbannerXL{
+     display: none !important;
+   }
+}
+@media only screen and (min-width: 1531px) and (max-width: 3000px){ 
+   #mainbannerXS{
+     display: none !important;
+   }
+
+   #mainbannerMD{
+     display: block !important;
+   }
+   
+   #mainbannerXL{
+     display: none !important;
+   }
+}
 
 .screenshot1 {
     animation: 25s swipe1 linear infinite;
