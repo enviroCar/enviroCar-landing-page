@@ -1798,8 +1798,11 @@ header {
     margin: auto;
 }
 .scr2speed:after {
-    animation: scr2spd 25s linear infinite;
     -webkit-animation: scr2spd 25s linear infinite;
+    -moz-animation:    scr2spd 25s linear infinite;
+    -o-animation:      scr2spd 25s linear infinite;
+    -ms-transition:    scr2spd 25s linear infinite;
+    animation:         scr2spd 25s linear infinite;
     display: block;
     font-size: 50px;
     color: #fff;
@@ -1869,8 +1872,11 @@ header {
 }
 
 .scr2time {
-    animation: swipe2time 25s linear infinite;
     -webkit-animation: swipe2time 25s linear infinite;
+    -moz-animation:    swipe2time 25s linear infinite;
+    -o-animation:      swipe2time 25s linear infinite;
+    -ms-transition:    swipe2time 25s linear infinite;
+    animation:         swipe2time 25s linear infinite;
     display: flex;
     align-items: flex-end;
     justify-content:flex-end;
@@ -1886,8 +1892,11 @@ header {
     margin: auto;
 }
 .scr2time:after {
-    animation: scr2time 25s linear infinite;
     -webkit-animation: scr2time 25s linear infinite;
+    -moz-animation:    scr2time 25s linear infinite;
+    -o-animation:      scr2time 25s linear infinite;
+    -ms-transition:    scr2time 25s linear infinite;
+    animation:         scr2time 25s linear infinite;
     display: block;
     font-size: 31px;
     color: #0488bd;
@@ -1979,8 +1988,11 @@ header {
     }
 }
 .scr2arrow {
-    animation: 25s tempomat linear infinite;
     -webkit-animation: 25s tempomat linear infinite;
+    -moz-animation:    25s tempomat linear infinite;
+    -o-animation:      25s tempomat linear infinite;
+    -ms-transition:    25s tempomat linear infinite;
+    animation:         25s tempomat linear infinite;
     position: absolute;
     right: 47%;
     bottom: 23%;
@@ -1989,8 +2001,11 @@ header {
     height: 37%;
 }
 .screenshot2 {
-    animation: 25s swipe2 linear infinite;
     -webkit-animation: 25s swipe2 linear infinite;
+    -moz-animation:    25s swipe2 linear infinite;
+    -o-animation:      25s swipe2 linear infinite;
+    -ms-transition:    25s swipe2 linear infinite;
+    animation:         25s swipe2 linear infinite;
     position: absolute;
     right: 2.4%;
     bottom: 10.6%;
@@ -2018,17 +2033,19 @@ header {
         right: 96.7%;
     }
 }
-.screenshot3 {
-    animation: 25s swipe3 linear infinite;
-    -webkit-animation: 25s swipe3 linear infinite;
+.scr3top {
+    -webkit-animation: 25s swipe3top linear infinite;
+    -moz-animation:    25s swipe3top linear infinite;
+    -o-animation:      25s swipe3top linear infinite;
+    -ms-transition:    25s swipe3top linear infinite;
+    animation:         25s swipe3top linear infinite;
     position: absolute;
-    right: 2.4%;
-    bottom: 10.6%;
-    z-index: 197;
-    width: 95%;
-    height: 81.5%;
+    right: 3.7%;
+    top: 8%;
+    z-index: 198;
+    width: 92.8%;
 }
-@keyframes swipe3 {
+@keyframes swipe3top {
     0% {
         right: -90%;
     }
@@ -2036,10 +2053,10 @@ header {
         right: -90%;
     }
     39.9% {
-        right: 2.4%;
+        right: 3.7%;
     }
     58% {
-        right: 2.4%;
+        right: 3.7%;
     }
     60% {
         right: 96.7%;
@@ -2048,9 +2065,84 @@ header {
         right: 96.7%;
     }
 }
+.screenshot3 {
+    -webkit-animation: 25s swipe3 linear infinite;
+    -moz-animation:    25s swipe3 linear infinite;
+    -o-animation:      25s swipe3 linear infinite;
+    -ms-transition:    25s swipe3 linear infinite;
+    animation:         25s swipe3 linear infinite;
+    position: absolute;
+    right: 3.7%;
+    top: 8%;
+    z-index: 197;
+    width: 92.8%;
+    opacity: 0;
+}
+@keyframes swipe3 {
+    0% {
+        right: -90%;
+        opacity: 0;
+    }
+    37.9% {
+        opacity: 0;
+    }
+    38% {
+        right: -90%;
+        top: 8%;
+        opacity: 1;
+    }
+    39.9% {
+        right: 3.7%;
+        top: 8%;
+    }
+    43% {
+        top: 8%;
+    }
+    43.5% {
+        top: -33%;
+    }
+    46.9% {
+        top: -36%;
+    }
+    47.4% {
+        top: -76%;
+    }
+    50.5% {
+        top: -80%;
+    }
+    51% {
+        top: -118%;
+    }
+    54% {
+        top: -120%;
+    }
+    54.5% {
+        top: -153%;
+    }
+    58% {
+        right: 3.7%;
+        top: -153%;
+    }
+    60% {
+        right: 96.7%;
+        top: -153%;
+        opacity: 1;
+    }
+    60.5% {
+        opacity: 0;
+    }
+    100% {
+        right: 96.7%;
+        top: -153%;
+        opacity: 0;
+    }
+}
 .screenshot4 {
-    animation: 25s swipe4 linear infinite;
     -webkit-animation: 25s swipe4 linear infinite;
+    -moz-animation:    25s swipe4 linear infinite;
+    -o-animation:      25s swipe4 linear infinite;
+    -ms-transition:    25s swipe4 linear infinite;
+    animation:         25s swipe4 linear infinite;
     position: absolute;
     right: 2.4%;
     bottom: 10.6%;
@@ -2079,8 +2171,11 @@ header {
     }
 }
 .screenshot5 {
-    animation: 25s swipe5 linear infinite;
     -webkit-animation: 25s swipe5 linear infinite;
+    -moz-animation:    25s swipe5 linear infinite;
+    -o-animation:      25s swipe5 linear infinite;
+    -ms-transition:    25s swipe5 linear infinite;
+    animation:         25s swipe5 linear infinite;
     position: absolute;
     right: 2.4%;
     bottom: 10.6%;
