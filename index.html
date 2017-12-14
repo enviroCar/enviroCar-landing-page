@@ -137,15 +137,24 @@
                      height: 100%;
                      width: 100%;
                      z-index: 300;">
-                <img class="screenshot1" src="assets/screenshot1.png" alt="">
-                <img class="screenshot2" src="assets/screenshot2.png" alt="">
-                <img class="scr2arrow" src="assets/tempomat-arrow.png" alt="">
-                <div class="scr2time"></div>
-                <div class="scr2speed"></div>
-                <img class="scr3top" src="assets/scr3-top.png" alt="">
-                <img class="screenshot3" src="assets/screenshot3.png" alt="">
-                <img class="screenshot4" src="assets/screenshot4.png" alt="">
-                <img class="screenshot5" src="assets/screenshot5.png" alt="">
+                <div style="    
+                     position: absolute;
+                     z-index: 30000;
+                     overflow: hidden;
+                     top: 8%;
+                     bottom: 10.5%;
+                     left: 3.5%;
+                     right: 3.5%;">
+                    <img class="screenshot1" src="assets/screenshot1.png" alt="">
+                    <img class="screenshot2" src="assets/screenshot2.png" alt="">
+                    <img class="scr2arrow" src="assets/tempomat-arrow.png" alt="">
+                    <div class="scr2time"></div>
+                    <div class="scr2speed"></div>
+                    <img class="scr3top" src="assets/scr3-top.png" alt="">
+                    <img class="screenshot3" src="assets/screenshot3.png" alt="">
+                    <img class="screenshot4" src="assets/screenshot4.png" alt="">
+                    <img class="screenshot5" src="assets/screenshot5.png" alt="">
+                </div>
             </div>
             <!--            <img id="banner-phone" src="assets/banner-phone.png" style="
                              z-index: 200;
@@ -176,7 +185,7 @@
             <p>Die <strong style="color: #ffffbb;">Citizen-Science</strong> cs.text</p>
         </div>
 
-        <!-- Section Short Description ADAPTER ; APP ; ANALYSIS-->
+        <!-- Section Short Description COLLECT ; SHARE ; ANALYZE-->
         <section id="howto" class="sectionHome">
             <div class="container-fluid">
                 <!-- Page Heading -->
@@ -196,7 +205,7 @@
                     </div>
                     <div class="col-lg-4 col-md-4 col-sm-4 portfolio-item">
                         <div class="card card-1 card-anim card-step">
-                            <a class="js-scroll-trigger" href="#share"><div style="position:relative;"><img class="card-img-top" src="assets/share.png" alt="">
+                            <a class="js-scroll-trigger" href="#share"><div style="position:relative;"><img class="card-img-top" src="assets/home_3.png" alt="">
                                     <img class="card-img-step" src="assets/step_2.png"></div></a>
                             <div class="card-body">
                                 <h4 class="card-title card-step-title">
@@ -228,7 +237,9 @@
 
         <!-- Platform -->
         <section id="platform" class="sectionPlatform">
-            <h2 class="section-heading" style="text-align: center;">nav.platform</h2>
+            <div class="container-fluid row col-12 nomargin">
+                <h2 class="section-heading col-8" style="text-align: center; margin:auto;">platform.txt1 <strong>platform.txt2</strong> platform.txt3</p></h2>
+            </div>
             <hr class="col-6 section-heading-spacer">
             <div class="row container-fluid col-12 nomargin">
                 <div class="row container-fluid col-lg-5 col-md-5 col-sm-12 col-12 noPadding nomargin">
@@ -242,12 +253,10 @@
                 <div class="row col-lg-6 col-md-6 col-sm-12 col-12 nomargin">
                     <div class="col-12 mr-auto noPadding nomargin">
                         <div class="clearfix"></div>
-                        <p class="section-lead nomargin">
-                            platform.txt1 <strong>platform.txt2</strong> platform.txt3</p>
-                        <p class="section-lead"  style="margin-left: 5%; margin-bottom: 5%;"><br>platform.contains</p>
+                        <p class="section-lead"  style="margin-bottom: 5%;"><br>platform.contains</p>
                         <div class='row'>
                             <div class='col-2 features-list-item'>
-                                <i class="ec-features material-icons md-36 " style="margin-left: 5%;">check_circle</i>
+                                <i class="ec-features material-icons md-36 ">phone_android</i>
                             </div>
                             <div class='col-10 lead'>
                                 <p class='ec-features'>platform.one</p>
@@ -255,7 +264,7 @@
                         </div>
                         <div class='row'>
                             <div class='col-2 features-list-item'>
-                                <i class="ec-features material-icons md-36 ">check_circle</i>
+                                <i class="ec-features material-icons md-36 ">cloud_upload</i>
                             </div>
                             <div class='col-10 lead'>
                                 <p class='ec-features'>platform.two</p>
@@ -263,21 +272,29 @@
                         </div>
                         <div class='row'>
                             <div class='col-2 features-list-item'>
-                                <i class ="ec-features material-icons md-36 ">check_circle</i>
+                                <i class ="ec-features material-icons md-36 ">art_track</i>
                             </div>
                             <div class='col-10 lead'>
                                 <p class='ec-features'>platform.three</p>
                             </div>
                         </div>
-                        <div class='row'>
-                            <div class='col-2 features-list-item'>
-                                <i class="ec-features material-icons md-36 ">check_circle</i>
-                            </div>
-                            <div class='col-10 lead'>
-                                <p class='ec-features'>platform.four</p>
-                            </div>
-                        </div>
                     </div>
+                </div>
+            </div>
+        </section>
+        <!-- enviroCar numbers -->
+        <section id="statistics" class="bg-primary">
+            <div class="c-no container-fluid">
+                <div class="row" id="counter">
+                    <div class="col-4 counter-Txt">
+                        <i class="material-icons md-60">people</i>
+                        <span class="counter-users" data-count="">0</span> rsc.members </div>
+                    <div class="col-4 counter-Txt">
+                        <i class="material-icons md-60">airport_shuttle</i>
+                        <span class="counter-tracks" data-count="">0</span> rsc.tracks </div>
+                    <div class="col-4 counter-Txt margin-bot-35">
+                        <i class="material-icons md-60">slow_motion_video</i>
+                        <span class="counter-measurements" data-count="">0</span> rsc.measures </div>
                 </div>
             </div>
         </section>
@@ -289,10 +306,12 @@
                         <hr class="section-heading-spacer">
                         <div class="clearfix"></div>
                         <h2 class="section-heading">platform.app</h2>
-                        <p class="section-lead nomargin">platform.app1</p>
+                        <p class="section-lead nomargin">platform.app1<a href="https://www.amazon.de/Cartrend-80290-Bluetooth-Controller-Smartphones/dp/B00CCZJPCU/ref=sr_1_2?ie=UTF8&qid=1513252484&sr=8-2&keywords=cartrend+obd2">
+                                platform.app2
+                            </a></p>
                         <!-- apple store button -->
 
-                        <!--                    <div style="height: 300px;">-->
+                        <!--<div style="height: 300px;">-->
                         <div style="height: 240px;">
                             <a class="btn btn-lg big-btn android-btn" href="https://play.google.com/store/apps/details?id=org.envirocar.app&hl=de" target="_blank">
                                 <img width="60" class="pull-left" src="https://www.userlogos.org/files/logos/jumpordie/google_play_04.png"><div class="btn-text"><small>GET IT ON</small><br><strong>Google Play</strong></div></a>
@@ -311,6 +330,51 @@
 
         <!-- Image Background Divider parall ax -->
         <div class="parallax parallax-two"></div>
+
+        <!--Share -->
+        <section id="share" class="sectionShare"><div class="row container-fluid col-12 nomargin">
+                <div class="container-fluid row col-12 nomargin">
+                    <h2 class="section-heading col-8" style="text-align: center; margin:auto;">share</h2>
+                </div>
+                <hr class="col-6 section-heading-spacer">
+                <div style="margin-bottom: 36px;">
+                    <div class="row container-fluid col-lg-5 col-md-5 col-sm-12 col-12 noPadding nomargin">
+                        <div class="col-12 mr-auto img-frame img-frame-1 noPadding">
+                            <span class="helper"></span>
+                            <!--<img class="img-fluid" src="assets/ec_platform_overview.png" alt="">-->
+                            <img class="img-fluid" src="assets/app_2.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-1 col-md-1 hidden-sm hidden-xs col-0"></div>
+                    <div class="row col-lg-6 col-md-6 col-sm-12 col-12 nomargin">
+                        <div class="col-12 mr-auto noPadding nomargin">
+                            <p class="section-lead"><br>share1</p>
+                            <p class="section-lead"  style="margin-bottom: 5%;">
+                                <span class="catch-phrase2">share2</span> share3</p>
+                            <p class="section-lead nomargin">
+                                share4<span class="catch-phrase2"> rsc.txt2</span>rsc.txt3<span class="catch-phrase2">rsc.txt4</span>rsc.txt5</p>
+                        </div>
+                    </div>
+                </div>
+
+<!--                <div class="container-fluid row col-12 noPadding nomargin">
+                    
+                    <div class="row container-fluid col-lg-12 col-md-12 col-sm-12 col-12 noPadding nomargin">
+                        <div class="col-lg-2 col-md-2 col-sm-1 col-xs-1 col-1 noPadding" style="z-index: 1000; background-color: #fff;"></div>
+                        <div class="col-lg-8 col-md-8 col-sm-10 col-xs-10 col-10 mr-auto img-frame img-frame-1 noPadding">
+                            <img id="street" class="img-fluid" src="assets/street.png" alt="">
+                            <img id="car" src="assets/car.png">
+                            <img id="traffic_light_one" class="traffic-light traffic_light_1" src="assets/traffic_light_red.png">
+                            <img id="traffic_light_two" class="traffic-light traffic_light_2" src="assets/traffic_light_red.png">
+                            <img id="traffic_light_three" class="traffic-light traffic_light_3" src="assets/traffic_light_red.png">
+                            <img id="traffic_light_one_g" class="traffic-light traffic_light_1 traffic_light_green" src="assets/traffic_light_green.png">
+                            <img id="traffic_light_two_g" class="traffic-light traffic_light_2 traffic_light_green" src="assets/traffic_light_green.png">
+                            <img id="traffic_light_three_g" class="traffic-light traffic_light_3 traffic_light_green" src="assets/traffic_light_green.png">
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-1 col-xs-1 col-1 noPadding" style="z-index: 1000; background-color: #fff;"></div>
+                    </div>
+                </div>-->
+        </section>
 
         <!--Analysis -->
         <section id="analysis" class="sectionAnalysis">
@@ -382,24 +446,6 @@
                 </div>
             </div>
         </section>
-
-        <!-- enviroCar numbers -->
-        <section id="statistics" class="bg-primary">
-            <div class="c-no container-fluid">
-                <div class="row" id="counter">
-                    <div class="col-4 counter-Txt">
-                        <i class="material-icons md-60">people</i>
-                        <span class="counter-users" data-count="">0</span> rsc.members </div>
-                    <div class="col-4 counter-Txt">
-                        <i class="material-icons md-60">airport_shuttle</i>
-                        <span class="counter-tracks" data-count="">0</span> rsc.tracks </div>
-                    <div class="col-4 counter-Txt margin-bot-35">
-                        <i class="material-icons md-60">slow_motion_video</i>
-                        <span class="counter-measurements" data-count="">0</span> rsc.measures </div>
-                </div>
-            </div>
-        </section>
-
 
         <!-- Press -->
         <section id= "press" class="sectionPress" style="background-color: #FFF;">
