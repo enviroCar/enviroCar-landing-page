@@ -453,7 +453,7 @@ div.transbox p {
 .transsbox {
     z-index: 200;
     position: absolute;
-    right: 15%;
+    left: 50% !important;
     top: 17%;
     width: 30%;
     max-width:700px;
@@ -637,7 +637,7 @@ div.transbox p {
     }
     .transsbox {
         font-size: 36px;
-        right: 30% !important;
+        left: 50% !important;
     }
     .features-list-item > i {
         font-size: 48px !important;
@@ -706,7 +706,6 @@ div.transbox p {
     }
     .transsbox {
         font-size: 36px;
-        right: 20% !important;
     }
     .features-list-item > i {
         font-size: 48px !important;
@@ -1130,6 +1129,11 @@ iframe {
     text-shadow: none;
     color: #fff;
     line-height: 24px;
+}
+
+/* Share Section */
+.sectionShare { 
+    background-color: #fff; 
 }
 
 /* Analysis Section */
@@ -1750,33 +1754,31 @@ header {
     animation: 25s swipe1 linear infinite;
     -webkit-animation: 25s swipe1 linear infinite;
     position: absolute;
-    right: 2.4%;
-    bottom: 10.6%;
     z-index: 199;
-    width: 95%;
-    height: 81.5%;
+    width: 100%;
+    height: 100%;
 }
 @keyframes swipe1 {
     0% {
-        right: 2.4%;
+        right: 0%;
     }
     18% {
-        right: 2.4%;
+        right: 0%;
     }
     20% {
-        right: 96.7%;
+        right: 100%;
     }
     97.99% {
-        right: 96.7%;
+        right: 100%;
     }
     98% {
-        right: -90%;
+        right: -100%;
     }
     99.9% {
-        right: 2.4%;
+        right: 0%;
     }
     100% {
-        right: 2.4%;
+        right: 0%;
     }
 }
 
@@ -1791,7 +1793,7 @@ header {
     /*background-color: red;*/
     position: absolute;
     right: 38%;
-    bottom: 37%;
+    bottom: 32%;
     z-index: 198;
     width: 30%;
     height: 10%;
@@ -1880,12 +1882,10 @@ header {
     display: flex;
     align-items: flex-end;
     justify-content:flex-end;
-    font-size: 50px;
     color: #fff;
-    /*background-color: red;*/
     position: absolute;
-    right: 35%;
-    bottom: 71%;
+    right: 36%;
+    bottom: 75%;
     z-index: 198;
     width: 30%;
     height: 10%;
@@ -1937,10 +1937,10 @@ header {
         right: -60%;
     }
     19.9% {
-        right: 38%;
+        right: 36%;
     }
     38% {
-        right: 38%;
+        right: 36%;
     }
     40% {
         right: 126.7%;
@@ -1951,11 +1951,11 @@ header {
 }
 @keyframes tempomat {
     0% {
-        right: -90%;
+        right: -100%;
         -webkit-transform: rotate(-90deg);
     }
     18% {
-        right: -90%;
+        right: -100%;
         -webkit-transform: rotate(-90deg);
     }
     19.9% {
@@ -1979,11 +1979,11 @@ header {
         -webkit-transform: rotate(-60deg);
     }
     40% {
-        right: 96.7%;
+        right: 100%;
         -webkit-transform: rotate(-90deg);
     }
     100% {
-        right: 96.7%;
+        right: 100%;
         -webkit-transform: rotate(-90deg);
     }
 }
@@ -1994,8 +1994,8 @@ header {
     -ms-transition:    25s tempomat linear infinite;
     animation:         25s tempomat linear infinite;
     position: absolute;
-    right: 47%;
-    bottom: 23%;
+    right: 50%;
+    bottom: 22%;
     z-index: 2000;
     width: auto;
     height: 37%;
@@ -2007,30 +2007,28 @@ header {
     -ms-transition:    25s swipe2 linear infinite;
     animation:         25s swipe2 linear infinite;
     position: absolute;
-    right: 2.4%;
-    bottom: 10.6%;
     z-index: 198;
-    width: 95%;
-    height: 81.5%;
+    width: 100%;
+    height: 100%;
 }
 @keyframes swipe2 {
     0% {
-        right: -90%;
+        right: -100%;
     }
     18% {
-        right: -90%;
+        right: -100%;
     }
     19.9% {
-        right: 2.4%;
+        right: 0%;
     }
     38% {
-        right: 2.4%;
+        right: 0%;
     }
     40% {
-        right: 96.7%;
+        right: 100%;
     }
     100% {
-        right: 96.7%;
+        right: 100%;
     }
 }
 .scr3top {
@@ -2040,29 +2038,28 @@ header {
     -ms-transition:    25s swipe3top linear infinite;
     animation:         25s swipe3top linear infinite;
     position: absolute;
-    right: 3.7%;
-    top: 8%;
+    top: 0;
     z-index: 198;
-    width: 92.8%;
+    width: 100%;
 }
 @keyframes swipe3top {
     0% {
-        right: -90%;
+        right: -100%;
     }
     38% {
-        right: -90%;
+        right: -100%;
     }
     39.9% {
-        right: 3.7%;
+        right: 0;
     }
     58% {
-        right: 3.7%;
+        right: 0;
     }
     60% {
-        right: 96.7%;
+        right: 100%;
     }
     100% {
-        right: 96.7%;
+        right: 100%;
     }
 }
 .screenshot3 {
@@ -2072,31 +2069,30 @@ header {
     -ms-transition:    25s swipe3 linear infinite;
     animation:         25s swipe3 linear infinite;
     position: absolute;
-    right: 3.7%;
-    top: 8%;
     z-index: 197;
-    width: 92.8%;
+    width: 100%;
+    top:0%;
     opacity: 0;
 }
 @keyframes swipe3 {
     0% {
-        right: -90%;
+        right: -100%;
         opacity: 0;
     }
     37.9% {
         opacity: 0;
     }
     38% {
-        right: -90%;
-        top: 8%;
+        right: -100%;
+        top:0%;
         opacity: 1;
     }
     39.9% {
-        right: 3.7%;
-        top: 8%;
+        right: 0%;
+        top:0%;
     }
     43% {
-        top: 8%;
+        top:0%;
     }
     43.5% {
         top: -33%;
@@ -2120,11 +2116,11 @@ header {
         top: -153%;
     }
     58% {
-        right: 3.7%;
+        right: 0%;
         top: -153%;
     }
     60% {
-        right: 96.7%;
+        right: 100%;
         top: -153%;
         opacity: 1;
     }
@@ -2132,42 +2128,75 @@ header {
         opacity: 0;
     }
     100% {
-        right: 96.7%;
+        right: 100%;
         top: -153%;
         opacity: 0;
     }
 }
+.scr4top {
+    -webkit-animation: 25s swipe4top linear infinite;
+    -moz-animation:    25s swipe4top linear infinite;
+    -o-animation:      25s swipe4top linear infinite;
+    -ms-transition:    25s swipe4top linear infinite;
+    animation:         25s swipe4top linear infinite;
+    position: absolute;
+    top: 0;
+    z-index: 196;
+    width: 100%;
+    height: 60%;
+}
+@keyframes swipe4top {
+    0% {
+        right: -100%;
+    }
+    58% {
+        right: -100%;
+    }
+    59.9% {
+        right: 0%;
+        height: 60%;
+    }
+    78% {
+        right: 0%;
+        height: 10%;
+    }
+    80% {
+        right: 100%;
+    }
+    100% {
+        right: 100%;
+    }
+}
 .screenshot4 {
-    -webkit-animation: 25s swipe4 linear infinite;
+/*    -webkit-animation: 25s swipe4 linear infinite;
     -moz-animation:    25s swipe4 linear infinite;
     -o-animation:      25s swipe4 linear infinite;
     -ms-transition:    25s swipe4 linear infinite;
-    animation:         25s swipe4 linear infinite;
+    animation:         25s swipe4 linear infinite;*/
     position: absolute;
-    right: 2.4%;
-    bottom: 10.6%;
     z-index: 196;
-    width: 95%;
-    height: 81.5%;
+    top: 60%;
+    width: 100%;
+    height: auto;
 }
 @keyframes swipe4 {
     0% {
-        right: -90%;
+        right: -100%;
     }
     58% {
-        right: -90%;
+        right: -100%;
     }
     59.9% {
-        right: 2.4%;
+        right: 0%;
     }
     78% {
-        right: 2.4%;
+        right: 0%;
     }
     80% {
-        right: 96.7%;
+        right: 100%;
     }
     100% {
-        right: 96.7%;
+        right: 100%;
     }
 }
 .screenshot5 {
@@ -2177,26 +2206,24 @@ header {
     -ms-transition:    25s swipe5 linear infinite;
     animation:         25s swipe5 linear infinite;
     position: absolute;
-    right: 2.4%;
-    bottom: 10.6%;
     z-index: 195;
-    width: 95%;
-    height: 81.5%;
+    width: 100%;
+    height: 100%;
 }
 @keyframes swipe5 {
     0% {
-        right: -90%;
+        right: -100%;
     }
     78% {
-        right: -90%;
+        right: -100%;
     }
     79.9% {
-        right: 2.4%;
+        right: 0%;
     }
     98% {
-        right: 2.4%;
+        right: 0%;
     }
     100% {
-        right: 96.7%;
+        right: 100%;
     }
 }
