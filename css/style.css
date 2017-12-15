@@ -2039,7 +2039,7 @@ header {
     animation:         25s swipe3top linear infinite;
     position: absolute;
     top: 0;
-    z-index: 1980;
+    z-index: 198;
     width: 100%;
 }
 @keyframes swipe3top {
@@ -2069,7 +2069,7 @@ header {
     -ms-transition:    25s swipe3 linear infinite;
     animation:         25s swipe3 linear infinite;
     position: absolute;
-    z-index: 1970;
+    z-index: 197;
     width: 100%;
     top:0%;
     opacity: 0;
@@ -2133,16 +2133,51 @@ header {
         opacity: 0;
     }
 }
+.scr4top {
+    -webkit-animation: 25s swipe4top linear infinite;
+    -moz-animation:    25s swipe4top linear infinite;
+    -o-animation:      25s swipe4top linear infinite;
+    -ms-transition:    25s swipe4top linear infinite;
+    animation:         25s swipe4top linear infinite;
+    position: absolute;
+    top: 0;
+    z-index: 196;
+    width: 100%;
+    height: 60%;
+}
+@keyframes swipe4top {
+    0% {
+        right: -100%;
+    }
+    58% {
+        right: -100%;
+    }
+    59.9% {
+        right: 0%;
+        height: 60%;
+    }
+    78% {
+        right: 0%;
+        height: 10%;
+    }
+    80% {
+        right: 100%;
+    }
+    100% {
+        right: 100%;
+    }
+}
 .screenshot4 {
-    -webkit-animation: 25s swipe4 linear infinite;
+/*    -webkit-animation: 25s swipe4 linear infinite;
     -moz-animation:    25s swipe4 linear infinite;
     -o-animation:      25s swipe4 linear infinite;
     -ms-transition:    25s swipe4 linear infinite;
-    animation:         25s swipe4 linear infinite;
+    animation:         25s swipe4 linear infinite;*/
     position: absolute;
     z-index: 196;
+    top: 60%;
     width: 100%;
-    height: 100%;
+    height: auto;
 }
 @keyframes swipe4 {
     0% {
