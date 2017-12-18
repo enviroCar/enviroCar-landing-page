@@ -24,4 +24,7 @@ var map = new ol.Map({
 
 setTimeout(function () {
     window.dispatchEvent(new Event('resize'));
+    setTimeout(function () {
+        window.dispatchEvent(new Event('resize'));
+    }, 1000);
 }, 1000);
