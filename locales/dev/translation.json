@@ -42,7 +42,24 @@
 
     "platform.app": "The enviroCar App",
     "platform.app1": "The enviroCar App collects real car sensor data while driving.",
-
+    "platform.app2": "Cartrend Bluetooth ODB-II Adapter",
+    
+    "share": "Share",
+    "share1": "Using the app, you can upload your recorded tracks and enrich the enviroCar community data store.",
+    "share2": "Everyone has access",
+    "share3": "to the anonymized floating car data of the community.",
+    "share4": "Contribute your data to research studies and planning processes. Help to jointly ",
+    "share5": "Stop&Go Traffic",
+    "share6": "High fuel consumption",
+    
+    "analyse1": "Analyze",
+    "analyse2": "EnviroCar provides",
+    "analyse3": "free & open access",
+    "analyse4": "to anonymized tracks of the community and further tools for analysis and visualization of tracks",
+    "analyse5": "Explore the presence of uploaded",
+    "analyse6": "enviroCar tracks",
+    "analyse7": "all around the world.",
+    
     "ana1": "Analysis",
     "ana.txt1": "Use the ",
     "ana.txt2": " to explore your tracks' sensor data.",

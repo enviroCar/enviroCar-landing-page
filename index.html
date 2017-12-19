@@ -180,10 +180,10 @@
                  width: 70%;
                  height: 100%;
                  background: red; /* For browsers that do not support gradients */
-                 background: -webkit-linear-gradient(left,rgba(255,0,0,0),rgba(0,0,0,0.55)); /*Safari 5.1-6*/
-                 background: -o-linear-gradient(right,rgba(255,0,0,0),rgba(0,0,0,0.55)); /*Opera 11.1-12*/
-                 background: -moz-linear-gradient(right,rgba(255,0,0,0),rgba(0,0,0,0.55)); /*Fx 3.6-15*/
-                 background: linear-gradient(to right, rgba(255,0,0,0), rgba(0,0,0,0.55)); /*Standard*/">
+                 background: -webkit-linear-gradient(left,rgba(0,0,0,0),rgba(0,0,0,0.55)); /*Safari 5.1-6*/
+                 background: -o-linear-gradient(right,rgba(0,0,0,0),rgba(0,0,0,0.55)); /*Opera 11.1-12*/
+                 background: -moz-linear-gradient(right,rgba(0,0,0,0),rgba(0,0,0,0.55)); /*Fx 3.6-15*/
+                 background: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,0.55)); /*Standard*/">
             </div>
         </div>
         <div class="transsbox">
@@ -339,50 +339,60 @@
         <div class="parallax parallax-two"></div>
 
         <!--Share -->
-        <section id="share" class="sectionShare">
-            <div class="row container-fluid col-12 nomargin">
-                <div class="container-fluid row col-12 nomargin">
-                    <h2 class="section-heading col-8" style="text-align: center; margin:auto;">share</h2>
-                </div>
-                <hr class="col-6 section-heading-spacer">
-                <div style="margin-bottom: 36px;">
-                    <div class="row container-fluid col-lg-5 col-md-5 col-sm-12 col-12 noPadding nomargin">
-                        <div class="col-12 mr-auto img-frame img-frame-1 noPadding">
-                            <span class="helper"></span>
-                            <!--<img class="img-fluid" src="assets/ec_platform_overview.png" alt="">-->
-                            <img class="img-fluid" src="assets/home_3portrait.png" alt="">
-                        </div>
-                    </div>
-                    <div class="col-lg-1 col-md-1 hidden-sm hidden-xs col-0"></div>
-                    <div class="row col-lg-6 col-md-6 col-sm-12 col-12 nomargin">
-                        <div class="col-12 mr-auto noPadding nomargin">
-                            <p class="section-lead"><br>share1</p>
-                            <p class="section-lead"  style="margin-bottom: 5%;">
-                                <span class="catch-phrase2">share2</span> share3</p>
-                            <p class="section-lead nomargin">
-                                share4<span class="catch-phrase2"> rsc.txt2</span>rsc.txt3<span class="catch-phrase2">rsc.txt4</span>rsc.txt5</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!--                <div class="container-fluid row col-12 noPadding nomargin">
-                                    
-                                    <div class="row container-fluid col-lg-12 col-md-12 col-sm-12 col-12 noPadding nomargin">
-                                        <div class="col-lg-2 col-md-2 col-sm-1 col-xs-1 col-1 noPadding" style="z-index: 1000; background-color: #fff;"></div>
-                                        <div class="col-lg-8 col-md-8 col-sm-10 col-xs-10 col-10 mr-auto img-frame img-frame-1 noPadding">
-                                            <img id="street" class="img-fluid" src="assets/street.png" alt="">
-                                            <img id="car" src="assets/car.png">
-                                            <img id="traffic_light_one" class="traffic-light traffic_light_1" src="assets/traffic_light_red.png">
-                                            <img id="traffic_light_two" class="traffic-light traffic_light_2" src="assets/traffic_light_red.png">
-                                            <img id="traffic_light_three" class="traffic-light traffic_light_3" src="assets/traffic_light_red.png">
-                                            <img id="traffic_light_one_g" class="traffic-light traffic_light_1 traffic_light_green" src="assets/traffic_light_green.png">
-                                            <img id="traffic_light_two_g" class="traffic-light traffic_light_2 traffic_light_green" src="assets/traffic_light_green.png">
-                                            <img id="traffic_light_three_g" class="traffic-light traffic_light_3 traffic_light_green" src="assets/traffic_light_green.png">
-                                        </div>
-                                        <div class="col-lg-2 col-md-2 col-sm-1 col-xs-1 col-1 noPadding" style="z-index: 1000; background-color: #fff;"></div>
-                                    </div>
-                                </div>-->
+        <section id="share" class="sectionShare" style="background-color: #fff;">
+            <div class="container-fluid row col-12 nomargin">
+                <h2 class="section-heading col-8" style="text-align: center; margin:auto;">share</h2>
             </div>
+            <hr class="col-6 section-heading-spacer">
+            <div class="row container-fluid col-12 nomargin" style="margin-bottom: 36px;">
+                <div class="row container-fluid col-lg-5 col-md-5 col-sm-12 col-12 noPadding nomargin">
+                    <div class="col-12 mr-auto img-frame img-frame-1 noPadding">
+                        <span class="helper"></span>
+                        <!--<img class="img-fluid" src="assets/ec_platform_overview.png" alt="">-->
+                        <img class="img-fluid" src="assets/share.png" alt="">
+                        <img class="share-co2" src="assets/share_co2.png" alt="">
+                        <div class="section-lead share-co2text">
+                            <p style="color: red;">CO2 Hotspots</p>
+                        </div>
+                        <img class="share-sag" src="assets/share_stopandgo.png" alt="">
+                        <div class="section-lead share-sagtext">
+                            <p style="color: rgb(132,60,12);">share5</p>
+                        </div>
+                        <img class="share-fuel" src="assets/share_fuel.png" alt="">
+                        <div class="section-lead share-fueltext">
+                            <p style="color: rgb(32,56,100);">share6</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-1 col-md-1 hidden-sm hidden-xs col-0"></div>
+                <div class="row col-lg-6 col-md-6 col-sm-12 col-12 nomargin">
+                    <div class="col-12 mr-auto noPadding nomargin">
+                        <p class="section-lead"><br>share1</p>
+                        <p class="section-lead"  style="margin-bottom: 5%;">
+                            <span class="catch-phrase2">share2</span> share3</p>
+                        <p class="section-lead nomargin">
+                            share4<span class="catch-phrase2"> rsc.txt2</span>rsc.txt3<span class="catch-phrase2">rsc.txt4</span>rsc.txt5</p>
+                    </div>
+                </div>
+            </div>
+
+            <!--                <div class="container-fluid row col-12 noPadding nomargin">
+                                
+                                <div class="row container-fluid col-lg-12 col-md-12 col-sm-12 col-12 noPadding nomargin">
+                                    <div class="col-lg-2 col-md-2 col-sm-1 col-xs-1 col-1 noPadding" style="z-index: 1000; background-color: #fff;"></div>
+                                    <div class="col-lg-8 col-md-8 col-sm-10 col-xs-10 col-10 mr-auto img-frame img-frame-1 noPadding">
+                                        <img id="street" class="img-fluid" src="assets/street.png" alt="">
+                                        <img id="car" src="assets/car.png">
+                                        <img id="traffic_light_one" class="traffic-light traffic_light_1" src="assets/traffic_light_red.png">
+                                        <img id="traffic_light_two" class="traffic-light traffic_light_2" src="assets/traffic_light_red.png">
+                                        <img id="traffic_light_three" class="traffic-light traffic_light_3" src="assets/traffic_light_red.png">
+                                        <img id="traffic_light_one_g" class="traffic-light traffic_light_1 traffic_light_green" src="assets/traffic_light_green.png">
+                                        <img id="traffic_light_two_g" class="traffic-light traffic_light_2 traffic_light_green" src="assets/traffic_light_green.png">
+                                        <img id="traffic_light_three_g" class="traffic-light traffic_light_3 traffic_light_green" src="assets/traffic_light_green.png">
+                                    </div>
+                                    <div class="col-lg-2 col-md-2 col-sm-1 col-xs-1 col-1 noPadding" style="z-index: 1000; background-color: #fff;"></div>
+                                </div>
+                            </div>-->
         </section>
 
         <!-- Image Background Divider parall ax -->
@@ -410,51 +420,12 @@
                             <p class="section-lead" style="margin-bottom: 5%;">
                                 analyse5<span class="catch-phrase"> analyse6</span> analyse7
                             </p>
-                            <p class="section-lead" style="margin-bottom: 5%;">
-                                analyse8</p>
                         </div>
                     </div>
                     <div class="col-lg-1 col-md-1 hidden-sm hidden-xs col-0"></div>
                 </div>
             </div>
         </section>
-
-        <!--Analysis -->
-        <section id="analysis" class="sectionAnalysis">
-            <h2 class="section-heading" style="text-align: center;">ana1</h2>
-            <hr class="section-heading-spacer col-6">
-            <div class="row container-fluid col-lg-12 col-md-12 col-sm-12 col-12" style="margin-bottom: 24px;">
-                <div class="col-12 mr-auto noPadding" style="margin-bottom: 24px;">
-                    <div class="clearfix"></div>
-                    <p class="section-lead nomargin" style="text-align: center;">
-                        ana.txt1<a href="http://pilot.52north.org/envirocar-ng/">enviroCar Webapp</a>ana.txt2</p>
-                </div>
-            </div>
-            <!-- TODO: FIX LINK: -->
-            <div class="row container-fluid col-12 nomargin">
-                <div class="row col-lg-5 col-md-5 col-sm-12 col-12 nomargin">
-                    <div class="col-12 mr-auto img-frame img-frame-1">
-                        <span class="helper"></span>
-                        <!--<div id="map" class="map img-fluid" style="height:600px;"></div>-->
-                    </div>
-                </div>
-                <div class="col-lg-1 col-md-1 hidden-sm hidden-xs col-0"></div>
-                <div class="row col-lg-6 col-md-6 col-sm-12 col-12 nomargin">
-                    <div class="col-12 mr-auto nomargin">
-                        <!-- TODO: FIX LINK: -->
-                        <p class="section-lead">ana2</p>
-                        <ul class="lead ec-feature-list" style="list-style-type: none;">
-                            <li class="features-list-item lead"><i class="ec-features material-icons md-36 ">network_check</i>ana.speeds</li>
-                            <li class="features-list-item lead"><i class="ec-features material-icons md-36 ">local_gas_station</i>ana.fuels</li>
-                            <li class="features-list-item lead"><i class="ec-features material-icons md-36 ">cloud_circle</i>ana.co2</li>
-                            <li class="features-list-item lead"><i class="ec-features material-icons md-36 ">traffic</i>ana.stops</li>
-                            <li class="features-list-item lead"><i class="ec-features material-icons md-36 ">more_vert</i>ana.more</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-
 
         <!-- Forschung -->
         <section id="research" class= "sectionResearch" style="background-color: #FFF;">

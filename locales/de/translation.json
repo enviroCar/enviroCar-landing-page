@@ -14,7 +14,7 @@
     "share_data": "Teile",
     "share_data2": "Teile deine Fahrten mit anderen Bürgern, Forschern & Planern",
     "analyse_data": "Analysiere",
-    "analyse_data2": "Gewinne Einblicke in den Straßenverkehr und Deinem Fahrverhalten",
+    "analyse_data2": "Gewinne Einblicke in den Straßenverkehr und in Dein Fahrverhalten",
     "research_data": "Forschung",
     "research_data2": "Beteilige Dich an der Forschung mit Experten",
 
@@ -36,7 +36,17 @@
     "share2": "Jeder hat Zugriff",
     "share3": "auf die anonymisierten Fahrtdaten der Community.",
     "share4": "Forscher und Planer nutzen die Daten der Fahrzeuge. Helfe, gemeinsam mit Ihnen den",
+    "share5": "Stop&Go Verkehr",
+    "share6": "Hoher Treibstoffverbrauch",
 
+    "analyse1": "Analysiere",
+    "analyse2": "EnviroCar bietet",
+    "analyse3": "freien & offenen Zugriff",
+    "analyse4": "auf anonymisierte Fahrtdaten der enviroCar Gemeinschaft und weitere Analyse- und Visualisierungstools der Fahrten.",
+    "analyse5": "Erkundschafte die Präsenz hochgeladener",
+    "analyse6": "enviroCar Fahrten",
+    "analyse7": "weltweit.",
+    
     "ana1": "Analyse",
     "ana.txt1": "In der ",
     "ana.txt2": " kannst Du Dir die Sensordaten zu Deinen Fahrten anschauen.",

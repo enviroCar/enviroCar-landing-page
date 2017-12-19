@@ -2082,20 +2082,14 @@ header {
     z-index: 197;
     width: 100%;
     top:0%;
-    opacity: 0;
 }
 @keyframes swipe3 {
     0% {
         right: -100%;
-        opacity: 0;
-    }
-    37.9% {
-        opacity: 0;
     }
     38% {
         right: -100%;
         top:0%;
-        opacity: 1;
     }
     39.9% {
         right: 0%;
@@ -2132,15 +2126,12 @@ header {
     60% {
         right: 100%;
         top: -153%;
-        opacity: 1;
     }
     60.5% {
-        opacity: 0;
     }
     100% {
         right: 100%;
         top: -153%;
-        opacity: 0;
     }
 }
 .scr4top {
@@ -2420,4 +2411,141 @@ header {
     100% {
         left: -22%;
     }
+}
+
+
+.share-sag {
+    -webkit-animation: 15s share-sag linear infinite;
+    -moz-animation:    15s share-sag linear infinite;
+    -o-animation:      15s share-sag linear infinite;
+    -ms-transition:    15s share-sag linear infinite;
+    animation:         15s share-sag linear infinite;
+    width: 21.3%;
+    height: auto;
+    position: absolute;
+    left: 52.3%;
+    bottom: 10.9%;
+    opacity: 0;
+}
+@keyframes share-sag {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 0;
+    }
+    27% {
+        opacity: 1;
+    }
+    48% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+.share-sagtext {
+    -webkit-animation: 15s share-sag linear infinite; 
+    -moz-animation: 15s share-sag linear infinite;
+    -o-animation: 15s share-sag linear infinite;
+    -ms-transition: 15s share-sag linear infinite;
+    animation: 15s share-sag linear infinite; 
+    width: 35.4%;
+    height: auto;
+    position: absolute;
+    left: 45.5%;
+    bottom: 50%;
+    opacity: 0; 
+}
+.share-co2 {
+    -webkit-animation: 15s share-co2 linear infinite;
+    -moz-animation:    15s share-co2 linear infinite;
+    -o-animation:      15s share-co2 linear infinite;
+    -ms-transition:    15s share-co2 linear infinite;
+    animation:         15s share-co2 linear infinite;
+    width: 35.5%;
+    height: auto;
+    position: absolute;
+    left: 39.3%;
+    bottom: 9.8%;
+    opacity: 0;
+}
+@keyframes share-co2 {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    52% {
+        opacity: 1;
+    }
+    73% {
+        opacity: 1;
+    }
+    75% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+.share-co2text {
+    -webkit-animation: 15s share-co2 linear infinite; 
+    -moz-animation: 15s share-co2 linear infinite;
+    -o-animation: 15s share-co2 linear infinite;
+    -ms-transition: 15s share-co2 linear infinite;
+    animation: 15s share-co2 linear infinite; 
+    width: 35.4%;
+    height: auto;
+    position: absolute;
+    left: 45.5%;
+    bottom: 50%;
+    opacity: 0; 
+}
+.share-fuel {
+    -webkit-animation: 15s share-fuel linear infinite;
+    -moz-animation:    15s share-fuel linear infinite;
+    -o-animation:      15s share-fuel linear infinite;
+    -ms-transition:    15s share-fuel linear infinite;
+    animation:         15s share-fuel linear infinite;
+    width: 29.9%;
+    height: auto;
+    position: absolute;
+    left: 43.7%;
+    bottom: 11%;
+    opacity: 0;
+}
+@keyframes share-fuel {
+    0% {
+        opacity: 0;
+    }
+    75% {
+        opacity: 0;
+    }
+    77% {
+        opacity: 1;
+    }
+    98% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+.share-fueltext {
+    -webkit-animation: 15s share-fuel linear infinite; 
+    -moz-animation: 15s share-fuel linear infinite;
+    -o-animation: 15s share-fuel linear infinite;
+    -ms-transition: 15s share-fuel linear infinite;
+    animation: 15s share-fuel linear infinite; 
+    width: 35.4%;
+    height: auto;
+    position: absolute;
+    left: 45.5%;
+    bottom: 50%;
+    opacity: 0; 
 }
