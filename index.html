@@ -16,6 +16,7 @@
         <!-- Custom fonts for this template -->
         <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
         <link href="https://fonts.googleapis.com/css?family=Roboto:200,300,400,700,200light,300light,400light,700light" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:200,300,400,700,200light,300light,400light,700light" rel="stylesheet">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <!-- Custom styles for this template -->
         <link href="css/style.css" rel="stylesheet">
@@ -54,16 +55,16 @@
                         <a class="nav-link js-scroll-trigger" href="#page-top">nav.home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" onclick="openSubpage('platform.html')">nav.platform</a>
+                        <a class="nav-link js-scroll-trigger" onclick="openSubpage('collect.html')">nav.collect</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" onclick="openSubpage('share.html')">nav.share</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link js-scroll-trigger" onclick="openSubpage('analysis.html')">nav.analysis</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" onclick="openSubpage('research.html')">nav.research</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#partner">nav.partner</a>
+                        <a class="nav-link js-scroll-trigger" onclick="openSubpage('resources.html')">nav.resources</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link js-scroll-trigger" href="http://pilot.52north.org/envirocar-ng/">
@@ -95,7 +96,7 @@
              height: 80%; 
              position: relative;
              overflow: hidden;">
-            <img id="mainbannerXS" src="assets/pixabay2.jpg" alt="enviroCar" style="
+            <img id="mainbannerXS" src="assets/pixabay3.jpg" alt="enviroCar" style="
                  height: auto;
                  width: auto; 
                  position: absolute; 
@@ -139,7 +140,7 @@
                      height: 100%;
                      width: 100%;
                      z-index: 300;">
-                <div style="    
+                <div id="bannerphonediv" style="    
                      position: absolute;
                      z-index: 30000;
                      overflow: hidden;
@@ -172,24 +173,72 @@
             <div class="transbox">
                 <img alt="enviroCar logo" src="assets/logo_white.png">
                 <p>Die <strong style="color: #ffffbb;">Citizen-Science</strong> cs.text</p>
+                <p class="catch-phrase-heading">cs.text2</p>
+                <p>cs.text3</p>
             </div>
-            <div style="
+            <div id="shadowMD" style="
                  position: absolute;
                  z-index: 100;
                  right: 0;
                  width: 70%;
                  height: 100%;
                  background: red; /* For browsers that do not support gradients */
-                 background: -webkit-linear-gradient(left,rgba(0,0,0,0),rgba(0,0,0,0.55)); /*Safari 5.1-6*/
-                 background: -o-linear-gradient(right,rgba(0,0,0,0),rgba(0,0,0,0.55)); /*Opera 11.1-12*/
-                 background: -moz-linear-gradient(right,rgba(0,0,0,0),rgba(0,0,0,0.55)); /*Fx 3.6-15*/
-                 background: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,0.55)); /*Standard*/">
+                 background: -webkit-linear-gradient(left,rgba(0,0,0,0), rgba(0,0,0,0), rgba(0,0,0,0.25), rgba(0,0,0,0.30),rgba(0,0,0,0.25) ,rgba(0,0,0,0)); /*Safari 5.1-6*/
+                 background: -o-linear-gradient(right,rgba(0,0,0,0), rgba(0,0,0,0), rgba(0,0,0,0.25), rgba(0,0,0,0.30),rgba(0,0,0,0.25) ,rgba(0,0,0,0)); /*Opera 11.1-12*/
+                 background: -moz-linear-gradient(right,rgba(0,0,0,0), rgba(0,0,0,0), rgba(0,0,0,0.25), rgba(0,0,0,0.30),rgba(0,0,0,0.25) ,rgba(0,0,0,0)); /*Fx 3.6-15*/
+                 background: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,0), rgba(0,0,0,0.25), rgba(0,0,0,0.30),rgba(0,0,0,0.25) ,rgba(0,0,0,0)); /*Standard*/">
             </div>
         </div>
         <div class="transsbox">
             <img alt="enviroCar logo" src="assets/logo_white.png">
             <p>Die <strong style="color: #ffffbb;">Citizen-Science</strong> cs.text</p>
+            <p class="catch-phrase-heading">cs.text2</p>
+            <p>cs.text3</p>
         </div>
+
+        <!-- Platform -->
+        <section id="platform" class="sectionPlatform">
+            <div class="container-fluid row col-12 nomargin">
+                <h2 class="section-heading col-8" style="text-align: center; margin:auto;">platform.txt1 <strong style="font-weight: 400!important;">platform.txt2</strong> platform.txt3</h2>
+            </div>
+            <hr class="col-6 section-heading-spacer">
+            <div class="row row-eq-height container-fluid col-12 nomargin">
+                <div class="container-fluid col-lg-5 col-md-5 col-sm-12 col-12 noPadding nomargin img-frame">
+                    <!--<img class="img-fluid" src="assets/ec_platform_overview.png" alt="">-->
+                    <img class="img-fluid" src="{{envirocar_platform}}" alt="">
+                </div>
+                <div class="col-lg-1 col-md-1 hidden-sm hidden-xs col-0"></div>
+                <div class="row col-lg-6 col-md-6 col-sm-12 col-12 nomargin div-frame">
+                    <div class="row col-12">
+                        <p class="section-lead"  style="margin-bottom: 5%;"><br>platform.contains</p>
+                    </div>
+                    <div class='row col-12'>
+                        <div class='col-2 features-list-item'>
+                            <i class="ec-features material-icons md-36 ">phone_android</i>
+                        </div>
+                        <div class='col-10 lead'>
+                            <p class='ec-features'>platform.one</p>
+                        </div>
+                    </div>
+                    <div class='row col-12'>
+                        <div class='col-2 features-list-item'>
+                            <i class="ec-features material-icons md-36 ">cloud_upload</i>
+                        </div>
+                        <div class='col-10 lead'>
+                            <p class='ec-features'>platform.two</p>
+                        </div>
+                    </div>
+                    <div class='row col-12'>
+                        <div class='col-2 features-list-item'>
+                            <i class ="ec-features material-icons md-36 ">art_track</i>
+                        </div>
+                        <div class='col-10 lead'>
+                            <p class='ec-features'>platform.three</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <!-- Section Short Description COLLECT ; SHARE ; ANALYZE-->
         <section id="howto" class="sectionHome">
@@ -240,54 +289,7 @@
                 </div>
             </div>
         </section>
-
-        <!-- Platform -->
-        <section id="platform" class="sectionPlatform">
-            <div class="container-fluid row col-12 nomargin">
-                <h2 class="section-heading col-8" style="text-align: center; margin:auto;">platform.txt1 <strong>platform.txt2</strong> platform.txt3</p></h2>
-            </div>
-            <hr class="col-6 section-heading-spacer">
-            <div class="row container-fluid col-12 nomargin">
-                <div class="row container-fluid col-lg-5 col-md-5 col-sm-12 col-12 noPadding nomargin">
-                    <div class="col-12 mr-auto img-frame img-frame-1 noPadding">
-                        <span class="helper"></span>
-                        <!--<img class="img-fluid" src="assets/ec_platform_overview.png" alt="">-->
-                        <img class="img-fluid" src="{{envirocar_platform}}" alt="">
-                    </div>
-                </div>
-                <div class="col-lg-1 col-md-1 hidden-sm hidden-xs col-0"></div>
-                <div class="row col-lg-6 col-md-6 col-sm-12 col-12 nomargin">
-                    <div class="col-12 mr-auto noPadding nomargin">
-                        <div class="clearfix"></div>
-                        <p class="section-lead"  style="margin-bottom: 5%;"><br>platform.contains</p>
-                        <div class='row'>
-                            <div class='col-2 features-list-item'>
-                                <i class="ec-features material-icons md-36 ">phone_android</i>
-                            </div>
-                            <div class='col-10 lead'>
-                                <p class='ec-features'>platform.one</p>
-                            </div>
-                        </div>
-                        <div class='row'>
-                            <div class='col-2 features-list-item'>
-                                <i class="ec-features material-icons md-36 ">cloud_upload</i>
-                            </div>
-                            <div class='col-10 lead'>
-                                <p class='ec-features'>platform.two</p>
-                            </div>
-                        </div>
-                        <div class='row'>
-                            <div class='col-2 features-list-item'>
-                                <i class ="ec-features material-icons md-36 ">art_track</i>
-                            </div>
-                            <div class='col-10 lead'>
-                                <p class='ec-features'>platform.three</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        
         <!-- enviroCar numbers -->
         <section id="statistics" class="bg-primary">
             <div class="c-no container-fluid">
@@ -304,74 +306,70 @@
                 </div>
             </div>
         </section>
-
+        
+        <!-- Image Background Divider parall ax -->
+        <div class="parallax parallax-two"></div>
+        
         <!-- Collect -->
-        <section style="background-color: #f3f3f3;">
+        <section style="background-color: #fff;">
             <div class="container-fluid row col-12 nomargin">
-                <div class="row col-lg-6 col-md-6 col-sm-12 col-12 noPadding nomargin">
-                    <div class="col-12 mr-auto noPadding">
-                        <hr class="section-heading-spacer">
-                        <div class="clearfix"></div>
-                        <h2 class="section-heading">platform.app</h2>
-                        <p class="section-lead nomargin">platform.app1<a href="https://www.amazon.de/Cartrend-80290-Bluetooth-Controller-Smartphones/dp/B00CCZJPCU/ref=sr_1_2?ie=UTF8&qid=1513252484&sr=8-2&keywords=cartrend+obd2">
-                                platform.app2
-                            </a></p>
-                        <!-- apple store button -->
+                <h2 class="section-heading col-8" style="text-align: center; margin:auto;">platform.app</h2>
+            </div>
+            <hr class="col-6 section-heading-spacer">
+            <div class="container-fluid row row-eq-height col-12 nomargin">
+                <div class="row col-lg-6 col-md-6 col-sm-12 col-12 noPadding nomargin div-frame">
+                    <p class="section-lead nomargin">platform.app1<a href="https://www.amazon.de/Cartrend-80290-Bluetooth-Controller-Smartphones/dp/B00CCZJPCU/ref=sr_1_2?ie=UTF8&qid=1513252484&sr=8-2&keywords=cartrend+obd2">
+                            platform.app2
+                        </a></p>
+                    <!-- apple store button -->
 
-                        <!--<div style="height: 300px;">-->
-                        <div style="height: 240px;">
-                            <a class="btn btn-lg big-btn android-btn" href="https://play.google.com/store/apps/details?id=org.envirocar.app&hl=de" target="_blank">
-                                <img width="60" class="pull-left" src="https://www.userlogos.org/files/logos/jumpordie/google_play_04.png"><div class="btn-text"><small>GET IT ON</small><br><strong>Google Play</strong></div></a>
-                        </div>
+                    <!--<div style="height: 300px;">-->
+                    <div style="height: 240px;">
+                        <a class="btn btn-lg big-btn android-btn" href="https://play.google.com/store/apps/details?id=org.envirocar.app&hl=de" target="_blank">
+                            <img width="60" class="pull-left" src="https://www.userlogos.org/files/logos/jumpordie/google_play_04.png"><div class="btn-text"><small>GET IT ON</small><br><strong>Google Play</strong></div></a>
                     </div>
                 </div>
                 <div class="col-lg-1 col-md-1 hidden-sm hidden-xs col-0"></div>
-                <div class="row col-lg-5 col-md-5 col-sm-12 col-12 noPadding nomargin">
-                    <div class="col-12 ml-auto img-frame img-frame-2 noPadding">
-                        <span class="helper"></span>
-                        <img class="img-fluid" src="assets/app_2.png" alt="">
-                    </div>
+                <div class="col-lg-5 col-md-5 col-sm-12 col-12 noPadding nomargin img-frame">
+                    <img class="img-fluid" src="assets/app_2.png" alt="">
                 </div>
             </div>
         </section>
 
-        <!-- Image Background Divider parall ax -->
-        <div class="parallax parallax-two"></div>
 
+        <!-- Image Background Divider parallax -->
+        <div class="parallax parallax-three"></div>
+
+        
         <!--Share -->
         <section id="share" class="sectionShare" style="background-color: #fff;">
             <div class="container-fluid row col-12 nomargin">
                 <h2 class="section-heading col-8" style="text-align: center; margin:auto;">share</h2>
             </div>
             <hr class="col-6 section-heading-spacer">
-            <div class="row container-fluid col-12 nomargin" style="margin-bottom: 36px;">
-                <div class="row container-fluid col-lg-5 col-md-5 col-sm-12 col-12 noPadding nomargin">
-                    <div class="col-12 mr-auto img-frame img-frame-1 noPadding">
-                        <span class="helper"></span>
-                        <!--<img class="img-fluid" src="assets/ec_platform_overview.png" alt="">-->
-                        <img class="img-fluid" src="assets/share.png" alt="">
-                        <img class="share-co2" src="assets/share_co2.png" alt="">
-                        <div class="section-lead share-co2text">
-                            <p style="color: red;">CO2 Hotspots</p>
-                        </div>
-                        <img class="share-sag" src="assets/share_stopandgo.png" alt="">
-                        <div class="section-lead share-sagtext">
-                            <p style="color: rgb(132,60,12);">share5</p>
-                        </div>
-                        <img class="share-fuel" src="assets/share_fuel.png" alt="">
-                        <div class="section-lead share-fueltext">
-                            <p style="color: rgb(32,56,100);">share6</p>
-                        </div>
+            <div class="row row-eq-height container-fluid col-12 nomargin" style="margin-bottom: 36px;">
+                <div class="container-fluid col-lg-5 col-md-5 col-sm-12 col-12 noPadding nomargin img-frame">
+                    <!--<img class="img-fluid" src="assets/ec_platform_overview.png" alt="">-->
+                    <img class="img-fluid" src="assets/share.png" alt="">
+                    <img class="share-co2" src="assets/share_co2.png" alt="">
+                    <div class="section-lead share-co2text">
+                        <p style="color: red;">CO2 Hotspots</p>
+                    </div>
+                    <img class="share-sag" src="assets/share_stopandgo.png" alt="">
+                    <div class="section-lead share-sagtext">
+                        <p style="color: rgb(132,60,12);">share5</p>
+                    </div>
+                    <img class="share-fuel" src="assets/share_fuel.png" alt="">
+                    <div class="section-lead share-fueltext">
+                        <p style="color: rgb(32,56,100);">share6</p>
                     </div>
                 </div>
                 <div class="col-lg-1 col-md-1 hidden-sm hidden-xs col-0"></div>
-                <div class="row col-lg-6 col-md-6 col-sm-12 col-12 nomargin">
-                    <div class="col-12 mr-auto noPadding nomargin">
-                        <p class="section-lead"><br>share1</p>
+                <div class="row col-lg-6 col-md-6 col-sm-12 col-12 nomargin div-frame">
+                    <div class="row col-12">
+                        <p class="section-lead">share1</p>
                         <p class="section-lead"  style="margin-bottom: 5%;">
-                            <span class="catch-phrase2">share2</span> share3</p>
-                        <p class="section-lead nomargin">
-                            share4<span class="catch-phrase2"> rsc.txt2</span>rsc.txt3<span class="catch-phrase2">rsc.txt4</span>rsc.txt5</p>
+                            share2<span class="catch-phrase2"> share3</span> share4<span class="catch-phrase2"> rsc.txt2</span>rsc.txt3<span class="catch-phrase2">rsc.txt4</span>rsc.txt5</p>
                     </div>
                 </div>
             </div>
@@ -394,70 +392,135 @@
                                 </div>
                             </div>-->
         </section>
+        
+        
+        <!-- Image Background Divider parallax -->
+        <div class="parallax parallax-one"></div>
+        
 
-        <!-- Image Background Divider parall ax -->
-        <div class="parallax parallax-three"></div>
-
-
-        <!-- Analysis -->
-        <section id="analysis" class="sectionAnalysis" style="padding-left: 0;">
-            <div class="row col-12 nomargin" style="padding-left: 0; padding-right: 0;">
-                <div class="container-fluid row col-12 nomargin nopadding">
-                    <h2 class="section-heading col-8" style="text-align: center; margin:auto;">analyse1</h2>
+        <!-- Analyze -->
+        <section id="analysis" class="sectionAnalysis" style="background-color: #fff;">
+            <div class="container-fluid row col-12 nomargin">
+                <h2 class="section-heading col-8" style="text-align: center; margin:auto;">analyse1</h2>
+            </div>
+            <hr class="col-6 section-heading-spacer">
+            <div class="container-fluid row row-eq-height col-12 nomargin">
+                <div class="row col-lg-6 col-md-6 col-sm-12 col-12 noPadding nomargin div-frame">
+                    <p class="section-lead">analyse2</p>
                 </div>
-                <hr class="col-6 section-heading-spacer">
-                <div class="col-12" style="margin-bottom: 36px; padding-left: 0; padding-right: 0;">
-                    <div class="row container-fluid col-lg-5 col-md-5 col-sm-12 col-12 noPadding nomargin">
-                        <div class="col-12 mr-auto img-frame img-frame-1 noPadding">
-                            <div id="map" class="map img-fluid" style="height:600px;"></div>
-                        </div>
-                    </div>
-                    <div class="col-lg-1 col-md-1 hidden-sm hidden-xs col-0"></div>
-                    <div class="row col-lg-5 col-md-5 col-sm-12 col-12 nomargin" style="padding-right: 0;">
-                        <div class="col-12 mr-auto noPadding nomargin">
-                            <p class="section-lead" style="margin-bottom: 5%;">
-                                analyse2<span class="catch-phrase2"> analyse3</span> analyse4</p>
-                            <p class="section-lead" style="margin-bottom: 5%;">
-                                analyse5<span class="catch-phrase"> analyse6</span> analyse7
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-lg-1 col-md-1 hidden-sm hidden-xs col-0"></div>
+                <div class="col-lg-1 col-md-1 hidden-sm hidden-xs col-0"></div>
+                <div class="col-lg-5 col-md-5 col-sm-12 col-12 noPadding nomargin img-frame">
+                    <img class="img-fluid" src="assets/app_4.png" alt="">
                 </div>
             </div>
         </section>
+        
+        
+        <!-- Image Background Divider parall ax -->
+        <div class="parallax parallax-five"></div>
+        
+
+        <!-- Funding projects -->
+        <section id="funding" class="sectionFunding" style="background-color: #fff;">
+            <h2 class="section-heading" style="text-align: center;">funding</h2>
+            <hr class="col-6 section-heading-spacer" style="padding-bottom: 32px;">
+            <div class="posts row">
+                <div class="col-xl-8 col-lg-10 col-md-11 col-sm-12 col-12" style="margin: auto;">
+                    <div class="row col-12 nomargin noPaddingGtXs">
+                        <div class="col-sm-3 col-12 noPadding">
+                            <img class="press-pic" src= "assets/BIGIoT-logo.png" alt="BIG IoT project"/>
+                            <p></p>
+                        </div>
+                        <div class="col-sm-9 noPaddingGtXs">
+                            <div class="content section-lead" style="margin-left: 24px;">
+                                <h2 class="press-heading" style="clear:both">funding.bigiot.title</h2>
+                                <p class="section-lead">funding.bigiot.desc<br>                                    
+                                </p>
+                            </div>
+                            <div class="fundingdiv row" style="margin-left: 24px !important;">
+                                <div class="col-6 date noPadding nomargin">
+                                    <span class="eu-funding-text" style="float: left;">funding.bigiot.ack</span></div>
+                                <div class="col-6 noPadding nomargin">
+                                    <img style="width: 100%; height: auto;" src="assets/eu_logo_cimulact.png" alt="BIG IoT project"/></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr class="clear nomargin section-heading-spacer">
+                </div>
+            </div>
+
+            <div class="posts row">
+                <div class="col-xl-8 col-lg-10 col-md-11 col-sm-12 col-12" style="margin: auto;">
+                    <div class="row col-12 nomargin noPaddingGtXs">
+                        <div class="col-sm-3 col-12 noPadding">
+                            <img class="press-pic" src="assets/presse/tsc_website.png" alt="enviroCar Projektförderung Förderung Funding beratendende Ingenieure für Verkehrswesen Mönchengladbach"/>
+                        </div>
+                        <div class="col-sm-9 noPaddingGtXs">
+                            <div class="content section-lead" style="margin-left: 24px;">
+                                <h2 class="press-heading" style="clear:both">funding.tscmg.title</h2>
+                                <p class="section-lead">funding.tscmg.desc<br>
+                                </p>
+                            </div>
+                        </div >
+                    </div>
+                    <hr class="clear nomargin section-heading-spacer">
+                </div>
+            </div>
+
+            <div class="posts row">
+                <div class="col-xl-8 col-lg-10 col-md-11 col-sm-12 col-12" style="margin: auto;">
+                    <div class="row col-12 nomargin noPaddingGtXs">
+                        <div class="col-sm-3 col-12 noPadding">
+                            <img class="press-pic" src="assets/indiegogo.png" alt="enviroCar Projektförderung Förderung Funding indiegogo"/>
+                        </div>
+                        <div class="col-sm-9 noPaddingGtXs">
+                            <div class="content section-lead" style="margin-left: 24px;">
+                                <h2 class="press-heading" style="clear:both">funding.indiegogo.title</h2>
+                                <p class="section-lead">funding.indiegogo.desc<br>
+                                </p>
+                            </div>
+                        </div >
+                    </div>
+                    <hr class="clear nomargin section-heading-spacer">
+                </div>
+            </div>
+        </section>
+        
+        <!-- Image Background Divider parallax -->
+        <div class="parallax parallax-four"></div>
 
         <!-- Forschung -->
-        <section id="research" class= "sectionResearch" style="background-color: #FFF;">
-            <h2 class="section-heading" style="text-align: center;">nav.research</h2>
-            <hr class="section-heading-spacer col-6">
-            <div class="container-fluid row col-12 noPadding nomargin">
-                <div class="row container-fluid col-lg-12 col-md-12 col-sm-12 col-12 noPadding" style="margin-bottom: 24px;">
-                    <div class="col-lg-2 col-md-2 col-sm-1 hidden-xs col-2 noPadding"></div>
-                    <div class="col-lg-8 col-md-8 col-sm-10 col-xs-12 col-8 mr-auto noPadding" style="margin-bottom: 24px;">
-                        <div class="clearfix"></div>
-                        <p class="section-lead nomargin">
-                            rsc.txt1<span class="catch-phrase2">rsc.txt2</span>rsc.txt3<span class="catch-phrase2">rsc.txt4</span>rsc.txt5</p>
+        <!--        <section id="research" class= "sectionResearch" style="background-color: #FFF;">
+                    <h2 class="section-heading" style="text-align: center;">nav.research</h2>
+                    <hr class="section-heading-spacer col-6">
+                    <div class="container-fluid row col-12 noPadding nomargin">
+                        <div class="row container-fluid col-lg-12 col-md-12 col-sm-12 col-12 noPadding" style="margin-bottom: 24px;">
+                            <div class="col-lg-2 col-md-2 col-sm-1 hidden-xs col-2 noPadding"></div>
+                            <div class="col-lg-8 col-md-8 col-sm-10 col-xs-12 col-8 mr-auto noPadding" style="margin-bottom: 24px;">
+                                <div class="clearfix"></div>
+                                <p class="section-lead nomargin">
+                                    rsc.txt1<span class="catch-phrase2">rsc.txt2</span>rsc.txt3<span class="catch-phrase2">rsc.txt4</span>rsc.txt5</p>
+                            </div>
+                            <div class="col-lg-2 col-md-2 col-sm-1 hidden-xs col-2 noPadding"></div>
+                        </div>
+        
+                        <div class="row container-fluid col-lg-12 col-md-12 col-sm-12 col-12 noPadding nomargin">
+                            <div class="col-lg-2 col-md-2 col-sm-1 col-xs-1 col-1 noPadding" style="z-index: 1000; background-color: #fff;"></div>
+                            <div class="col-lg-8 col-md-8 col-sm-10 col-xs-10 col-10 mr-auto img-frame img-frame-1 noPadding">
+                                <img id="street" class="img-fluid" src="assets/street.png" alt="">
+                                <img id="car" src="assets/car.png">
+                                <img id="traffic_light_one" class="traffic-light traffic_light_1" src="assets/traffic_light_red.png">
+                                <img id="traffic_light_two" class="traffic-light traffic_light_2" src="assets/traffic_light_red.png">
+                                <img id="traffic_light_three" class="traffic-light traffic_light_3" src="assets/traffic_light_red.png">
+                                <img id="traffic_light_one_g" class="traffic-light traffic_light_1 traffic_light_green" src="assets/traffic_light_green.png">
+                                <img id="traffic_light_two_g" class="traffic-light traffic_light_2 traffic_light_green" src="assets/traffic_light_green.png">
+                                <img id="traffic_light_three_g" class="traffic-light traffic_light_3 traffic_light_green" src="assets/traffic_light_green.png">
+                            </div>
+                            <div class="col-lg-2 col-md-2 col-sm-1 col-xs-1 col-1 noPadding" style="z-index: 1000; background-color: #fff;"></div>
+                        </div>
                     </div>
-                    <div class="col-lg-2 col-md-2 col-sm-1 hidden-xs col-2 noPadding"></div>
-                </div>
-
-                <div class="row container-fluid col-lg-12 col-md-12 col-sm-12 col-12 noPadding nomargin">
-                    <div class="col-lg-2 col-md-2 col-sm-1 col-xs-1 col-1 noPadding" style="z-index: 1000; background-color: #fff;"></div>
-                    <div class="col-lg-8 col-md-8 col-sm-10 col-xs-10 col-10 mr-auto img-frame img-frame-1 noPadding">
-                        <img id="street" class="img-fluid" src="assets/street.png" alt="">
-                        <img id="car" src="assets/car.png">
-                        <img id="traffic_light_one" class="traffic-light traffic_light_1" src="assets/traffic_light_red.png">
-                        <img id="traffic_light_two" class="traffic-light traffic_light_2" src="assets/traffic_light_red.png">
-                        <img id="traffic_light_three" class="traffic-light traffic_light_3" src="assets/traffic_light_red.png">
-                        <img id="traffic_light_one_g" class="traffic-light traffic_light_1 traffic_light_green" src="assets/traffic_light_green.png">
-                        <img id="traffic_light_two_g" class="traffic-light traffic_light_2 traffic_light_green" src="assets/traffic_light_green.png">
-                        <img id="traffic_light_three_g" class="traffic-light traffic_light_3 traffic_light_green" src="assets/traffic_light_green.png">
-                    </div>
-                    <div class="col-lg-2 col-md-2 col-sm-1 col-xs-1 col-1 noPadding" style="z-index: 1000; background-color: #fff;"></div>
-                </div>
-            </div>
-        </section>
+                </section>-->
 
         <!-- Press -->
         <section id= "press" class="sectionPress" style="background-color: #FFF;">
@@ -478,7 +541,7 @@
                                     anderen Städten geführt", sagte der zuständige Technische...<br>
                                     <a class="press-link" href=" http://www.rp-online.de/nrw/staedte/moenchengladbach/die-lehren-des-gruene-welle-experiments-aid-1.7092548" target="_blank">Andreas Gruhn in “RP-online” Blogeintrag vom 20.09.2017</a></p>
                             </div>
-                        </div >
+                        </div>
                     </div>
                     <hr class="clear nomargin section-heading-spacer">
                     <div class="authordiv">
@@ -537,68 +600,20 @@
             </div>
         </section>
 
+       
         <!-- Image Background Divider parallax -->
-        <div class="parallax parallax-one">
-            <!-- Funding projects -->
-            <section id="funding" class="sectionFunding" style="background-color: #fff;">
-                <h2 class="section-heading" style="text-align: center;">funding</h2>
-                <hr class="col-6 section-heading-spacer" style="padding-bottom: 32px;">
-                <div class="posts row">
-                    <div class="col-11 col-xs-12" style="margin: auto;">
-                        <div class="row col-12 nomargin noPaddingGtXs">
-                            <div class="col-sm-3 col-12 noPadding">
-                                <img class="press-pic" src= "assets/BIGIoT-logo.png" alt="BIG IoT project"/>
-                                <p></p>
-                            </div>
-                            <div class="col-sm-9 noPaddingGtXs">
-                                <div class="content section-lead" style="margin-left: 24px;">
-                                    <h2 class="press-heading" style="clear:both">funding.bigiot.title</h2>
-                                    <p class="section-lead">funding.bigiot.desc<br>                                    
-                                    </p>
-                                </div>
-                                <div class="fundingdiv row" style="margin-left: 24px !important;">
-                                    <div class="col-6 date noPadding nomargin">
-                                        <span class="eu-funding-text" style="float: left;">funding.bigiot.ack</span></div>
-                                    <div class="col-6 noPadding nomargin">
-                                        <img style="width: 100%; height: auto;" src="assets/eu_logo_cimulact.png" alt="BIG IoT project"/></div>
-                                </div>
-                            </div>
-                        </div>
+        <div class="parallax parallax-six"></div>
 
-                        <hr class="clear nomargin section-heading-spacer">
-                    </div>
-                </div>
-
-                <div class="posts row">
-                    <div class="col-11 col-xs-12" style="margin: auto;">
-                        <div class="row col-12 nomargin noPaddingGtXs">
-                            <div class="col-sm-3 col-12 noPadding">
-                                <img class="press-pic" src="assets/presse/tsc_website.png" alt="enviroCar Projektförderung Förderung Funding beratendende Ingenieure für Verkehrswesen Mönchengladbach"/>
-                            </div>
-                            <div class="col-sm-9 noPaddingGtXs">
-                                <div class="content section-lead" style="margin-left: 24px;">
-                                    <h2 class="press-heading" style="clear:both">funding.tscmg.title</h2>
-                                    <p class="section-lead">funding.tscmg.desc<br>
-                                    </p>
-                                </div>
-                            </div >
-                        </div>
-                        <hr class="clear nomargin section-heading-spacer">
-                    </div>
-                </div>
-            </section>
-        </div>
-
-
+        
         <!--Partner--> 
         <section id="partner" class="sectionPartner" style="background-color: #fff;">
             <div class="container col-12">
                 <h2 class="section-heading" style="text-align: center;">Partner</h2>
                 <hr class="col-3 section-heading-spacer">
                 <div class="row col-12">
+                    <img class="img-partner" src="assets/partner/wwu.png" alt="enviroCar Partner Westfälische Wilhelms Universität Münster">
                     <img class="img-partner conterra" src="assets/partner/conterra.png" alt="enviroCar Partner Conterra">
                     <img class="img-partner esri" src="assets/partner/esri.png" alt="enviroCar Partner Esri">
-                    <img class="img-partner" src="assets/partner/wwu.png" alt="enviroCar Partner Westfälische Wilhelms Universität Münster">
                     <img class="img-partner" src="assets/partner/ifgi.png" alt="enviroCar Partner Institut für Geoinformatik Münster">
                     <img class="img-partner" src="assets/partner/BochumHS.png" alt="enviroCar Partner Hochschule Bochum">
                     <img class="img-partner" src="assets/partner/DresdenTU.png" alt="enviroCar Partner Technische Universität Dresden">
