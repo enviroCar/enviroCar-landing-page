@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -22,8 +21,10 @@
         <!-- Custom styles for this template -->
         <link href="css/style.css" rel="stylesheet">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://openlayers.org/en/v4.6.2/css/ol.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="https://openlayers.org/en/v4.6.2/build/ol.js"></script>
         <script src="js/i18nextify.min.js"></script>
         <script src="js/i18nextXHRBackend.min.js"></script>
         <script>
@@ -35,7 +36,7 @@
         </script>
     </head>
 
-    <body id="page-top" style="display: none; background-color: #e6e6e6;">
+    <body id="page-top" style="display: none; background-color: #fff;">
 
         <!-- Navigation Bar -->
         <nav class="navbar fixed-top navbar-dark bg-primary navbar-expand-lg navbar-expand-md" style="position: fixed; top: 0; border-bottom: solid 1px #0065A0;" id="mainNav">
@@ -51,16 +52,16 @@
                         <a class="nav-link js-scroll-trigger" onclick="openSubpage('index.html')">nav.home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" onclick="openSubpage('platform.html')">nav.platform</a>
+                        <a class="nav-link js-scroll-trigger" onclick="openSubpage('collect.html')">nav.collect</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" onclick="openSubpage('share.html')">nav.share</a>
                     </li>
                     <li class="nav-item nav-onSelected">
                         <a class="nav-link js-scroll-trigger" href="#page-top">nav.analysis</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" onclick="openSubpage('research.html')">nav.research</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" onclick="openPartnerSection()">nav.partner</a>
+                        <a class="nav-link js-scroll-trigger" onclick="openSubpage('resources.html')">nav.resources</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link js-scroll-trigger" href="http://pilot.52north.org/envirocar-ng/">
@@ -78,32 +79,40 @@
         </nav>
         <div class="placeholder" style="height: 50px;"></div>
 
-        <section id="features" class="pageAnalysis">
-            <h2 class="section-heading" style="text-align: center;">nav.analysis</h2>
-            <hr class="col-6 section-heading-spacer" style="padding-bottom: 32px;">
-            <div class="container-fluid row col-12 noPadding nomargin">
-                <div class="row container-fluid col-lg-12 col-md-12 col-sm-12 col-12 noPadding nomargin">
-                    <div class="col-lg-2 col-md-2 col-sm-1 col-0 noPadding"></div>
-                    <div class="col-lg-8 col-md-8 col-sm-10 col-12 mr-auto noPadding">
-                        <div class="clearfix"></div>
-                        <p class="section-lead" style="margin-bottom: 36px;">ana.topic<br>
-                        </p>
-                    </div>
-                    <div class="col-lg-2 col-md-2 col-sm-1 col-0 noPadding"></div>
-                </div>
+        <!-- Analyze -->
+        <section style="background-color: #fff; margin-bottom: 0; padding-bottom: 0;">
+            <div class="container-fluid row col-12 nomargin" style="margin-bottom: 86px !important;text-align: center;">
+                <h2 class="section-heading col-8" style="text-align: center; margin:auto; margin-bottom: 16px;">ana1</h2>
+                <p class="col-12 section-lead" style="">
+                    ana2
+                </p>
             </div>
         </section>
-
+        
         <!-- Image Background Divider parallax -->
         <div class="parallax parallax-ana1"></div>
 
+        <!-- Analyze -->
+        <section style="background-color: #fff; margin-bottom: 0; padding-bottom: 0;">
+            <div class="container-fluid row col-12 nomargin" style="margin-bottom: 86px !important;text-align: center;">
+                <h2 class="section-heading col-8" style="text-align: center; margin:auto; margin-bottom: 16px;">ana1</h2>
+                <p class="col-12 section-lead" style="">
+                    ana3<strong class="catch-phrase" style="">ana3b</strong>ana3c
+                </p>
+            </div>
+        </section>
+        <div id="map" class="container-fluid row col-12 nomargin map" style="height: 80%;"></div>
+
+        <!-- Image Background Divider parallax -->
+        <div class="parallax parallax-ana2"></div>
+        
         <!-- WebApp -->
         <section id="webapp" class="sectionWebApp" style="background-color: #fff;">
             <hr class="col-6 section-heading-spacer" style="text-align: center;">
             <div class="container-fluid row col-12 noPadding nomargin">
                 <div class="row container-fluid col-lg-12 col-md-12 col-sm-12 col-12 noPadding nomargin">
                     <div class="col-lg-2 col-md-2 col-sm-1 col-0 noPadding"></div>
-                    <div class="col-lg-8 col-md-8 col-sm-10 col-12 mr-auto noPadding">
+                    <div class="col-lg-8 col-md-8 col-sm-10 col-12 mr-auto noPadding" style="text-align: center;">
                         <div class="clearfix"></div>
                         <h2 class="section-heading">WebApp</h2>
                         <p class="section-lead" style="margin-bottom: 36px;">ana.wa6<br>
@@ -142,7 +151,7 @@
         </section>
 
         <!-- Image Background Divider parallax -->
-        <div class="parallax parallax-ana2"></div>
+        <div class="parallax parallax-ana3"></div>
 
         <!-- Maps -->
         <section style="background-color:#fff;">
@@ -296,6 +305,7 @@
         <script src="js/popper.min.js"></script>
         <script src="js/scrolling-nav.js"></script>
         <script src="js/hover-effects.js"></script>
+        <script src="js/landing-page-map.js"></script>
 
         <script>
                                 $(function () {

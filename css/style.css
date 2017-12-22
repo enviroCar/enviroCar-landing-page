@@ -96,13 +96,16 @@
     background-image: url("..//assets/rocket.jpg");
 }
 .parallax-ana1 { 
-    background-image: url("..//assets/pexels1.jpeg");
+    background-image: url("..//assets/earth.jpg");
 }
 .parallax-ana2 { 
-    background-image: url("..//assets/gasoline.jpg");
+    background-image: url("..//assets/analyze3.png");
 }
+/*.parallax-ana2 { 
+    background-image: url("..//assets/pixabay3.jpg");
+}*/
 .parallax-ana3 { 
-    background-image: url("..//assets/pexels3.jpeg");
+    background-image: url("..//assets/analyze2.png");
 }
 /* Turn off parallax scrolling for tablets and phones. Increase/decrease the pixels if needed */
 @media only screen and (max-device-width: 720px) {
@@ -715,7 +718,7 @@ div.transbox p {
     }
     .lead {
         font-size: 36px !important;
-        margin-bottom: 78px !important;
+        margin-bottom: 64px !important;
     }
     .container-fluid {
         padding-left: 20% !important;
@@ -787,7 +790,7 @@ iframe {
     }
     .lead {
         font-size: 24px !important;
-        margin-bottom: 64px !important;
+        margin-bottom: 32px !important;
     }
     .container-fluid {
         padding-left: 10% !important;
@@ -846,7 +849,7 @@ iframe {
     }
     .lead {
         font-size: 18px !important;
-        margin-bottom: 36px !important;
+        margin-bottom: 26px !important;
     }
     .section-heading {
         font-size: 21px;
@@ -1023,10 +1026,10 @@ iframe {
 }
 
 .helper {
-    max-height: 400px !important;
+    /*max-height: 400px !important;*/
     display: inline-block;
     height: 100%;
-    /*vertical-align: middle;*/
+    vertical-align: middle;
 }
 
 iframe {
@@ -1097,8 +1100,7 @@ iframe {
 .android-btn{
     height: 60px; 
     position: absolute; 
-    top: 50%; 
-    margin-top: 45px; 
+    bottom: 0%;
     left: 50%; 
     margin-left: -120px;
     width: 240px;
@@ -1649,21 +1651,26 @@ header {
 }
 .catch-phrase {
     color: #0065A0;
-    font-weight: bold;
+    font-weight: 200 !important;
 }
 .catch-phrase-heading {
     font-weight: 700;
 }
+.catch-phrase1 {
+    color: #00A065;
+    font-weight: 200 !important;
+}
 .catch-phrase2 {
     color: #8CBF3F;
+    font-weight: 200 !important;
 }
 .catch-phrase3 {
-    color: #F44336;
-    font-weight: bold;
+    color: #b7352c;
+    font-weight: 200 !important;
 }
 .catch-phrase4 {
     color: #ffffbb;
-    font-weight: bold;
+    font-weight: 200 !important;
 }
 .row {
     margin-left: 0px !important;
@@ -1726,8 +1733,10 @@ header {
 @media only screen and (max-width: 700px) {
     #banner-phone {
         display: none !important;
+        /*right:*/
     }
     #bannerphonediv {
+        /*width: 100%;*/
         display: none !important;
     }
     #shadowMD {
