@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="enviroCar website">
+        <meta name="author" content="52north GmbH">
+        <link rel="icon" href="assets/app_logo.png">
+
+        <title>enviroCar.org</title>
+
+        <!-- Bootstrap core CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Custom fonts for this template -->
+        <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:200,300,400,700,200light,300light,400light,700light" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!-- Custom styles for this template -->
+        <link href="css/style.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="js/i18nextify.min.js"></script>
+        <script src="js/i18nextXHRBackend.min.js"></script>
+        <script>
+            window.i18nextify
+                    .init({
+                        backend: {
+                            loadPath: 'locales/{{lng}}/translation.json'
+                        }});
+        </script>
+    </head>
+
+    <body id="page-top" style="display: none; background-color: #fff;">
+
+        <!-- Navigation Bar -->
+        <nav class="navbar fixed-top navbar-dark bg-primary navbar-expand-lg navbar-expand-md" style="position: fixed; top: 0; border-bottom: solid 1px #0065A0;" id="mainNav">
+            <a style="padding: 0;" class="navbar-brand js-scroll-trigger" href="#page-top">
+                <img style="height: 80%; width: auto;" alt="enviroCar logo" src="assets/logo_white.png">
+            </a>
+            <button class="navbar-toggler ml-auto navbar-dark" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav mr-auto navbar-right">
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" onclick="openSubpage('index.html')">nav.home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" onclick="openSubpage('collect.html')">nav.collect</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" onclick="openSubpage('share.html')">nav.share</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" onclick="openSubpage('analysis.html')">nav.analysis</a>
+                    </li>
+                    <li class="nav-item nav-onSelected">
+                        <a class="nav-link js-scroll-trigger" href="#page-top">nav.resources</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="http://pilot.52north.org/envirocar-ng/">
+                            <img src="assets/login_white.png"/>nav.login</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">nav.language</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="lngOption" onclick="changeLanguage('en')">English</a></li>
+                            <li><a class="lngOption" onclick="changeLanguage('de')">Deutsch</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="placeholder" style="height: 50px;"></div>
+
+        <!-- Resources -->
+        <section style="background-color: #fff;">
+            <div class="container-fluid row col-12 nomargin" style="margin-bottom: 86px !important;">
+                <h2 class="section-heading col-8" style="text-align: center; margin:auto; margin-bottom: 16px;">res1</h2>
+                <p class="section-lead">sh2<strong class="catch-phrase2">Open Data</strong>sh3<strong></strong>
+                    sh4<strong class="catch-phrase2">smart Cities</strong>sh5
+                </p> 
+            </div>
+        </section>
+
+        <!-- Share: OpenData -->
+        <section style="background-color: #f3f3f3;">
+            <div class="container-fluid row row-eq-height col-12 nomargin">
+                <div class="row col-lg-6 col-md-6 col-sm-12 col-12 noPadding nomargin div-frame" style="  display: flex;
+                     justify-content: center;
+                     align-items: center; ">
+                    <div>
+                        <hr class="col-12 section-heading-spacer">
+                        <div class="container-fluid row col-12 nomargin">
+                            <h2 class="section-heading col-12" style="text-align: center; margin:auto; margin-bottom: 16px;">res1</h2>
+                        </div>
+                        <p class="section-lead nomargin">sh7<br>
+                            sh8<strong class="catch-phrase3">sh9</strong><br>
+                            sh10
+                            <strong class="catch-phrase2">sh11</strong>
+                            sh12
+                            <strong class="catch-phrase2">sh13</strong>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-1 col-md-1 hidden-sm hidden-xs col-0"></div>
+                <div class="col-lg-5 col-md-5 col-sm-12 col-12 noPadding nomargin img-frame">
+                    <span class="helper"></span>
+                    <img class="img-fluid" src="assets/pexels4.jpg" alt="">
+                </div>
+            </div>
+        </section>
+        <section style="background-color: #f3f3f3;">
+            <div id="privacy" class="container-fluid row row-eq-height col-12 nomargin">
+                <div class="col-lg-5 col-md-5 col-sm-12 col-12 noPadding nomargin img-frame">
+                    <span class="helper"></span>
+                    <img class="img-fluid" src="assets/datenschutz.jpg" alt="">
+                </div>
+                <div class="col-lg-1 col-md-1 hidden-sm hidden-xs col-0"></div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-12 noPadding nomargin div-frame" style="  display: flex;
+                     justify-content: center;
+                     align-items: center; ">
+                    <div>
+                        <div class="container-fluid row col-12 nomargin">
+                            <h2 class="section-heading col-12" style="text-align: center; margin:auto; margin-bottom: 16px;">sh14</h2>
+                        </div>
+                        <p class="section-lead nomargin col-12">
+                            sh15<strong class="catch-phrase2">sh15b</strong>sh15c<br><br>
+                            sh16<strong class="catch-phrase1">Tracks</strong>sh16b<strong class="catch-phrase1">sh16c</strong>sh16d
+                            <strong class="catch-phrase">sh16e</strong>sh16f<strong class="catch-phrase">sh16g</strong><br><br>
+                            sh17<strong class="catch-phrase1">sh17b</strong>sh17c<strong class="catch-phrase1">sh17d</strong>sh17e
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Share: how to  -->
+        <section style="background-color: #fff;">
+            <div class="container-fluid row row-eq-height col-12 nomargin">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-12 noPadding nomargin div-frame">
+                    <hr class="col-12 section-heading-spacer">
+                    <div class="container-fluid row col-12 nomargin">
+                        <h2 class="section-heading col-12" style="text-align: center; margin:auto; margin-bottom: 16px;">sh18</h2>
+                    </div>
+                    <p class="section-lead nomargin">
+                        sh19<br><br>
+                        sh20
+                    </p>
+                </div>
+                <div class="col-lg-1 col-md-1 hidden-sm hidden-xs col-0"></div>
+                <div class="col-lg-5 col-md-5 col-sm-12 col-12 noPadding nomargin img-frame">
+                    <span class="helper"></span>
+                    <img class="img-fluid" src="assets/settings.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        <!-- Share: How to Access Data  -->
+        <section style="background-color: #f3f3f3;">
+            <div class="container-fluid row row-eq-height col-12 nomargin">
+                <div class="col-lg-5 col-md-5 col-sm-12 col-12 noPadding nomargin img-frame">
+                    <span class="helper"></span>
+                    <img class="img-fluid" src="assets/access.png" alt="">
+                </div>
+                <div class="col-lg-1 col-md-1 hidden-sm hidden-xs col-0"></div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-12 noPadding nomargin div-frame" style="  display: flex;
+                     justify-content: center;
+                     align-items: center; ">
+                    <div>
+                        <hr class="col-12 section-heading-spacer">
+                        <div class="container-fluid row col-12 nomargin">
+                            <h2 class="section-heading col-12" style="text-align: center; margin:auto; margin-bottom: 16px;">sh21</h2>
+                        </div>
+                        <p class="section-lead nomargin col-12">
+                            sh22<br><br>
+                            sh23<a class="js-scroll-trigger" href='#privacy'>sh24</a>sh25<br>
+                            sh26<a target="_blank" href="https://envirocar.org/api/stable">enviroCar API</a>sh26b<a target="_blank" href="http://envirocar.github.io/enviroCar-server/api/">sh26c</a>.<br>
+                            sh27
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Collect: How to delete MY Data  -->
+        <section style="background-color: #fff;">
+            <div class="container-fluid row row-eq-height col-12 nomargin">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-12 noPadding nomargin div-frame" style="  display: flex;
+                     justify-content: center;
+                     align-items: center; ">
+                    <!--<hr class="col-12 section-heading-spacer">-->
+                    <div>
+                        <hr class="col-12 section-heading-spacer">
+                        <div class="container-fluid row col-12 nomargin">
+                            <h2 class="section-heading col-12" style="text-align: center; margin:auto; margin-bottom: 16px;">sh28</h2>
+
+                        </div>
+                        <p class="section-lead nomargin col-12">
+                            sh29<br>
+                            sh30<br><br>
+                            <strong>sh31</strong>sh32<a class="js-scroll-trigger" href="#privacy">sh32b</a>sh32c
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-1 col-md-1 hidden-sm hidden-xs col-0"></div>
+                <div class="col-lg-5 col-md-5 col-sm-12 col-12 noPadding nomargin img-frame">
+                    <span class="helper"></span>
+                    <img class="img-fluid" src="assets/delete.png" alt="">
+                </div>
+            </div>
+        </section>
+        
+        
+        
+        
+        <section style="background-color:#fff;">
+            <hr class="col-6 section-heading-spacer" style="text-align: center;">
+            <div id="access" class="container" style="min-width: 70% !important;">
+                <div class="col-12 mr-auto" style="padding-bottom: 35px;">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading mr-auto"  style="padding-bottom: 24px;">pf.da1</h2>
+                    <p class="section-lead">pf.da2<strong>
+                            enviroCar Webapp</strong>pf.da3<br><br>
+                        pf.da4<a href="https://envirocar.org/api/stable/">enviroCar API</a>pf.da5
+                        <a href="http://envirocar.org.github.io/enviroCar-server/api/">pf.da6</a>.
+                        <br><br>
+                        pf.da7<br><br>
+                        pf.da8
+                        <a href="https://opendatacommons.org/licenses/odbl/1.0/">Open Database License (ODbL)</a>
+                        pf.da9<br><br>
+                    </p>
+                </div>
+            </div>
+        </section>
+       
+       
+        <section style="background-color:#e6e6e6;">
+            <hr class="col-6 section-heading-spacer" style="text-align: center;">
+            <div id="products" class="container" style="min-width: 70% !important;">
+                <div class="col-12 ml-auto" style="padding-bottom: 35px;">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading" style="padding-bottom: 24px;">maps1</h2>
+                    <p class="section-lead">pf.dtc10<strong>enviroCar Webapp</strong>maps2<strong>maps3</strong>
+                        maps4
+                        <a href="https://github.com/envirocar">maps5</a>maps6
+                    </p>
+                </div>
+                <div class='col-12 float-right'> 
+                    <a onclick="gotoSubpageSection('analysis.html', 'maps')" id="code" type="submit" class="section-lead btn btn-primary float-right btn-moreinfo" style="color:#fff;">pf.showMore</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="research" class="sectionResearch" style=" background-color: #fff;">
+            <hr class="col-6 section-heading-spacer" style="text-align: center;">
+            <div class="container noPadding" style="min-width: 70% !important;"> 
+                <div class="col-12 mr-auto" style="padding-bottom: 35px;">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading mr-auto" style="padding-bottom: 24px;">enviroCar Source Code</h2>
+                    <p class="section-lead">
+                        src.cd1
+                        <a href="https://github.com/envirocar">src.cd2</a>src.cd3
+                    </p>
+                </div>
+                <div class="col-12 row noPadding nomargin">
+                    <div class="col-lg-3 col-md-6 col-sm-6 portfolio-item" style="margin-bottom: 24px;">
+                        <div class="card card-1 card-anim card-step">
+                            <a target="_blank" href="https://github.com/enviroCar/enviroCar-server">
+                                <div style="position:relative;"><img class="card-img-top" src="assets/env_server.png" alt="enviroCar server">
+                                </div>
+                            </a>
+                            <div class="card-body">
+                                <h4 class="card-title card-step-title">
+                                    <a target="_blank" class="js-scroll-trigger" href="https://github.com/enviroCar/enviroCar-server" style="color: #313131 !important;">
+                                        <img style="width: 24px; height: 24px;margin-right: 4px; margin-bottom: 5px;" src="assets/products/GitHub-Mark.png">
+                                        env_server_title
+                                    </a>
+                                </h4>
+                                <p class="sourceCode-text">
+                                    env_server_text</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 portfolio-item" style="margin-bottom: 24px;">
+                        <div class="card card-1 card-anim card-step">
+                            <a target="_blank" href="https://github.com/MojioMS/enviroCar-landing-page">
+                                <div style="position:relative;"><img class="card-img-top" src="assets/env_website.png" alt="enviroCar website">
+                                </div>
+                            </a>
+                            <div class="card-body">
+                                <h4 class="card-title card-step-title">
+                                    <a target="_blank" class="js-scroll-trigger" href="https://github.com/MojioMS/enviroCar-landing-page" style="color: #313131 !important;">
+                                        <img style="width: 24px; height: 24px;margin-right: 4px; margin-bottom: 5px;" src="assets/products/GitHub-Mark.png">env_website_title</a>
+                                </h4>
+                                <p class="sourceCode-text">
+                                    env_website_text</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 portfolio-item" style="margin-bottom: 24px;">
+                        <div class="card card-1 card-anim card-step">
+                            <a target="_blank" href="https://github.com/enviroCar/enviroCar-app">
+                                <div style="position:relative;"><img class="card-img-top" src="assets/env_app.png" alt="enviroCar android app">
+                                </div>
+                            </a>
+                            <div class="card-body">
+                                <h4 class="card-title card-step-title">
+                                    <a target="_blank" class="js-scroll-trigger" href="https://github.com/enviroCar/enviroCar-app" style="color: #313131 !important;">
+                                        <img style="width: 24px; height: 24px;margin-right: 4px; margin-bottom: 5px;" src="assets/products/GitHub-Mark.png">env_app_title</a>
+                                </h4>
+                                <p class="sourceCode-text">
+                                    env_app_text</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 portfolio-item" style="margin-bottom: 24px;">
+                        <div class="card card-1 card-anim card-step">
+                            <a target="_blank" href="https://github.com/enviroCar/envirocar-www-ng/tree/develop">
+                                <div style="position:relative;"><img class="card-img-top" src="assets/env_webapp.png" alt="enviroCar webapp">
+                                </div>
+                            </a>
+                            <div class="card-body">
+                                <h4 class="card-title card-step-title">
+                                    <a target="_blank" href="https://github.com/enviroCar/envirocar-www-ng/tree/develop" style="color: #313131 !important;">
+                                        <img style="width: 24px; height: 24px;margin-right: 4px; margin-bottom: 5px;" src="assets/products/GitHub-Mark.png">env_webapp_title</a>
+                                </h4>
+                                <p class="sourceCode-text">
+                                    env_webapp_text</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        Dokumentation 
+        <section id="documentation">
+            <hr class="col-6 section-heading-spacer" style="text-align: center;">
+            <div class="container">
+                <h2 class="section-heading" style="text-align: center; padding-bottom: 32px;">apiDoc</h2>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h4>API</h4>
+                        <p class="lead">api1<br><br>
+                            api2<strong>api3</strong>: 
+                            <a href="http://envirocar.github.io/enviroCar-server/api/">http://envirocar.github.io/enviroCar-server/api/</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h4>API URLs</h4>
+                        <ul class="lead">
+                            <li>api4<a href="https://envirocar.org/api/stable/">https://envirocar.org/api/stable/</a></li>
+                            <li>api5<a href="https://envirocar.org/api/dev/">https://envirocar.org/api/dev/</a></li>
+                        </ul>	
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h4>api6</h4>
+                        <p class="lead">api7
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h4>api8</h4>
+                        <p class="lead">api9
+                            <a href="http://opendatacommons.org/licenses/odbl/1.0/" target="_blank">Open Database License (ODbL)</a> 
+                            api10<a href="./terms.php#license">api11</a>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="bg-primary">
+            <div class="row footerdiv">
+                <div class="row col-12" style="margin: auto;">
+
+                    <div class="row col-xs-12 col-sm-12 col-md-4 col-lg-2 col-4">
+                        <span class="helper"></span>
+                        <a class="js-scroll-trigger col-md-12 col-10 noPadding" href="#page-top" style="margin:auto;width: 100%; height: auto;">
+                            <img class="footer-logo" style="width: 100%; display: block; margin: 0;" src="assets/logo_white.png" alt="enviroCar logo white inverse"/>
+                        </a>
+                    </div>
+                    <div class="spaceholder col-lg-2 col-md-2 hidden-sm hidden-xs"></div>
+                    <div class="footer-item col-xs-6 col-sm-6 col-md-4 col-lg-4">
+                        <h3>ft.background</h3>
+                        <ul>
+                            <li><a class="footerLink"onclick="openSubpage('about.html')">ft.about</a></li>
+                            <li><a class="footerLink" onclick="openSubpage('press.html')">ft.press</a></li>
+                            <li><a class="footerLink" onclick="openSubpage('faq.html')">ft.faq</a></li>
+                            <li><a class="footerLink" onclick="openSubpage('imprint.html')">ft.imprint</a></li>
+                            <li><a class="footerLink" onclick="openSubpage('conditions.html')">ft.terms</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-item col-xs-6 col-sm-6 col-md-4 col-lg-4">
+                        <h3>ft.follow</h3>
+                        <ul>
+                            <li><a href="https://twitter.com/enviroCar_org?ref_src=twsrc%5Etfw&ref_url=https%3A%2F%2Fenvirocar.org%2Findex.php" target="_blank">Twitter</a></li>
+                            <li><a href="https://www.facebook.com/enviroCar/" target="_blank">Facebook</a></li>
+                            <li><a href="https://github.com/enviroCar" target="_blank">GitHub</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Bootstrap core JavaScript -->
+        <!--<script src="js/jquery.min.js"></script>-->
+        <script src="js/jquery.easing.1.3.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/scrolling-nav.js"></script>
+        <script src="js/language-url.js"></script>
+
+        <script>
+                                $(function () {
+                                    var includes = $('[data-include]');
+                                    jQuery.each(includes, function () {
+                                        var file = '' + $(this).data('include') + '.html';
+                                        $(this).load(file);
+                                    });
+                                });
+        </script>
+
+    </body>
+
+</html>

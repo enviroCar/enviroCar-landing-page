@@ -107,6 +107,9 @@
 .parallax-ana3 { 
     background-image: url("..//assets/analyze2.png");
 }
+.parallax-ana4 { 
+    background-image: url("..//assets/envCar_Foto06.jpg");
+}
 /* Turn off parallax scrolling for tablets and phones. Increase/decrease the pixels if needed */
 @media only screen and (max-device-width: 720px) {
     .parallax {
