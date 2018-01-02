@@ -34,6 +34,7 @@
     "platform.app1": "Der Adapter wird in dein Fahrzeug gesteckt und die enviroCar App sammelt Motorsensordaten Deines Fahrzeugs während Du fährst. Der Adapter muss gekauft werden. Wir empfehlen den ",
     "platform.app2": "Cartrend Bluetooth OBD-II Adapter.",
     "platform.app3": "Die App ist kostenlos.",
+    "main_app_2": "assets/app_2_de.png",
 
     "share": "Teile Fahrtdaten",
     "share1": "Mit der App kannst du Deine aufgenommen Fahrten hochladen und so den enviroCar Datensatz bereichern.",
@@ -106,6 +107,7 @@
     "collect10": "Um eine Verbindung mit dem in Dein Fahrzeug eingesteckten OBD-II Adapter herzustellen, musst Du Bluetooth aktivieren und als Pairing-Gerät den Adapter auswählen. Fertig!",
     "collect11": "Fahrt aufzeichnen",
     "collect12": "Zum Starten einer Aufzeichnung müssen vier Voraussetzungen erfüllt sein:",
+    "start_track": "assets/start_track_de.png",
     "col1": "Bluetooth aktiviert",
     "col2": "GPS aktiviert",
     "col3": "Fahrzeugtyp ausgewählt",
@@ -147,6 +149,7 @@
     "sh17c": " Start und Ziel Deiner Messfahrten. Sofern Du diese Funktion in der App nicht explizit deaktivierst, werden die ersten und letzten 250 Meter einer jeden Messfahrt abgeschnitten - mindestens aber die Strecken, die in der ersten und letzten Minute des jeweiligen Messvorganges gefahren wurden. So verhindern Wir, dass Messfahrten mit ",
     "sh17d": "häufig angefahrenen Privat- oder Geschäftsadressen",
     "sh17e": " in Verbindung gebracht werden könnten.",
+    "upload_track": "assets/settings_de.png",
     "sh18": "Fahrten als OpenData freigeben",
     "sh19": "Deine aufgezeichneten Fahrten sind erstmal nur auf deinem Smartphone. Du findest Deine Fahrten im Dashboard unter \"meine Fahrten\". Die Fahrten sind unterteilt in \"Lokale\" und \"Hochgeladene\" Fahrten.",
     "sh20": "Du kannst für jede Deiner lokalen Fahrten einzeln entscheiden, ob Du sie als Open Data bereitstellen möchtest oder nicht. Du kannst auch in den Allgemeinen Einstellungen festlegen, dass jede Fahrt automatisch hochgeladen werden soll, sobald Dein Smartphone sich im WLAN befindet - wenn Du das möchtest.",
@@ -166,6 +169,7 @@
     "sh32": "Fahrten, die einmal als OpenData publiziert wurden, können bis zum Zeitpunkt der Löschung bereits von anderen heruntergeladen worden sein und können so immernoch unter der OpenData Lizenz und ",
     "sh32b": "unter Berücksichtigung unseres Datenschutzes",
     "sh32c": " im Umlauf sein.",
+    "delete_track": "assets/delete_de.png",
 
     "ana1": "Analysieren",
     "ana2": "EnviroCar bietet Sichten auf einzelne Fahrten, interaktive Karten zu analysierten enviroCar Gemeinschaftsdatensatz, und viele Möglichkeiten die Fahrtdaten ohne Statistikkenntnisse in Excel oder professionell in R oder in weiteren Programmiersprachen herunterzuladen, zu explorieren, und zu analysieren.",
@@ -180,8 +184,8 @@
     "ana.wa5": "Freie Tools zur weiteren Analyse",
     "ana.wa6": "Die WebApp bietet umfangreiche Features für unterschiedliche Sichten auf Deine gesammelten Daten. Melde dich auf der Webseite an um zur WebApp zu gelangen.",
 
-    "res1" : "Ressourcen",
-    "res2" : "",
+    "res1": "Ressourcen",
+    "res2": "",
 
     "ana.webapp.img": "assets/webapp/dashboard_1_de.PNG",
     "ana.webapp.img1": "assets/webapp/dashboard_1_de.PNG",

@@ -1101,10 +1101,11 @@ iframe {
     font-size: 75%;
 }
 .android-btn{
-    height: 60px; 
-    position: absolute; 
+    height: 60px;
+    position: relative;
+    margin-top: 24px;
     bottom: 0%;
-    left: 50%; 
+    left: 50%;
     margin-left: -120px;
     width: 240px;
     background-color: #000;
