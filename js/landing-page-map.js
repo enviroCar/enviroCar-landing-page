@@ -1,3 +1,7 @@
+var layer = new ol.layer.Tile({
+    source: new ol.source.OSM()
+});
+
 var layers = [
     new ol.layer.Tile({
         source: new ol.source.OSM()
@@ -6,7 +10,10 @@ var layers = [
         source: new ol.source.ImageWMS({
             url: 'http://processing.envirocar.org:9090/geoserver/wms',
             port: 9090,
-            params: {'LAYERS': 'cite:tracks'},
+            params: {
+                'LAYERS': 'cite:roadsegments',
+                'STYLES': 'speedinterpolation'
+            },
             ratio: 1,
             serverType: 'geoserver'
         })
@@ -21,6 +28,7 @@ var map = new ol.Map({
         zoom: 6
     })
 });
+
 
 setTimeout(function () {
     window.dispatchEvent(new Event('resize'));

@@ -26,6 +26,8 @@
     }
 };
 
+div.mapcanvas {
+}
 
 /* material design icons */
 .material-icons.md-18 { font-size: 18px; }
@@ -1986,11 +1988,11 @@ header {
 }
 @keyframes tempomat {
     0% {
-        right: -100%;
+        right: -53%;
         -webkit-transform: rotate(-90deg);
     }
     18% {
-        right: -100%;
+        right: -53%;
         -webkit-transform: rotate(-90deg);
     }
     19.9% {
@@ -2014,11 +2016,11 @@ header {
         -webkit-transform: rotate(-60deg);
     }
     40% {
-        right: 100%;
+        right: 147%;
         -webkit-transform: rotate(-90deg);
     }
     100% {
-        right: 100%;
+        right: 147%;
         -webkit-transform: rotate(-90deg);
     }
 }
