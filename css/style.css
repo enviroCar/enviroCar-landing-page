@@ -1778,6 +1778,9 @@ header {
 }
 
 .screenshot1 {
+    -moz-animation:    25s swipe1 linear infinite;
+    -o-animation:      25s swipe1 linear infinite;
+    -ms-transition:    25s swipe1 linear infinite;
     animation: 25s swipe1 linear infinite;
     -webkit-animation: 25s swipe1 linear infinite;
     position: absolute;

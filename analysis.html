@@ -25,6 +25,8 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <script src="https://openlayers.org/en/v4.6.2/build/ol.js"></script>
+        <script type="text/javascript" src="http://www.openlayers.org/api/OpenLayers.js"></script>
+        <script type="text/javascript" src="http://maps.stamen.com/js/tile.stamen.js?v1.3.0"></script>
         <script src="js/i18nextify.min.js"></script>
         <script src="js/i18nextXHRBackend.min.js"></script>
         <script>
@@ -100,7 +102,10 @@
                 </p>
             </div>
         </section>
-        <div id="map" class="container-fluid row col-12 nomargin map" style="height: 80%;"></div>
+        <div id="map" data-provider="toner" class="container-fluid row col-12 nomargin map" style="height: 80%; width: 100%;"></div>
+        <!--<div id="map-main" class="map switch" data-provider="toner">-->
+        <!--</div>-->
+
 
         <!-- Image Background Divider parallax -->
         <div class="parallax parallax-ana2"></div>
