@@ -1158,6 +1158,18 @@ iframe {
     margin-left: 0px;
     transition: all 0.2s;
 }
+.ol-control button {
+    background-color: #FFFF00 !important;
+    color: #444 !important;
+    margin: 3px !important;
+    height: 2em !important;
+    width: 2em !important;
+}
+.ol-control button:hover {
+    background-color: #FF8800 !important;
+    margin: 3px !important;
+}
+
 @media (max-width: 460px) {
     .ec-features-2 {
         width: 24px;

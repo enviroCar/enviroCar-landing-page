@@ -33,7 +33,19 @@ function initialize() {
                 ratio: 1,
                 serverType: 'geoserver'
             })
-        })
+        }),
+//        new ol.layer.Image({
+//            source: new ol.source.ImageWMS({
+//                url: 'http://processing.envirocar.org:9090/geoserver/wms',
+//                port: 9090,
+//                params: {
+//                    'LAYERS': 'cite:roadsegments',
+//                    'STYLES': 'speedinterpolions'
+//                },
+//                ratio: 1,
+//                serverType: 'geoserver'
+//            })
+//        })
     ];
     var map = new ol.Map({
         layers: layers,
@@ -43,9 +55,12 @@ function initialize() {
             zoom: 6
         }),
         controls: ol.control.defaults({
-          zoom: false,
-          attribution: false,
-          rotate: false
+          zoom: true,
+          attribution: true,
+          rotate: true
+        }),
+        interactions: ol.interaction.defaults({
+            mouseWheelZoom: false
         })
     });
 }
