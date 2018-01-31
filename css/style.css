@@ -1169,6 +1169,15 @@ iframe {
     background-color: #FF8800 !important;
     margin: 3px !important;
 }
+.ol-zoom.ol-unselectable.ol-control {
+    position: absolute;
+    top: 0;
+}
+.ol-full-screen.ol-unselectable.ol-control {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
 
 @media (max-width: 460px) {
     .ec-features-2 {
@@ -2590,4 +2599,10 @@ header {
     left: 45.5%;
     bottom: 50%;
     opacity: 0; 
+}
+.third-map {
+    float: left;
+    height: 100%;
+    width: 33%;
+    background-color: #b5d0d0;
 }

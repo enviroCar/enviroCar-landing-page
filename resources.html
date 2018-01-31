@@ -25,6 +25,9 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <script src="js/i18nextify.min.js"></script>
         <script src="js/i18nextXHRBackend.min.js"></script>
+        <script src="https://openlayers.org/en/v4.6.2/build/ol.js"></script>
+        <script type="text/javascript" src="http://www.openlayers.org/api/OpenLayers.js"></script>
+        <script type="text/javascript" src="http://maps.stamen.com/js/tile.stamen.js?v1.3.0"></script>
         <script>
             window.i18nextify
                     .init({
@@ -78,53 +81,76 @@
         <div class="placeholder" style="height: 50px;"></div>
 
         <!-- Resources -->
-        <section style="background-color: #fff;">
+        <section style="background-color: #f3f3f3;">
             <div class="container-fluid row col-12 nomargin" style="margin-bottom: 86px !important;">
                 <h2 class="section-heading col-8" style="text-align: center; margin:auto; margin-bottom: 16px;">res1</h2>
                 <p class="section-lead">sh2<strong class="catch-phrase2">Open Data</strong>sh3<strong></strong>
-                    sh4<strong class="catch-phrase2">smart Cities</strong>sh5
+                    sh4 <strong class="catch-phrase2">smart Cities</strong>sh5
                 </p> 
             </div>
         </section>
-       
+
         <!-- Storage and Access -->
-        <section style="background-color:#fff;">
-            <hr class="col-6 section-heading-spacer" style="text-align: center;">
-            <div id="access" class="container" style="min-width: 70% !important;">
-                <div class="col-12 mr-auto" style="padding-bottom: 35px;">
-                    <div class="clearfix"></div>
-                    <h2 class="section-heading mr-auto"  style="padding-bottom: 24px;">pf.da1</h2>
-                    <p class="section-lead">pf.da2<strong>
-                            enviroCar Webapp</strong>pf.da3<br><br>
-                        pf.da4<a href="https://envirocar.org/api/stable/">enviroCar API</a>pf.da5
-                        <a href="http://envirocar.org.github.io/enviroCar-server/api/">pf.da6</a>.
-                        <br><br>
-                        pf.da7<br><br>
-                        pf.da8
-                        <a href="https://opendatacommons.org/licenses/odbl/1.0/">Open Database License (ODbL)</a>
-                        pf.da9<br><br>
-                    </p>
+        <section style="background-color: #fff;">
+            <div class="container-fluid row row-eq-height col-12 nomargin">
+                <div class="row col-lg-6 col-md-6 col-sm-12 col-12 noPadding nomargin div-frame" style="  display: flex;
+                     justify-content: center;
+                     align-items: center; ">
+                    <div>
+                        <hr class="col-12 section-heading-spacer">
+                        <div class="container-fluid row col-12 nomargin">
+                            <h2 class="section-heading col-12" style="text-align: center; margin:auto; margin-bottom: 16px;">pf.da1</h2>
+                        </div>
+                        <p class="section-lead">pf.da2<strong>
+                                enviroCar Webapp</strong>pf.da3<br><br>
+                            pf.da4<a href="https://envirocar.org/api/stable/">enviroCar API</a>pf.da5
+                            <a href="http://envirocar.org.github.io/enviroCar-server/api/">pf.da6</a>.
+                            <br><br>
+                            pf.da7<br><br>
+                            pf.da8
+                            <a href="https://opendatacommons.org/licenses/odbl/1.0/">Open Database License (ODbL)</a>
+                            pf.da9<br><br>
+                        </p>
+                    </div>
+
+                </div>
+                <div class="col-lg-1 col-md-1 hidden-sm hidden-xs col-0"></div>
+                <div class="col-lg-5 col-md-5 col-sm-12 col-12 noPadding nomargin img-frame">
+                    <span class="helper"></span>
+                    <img class="img-fluid" src="assets/storage_access.png" alt="">
                 </div>
             </div>
         </section>
-       
-       
-        <section style="background-color:#e6e6e6;">
+
+        <!-- Maps -->
+        <section style="background-color:#f3f3f3;">
             <hr class="col-6 section-heading-spacer" style="text-align: center;">
-            <div id="products" class="container" style="min-width: 70% !important;">
+            <div id="maps" class="container" style="min-width: 70% !important;">
                 <div class="col-12 ml-auto" style="padding-bottom: 35px;">
                     <div class="clearfix"></div>
-                    <h2 class="section-heading" style="padding-bottom: 24px;">maps1</h2>
-                    <p class="section-lead">pf.dtc10<strong>enviroCar Webapp</strong>maps2<strong>maps3</strong>
-                        maps4
-                        <a href="https://github.com/envirocar">maps5</a>maps6
+                    <h2 class="section-heading" style="padding-bottom: 24px; text-align: center;">ana.mp1</h2>
+                    <p class="section-lead"><!--<strong>enviroCar</strong>ana.mp2<br>-->
+                        ana.mp3<strong>ana.mp4</strong>ana.mp5
                     </p>
-                </div>
-                <div class='col-12 float-right'> 
-                    <a onclick="gotoSubpageSection('analysis.html', 'maps')" id="code" type="submit" class="section-lead btn btn-primary float-right btn-moreinfo" style="color:#fff;">pf.showMore</a>
                 </div>
             </div>
         </section>
+        <div class="col-12 row" style="background-color: #f3f3f3;">
+            <div class="col-4">
+                <p class="section-heading" style="text-align:center;background-color: #f3f3f3;">avgSpeed</p>
+            </div>
+            <div class="col-4" style="background-color: #f3f3f3;">
+                <p class="section-heading" style="text-align:center;background-color: #f3f3f3;">avgCO2</p>
+            </div>
+            <div class="col-4" style="background-color: #f3f3f3;">
+                <p class="section-heading" style="text-align:center;background-color: #f3f3f3;">avgConsumption</p>
+            </div>
+        </div>
+        <div style="height:600px; background-color:#f3f3f3;">
+            <div id="mapres1" class="third-map mapres1 noPadding" style="padding-right:8px !important;"></div>
+            <div id="mapres2" class="row third-map mapres2 noPadding" style="padding-right:8px !important;"></div>
+            <div id="mapres3" class="row third-map mapres3 noPadding"></div>
+        </div>
 
         <section id="research" class="sectionResearch" style=" background-color: #fff;">
             <hr class="col-6 section-heading-spacer" style="text-align: center;">
@@ -208,47 +234,24 @@
             </div>
         </section>
 
-        <!-- Dokumentation -->
-        <section id="documentation">
-            <hr class="col-6 section-heading-spacer" style="text-align: center;">
-            <div class="container">
-                <h2 class="section-heading" style="text-align: center; padding-bottom: 32px;">apiDoc</h2>
-                <div class="row">
-                    <div class="col-lg-12">
-                        <h4>API</h4>
-                        <p class="lead">api1<br><br>
-                            api2<strong>api3</strong>: 
-                            <a href="http://envirocar.github.io/enviroCar-server/api/">http://envirocar.github.io/enviroCar-server/api/</a></p>
-                    </div>
+        <!-- documentation -->
+        <section style="background-color: #f3f3f3;">
+            <div class="container-fluid row row-eq-height col-12 nomargin">
+                <div class="col-lg-5 col-md-5 col-sm-12 col-12 noPadding nomargin img-frame">
+                    <span class="helper"></span>
+                    <img class="img-fluid" src="assets/api.png" alt="">
                 </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <h4>API URLs</h4>
-                        <ul class="lead">
-                            <li>api4<a href="https://envirocar.org/api/stable/">https://envirocar.org/api/stable/</a></li>
-                            <li>api5<a href="https://envirocar.org/api/dev/">https://envirocar.org/api/dev/</a></li>
-                        </ul>	
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <h4>api6</h4>
-                        <p class="lead">api7
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <h4>api8</h4>
-                        <p class="lead">api9
-                            <a href="http://opendatacommons.org/licenses/odbl/1.0/" target="_blank">Open Database License (ODbL)</a> 
-                            api10<a href="./terms.php#license">api11</a>.
+                <div class="col-lg-1 col-md-1 hidden-sm hidden-xs col-0"></div>
+                <div class="row col-lg-6 col-md-6 col-sm-12 col-12 noPadding nomargin div-frame" style="  display: flex;
+                     justify-content: center;
+                     align-items: center; ">
+                    <div>
+                        <hr class="col-12 section-heading-spacer">
+                        <div class="container-fluid row col-12 nomargin">
+                            <h2 class="section-heading col-12" style="text-align: center; margin:auto; margin-bottom: 16px;">src.doc1</h2>
+                        </div>
+                        <p class="section-lead">
+                            src.doc2
                         </p>
                     </div>
                 </div>
@@ -293,6 +296,7 @@
         <script src="js/jquery.easing.1.3.min.js"></script>
         <script src="js/popper.min.js"></script>
         <script src="js/scrolling-nav.js"></script>
+        <script src="js/resource-maps.js"></script>
         <script src="js/language-url.js"></script>
 
         <script>
