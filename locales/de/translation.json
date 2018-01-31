@@ -188,8 +188,8 @@
     "ana.wa6": "Die WebApp bietet umfangreiche Features für unterschiedliche Sichten auf Deine gesammelten Daten. Melde dich auf der Webseite an um zur WebApp zu gelangen.",
 
     "res1": "Ressourcen",
-    "res2": "",
-
+    "res2": "Die enviroCar Daten werden frei verfügbar als Open Data bereitgestellt. Der Zugriff erfolgt standartisiert und wird unten beschrieben. Die enviroCar Platform ist mit mehreren Komponten gebaut. Diese Komponenten sind als Open Source verfügbar.",
+    
     "ana.webapp.img": "assets/webapp/dashboard_1_de.PNG",
     "ana.webapp.img1": "assets/webapp/dashboard_1_de.PNG",
     "ana.webapp.img2": "assets/webapp/dashboard_2_en.png",
