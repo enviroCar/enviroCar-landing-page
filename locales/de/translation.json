@@ -37,10 +37,10 @@
     "main_app_2": "assets/app_2_de.png",
 
     "share": "Teile Fahrtdaten",
-    "share1": "Mit der App kannst du Deine aufgenommen Fahrten hochladen und so den enviroCar Datensatz bereichern.",
+    "share1": "Mit der App kannst du Deine aufgenommenen Fahrten hochladen und so den enviroCar Datensatz bereichern.",
     "share2": "EnviroCar bietet",
     "share3": "freien & offenen Zugriff",
-    "share4": "auf anonymisierte Fahrtdaten der enviroCar Gemeinschaft. Forscher und Planer nutzen die Daten der Fahrzeuge. Helfe, gemeinsam mit Ihnen den",
+    "share4": "auf anonymisierte Fahrtdaten der enviroCar Gemeinschaft. Forscher und Planer nutzen die Daten der Fahrzeuge. Hilf, gemeinsam mit Ihnen den",
     "share5": "Stop&Go Verkehr",
     "share6": "Hoher Treibstoffverbrauch",
 
@@ -56,7 +56,7 @@
     "ana.stops": "Stop & Go's",
     "ana.more": "und vieles mehr",
 
-    "rsc.txt1": "Forscher und Planer nutzen die Daten aus der Sensorik Deines Fahrzeuges. Helfe, gemeinsam mit Ihnen den ",
+    "rsc.txt1": "Forscher und Planer nutzen die Daten aus der Sensorik Deines Fahrzeuges. Hilf, gemeinsam mit Ihnen den ",
     "rsc.txt2": "Straßenverkehr",
     "rsc.txt3": " zu ",
     "rsc.txt4": "optimieren",

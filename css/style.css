@@ -234,6 +234,9 @@ nav {
     cursor: pointer;
     border-bottom: 1px solid rgb(255,255,255);
 }
+.curser:hover {
+    cursor: pointer;
+}
 .nav-onSelected>a {
     background-color: #F3F3F3 !important;
     color: rgba(0,101,160,1) !important;

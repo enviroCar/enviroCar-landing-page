@@ -99,6 +99,7 @@ function openSubpage(subpage) {
             lngParam += "en";
         insertParam("lng", "en");
     }
+    console.log("opening: " + subpage+lngParam);
     location.href = subpage+lngParam;
 };
 
