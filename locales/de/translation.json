@@ -46,6 +46,7 @@
 
     "analyse1": "Analysiere",
     "analyse2": "Welcher Weg ist zur Hauptverkehrszeit schneller und umweltschonender? Wieviel CO2 produziert Dein Fahrzeug? EnviroCar bietet eine Vielzahl an interaktiven Analyse- und Visualisierungstools, Kartenprodukten, und API's mit denen du diese und ähnliche Fragen beantworten kannst.",
+    "analyse2_img": "assets/app_4.png",
 
     "ana.txt1": "In der ",
     "ana.txt2": " kannst Du Dir die Sensordaten zu Deinen Fahrten anschauen.",

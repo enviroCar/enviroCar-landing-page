@@ -46,6 +46,7 @@
 
     "analyse1": "Analyze",
     "analyse2": "Which route is faster and more environmentally friendly at rush hour? How much CO2 does your vehicle produce? EnviroCar offers a variety of interactive analysis and visualization tools, map products, and APIs to answer these and similar questions.",
+    "analyse2_img": "assets/app_4_en.png",
 
     "ana.txt1": "Use the ",
     "ana.txt2": " to explore your tracks' sensor data.",
@@ -85,7 +86,7 @@
     "funding.bigiot.desc": "enviroCar was successfully applied in the First Open Call of the EC funded BIG IoT project. Thus, the enviroCar project is one of the first projects to appear on the BIG IoT marketplace.",
     "funding.bigiot.ack": "This project has received funding from the European Union's Horizon 2020 research and innovation programme under grant agreement No 688038.",
     "funding.tscmg.title": "Traffic flow evaluation in Moenchengladbach",
-    "funding.tscmg.desc": "The enviroCar platform was successfully used in traffic flow evaluation along major traffic roads in the city of Moenchengladbach. Approximately 150 citizens actively collected data using enviroCar. 52°North supported Traffic System Consulting GmbH by assuring quality of services and data and preparing the data for analyis.",
+    "funding.tscmg.desc": "The enviroCar platform was successfully used in traffic flow evaluation along major traffic roads in the city of Moenchengladbach. Approximately 150 citizens actively collected data using enviroCar. 52°North supported Traffic System Consulting GmbH by assuring quality of services and data and preparing the data for analysis.",
     "funding.indiegogo.title": "Funding by IndieGoGo Campaign",
     "funding.indiegogo.desc": "enviroCar has been funded successfully via an IndieGoGo-Campaign. 55 contributors donated financially or recorded the first tracks voluntary. This funding has laid the foundation of the enviroCar platform development.",
 
@@ -126,7 +127,7 @@
     "sh1": "Share Data",
     "sh2": "enviroCar enables the publication of recorded driving data as ",
     "sh3": ". ",
-    "sh4": "Privacy issues are of utmost importance to us. Open Data creates great benefits for the community. We can use the enviroCar community’s collected driving data to turn our cities into",
+    "sh4": "Privacy issues are of utmost importance to us. Open Data creates great benefits for the community. We can use the enviroCar community’s collected driving data to turn our cities into ",
     "sh5": ".",
     "sh6": "Why Share Data?",
     "sh7": "Long red lights, traffic jams and air pollutants…",
@@ -166,7 +167,7 @@
     "sh25": " we offer several ways to access these tracks.",
     "sh26": "Use the ",
     "sh26b": " to download and analyze the data from other drivers. A detailed description of the API can be found ",
-    "sh26c": "here.",
+    "sh26c": "here",
     "sh27": "Users can download their own tracks in various formats (e.g. GeoJSON) via the menus in the track view (To access the track view, log in and click on „Tracks“. In the track view, click on one of the tracks in the list).",
     "sh28": "Delete Data",
     "sh29": "You always have the opportunity to delete your tracks. Use the app to easily delete single tracks.",
