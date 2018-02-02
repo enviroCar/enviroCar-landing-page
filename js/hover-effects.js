@@ -88,9 +88,9 @@ $(function () {
             var lng = i18nextify.i18next.language;
             var imgsrc = "";
             if (lng === 'de') {
-                imgsrc = "assets/webapp/dashboard_2_en.png";
-            } else {
                 imgsrc = "assets/webapp/dashboard_2_de.png";
+            } else {
+                imgsrc = "assets/webapp/dashboard_2_en.png";
             }
             $("#webapp_img").attr("src", imgsrc);
             $('#webapp_img').addClass('webapp-hover');

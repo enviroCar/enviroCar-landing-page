@@ -1221,6 +1221,7 @@ iframe {
     margin-top: 16px;
     margin-bottom: 16px;
     transition: all 0.2s;
+    cursor: pointer;
 }
 .dashboard-item-hover {
     font-weight: bold;
@@ -1228,6 +1229,7 @@ iframe {
     margin-bottom: 16px;
     transition: all 0.2s;
     padding-bottom: 1px !important;
+    cursor: pointer;
 }
 .dashboard-item-hover img {
     margin-right: 8px  !important;
@@ -1729,15 +1731,16 @@ header {
 }
 
 #webapp_img {
-    max-width: 50%;
-    max-height: 476px;
+    max-width: 100%;
+    /*max-height: 476px;*/
     opacity: 0.5;
     -webkit-transition: all 0.3s; /* Safari */
     transition: all 0.3s;
 }
 .webapp-hover {
-    max-height: 476px;
+    /*max-height: 476px;*/
     max-width: 100% !important;
+    width: 100%;
     opacity: 1 !important;
     -webkit-transition: all 0.3s; /* Safari */
     transition: all 0.3s;
