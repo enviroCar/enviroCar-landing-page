@@ -65,7 +65,6 @@ div.mapcanvas {
 .parallax {
     /* Set a specific height */
     height: 60%; 
-
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
@@ -638,6 +637,9 @@ div.transbox p {
     height: 100%;
 }
 @media (min-width: 4097px) {
+    .parallax {
+        height: 40%;
+    }
     .navbar {
         height: 102px;
     }
@@ -703,6 +705,9 @@ div.transbox p {
     }
 }
 @media (min-width: 2049px) and (max-width: 4096px) {
+    .parallax {
+        height: 40%;
+    }
     .navbar {
         height: 84px;
     }
@@ -1014,6 +1019,12 @@ iframe {
     text-align: center; 
     margin: auto;
 }
+/*.img-frame-img {
+    height: auto;
+    width: 100%;
+    text-align: center;
+    margin: auto;
+}*/
 .img-frame img {
     height: auto;
     width: 100%;
@@ -1801,10 +1812,10 @@ header {
 }
 
 .screenshot1 {
+    -webkit-animation: 25s swipe1 linear infinite;
     -moz-animation:    25s swipe1 linear infinite;
     -o-animation:      25s swipe1 linear infinite;
     animation: 25s swipe1 linear infinite;
-    -webkit-animation: 25s swipe1 linear infinite;
     position: absolute;
     z-index: 199;
     width: 100%;
@@ -1845,8 +1856,8 @@ header {
 }
 
 .scr2speed {
-    animation: swipe2spd 25s linear infinite;
     -webkit-animation: swipe2spd 25s linear infinite;
+    animation: swipe2spd 25s linear infinite;
     display: flex;
     align-items: flex-end;
     justify-content:flex-end;
