@@ -173,6 +173,7 @@
     "sh32": "Fahrten, die einmal als OpenData publiziert wurden, können bis zum Zeitpunkt der Löschung bereits von anderen heruntergeladen worden sein und können so immernoch unter der OpenData Lizenz und ",
     "sh32b": "unter Berücksichtigung unseres Datenschutzes",
     "sh32c": " im Umlauf sein.",
+    "share_track":"assets/access_de.png",
     "delete_track": "assets/delete_de.png",
 
     "ana1": "Analysieren",

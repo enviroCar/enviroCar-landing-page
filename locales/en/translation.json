@@ -175,6 +175,7 @@
     "sh32": "Tracks that you have provided as Open Data may have been downloaded before you delete them. Such tracks can still be in circulation under the OpenData License and ",
     "sh32b": "according to our privacy policy",
     "sh32c": ".",
+    "share_track":"assets/access.png",
     "delete_track": "assets/delete_en.png",
 
     "ana1": "Analyze",
