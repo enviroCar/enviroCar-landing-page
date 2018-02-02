@@ -986,7 +986,6 @@ iframe {
     -webkit-transition: all .2s ease; /* Safari and Chrome */
     -moz-transition: all .2s ease; /* Firefox */
     -o-transition: all .2s ease; /* IE 9 */
-    -ms-transition: all .2s ease; /* Opera */
     transition: all .2s ease;
 }
 .card-1 {
@@ -1002,7 +1001,6 @@ iframe {
     backface-visibility: hidden;
     -webkit-transform:translateZ(0) scale(1.05); /* Safari and Chrome */
     -moz-transform:scale(1.05); /* Firefox */
-    -ms-transform:scale(1.05); /* IE 9 */
     -o-transform:translatZ(0) scale(1.05); /* Opera */
     transform:translateZ(0) scale(1.05);
     /*    box-shadow: 8px 8px 4px -4px #888888;  shadow */
@@ -1595,7 +1593,6 @@ header {
     -webkit-transition: all .2s ease; /* Safari and Chrome */
     -moz-transition: all .2s ease; /* Firefox */
     -o-transition: all .2s ease; /* IE 9 */
-    -ms-transition: all .2s ease; /* Opera */
     transition: all .2s ease;
     border-radius: 2px;
     z-index: 50;
@@ -1607,7 +1604,6 @@ header {
     backface-visibility: hidden;
     -webkit-transform:translateZ(0) scale(1.2); /* Safari and Chrome */
     -moz-transform:scale(1.2); /* Firefox */
-    -ms-transform:scale(1.2); /* IE 9 */
     -o-transform:translatZ(0) scale(1.2); /* Opera */
     transform:translateZ(0) scale(1.2);
     /*    box-shadow: 8px 8px 4px -4px #888888;  shadow */
@@ -1807,7 +1803,6 @@ header {
 .screenshot1 {
     -moz-animation:    25s swipe1 linear infinite;
     -o-animation:      25s swipe1 linear infinite;
-    -ms-transition:    25s swipe1 linear infinite;
     animation: 25s swipe1 linear infinite;
     -webkit-animation: 25s swipe1 linear infinite;
     position: absolute;
@@ -1870,7 +1865,6 @@ header {
     -webkit-animation: scr2spd 25s linear infinite;
     -moz-animation:    scr2spd 25s linear infinite;
     -o-animation:      scr2spd 25s linear infinite;
-    -ms-transition:    scr2spd 25s linear infinite;
     animation:         scr2spd 25s linear infinite;
     display: block;
     font-size: 50px;
@@ -1944,7 +1938,6 @@ header {
     -webkit-animation: swipe2time 25s linear infinite;
     -moz-animation:    swipe2time 25s linear infinite;
     -o-animation:      swipe2time 25s linear infinite;
-    -ms-transition:    swipe2time 25s linear infinite;
     animation:         swipe2time 25s linear infinite;
     display: flex;
     align-items: flex-end;
@@ -1962,7 +1955,6 @@ header {
     -webkit-animation: scr2time 25s linear infinite;
     -moz-animation:    scr2time 25s linear infinite;
     -o-animation:      scr2time 25s linear infinite;
-    -ms-transition:    scr2time 25s linear infinite;
     animation:         scr2time 25s linear infinite;
     display: block;
     font-size: 31px;
@@ -2020,45 +2012,54 @@ header {
     0% {
         right: -53%;
         -webkit-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
     }
     18% {
         right: -53%;
         -webkit-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
     }
     19.9% {
         right: 47%;
         -webkit-transform: rotate(-80deg);
+        -ms-transform: rotate(-80deg);
     }
     22% {
         -webkit-transform: rotate(-57deg);
+        -ms-transform: rotate(-57deg);
     }
     28% {
         -webkit-transform: rotate(55deg);
+        -ms-transform: rotate(55deg);
     }
     28.5% {
         -webkit-transform: rotate(25deg);
+        -ms-transform: rotate(25deg);
     }
     30% {
         -webkit-transform: rotate(40deg);
+        -ms-transform: rotate(40deg);
     }
     38% {
         right: 47%;
         -webkit-transform: rotate(-60deg);
+        -ms-transform: rotate(-60deg);
     }
     40% {
         right: 147%;
         -webkit-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
     }
     100% {
         right: 147%;
         -webkit-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
     }
 }
 .scr2arrow {
     -webkit-animation: 25s tempomat linear infinite;
     -moz-animation:    25s tempomat linear infinite;
     -o-animation:      25s tempomat linear infinite;
-    -ms-transition:    25s tempomat linear infinite;
     animation:         25s tempomat linear infinite;
     position: absolute;
     right: 50%;
@@ -2071,7 +2072,6 @@ header {
     -webkit-animation: 25s swipe2 linear infinite;
     -moz-animation:    25s swipe2 linear infinite;
     -o-animation:      25s swipe2 linear infinite;
-    -ms-transition:    25s swipe2 linear infinite;
     animation:         25s swipe2 linear infinite;
     position: absolute;
     z-index: 198;
@@ -2102,7 +2102,6 @@ header {
     -webkit-animation: 25s swipe3top linear infinite;
     -moz-animation:    25s swipe3top linear infinite;
     -o-animation:      25s swipe3top linear infinite;
-    -ms-transition:    25s swipe3top linear infinite;
     animation:         25s swipe3top linear infinite;
     position: absolute;
     top: 0;
@@ -2133,7 +2132,6 @@ header {
     -webkit-animation: 25s swipe3 linear infinite;
     -moz-animation:    25s swipe3 linear infinite;
     -o-animation:      25s swipe3 linear infinite;
-    -ms-transition:    25s swipe3 linear infinite;
     animation:         25s swipe3 linear infinite;
     position: absolute;
     z-index: 197;
@@ -2195,7 +2193,6 @@ header {
     -webkit-animation: 25s swipe4top linear infinite;
     -moz-animation:    25s swipe4top linear infinite;
     -o-animation:      25s swipe4top linear infinite;
-    -ms-transition:    25s swipe4top linear infinite;
     animation:         25s swipe4top linear infinite;
     position: absolute;
     top: 0;
@@ -2245,7 +2242,6 @@ header {
     -webkit-animation: 25s scr4blue linear infinite;
     -moz-animation:    25s scr4blue linear infinite;
     -o-animation:      25s scr4blue linear infinite;
-    -ms-transition:    25s scr4blue linear infinite;
     animation:         25s scr4blue linear infinite;
     position: absolute;
     background-color: #0065A0;
@@ -2258,9 +2254,11 @@ header {
 @keyframes scr4blue {
     0% {
         right: -100%;
+        opacity: 0;
     }
     58% {
         right: -100%;
+        opacity: 0;
     }
     59.9% {
         right: 0%;
@@ -2307,7 +2305,6 @@ header {
     -webkit-animation: 25s swipe4 linear infinite;
     -moz-animation:    25s swipe4 linear infinite;
     -o-animation:      25s swipe4 linear infinite;
-    -ms-transition:    25s swipe4 linear infinite;
     animation:         25s swipe4 linear infinite;
     position: absolute;
     z-index: 196;
@@ -2359,7 +2356,6 @@ header {
     -webkit-animation: 25s swipe5 linear infinite;
     -moz-animation:    25s swipe5 linear infinite;
     -o-animation:      25s swipe5 linear infinite;
-    -ms-transition:    25s swipe5 linear infinite;
     animation:         25s swipe5 linear infinite;
     position: absolute;
     z-index: 195;
@@ -2388,7 +2384,6 @@ header {
     -webkit-animation: 25s swipe5stats linear infinite;
     -moz-animation:    25s swipe5stats linear infinite;
     -o-animation:      25s swipe5stats linear infinite;
-    -ms-transition:    25s swipe5stats linear infinite;
     animation:         25s swipe5stats linear infinite;
     position: absolute;
     z-index: 194;
@@ -2430,7 +2425,6 @@ header {
     -webkit-animation: 25s scr5bot linear infinite;
     -moz-animation:    25s scr5bot linear infinite;
     -o-animation:      25s scr5bot linear infinite;
-    -ms-transition:    25s scr5bot linear infinite;
     animation:         25s scr5bot linear infinite;
     position: absolute;
     background-color: rgba(100,100,100,0.4);
@@ -2475,7 +2469,6 @@ header {
     -webkit-animation: 15s share-sag linear infinite;
     -moz-animation:    15s share-sag linear infinite;
     -o-animation:      15s share-sag linear infinite;
-    -ms-transition:    15s share-sag linear infinite;
     animation:         15s share-sag linear infinite;
     width: 21.3% !important;
     height: auto;
@@ -2508,7 +2501,6 @@ header {
     -webkit-animation: 15s share-sag linear infinite; 
     -moz-animation: 15s share-sag linear infinite;
     -o-animation: 15s share-sag linear infinite;
-    -ms-transition: 15s share-sag linear infinite;
     animation: 15s share-sag linear infinite; 
     width: 35.4%;
     height: auto;
@@ -2521,7 +2513,6 @@ header {
     -webkit-animation: 15s share-co2 linear infinite;
     -moz-animation:    15s share-co2 linear infinite;
     -o-animation:      15s share-co2 linear infinite;
-    -ms-transition:    15s share-co2 linear infinite;
     animation:         15s share-co2 linear infinite;
     width: 35.5% !important;
     height: auto;
@@ -2554,7 +2545,6 @@ header {
     -webkit-animation: 15s share-co2 linear infinite; 
     -moz-animation: 15s share-co2 linear infinite;
     -o-animation: 15s share-co2 linear infinite;
-    -ms-transition: 15s share-co2 linear infinite;
     animation: 15s share-co2 linear infinite; 
     width: 35.4%;
     height: auto;
@@ -2567,7 +2557,6 @@ header {
     -webkit-animation: 15s share-fuel linear infinite;
     -moz-animation:    15s share-fuel linear infinite;
     -o-animation:      15s share-fuel linear infinite;
-    -ms-transition:    15s share-fuel linear infinite;
     animation:         15s share-fuel linear infinite;
     width: 29.9% !important;
     height: auto;
@@ -2597,7 +2586,6 @@ header {
     -webkit-animation: 15s share-fuel linear infinite; 
     -moz-animation: 15s share-fuel linear infinite;
     -o-animation: 15s share-fuel linear infinite;
-    -ms-transition: 15s share-fuel linear infinite;
     animation: 15s share-fuel linear infinite; 
     width: 35.4%;
     height: auto;
