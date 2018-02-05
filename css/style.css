@@ -1028,12 +1028,12 @@ iframe {
     text-align: center;
     margin: auto;
 }*/
-.img-frame img {
+/*.img-frame img {
     height: auto;
     width: 100%;
     text-align: center;
     margin: auto;
-}
+}*/
 #street {
     width: 100%;
 }
@@ -1735,9 +1735,9 @@ header {
     width: auto;
 }
 .img-frame img {
-    height: auto;
-    vertical-align: middle;
-    margin: auto;
+    /*    height: auto;
+        vertical-align: middle;
+        margin: auto;*/
 }
 
 #webapp_img {
@@ -1811,6 +1811,19 @@ header {
 
     #mainbannerXL{
         display: none !important;
+    }
+}
+@media only screen and (min-width: 3000px){ 
+    #mainbannerXS{
+        display: none !important;
+    }
+
+    #mainbannerMD{
+        display: none !important;
+    }
+
+    #mainbannerXL{
+        display: block !important;
     }
 }
 
@@ -2358,33 +2371,33 @@ header {
     opacity: 0;
     width: 47%;
     height: 18%;
-    right: 23%;
+    right: 27%;
     top: 53%;
 }
 @keyframes swipes05 {
     0% {
         opacity: 0;
-        right: 23%;
+        right: 27%;
     }
     27.8% {
         opacity: 0;
-        right: 23%;
+        right: 27%;
     }
     28% {
         opacity: 1;
-        right: 23%;
+        right: 27%;
     }
     29.8% {
         opacity: 1;
-        right: 23%;
+        right: 27%;
     }
     30% {
         opacity: 0;
-        right: 23%;
+        right: 27%;
     }
     100% {
         opacity: 0;
-        right: 23%;
+        right: 27%;
     }
 }
 .scr06 {
@@ -2397,33 +2410,33 @@ header {
     opacity: 0;
     width: 47%;
     height: 18%;
-    right: 23%;
+    right: 27%;
     top: 53%;
 }
 @keyframes swipes06 {
     0% {
         opacity: 0;
-        right: 23%;
+        right: 27%;
     }
     29.8% {
         opacity: 0;
-        right: 23%;
+        right: 27%;
     }
     30% {
         opacity: 1;
-        right: 23%;
+        right: 27%;
     }
     31.8% {
         opacity: 1;
-        right: 23%;
+        right: 27%;
     }
     32% {
         opacity: 0;
-        right: 23%;
+        right: 27%;
     }
     100% {
         opacity: 0;
-        right: 23%;
+        right: 27%;
     }
 }
 .scr07 {
@@ -2442,27 +2455,27 @@ header {
 @keyframes swipes07 {
     0% {
         opacity: 0;
-        right: 23%;
+        right: 27%;
     }
     31.8% {
         opacity: 0;
-        right: 23%;
+        right: 27%;
     }
     32% {
         opacity: 1;
-        right: 23%;
+        right: 27%;
     }
     33.8% {
         opacity: 1;
-        right: 23%;
+        right: 27%;
     }
     34% {
         opacity: 0;
-        right: 23%;
+        right: 27%;
     }
     100% {
         opacity: 0;
-        right: 23%;
+        right: 27%;
     }
 }
 .scr08 {
@@ -2475,33 +2488,33 @@ header {
     opacity: 0;
     width: 47%;
     height: 18%;
-    right: 23%;
+    right: 27%;
     top: 53%;
 }
 @keyframes swipes08 {
     0% {
         opacity: 0;
-        right: 23%;
+        right: 27%;
     }
     33.8% {
         opacity: 0;
-        right: 23%;
+        right: 27%;
     }
     34% {
         opacity: 1;
-        right: 23%;
+        right: 27%;
     }
     35.8% {
         opacity: 1;
-        right: 23%;
+        right: 27%;
     }
     36% {
         opacity: 0;
-        right: 23%;
+        right: 27%;
     }
     100% {
         opacity: 0;
-        right: 23%;
+        right: 27%;
     }
 }
 .scr09 {
