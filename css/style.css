@@ -307,9 +307,9 @@ nav {
     /*    position: relative;
         bottom: -6px;*/
 }
-* {
+/** {
     font-family: arial;
-}
+}*/
 
 body {
     background-color: #333;
