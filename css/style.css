@@ -1006,12 +1006,15 @@ iframe {
 .card-anim:hover {
     box-shadow: 0 4px 8px rgba(0,0,0,0.25), 0 4px 8px rgba(0,0,0,0.22);
     -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
     backface-visibility: hidden;
     -webkit-transform:translateZ(0) scale(1.05); /* Safari and Chrome */
     -moz-transform:scale(1.05); /* Firefox */
     -o-transform:translatZ(0) scale(1.05); /* Opera */
-    transform:translateZ(0) scale(1.05);
-    /*    box-shadow: 8px 8px 4px -4px #888888;  shadow */
+    -ms-transform:scale(1.05);
+    /*transform:translateZ(0) scale(1.05);*/
+        /*box-shadow: 8px 8px 4px -4px #888888;*/
     z-index: 100;
 }
 
