@@ -638,7 +638,7 @@ div.transbox p {
 }
 @media (min-width: 4097px) {
     .parallax {
-        height: 40%;
+        height: 45%;
     }
     .navbar {
         height: 102px;
@@ -706,7 +706,7 @@ div.transbox p {
 }
 @media (min-width: 2049px) and (max-width: 4096px) {
     .parallax {
-        height: 40%;
+        height: 50%;
     }
     .navbar {
         height: 84px;
@@ -780,6 +780,9 @@ iframe {
     width: 2048px;
 }
 @media (min-width: 1025px) and (max-width: 2048px) {
+    .parallax {
+        height: 55%;
+    }
     .navbar {
         height: 64px;
     }
