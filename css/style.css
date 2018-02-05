@@ -1622,7 +1622,7 @@ header {
     -webkit-transform:translateZ(0) scale(1.2); /* Safari and Chrome */
     -moz-transform:scale(1.2); /* Firefox */
     -o-transform:translatZ(0) scale(1.2); /* Opera */
-    transform:translateZ(0) scale(1.2);
+    transform: scale(1.2);
     /*    box-shadow: 8px 8px 4px -4px #888888;  shadow */
     box-shadow: 
         0 19px 38px rgba(0,0,0,0.30), 
