@@ -2112,6 +2112,36 @@ header {
         right: 100%;
     }
 }
+.scr0820 {
+    -webkit-animation: 25s swipe20820 linear infinite;
+    -moz-animation:    25s swipe20820 linear infinite;
+    -o-animation:      25s swipe20820 linear infinite;
+    animation:         25s swipe20820 linear infinite;
+    position: absolute;
+    z-index: 198;
+    width: 100%;
+    height: 100%;
+}
+@keyframes swipe20820 {
+    0% {
+        right: -100%;
+    }
+    18% {
+        right: -100%;
+    }
+    19.8% {
+        right: 0%;
+    }
+    38% {
+        right: 0%;
+    }
+    40% {
+        right: 100%;
+    }
+    100% {
+        right: 100%;
+    }
+}
 .scr3top {
     -webkit-animation: 25s swipe3top linear infinite;
     -moz-animation:    25s swipe3top linear infinite;
