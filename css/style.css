@@ -235,6 +235,7 @@ nav {
 }
 .curser:hover {
     cursor: pointer;
+    text-decoration: underline !important;
 }
 .nav-onSelected>a {
     background-color: #F3F3F3 !important;
@@ -1619,10 +1620,10 @@ header {
 .img-hover img:hover {
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-    -webkit-transform:translateZ(0) scale(1.2); /* Safari and Chrome */
-    -moz-transform:scale(1.2); /* Firefox */
+    -webkit-transform:translateZ(0) scale(1.1); /* Safari and Chrome */
+    -moz-transform:scale(1.1); /* Firefox */
     -o-transform:translatZ(0) scale(1.2); /* Opera */
-    transform: scale(1.2);
+    transform: scale(1.1);
     /*    box-shadow: 8px 8px 4px -4px #888888;  shadow */
     box-shadow: 
         0 19px 38px rgba(0,0,0,0.30), 
@@ -1632,32 +1633,36 @@ header {
 
 .product-text {
     color: #0065A0;
-    font-size: 22px;
-    font-weight: 300;
-    text-align: center;
     height: 50px;
-    font-weight: bold;
+    font-weight: 300;
+    line-height: 1.3;
+    font-variant-ligatures: normal;
+    font-variant-caps: normal;
+    font-variant-numeric: normal;
+    font-variant-east-asian: normal;
+    font-family: "Open Sans", sans-serif;
+    text-align: center;
 }
 @media (min-width: 1300px) {
     .product-text {
-        font-size: 22px;
+        font-size: 30px;
         height: 75px;
     }
 }
 @media (max-width: 1299px) and (min-width: 977px) {
     .product-text {
-        font-size: 18px;
+        font-size: 24px;
         height: 65px;
     }
 }
 @media (max-width: 976px) and (min-width: 768px) {
     .product-text {
-        font-size: 16px;
+        font-size: 22px;
     }
 }
 @media (max-width: 767px) {
     .product-text {
-        font-size: 14px;
+        font-size: 18px;
         height: 30px;
     }
 }
