@@ -660,6 +660,9 @@ div.transbox p {
     .section-heading {
         font-size: 48px;
     }
+    .section-heading-sm {
+        font-size: 34px;
+    }
     .section-lead {
         font-size: 24px;
     }
@@ -726,6 +729,9 @@ div.transbox p {
     }
     .section-heading {
         font-size: 48px;
+    }
+    .section-heading-sm {
+        font-size: 32px;
     }
     .section-lead {
         font-size: 24px;
@@ -802,6 +808,9 @@ iframe {
     .section-heading {
         font-size: 48px;
     }
+    .section-heading-sm {
+        font-size: 28px;
+    }
     .section-lead {
         font-size: 24px;
     }
@@ -871,6 +880,9 @@ iframe {
     .section-heading {
         font-size: 21px;
     }
+    .section-heading-sm {
+        font-size: 18px;
+    }
     .section-lead {
         font-size: 18px;
     }
@@ -933,6 +945,10 @@ iframe {
     .section-heading {
         text-align: center !important;
         font-size: 18px;
+    }
+    .section-heading-sm {
+        font-size: 16px;
+        text-align: center !important;
     }
     .section-lead {
         font-size: 16px;
@@ -1015,7 +1031,7 @@ iframe {
     -o-transform:translatZ(0) scale(1.05); /* Opera */
     -ms-transform:scale(1.05);
     /*transform:translateZ(0) scale(1.05);*/
-        /*box-shadow: 8px 8px 4px -4px #888888;*/
+    /*box-shadow: 8px 8px 4px -4px #888888;*/
     z-index: 100;
 }
 
@@ -1293,6 +1309,18 @@ iframe {
     opacity: 1;
     z-index: 20;
     font-weight: 300;
+    font-style: normal;
+    font-variant-ligatures: normal;
+    font-variant-caps: normal;
+    font-variant-numeric: normal;
+    font-variant-east-asian: normal;
+    font-family: "Open Sans", sans-serif;
+}
+.section-heading-sm {
+    color: #404040;
+    opacity: 1;
+    z-index: 20;
+    font-weight: 200;
     font-style: normal;
     font-variant-ligatures: normal;
     font-variant-caps: normal;
