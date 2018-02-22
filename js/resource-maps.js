@@ -1,7 +1,7 @@
 function initialize() {
     var defLayer = new ol.layer.Tile({
         source: new ol.source.OSM({
-            url: "http://{a-c}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png"
+            url: "https://{a-c}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png"
         })
     });
 
@@ -9,21 +9,6 @@ function initialize() {
         center: [1000000, 6700000],
         zoom: 6
     });
-
-//    var layers2 = [
-//        new ol.layer.Image({
-//            source: new ol.source.ImageWMS({
-//                url: 'http://processing.envirocar.org:9090/geoserver/wms',
-//                port: 9090,
-//                params: {
-//                    'LAYERS': 'cite:roadsegments',
-//                    'STYLES': 'co2interpolation'
-//                },
-//                ratio: 1,
-//                serverType: 'geoserver'
-//            })
-//        }),
-//    ];
 
     var mapres1 = new ol.Map({
         layers: [
