@@ -327,7 +327,7 @@
     "tms.lz1": "4. Licensing",
     "tms.lz2": "Data available via the enviroCar API can be used by third parties in accordance with the Open Database License ODbL. This means",
     "tms.lz3": " you are allowed to copy and redistribute this database, create works from this database and modify copies of this database.",
-    "tms.lz4": " as long as you mention the source of the data (use \"Source: 52�North enviroCar Server\"), share copies or modified copies of this database in accordance with the ODbL and keep your database open and accessible (you are not allowed to protect it with Digital Rights Managements (DRM) measures if it is not simultaneously available as a DRM free version).",
+    "tms.lz4": " as long as you mention the source of the data (use \"Source: 52°North enviroCar Server\"), share copies or modified copies of this database in accordance with the ODbL and keep your database open and accessible (you are not allowed to protect it with Digital Rights Managements (DRM) measures if it is not simultaneously available as a DRM free version).",
     "tms.ck1": "5. Use of cookies",
     "tms.ck2": "When you use this website, you agree to the use of cookies. The cookies will be used strictly for the purpose of enabling you to log in to our services and select the language of preference for our website. The cookie stores a combination of numbers and characters to identify you during a browser session. Our cookies are valid for one (1) browser session.",
 
@@ -387,7 +387,7 @@
     "datap15f": "",
     "datap1g": "Cookies",
     "datap2g": "Cookies are used to optimize a website and to enhance your user experience. Cookies are small text files which are stored by your browser when you visit web pages and applications. Cookies are downloaded by your browser the first time you visit a particular website. When you revisit this website with the same device, the data stored in the cookie is sent back to the website that created it. The website then recognizes web browser with which it was already invoked, and optimizes the content displayed for you accordingly. You can specify how websites use cookies through the privacy settings in your browser (for more information on configuring cookie settings, refer to the help function of your browser). If you disable cookies altogether, the enviroCar websites and applications may no longer function correctly under certain circumstances. More information about cookies can be found at: http://www.allaboutcookies.org/.", 
-    "datap3g": "Ihr Browser bietet die Möglichkeit das Setzen von Cookies einzuschränken oder ganz zu verhindern. Auch das automatische Löschen von Cookies beim Schließen des Browsers kann aktiviert werden. Dies kann allerdings zu einer eingeschränkten Nutzbarkeit unseres Webangebots führen.",
+    "datap3g": "",
     "datap1h": "Embedded Content",
     "datap2h": "1. YouTube",
     "datap3h": "Our Website imbeds content of the YouTube Website (Google) via iframe. Operator of this Website is",
@@ -408,7 +408,7 @@
     "datap2l": "Due to technical or organizational needs, the data privacy statement may need to be changed. In case of a change, the new data privacy regulation applies with your next visit on our Website.",
     "datap1m": "Objection against advertising emails",
     "datap2m": "The usage of contact data for delivering advertising mails and other information unless explicitly requested is not allowed. In case of violating this, we will reserve the right to take legal action.", 
-    
+
     "faq.q1": "Frequently Asked Questions",
     "faq.q2": "Where do I get an OBD-II Adapter?",
     "faq.q3": "Is my car supported?",
