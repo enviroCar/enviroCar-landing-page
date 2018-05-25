@@ -2,7 +2,6 @@
 <html lang="en">
 
     <head>
-
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="enviroCar website">
@@ -17,12 +16,16 @@
         <!-- Custom fonts for this template -->
         <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
         <link href="https://fonts.googleapis.com/css?family=Roboto:200,300,400,700,200light,300light,400light,700light" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:200,300,400,700,200light,300light,400light,700light" rel="stylesheet">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <!-- Custom styles for this template -->
         <link href="css/style.css" rel="stylesheet">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next/8.1.0/i18next.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-i18next/1.2.0/jquery-i18next.min.js"></script>
         <script src="js/i18nextify.min.js"></script>
         <script src="js/i18nextXHRBackend.min.js"></script>
         <script>
@@ -34,11 +37,12 @@
         </script>
     </head>
 
-    <body id="page-top" style="display: none; background-color: #fff;">
+    <body id="page-top" style="display: none; background-color: #f3f3f3; overflow-x: hidden;">
+
         <!-- Navigation Bar -->
         <nav class="navbar fixed-top navbar-dark bg-primary navbar-expand-lg navbar-expand-md" style="position: fixed; top: 0; border-bottom: solid 1px #0065A0;" id="mainNav">
             <a style="padding: 0;" class="navbar-brand js-scroll-trigger" href="#page-top">
-                <img style="height: 80%; width: auto;" alt="enviroCar logo" src="assets/logo_white.png">
+                <img style="width: auto;" alt="enviroCar logo" src="assets/logo_white.png">
             </a>
             <button class="navbar-toggler ml-auto navbar-dark" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -46,7 +50,7 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav mr-auto navbar-right">
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" onclick="openSubpage('index.html')">nav.home</a>
+                        <a class="nav-link js-scroll-trigger" href="#page-top">nav.home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link js-scroll-trigger" onclick="openSubpage('collect.html')">nav.collect</a>
@@ -60,7 +64,7 @@
                     <li class="nav-item">
                         <a class="nav-link js-scroll-trigger" onclick="openSubpage('resources.html')">nav.resources</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item nav-onSelected">
                         <!--                        <a class="nav-link js-scroll-trigger" href="http://pilot.52north.org/envirocar-ng/">
                                                     <img src="assets/login_white.png"/>nav.login</a>-->
                         <a class="nav-link js-scroll-trigger" onclick="openSubpage('under_construction.html')">
@@ -76,45 +80,23 @@
                 </ul>
             </div>
         </nav>
-
         <div class="placeholder" style="height: 50px;"></div>
 
-        <section id="aboutUs" class="sectionUs" style="
-                 background-color: #fff;
-                 min-height: 84%;">
-            <div class="container-fluid col-12">
-                <h2 class="section-heading" style="text-align: center;">about1</h2>
-                <hr class="col-6 section-heading-spacer" style="padding-bottom: 32px;">
-                <div class="container col-lg-6 col-md-6 col-sm-12 col-xs-12 col-12 noPadding nomargin">
-                    <div class="col-12 mr-auto noPadding">
-                        <div class="clearfix"></div>
-                        <h4 class="section-heading">about2</h4>
-                        <p class="section-lead nomargin">
-                            <!--                            <strong>enviroCar</strong> ist ein Projekt des Forschungsnetzwerkes 
-                                                        <a class="n52" href="http://52north.org">52°North</a> und des <a href="http://ifgi.de">Institutes 
-                                                            für Geoinformatik der Universität Münster</a>.<br><br>-->
-                            <br>
-                            <a target="_blank" href="https://tu-dresden.de/bu/umwelt/geo/geoinformatik">about3</a>,<br>
-                            <a target="_blank" href="https://www.conterra.de/">con terra GmbH</a>,<br>
-                            <a target="_blank" href="http://www.hochschule-bochum.de/fbv.html">about4</a>,<br>
-                            <a target="_blank" href="https://www.mvup.de/">about5</a>.<br><br>
-                        </p>
-                        <br>
-                        <h4 class="section-heading">Global Sponsor</h4>
-                        <p class="section-lead nomargin">
-                            <br>
-                            about6<a target="_blank" href="https://www.esri.de/">about7</a>
-                            about8<br><br>
-                            about9<br>
-                            about10<a href="mailto:envirocar@52north.org?Subject=" target="_top">enviroCar@52north.org</a>
-                        </p>
-                    </div>
-                    <div class="hidden-lg hidden-md col-sm-2 hidden-xs noPadding"></div>
+        <!--Share -->
+        <section id="share" class="sectionShare" style="background-color: #fff; min-height: 90%; height: 90%;">
+            <div class="container-fluid row col-12 nomargin">
+                <h2 class="section-heading col-8" style="text-align: center; margin:auto;">ud1</h2>
+            </div>
+            <hr class="col-6 section-heading-spacer">
+            <div class="row row-eq-height container-fluid col-12 nomargin" style="margin-bottom: 36px;">
+                <div class="container-fluid col-lg-5 col-md-5 col-sm-12 col-12 noPadding nomargin img-frame">
+                    <!--<img class="img-fluid" src="assets/ec_platform_overview.png" alt="">-->
+                    <img class="img-fluid" src="assets/under_construction.jpg" alt="">
                 </div>
-                <div class="container col-lg-6 col-md-6 col-sm-12 col-12 noPadding nomargin">
-                    <div class="col-12 ml-auto img-frame img-frame-2 noPadding" style="max-width: 80%;">
-                        <span class="helper"></span>
-                        <img class="img-fluid" src="assets/partner/52north.png" alt="">
+                <div class="col-lg-1 col-md-1 hidden-sm hidden-xs col-0"></div>
+                <div class="row col-lg-6 col-md-6 col-sm-12 col-12 nomargin div-frame">
+                    <div class="row col-12">
+                        <p class="section-lead">ud2<br><br>ud3</p>
                     </div>
                 </div>
             </div>
@@ -154,10 +136,11 @@
         </footer>
 
         <!-- Bootstrap core JavaScript -->
-        <!--<script src="js/jquery.min.js"></script>-->
         <script src="js/jquery.easing.1.3.min.js"></script>
         <script src="js/popper.min.js"></script>
         <script src="js/scrolling-nav.js"></script>
+        <script src="js/enviroCar-statistics.js"></script>
+        <script src="js/scroll-count.js"></script>
 
         <script>
                                 $(function () {

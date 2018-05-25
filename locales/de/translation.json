@@ -399,7 +399,7 @@
     "datap2l": "Aufgrund von technischen oder organisatorischen Weiterentwicklungen können Änderungen der Datenschutzerklärung notwendig werden. Daher werden wir von Zeit zu Zeit diese Datenschutzerklärung anpassen müssen, um stets den aktuellen gesetzlichen Vorgaben zu entsprechen. Die neue Datenschutzerklärung greift dann bei Ihrem nächsten Besuch auf unserem Angebot.",
     "datap1m": "Widerspruch gegen Werbe-Mails",
     "datap2m": "Der Nutzung von im Rahmen der Impressumspflicht veröffentlichten Kontaktdaten zur Übersendung von nicht ausdrücklich angeforderter Werbung und Informationsmaterialien wird hiermit widersprochen. Die Betreiber der Seiten behalten sich ausdrücklich rechtliche Schritte im Falle der unverlangten Zusendung von Werbeinformationen, etwa durch Spam-E-Mails, vor.",
-    
+
     "faq.q1": "Häufig gestellte Fragen",
     "faq.q2": "Wo bekomme ich einen OBD-II Adapter?",
     "faq.q3": "Wird mein Auto unterstützt?",
@@ -447,5 +447,9 @@
     "ipt13": "Urheberrecht",
     "ipt14": "Alle Grafiken dieser Webseite sind lizenziert als ",
     "ipt15": ", es sei denn eine andere Lizenz wurde genannt. Alle Texte dieser Website sind lizenziert als ",
-    "ipt16": ", es sei denn eine andere Lizenz wurde genannt. Alle Daten die über die enviroCar API abrufbar sind, sind lizenziert unter der "
+    "ipt16": ", es sei denn eine andere Lizenz wurde genannt. Alle Daten die über die enviroCar API abrufbar sind, sind lizenziert unter der ",
+
+    "ud1": "In Bearbeitung...",
+    "ud2": "Uns liegt der Datenschutz sehr im Herzen. Um auch weiterhin eine sichere und datenschutzkonforme Plattform bereitzustellen ist der Login-Bereich zur Zeit in Bearbeitung.",
+    "ud3": "Wir danken für Ihr Verständnis."
 }
