@@ -253,6 +253,8 @@
     "src.cd1": "All compontents of the enviroCar platform are available as ",
     "src.cd2": "Open Source on GitHub",
     "src.cd3": " and can be used and extended. ",
+    "src.doc1": "Documentation",
+    "src.doc2": "The API of the enviroCar server provides access to anonymous Trackdata. You can access the Tracks, the measurements and belonging statistics via HTTP. For selection, you can apply spatial and/or temporal filter. The data are anonymous. A connection to the personal data of the users can not be reconstructed.",
     "env_server_title": "Server",
     "env_server_text": "The enviroCar server is implemented in Java, uses MongoDB and follows a JSON schema for encoding the data.",
     "env_website_title": "Website",
@@ -456,4 +458,6 @@
     "ipt14": "The graphics on this website are licensed as ",
     "ipt15": ", unless stated otherwise. All texts on this website are licensed as ",
     "ipt16": ", unless stated otherwise. All data which is accessible with the enviroCar API is licensed under the "
+    
+    
 }
