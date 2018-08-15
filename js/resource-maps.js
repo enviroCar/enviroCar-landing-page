@@ -15,7 +15,7 @@ function initialize() {
             defLayer,
             new ol.layer.Image({
                 source: new ol.source.ImageWMS({
-                    url: 'https://processing.envirocar.org:9090/geoserver/wms',
+                    url: 'http://processing.envirocar.org:9090/geoserver/wms',
                     port: 9090,
                     params: {
                         'LAYERS': 'cite:roadsegments',
