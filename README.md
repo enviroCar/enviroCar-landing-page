@@ -58,7 +58,7 @@ section divider 6: partners [https://pixabay.com/de/h%C3%A4ndesch%C3%BCtteln-han
 
 ODB 2 adapters: selfmade
 
-Car cockpit OBD 2 adapter: **SOURCE NOT FOUND**
+Car cockpit OBD 2 adapter: selfmade
 
 Android App adapter and phone(s): selfmade
 
