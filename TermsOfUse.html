@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="enviroCar website">
+        <meta name="author" content="52north GmbH">
+        <link rel="icon" href="assets/app_logo.png">
+
+        <title>enviroCar.org</title>
+
+        <!-- Bootstrap core CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Custom fonts for this template -->
+        <link href="css/material-icons.css" rel="stylesheet">
+        <link href="css/lato-font.css" rel="stylesheet" type="text/css">
+        <link href="css/open-sans-font.css" rel="stylesheet" type="text/css">
+        
+        <!-- Custom styles for this template -->
+        <link href="css/style.css" rel="stylesheet">
+        <link href="css/bootstrap.copy.min.css" rel="stylesheet">
+        <script src="js/jquery.copy.min.js"></script>
+        <script src="js/bootstrap.copy.min.js"></script>
+        <script src="js/i18next.copy.min.js"></script>
+        <script src="js/jquery-i18next.min.js"></script> 
+        
+        <li><a class="footerLink" onclick="openSubpage('TermsOfUse.html')">ft.TermsOfUse</a></li>
+        <script src="js/i18nextify.min.js"></script>
+        <script src="js/i18nextXHRBackend.min.js"></script>
+
+        <script>
+            window.i18nextify
+                    .init({
+                        backend: {
+                            loadPath: 'locales/{{lng}}/translation.json'
+                        }});
+        </script>
+    </head>
+
+    <body id="page-top" style="display: none; background-color: #f3f3f3;">
+
+        
+                            <!-- Navigation Bar -->
+
+        <nav class="navbar fixed-top navbar-dark bg-primary navbar-expand-lg navbar-expand-md" style="position: fixed; top: 0; border-bottom: solid 1px #0065A0;" id="mainNav">
+            
+            <a style="padding: 0;" class="navbar-brand js-scroll-trigger" href="#page-top">
+                <img style="height: 80%; width: auto;" alt="enviroCar logo" src="assets/logo_white.png">
+            </a>
+
+            <button class="navbar-toggler ml-auto navbar-dark" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+
+                <ul class="navbar-nav mr-auto navbar-right">
+
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" onclick="openSubpage('index.html')">nav.home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" onclick="openSubpage('collect.html')">nav.collect</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" onclick="openSubpage('share.html')">nav.share</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" onclick="openSubpage('analysis.html')">nav.analysis</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" onclick="openSubpage('resources.html')">nav.resources</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="https://envirocar.org/app">
+                            <img src="assets/login_white.png"/>nav.login</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">nav.language</a>
+                        
+                        <ul class="dropdown-menu">
+                            <li><a class="lngOption" onclick="changeLanguage('en')">English</a></li>
+                            <li><a class="lngOption" onclick="changeLanguage('de')">Deutsch</a></li>
+                        </ul>
+
+                    </li>
+
+                </ul>
+            
+            </div>
+
+        </nav>
+
+        
+        <div class="placeholder" style="height: 50px;"></div>
+
+        <section id="aboutenviroCar" class="sectionAboutenviroCar" style="background-color: #fff; padding-top: 48px;">
+            
+
+
+
+            
+                                            <!-- General Terms of Use -->
+
+            <div class="container-fluid col-12 nomargin">
+                <h1 class="section-heading">touTitle<br><br></h1>
+                <div class="clearfix"></div>
+                <div class="section-lead nomargin">
+                    touPara1<br><br>
+                    touPara2<br><br>
+                    touPara3 
+                    <br><br><br>
+                </div>
+            </div>
+            
+                    <!-- Liability and Warranties -->
+            <div class="container-fluid col-12 nomargin">
+                <h2 class="section-heading-sm">touSecTitle1<br><br></h2>
+                <div class="clearfix"></div>
+                <div class="section-lead nomargin">
+                    touPara4<br><br>
+                    touPara5<br><br>
+                    touPara6<br><br>
+                    touPara7
+                    <br><br><br>
+                </div>
+            </div>
+
+
+                    <!-- Datenschutz -->
+            <div class="container-fluid col-12 nomargin">
+                    <h2 class="section-heading-sm">touTitleDataP<br><br></h2>
+                    <div class="clearfix"></div>
+                    <div class="section-lead nomargin">
+                        touTitleDataPP1
+                        <a href="conditions.html">LinkDatenschutzerklärung</a>
+                            <br><br><br>
+                        </div>
+                    </div>
+
+
+                    <!-- Kontakt -->
+            <div class="container-fluid col-12 nomargin">
+                <h2 class="section-heading-sm">touTitleKontakt<br><br></h2>
+                <div class="clearfix"></div>
+                <div class="section-lead nomargin">
+                    touTitleKontaktP1 <a href="mailto:envirocar@52north.org?Subject=" target="_top">enviroCar@52north.org</a>.<br><br>
+                    touTitleKontaktP2
+                        <br><br><br>
+                    </div>
+                </div>
+
+
+
+
+                                            <!-- Besondere Nutzungsbedingungen -->
+
+               <div class="container-fluid col-12 nomargin">
+                    <p id="SToU">
+                            <button class="btn btn-secondary btn-lg btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                                    <h2>touTitle2</h2> 
+                                  </button><br>
+                    </p>
+                    <div class="collapse" id="collapseExample">
+                            <!--<div class="card card-body">-->
+                              <!-- Special Terms of Use -->
+                                <div class="container-fluid col-12 nomargin"></div>
+                                    
+                                    <div class="clearfix"></div>
+                                    <div class="section-lead nomargin">
+                                        touPara8<br><br>
+                                        touPara9<br><br>
+                                        touPara10<br><br>
+                                        touPara11<br><br>
+                                        touAufz1<br>
+                                        <ul>
+                                            <li>touAufz1.1</li>
+                                            <li>touAufz1.2</li>
+                                            <li>touAufz1.3</li>
+                                        </ul>
+                                        <br>
+                                        touPara12<br><br>
+                                        touPara13<br><br>
+                                        touPara14<br><br>
+                                        touPara15.1 
+                                        <a href="mailto:envirocar@52north.org?Subject=" target="_top">enviroCar@52north.org</a>
+                                        touPara15.2<br><br>
+                                        Aufz2.1<br>
+                                        <ol type="a">
+                                            <li>Aufz2a</li>
+                                            <li>Aufz2b</li>
+                                        </ol>  
+                                        Aufz2.2<br><br>
+                                        touPara16
+                                        <br><br><br>
+                                    </div>
+                                <!--</div>-->
+
+
+                                         <!--Setting up your personal Account-->
+                                        <h2 class="section-heading-sm">touSecTitle2<br><br></h2>
+                                        <div class="clearfix"></div>
+                                        <div class="section-lead nomargin">
+                                            touPara17<br><br>
+                                            touPara18<br><br>
+                                            touPara19<br><br>
+                                            touPara20<br><br>
+                                            <!--Pflichtangaben-->
+                                            Aufz3
+                                            <ul>
+                                                <li>Aufz3.1</li>
+                                                <li>Aufz3.2</li>
+                                                <li>Aufz3.3</li>
+                                            </ul>
+                                            <br>
+                                            <!--Optionale Angaben-->
+                                            Aufz4
+                                            <ul>
+                                                <li>Aufz4.1</li>
+                                                <li>Aufz4.2</li>
+                                                <li>Aufz4.3</li>
+                                                <li>Aufz4.4</li>
+                                                <li>Aufz4.5</li>
+                                            </ul>
+                                            <br>
+                                            touPara21
+                                            <br><br><br>
+                                        </div>
+                                    
+                        
+                                         <!--Recording and Publication of your Driving data-->
+                                        <h2 class="section-heading-sm">touSecTitle3<br><br></h2>
+                                        <div class="clearfix"></div>
+                                        <div class="section-lead nomargin">
+                                            <!--Erfassung von Messfahrten mit Hilfe der Smartphone App-->
+                                            <h3>touSecTitle3suba</h3>
+                                            touPara17<br><br>
+                                            touPara18<br><br>
+                                            touPara19<br><br>
+                                            touPara20<br><br>
+                                            Aufz5
+                                            <br><br>
+                                            <ul>
+                                                <li>Aufz5.1</li>
+                                                <li>Aufz5.2</li>
+                                                <li>Aufz5.3</li>
+                                                <li>Aufz5.4</li>
+                                                <li>Aufz5.5</li>
+                                            </ul>
+                                            touPara22
+                                            <br><br><br>
+                                            <!--Publikation der Daten mir Hilfe der Smartphone App und Nutzung der Daten auf dem enviroCar Server-->
+                                            <h3>touSecTitle3subb</h3>
+                                            touPara23
+                                            <a href="https://www.opendatacommons.org/licenses/odbl/summary/index.html" target="_blank">https://www.opendatacommons.org/licenses/odbl/summary/index.html</a>
+                                            <br><br>
+                                            touPara24<br><br>
+                                            touPara25
+                                            <br><br><br>
+                                            <!--Nutzung der publizierten Daten durch Dritte-->
+                                            <h3>touSecTitle3subc</h3>
+                                            touPara26<br><br>
+                                            touPara27
+                                            <a href="https://www.opendatacommons.org/licenses/odbl/1.0/" target="_blank">https://www.opendatacommons.org/licenses/odbl/1.0/</a>
+                                            <br><br>
+                                            touPara28<br><br><br>
+                                        </div>
+                                    
+                        
+                                        <!--Deleting your account-->
+                                        <h2 class="section-heading-sm">touSecTitle4<br><br></h2>
+                                        <div class="clearfix"></div>
+                                        <div class="section-lead nomargin">
+                                            touPara29<br><br>
+                                            touPara30<br><br><br>
+                                        </div>
+                                    
+
+                                        <!--Uploading Driving Data From external Systems-->
+                                        <h2 class="section-heading-sm">touSecTitle42</h2>
+                                        <div class="clearfix"></div>
+                                        <div class="section-lead nomargin">
+                                            touPara49<br><br>
+                                            touPara50<br><br>
+                                            touPara51
+                                            <br>
+                                            <ol type="a">
+                                            <li>touPara511</li>
+                                            <li>touPara512</li>
+                                            <li>touPara513</li>
+                                            <br><br><br>
+                                            </ol>  
+                                        </div>
+
+
+                                        <!--Warranties and Liabilities-->
+                                        <h2 class="section-heading-sm">touSecTitle5<br><br></h2>
+                                        <div class="clearfix"></div>
+                                        <div class="section-lead nomargin">
+                                            touPara31<br><br>
+                                            touPara32<br><br>
+                                            touPara33<br><br>
+                                            touPara34<br><br>
+                                            touPara35<br><br>
+                                            touPara36<br><br>
+                                            touPara37<br><br>
+                                            touPara38<br><br>
+                                            touPara39<br><br>
+                                            touPara40<br><br>
+                                            touPara41<br><br>
+                                            touPara42<br><br>
+                                            touPara43<br><br><br>
+                                        </div>
+                                    
+                        
+                                        <!--Other Provisions-->
+                                        <h2 class="section-heading-sm">touSecTitle6<br><br></h2>
+                                        <div class="clearfix"></div>
+                                        <div class="section-lead nomargin">
+                                            touPara44<br><br>
+                                            touPara45<br><br>
+                                            touPara46<br><br>
+                                            touPara47S
+                                            <a href="mailto:envirocar@52north.org?Subject=" target="_top">enviroCar@52north.org</a>
+                                            <br><br><br>
+                                        </div>
+                                    
+                        
+                                        <!--Last Update-->
+                                        <h2 class="section-heading-sm">touSecTitle7<br><br></h2>
+                                        <div class="clearfix"></div>
+                                        <div class="section-lead nomargin">
+                                            touPara48
+                                            <br><br><br>
+                                        </div>
+                            </div>
+                        </div>                    
+                </div>
+        </section>
+
+
+
+    
+                                                        <!--Footer Section-->
+
+        <footer class="bg-primary">
+
+            <div class="row footerdiv">
+
+                <div class="row col-12" style="margin: auto;">
+
+                    <div class="row col-xs-12 col-sm-12 col-md-4 col-lg-2 col-4">
+                        <span class="helper"></span>
+                        <a class="js-scroll-trigger col-md-12 col-10 noPadding" href="#page-top" style="margin:auto;width: 100%; height: auto;">
+                            <img class="footer-logo" style="width: 100%; display: block; margin: 0;" src="assets/logo_white.png" alt="enviroCar logo white inverse"/>
+                        </a>
+                    </div>
+
+                    <div class="spaceholder col-lg-2 col-md-2 hidden-sm hidden-xs"></div>
+
+                    <div class="footer-item col-xs-6 col-sm-6 col-md-4 col-lg-4">
+                        <h3>ft.background</h3>
+                        <ul>
+                            <li><a class="footerLink" onclick="openSubpage('about.html')">ft.about</a></li>
+                            <li><a class="footerLink" onclick="openSubpage('press.html')">ft.press</a></li>
+                            <li><a class="footerLink" onclick="openSubpage('faq.html')">ft.faq</a></li>
+                            <li><a class="footerLink" onclick="openSubpage('imprint.html')">ft.imprint</a></li>
+                            <li><a class="footerLink" onclick="openSubpage('conditions.html')">ft.terms</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-item col-xs-6 col-sm-6 col-md-4 col-lg-4">
+                        <h3>ft.follow</h3>
+                        <ul>
+                            <li><a href="https://twitter.com/enviroCar_org" target="_blank">Twitter</a></li>
+                            <li><a href="https://www.facebook.com/enviroCar/" target="_blank">Facebook</a></li>
+                            <li><a href="https://github.com/enviroCar" target="_blank">GitHub</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </footer>
+
+        <!-- Bootstrap core JavaScript -->
+        <!--<script src="js/jquery.min.js"></script>-->
+        <script src="js/jquery.easing.1.3.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/scrolling-nav.js"></script>
+
+        <script>
+                                $(function () {
+                                    var includes = $('[data-include]');
+                                    jQuery.each(includes, function () {
+                                        var file = '' + $(this).data('include') + '.html';
+                                        $(this).load(file);
+                                    });
+                                });
+        </script>
+
+        <script src="js/language-url.js"></script>
+
+    </body>
+
+</html>

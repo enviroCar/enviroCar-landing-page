@@ -58,10 +58,10 @@
     "ana.more": "und vieles mehr",
 
     "rsc.txt1": "Forscher und Planer nutzen die Daten aus der Sensorik Deines Fahrzeuges. Hilf, gemeinsam mit Ihnen den ",
-    "rsc.txt2": "Straßenverkehr",
-    "rsc.txt3": " zu ",
-    "rsc.txt4": "optimieren",
-    "rsc.txt5": " und ihn umweltfreundlicher zu gestalten.",
+    "rsc.txt2": "Straßenverkehr zu optimieren",
+    "rsc.txt3": " und ihn",
+    "rsc.txt4": "umweltfreundlicher",
+    "rsc.txt5": "zu gestalten.",
     "rsc.members": "Mitglieder",
     "rsc.tracks": "Fahrten",
     "rsc.measures": "Messungen",
@@ -98,6 +98,7 @@
     "ft.imprint": "Impressum",
     "ft.terms": "Datenschutz",
     "ft.follow": "Folge Uns",
+    "ft.TermsOfUse": "Nutzungsbedingungen",
 
     "collect1": "Daten Erheben",
     "collect2": "Mit Hilfe eines Bluetooth OBD-II-Adapters, deinem Android Smartphone und der enviroCar App greifst du auf die Daten der Sensorik deines Fahrzeugs zu.",
@@ -451,5 +452,286 @@
 
     "ud1": "In Wartung...",
     "ud2": "Wir arbeiten noch an den letzten offenen Punkten bzgl. der DSGVO.",
-    "ud3": "Wir danken für Ihr Verständnis."
+    "ud3": "Wir danken für Ihr Verständnis.", 
+
+
+
+
+
+
+                                                "touTitle": "Allgemeine Nutzungsbedingungen", 
+
+    "touPara1": "enviroCar ist eine offene Citizen Science Plattform, die es Bürgern, Wissenschaftlern, und Verkehrsingenieuren ermöglicht, Daten fahrender Fahrzeuge zusammenzutragen und mit Hilfe dieser Daten Fragen zur Effizienz und Nachhaltigkeit des Verkehrsgeschehens zu beantworten. Die enviroCar Webseiten und Services werden von der 52°North, Initiative for Geospatial Open Source Software GmbH, Martin-Luther-King-Weg 24, 48155 Münster, Deutschland, betrieben",
+    "touPara2": "Nachfolgend finden Sie die Allgemeinen Nutzungsbedingungen der enviroCar Webseiten und Services. Diese werden von Zeit zu Zeit aktualisiert. Mit der Nutzung der enviroCar Webseiten akzeptieren Sie die jeweils aktuelle Fassung der allgemeinen Nutzungsbedingungen, auch wenn keine ausdrückliche Einwilligung abgefragt wird. Erfüllungsort und Gerichtsstand ist Münster in Nordrhein-Westfalen, Deutschland.",
+    "touPara3": "Wenn Sie die Leistungen und Funktionen der Plattform nutzen möchten, die nur für registrierte Nutzer zugänglich sind, müssen sie zusätzlich den Besonderen Nutzungsbedingungen (siehe unten 'Besondere Nutzungsbestimmungen') zustimmen. Dies erfolgt im Zuge der Registrierung und später bei Änderungen der besonderen Nutzungsbedingungen.",
+    
+
+
+                    "touSecTitle1": "Haftung und Gewährleistung",
+
+    "touPara4": "Es besteht kein grundsätzlichen Anspruch auf die Nutzung der enviroCar Websites und Services. Wartungsarbeiten oder technische Probleme können dazu führen, dass sie nicht verfügbar sind.",
+    "touPara5": "Auch kann trotz aller Bemühungen und Sicherheitsvorrichtungen nicht zu 100%  ausgeschlossen werden, dass durch die Nutzung der Angebote Schäden entstehen, z.B. bei Cyberangriffen und Missbrauch unserer technischen Anlagen durch Dritte. 52°North und seine vertreter haften nicht für jegliche Schäden, die aus der Nutzung der enviroCar Webseiten und Services entstehen, sofern sie nicht auf Vorsatz oder grobe Fahrlässigkeit zurückzuführen sind. Bei Verletzung des Lebens, des Körpers oder der Gesundheit schließen wir die Haftung auch für einfache Fahrlässigkeit nicht grundsätzlich aus.",
+    "touPara6": "Wir übernehmen keine Gewähr für die Aktualität, Richtigkeit, Vollständigkeit oder Nutzbarkeit der Daten und Inhalte der enviroCar Webseiten und Services. Jegliche Verwendung geschieht auf eigenes Risiko.",
+    "touPara7": "52°North haftet nicht für fremde Inhalte, die über die enviroCar Webseite erreichbar sind - beispielsweise durch Links auf fremde Internetseiten. Wir distanzieren uns in jedem Fall von allen Inhalten, die straf- oder haftungsrechtliche Relevanz haben oder gegen gute Sitten verstoßen. Sobald wir Hinweise auf entsprechende Inhalte erhalten, werden wir diese umgehend  aus den enviroCar Webseiten und Services entfernen.",
+    
+
+
+                    "touTitleDataP": "Datenschutz",
+
+    "touTitleDataPP1":"52°North nimmt Ihre Belange zum Schutz personenbezogener Daten sehr ernst. Über unsere Datenschutzpolitik für die enviroCar Webseiten und Services informieren wir in der ",
+    "LinkDatenschutzerklärung":"enviroCar Datenschutzerklärung",
+
+
+
+                    "touTitleKontakt":"Kontakt",
+
+    "touTitleKontaktP1":"Bei Fragen oder Kommentaren bezüglich der Allgemeinen Nutzungsbedingungen für die enviroCar Webseiten und Services nehmen Sie gern per Mail Kontakt mit uns auf: ",
+    "touTitleKontaktP2":"Die Übersendung von Werbe- und Informationsmaterialien ist nicht erlaubt, sofern diese nicht ausdrücklich angefordert wurde. Im Falle der unverlangten Zusendung behalten wir uns rechtliche Schritte vor.",
+
+    
+
+
+
+
+    
+                                                "touTitle2":"Besondere Nutzungsbedingungen",
+
+    "touPara8":"enviroCar ist eine offene Citizen Science Plattform, die es Bürgern, Wissenschaftlern, und Verkehrsingenieuren ermöglicht, Daten fahrender Fahrzeuge zusammenzutragen und mit Hilfe dieser Daten Fragen zur Effizienz und Nachhaltigkeit des Verkehrsgeschehens zu beantworten.",
+    "touPara9": "Die enviroCar Webseiten und Services werden von der 52°North, Initiative for Geospatial Open Source Software GmbH, Martin-Luther-King-Weg 24, 48155 Münster, Deutschland, betrieben.",
+    "touPara10":"Wir freuen uns sehr über Ihr Interesse und Ihre  Bereitschaft, mit eigenen Daten zu dieser Citizen Science Plattform beizutragen. Die Besonderen Nutzungsbedingungen dienen dazu, einen klaren rechtlichen und organisatorischen Rahmen für die Nutzung der Dienste und für die Bereitstellung ihrer Fahrdaten zu  vereinbaren.",
+    "touPara11": "Die Bestätigung der Besonderen Nutzungsbedingungen und die Bestätigung der Datenschutzerklärung sind daher Voraussetzung für die Nutzung der Funktionen und Inhalte der enviroCar Webseiten und Services, für die eine Registrierung auf der enviroCar Plattform erforderlich ist.", 
+        "touAufz1":"Dies betrifft:",
+            "touAufz1.1": "die enviroCar Mobile App für Android Smartphones",
+            "touAufz1.2":"die enviroCar WebApp",
+            "touAufz1.3":"den personalisierten Zugriff auf die enviroCar Server", 
+    "touPara12":"Die Besonderen Nutzungsbedingungen ergänzen die Allgemeinen Nutzungsbedingungen, die bei allen Nutzungen der enviroCar Webseiten und Services zu beachten sind.",
+    "touPara13": "Wir werden die Besonderen Nutzungsbedingungen und auch die Datenschutzerklärung von Zeit zu Zeit aktualisieren, um neue Erfordernisse und Erkenntnisse zu berücksichtigen und um die Vereinbarungen zur Nutzung der enviroCar Webseiten und Services so klar wie möglich zu gestalten.",
+    "touPara14": "Die Bestätigung der Besonderen Nutzungsbedingungen und die Einwilligung zur zweckgebundenen Speicherung und Verarbeitung personenbezogener Daten werden im Zuge der Registrierung und später auch für alle aktualisierten Fassungen dieser Dokumente abgefragt.",
+    "touPara15.1": "Sie haben jederzeit die Möglichkeit, die Bestätigung der Besonderen Nutzungsbedingungen per Mail an ",
+    "touPara15.2":"zu widerrufen. Mit dem Widerruf erlischt für Sie auch das Recht, diejenigen Funktionen und Inhalte der enviroCar Plattform zu nutzen, die registrierten Nutzern vorbehalten und damit an die Bestätigung der Besonderen Nutzungsbedingungen gebunden sind.",
+        "Aufz2.1": "Sofern Sie",
+            "Aufz2a": "Ihre Zustimmung zu den Besonderen Nutzungsbedingungen oder der Datenschutzerklärung widerrufen oder",
+            "Aufz2b": "bei einer späteren Aktualisierung der Speziellen Nutzungsbedingungen oder der Datenschutzerklärung ihre Zustimmung nicht erteilen",
+            "Aufz2.2":"wird Ihr Account solange gesperrt, bis der Widerruf aufgehoben oder die erforderliche Zustimmung erteilt ist. Dies ist erforderlich, da es ohne Ihre Zustimmung zwischen Ihnen und uns keine verbindliche Vereinbarung über die weitere Nutzung der enviroCar Plattform gibt. Die Sperrung des Accounts kann jederzeit aufgehoben werden, wenn eine solche Vereinbarung wieder zustande kommt (z.B. durch die Klärung von Fragen oder durch Anpassung und Bestätigung aktualisierter Nutzungsbedingungen).",    
+    "touPara16":"Sofern Sie Ihren gesperrten Account nicht innerhalb von drei Monaten wieder reaktivieren, werden Ihre Account-Daten permanent gelöscht. Die von Ihnen unter der ODbL-Lizenz als Open Data publizierten Fahrdaten verbleiben dabei im System. ",
+
+
+    
+                    "touSecTitle2":"Einrichten Ihres persönlichen Accounts",
+
+    "touPara17": "Sie können sich selbst mit Hilfe der enviorCar Smartphone App oder der enviroCar WebApp als enviroCar Nutzer registrieren und dabei Ihren eigenen persönlichen “Account” erzeugen. Die Registrierung ist nur für natürliche Personen, nicht für Rechtspersonen wie z.B. Unternehmen, Universitäten oder andere Körperschaften des öffentlichen Rechts erlaubt. Die mit der Registrierung Ihres persönlichen Accounts verbundenen Rechte und Pflichten dürfen nicht auf andere Personen übertragen werden.",
+    "touPara18":"Wenn Sie die enviroCar Websites oder Dienste für ein Unternehmen oder eine Organisation nutzen, erklären Sie mit Ihrer Zustimmung zu diesen Besonderen Nutzungsbedingungen verbindlich, dass das Unternehmen oder die Organisation, für die Sie als Vertreter tätig sind, diese Nutzungsbedingungen ebenfalls akzeptiert.",
+    "touPara19":"Der eingerichtete Account ermöglicht es uns, Ihnen den Zugriff auf Ihre eigenen Fahrdaten zu gewähren, so dass sie diese verwalten und analysieren können. ",
+    "touPara20":"Bei der Registrierung und Nutzung der enviroCar-Dienste werden folgende Account-Informationen erfasst und so lange gespeichert, bis der Account wieder gelöscht wird:",
+        "Aufz3":"Pflichtangaben",
+            "Aufz3.1":"Ihr selbst gewählter Benutzername (Pseudonym)",
+            "Aufz3.2": "Die angegebene E-Mail-Adresse",
+            "Aufz3.3": "Das angegebene Passwort (verschlüsselt)",
+        "Aufz4":"Optionale Angaben",
+            "Aufz4.1":"Vorname, Nachname",
+            "Aufz4.2": "Land, in dem sie leben",
+            "Aufz4.3": "Geschlecht",
+            "Aufz4.4": "Geburtsdatum",
+            "Aufz4.5": "bevorzugte Sprache für enviroCar",
+    "touPara21":"Zusätzlich werden die Versionsnummern der Nutzungsbedingungen und der Datenschutzerklärung gespeichert, denen Sie zugestimmt haben.",
+
+
+
+                    "touSecTitle3":"Erfassung und Publikation von Messfahrten",
+
+    "touSecTitle3suba": "a) Erfassung von Messfahrten mit Hilfe der Smartphone App",
+        "Aufz5": "Die enviroCar Smartphone App ermöglicht es Ihnen, Ihre Fahrdaten aufzuzeichnen und als Open Data zu publizieren. Bei der Aufzeichnung Ihrer Messfahrten werden folgende Daten mit dem Smartphone aufgenommen und gespeichert:",
+            "Aufz5.1":"Datum und Uhrzeit der Messung",
+            "Aufz5.2":"GPS-Position, GPS-Geschwindigkeit, GPS-Bewegungsrichtung, Kennwerte zur Messqualität (HDOP, PDOP, VDOP)",
+            "Aufz5.3":"Verweis auf den verwendeten Fahrzeugtyp: Fahrzeughersteller, Modell, Baujahr, Hubraum, Treibstoffart",
+            "Aufz5.4":"Technische Daten aus der Motorsteuerung Ihres Fahrzeuges, wie beispielsweise: Geschwindigkeit, Umdrehungen pro Minute, Motorlast, Luftmassenstrom, Einlassdruck, Einlasstemperatur, Trimmung der Kraftstoffzufuhr, Gaspedal-Stellung, Messwerte der Lambda Sonde",
+            "Aufz5.5":"Daraus abgeleitete Daten, wie z.B.: Kraftstoffverbrauch, CO2-Emission",
+    "touPara22":"Die Daten stehen Ihnen auf dem Smartphone für eigene Analysen zur Verfügung.",
+        "touSecTitle3subb": "b) Publikation der Daten mit Hilfe der Smartphone App und Nutzung der Daten auf dem enviroCar Server",
+            "touPara23":"Mit dem Hochladen von Daten aus der enviroCar App auf den enviroCar Server (Option: Daten als Open Data hochladen) erklären Sie sich einverstanden, dass die von Ihnen erfassten Messfahrten in anonymer Form als Open Data publiziert und nach Maßgabe der Open Database License (ODbL) von uns wie auch von Dritten genutzt werden dürfen. Für weitere Informationen nutzen sie bitte den folgenden Link:",
+            "touPara24":"Durch die Veröffentlichung der Daten tragen Sie dazu bei, dass Wissenschaftler und Verkehrsplaner wichtige Datengrundlagen für Ihre Arbeit erhalten. Gleichzeitig entsteht beim Hochladen für Sie selbst die Möglichkeit, die erweiterten Fähigkeiten der enviroCar-Plattform für die Analyse Ihrer Daten zu nutzen.",
+            "touPara25":"Ihr enviroCar Account enthält einen Verweis auf alle Fahrten, die Sie als Open Data publiziert haben. Auf diese Weise haben Sie die Möglichkeit, ihre eigenen Daten zu verwalten und mit den Mitteln der Plattform zu analysieren. Sie habe jederzeit die Möglichkeit, einzelne oder alle Ihrer Messfahrten von der enviroCar Plattform zu löschen. Sie haben auch die Möglichkeit, Ihren Account zu löschen. Alle Messfahrten, die von Dritten bereits als Open Data heruntergeladen wurden, können von diesen allerdings weiterhin nach Maßgabe der ODbL genutzt werden.",  
+        "touSecTitle3subc": "c) Nutzung der publizierten Daten durch Dritte",
+            "touPara26":"Die Daten, die Sie auf den enviroCar Server hochgeladen haben (Option: Fahrt als Open Data hochladen) und die von dort über verschiedene Schnittstellen abrufbar sind, dürfen von Dritten nach Maßgabe der Open Database License (ODbL) genutzt werden. Das heißt: Es ist erlaubt, die Daten dieser Datenbank zu kopieren, weiterzugeben und neue Daten aus dieser Datenbank abzuleiten.",
+            "touPara27":"Bei der Weitergabe der Daten ist anzugeben, woher die Daten stammen (Benennung der Quelle in der Form Quelle: enviroCar contributors). Jede kopierte, veränderte oder ergänzte Fassung der Datenbank muss selbst ebenfalls nach Maßgabe der ODbL zugänglich gemacht werden. Der verbindliche Wortlaut der ODbL findet sich hier:",
+            "touPara28":"Die Messfahrten, die Sie als Open Data publizieren, enthalten keinen Verweis auf Ihren Account, so dass andere Nutzer keine Information über diese Beziehung haben. Hierbei ist zu beachten, dass Messfahrten auch ohne diese Information Rückschlüsse auf den Autor zulassen, wenn die Daten selbst eine so individuelle Charakteristik aufweisen, dass eine Beziehung zu bestimmten Personen nahe liegt. Dies ist beispielsweise dann der Fall, wenn ein seltener Fahrzeugtyp stets zwischen dem Wohn- und Arbeitsort einer Person bewegt wird und diese Person bekanntermaßen über ein Fahrzeug diesen Typs verfügt. Um solche Zuordnungen zu erschweren steht Ihnen die Möglichkeit zur Verfügung, Beginn und Ende der Messfahrten um eine bestimmte Strecke oder Fahrtdauer zu kürzen.",
+   
+    
+
+                    "touSecTitle4":"Löschen Ihres Accounts",
+
+    "touPara29":"Sie können Ihren enviroCar-Account jederzeit löschen. Sofern Sie möchten, dass hierbei neben den Account Daten (siehe oben: Nutzername, eMail-Adresse, ..) auch die Fahrzeugbeschreibungen und Fahrdaten gelöscht werden, die sie als Open Data unter der ODbL-Lizenz publiziert haben, so werden wir auch diese aus dem System entfernen. Hierbei ist zu beachten, dass Daten, die bereits von Dritten als Open Data heruntergeladen wurden, weiterhin nach Maßgabe der ODbL genutzt und weiterverarbeitet werden können.",
+    "touPara30":"Nach dem Löschen Ihres Accounts haben wir keine Möglichkeit mehr, die im System verbleibenden Fahrdaten Ihrer Person zuzuordnen und entsprechend zu verwalten.",
+    
+
+
+                    "touSecTitle42": "Bereitstellung von Fahrdaten aus Fremdsystemen",
+                    
+    "touPara49":"Der enviroCar-Server verfügt über eine technische Schnittstelle (API), die es ermöglicht, anonyme Fahrdaten aus Fremdsystemen nach Maßgabe der ODbL [Link] als Open Data auf den enviroCar-Server zu laden.",
+    "touPara50":"Das Hochladen von Daten mit Personenbezug (z.B. Namen der Fahrer oder Fahrzeughalter, Kennzeichen oder sonstige Identifikatoren, die es erlauben, einen direkten Bezug zum Fahrer, Halter oder zum Fahrzeug herzustellen) sind untersagt.",
+    "touPara51":"Mit der Anerkennung der Besonderen Nutzungsbedingen sichern Sie zu, dass Sie",
+    "touPara511":"keine personenbezogenen Daten auf den enviroCar Server hochladen werden,",
+    "touPara512":"über alle Rechte verfügen, die es Ihnen erlauben, die Daten Maßgabe der ODbL als open Data zu publizieren,",
+    "touPara513":"52°North von allen Rechtsansprüchen Dritter freistellen, die im Zusammenhang mit den hochgeladenen Daten aus  der Verletzung von Urheberrechten oder aus der Verletzung des Schutzes personenbezogener Daten entstehen.",
+
+
+                    "touSecTitle5": "Gewährleistung und Haftung",
+
+    "touPara31":"Die enviorCar Websites und Services werden 'wie besehen' und 'wie verfügbar' bereitgestellt. Wir übernehmen keine Gewähr für die Aktualität, Richtigkeit, Vollständigkeit oder Nutzbarkeit der Daten und Inhalte der enviroCar Webseiten und Services.",
+    "touPara32":"Es besteht kein grundsätzlichen Anspruch auf die Nutzung der enviroCar Websites und Services. Wartungsarbeiten oder technische Probleme können dazu führen, dass sie nicht verfügbar sind.",
+    "touPara33": "52°North behält sich das Recht vor, die enviroCar Websites und Services oder Teile davon jederzeit mit oder ohne Vorankündigung zu ändern, auszusetzen oder ganz zu beenden. Sie sind sich bewusst, dass wir keine Gewährleistung für Schäden übernehmen, die Ihnen oder Dritten aus der Änderung, Aussetzung oder Beendigung von enviroCar Websites oder Services entstehen können. Wir empfehlen Ihnen daher, die enviroCar Plattform nicht als ausschließlichen Speicherort für Ihre Daten und Inhalte zu verwenden.",
+    "touPara34":"Als 52°North sind wir nicht dafür verantwortlich, die Qualität der über die enviroCar-Websites und Services bereitgestellten Daten und Analysen zu prüfen oder eine bestimmte Qualität sicherzustellen. Wir können aber jederzeit Daten und Inhalte nach eigenem Ermessen aus der enviroCar Plattform entfernen, wenn wir der Ansicht sind, dass die Qualität der Daten den Zielen der Citizen Science Plattform entgegensteht.",
+    "touPara35":"Soweit dies nach geltendem Recht zulässig ist, lehnt 52°North jegliche expliziten der stillschweigenden  Gewährleistungen ab, einschließlich der Gewährleistung des Betriebes der Plattform, der Qualität der Daten, Analysen und Visualisierungen oder deren Eignung für einen bestimmten Zweck.",
+    "touPara36": "Auch kann trotz aller Bemühungen und Sicherheitsvorrichtungen nicht zu 100%  ausgeschlossen werden, dass durch die Nutzung der Angebote Schäden entstehen, z.B. bei Cyberangriffen und Missbrauch unserer technischen Anlagen durch Dritte. 52°North wendet wirtschaftlich angemessene Maßnahmen und Industriestandards an, um die Sicherheit der enviroCar Websites und Services zu gewährleisten. Trotz dieser Maßnahmen können wir nicht garantieren, dass Unbefugte unsere Sicherheitsmaßnahmen nicht umgehen können.", 
+    "touPara37":"Ihr Zugriff auf einige unserer Websites, Dienste und Inhalte ist durch Kennwörter geschützt, die nur Ihnen zugänglich sind. Um die Sicherheit Ihrer Daten zu gewährleisten, müssen Sie Ihre Benutzernamen und Kennwörter streng vertraulich behandeln und dürfen sie nicht an Dritte weitergeben. Für Zugriffe auf unsere Websites und Dienste, die unter Verwendung Ihres Benutzernamens und Kennworts durchgeführt werden, bevor Sie uns über den Verlust der Vertraulichkeit Ihrer Kennwörter informiert haben, sind Sie allein verantwortlich.  Wenn Sie Kenntnis von einer Verletzung der Vertraulichkeit Ihres Passworts oder einer Sicherheitsverletzung der enviroCar Websites oder Services erhalten haben, müssen Sie uns daher umgehend in Kenntnis setzen.",
+    "touPara38":"Sie sichern zu, dass Sie die enviroCar Websites und Services nicht verwenden, um gegen geltendes lokales, nationales oder internationales Recht zu verstoßen. Jegliche Verstöße gegen geltendes Recht und gegen die Regelungen der Besonderen Nutzungsbedingungen können zur umgehenden Sperrung ihres Accounts führen.",
+    "touPara39":"Sie sichern zu, dass sie die enviroCar mobileApp nicht während der Fahrt bedienen, wenn Sie das Fahrzeug selbst führen. Den gesetzlichen Regelungen zum sicheren Betrieb von Fahrzeugen folgend und zu Ihrer eigenen Sicherheit ist dies ausdrücklich untersagt.",
+    "touPara40":"Sie sichern zu, dass die Daten, die Sie als Open Data auf die enviroCar Plattform hochladen, von Ihnen selbst erfasst wurden und dass die Veröffentlichung als Open Data keine Persönlichkeits- oder Urheberrechte Dritter verletzt. Die Verletzung der Persönlichkeitsrechte Dritter ist beispielsweise dann gegeben, wenn Sie Fahrdaten in einem Fahrzeug erheben, ohne dass Sie das Fahrzeug selbst lenken und ohne dass Sie die explizite Einwilligung des Fahrzeuglenkers/der Fahrzeuglenkerin eingeholt haben, diese Daten als Open Data auf der enviroCar Plattform publizieren zu dürfen. In diesen Fällen halten Sie 52°North von jeglichen Rechts- und Schadenersatzansprüchen Dritter frei.",
+    "touPara41":"Ansonsten stellen Sie Ihre Fahrzeugbeschreibungen und Fahrdaten soweit dies nach geltendem Recht zulässig ist, ohne jegliche ausdrückliche oder stillschweigende Gewährleistung zur Verfügung, einschließlich, jedoch nicht beschränkt auf, Garantien bezüglich der Eignung für einen bestimmten Zweck.",
+    "touPara42":"Unter keinen Umständen haftet 52°North für jegliche Schäden, die aus der Nutzung der enviroCar WebSites und Services oder der darin enthaltenen Daten entstanden sind. Jegliche Verwendung geschieht auf eigenes Risiko.",
+    "touPara43":"52°North haftet nicht für fremde Inhalte, die über die enviroCar Webseite erreichbar sind - beispielsweise durch Links auf fremde Internetseiten. Wir distanzieren uns in jedem Fall von allen Inhalten, die straf- oder haftungsrechtliche Relevanz haben oder gegen gute Sitten verstoßen. Sobald wir Hinweise auf entsprechende Inhalte erhalten, werden wir diese umgehend  aus den enviroCar Webseiten und Services entfernen.",
+    
+
+
+                    "touSecTitle6":"Sonstige Regelungen",
+
+    "touPara44":"Sollte eine Bestimmung der Besonderen Nutzungsbedingungen  unwirksam sein, wird die Wirksamkeit der übrigen Bestimmungen davon nicht berührt. Die Parteien verpflichten sich, anstelle der unwirksamen Bestimmung eine dieser Bestimmung möglichst nahekommende wirksame Regelung zu treffen.",
+    "touPara45":"Alle Nebenabreden, Änderungen oder Ergänzungen zu den Besonderen Nutzungsbedingungen  bedürfen zu ihrer Wirksamkeit der Schriftform.",
+    "touPara46":"Erfüllungsort und Gerichtsstand ist Münster in Nordrhein-Westfalen, Deutschland.",
+    "touPara47":"Bei Fragen oder Kommentaren bezüglich der Besonderen Nutzungsbedingungen für die enviroCar Webseiten und Services nehmen Sie gern per Mail Kontakt mit uns auf: ",    
+
+
+
+                    "touSecTitle7":"Aktualität",
+
+    "touPara48":"Die letzte Aktualisierung dieser Allgemeinen Nutzungsbedingungen erfolgte am 14. Juli 2019.",
+
+
+
+
+
+
+                                                    "dsMainTitle":"Datenschutzerklärung",
+
+    "dsPara1":"enviroCar ist eine offene Citizen Science Plattform, die es Bürgern, Wissenschaftlern, und Verkehrsingenieuren ermöglicht, Daten fahrender Fahrzeuge zusammenzutragen und mit Hilfe dieser Daten Fragen zur Effizienz und Nachhaltigkeit des Verkehrsgeschehens zu beantworten.",
+    "dsPara2":"Die Nutzung der enviroCar.org Website sowie der enviroCar App erfordert das Erheben, Verarbeiten und Speichern von personenbezogenen Daten. ",
+    "dsPara3":"Personenbezogene Daten sind Informationen, die in direktem oder indirektem Bezug zur Identität einer Person stehen (z.B. Name, E-Mail Adresse, IP-Adresse, etc.).",
+    "dsPara4":"Wir sind uns unserer Verantwortung zum Schutze personenbezogener Daten bewusst und behandeln diese vertraulich und gemäß den aktuellen Datenschutzvorschriften. Wir möchten im folgenden Auskunft darüber geben, welche Daten wir genau erheben, wie und zu welchem Zweck wir diese verwenden.",
+    
+
+
+                    "dsSecTitle1":"Verantwortliche Stelle",
+
+    "dsPara5":"Die zur Datenverarbeitung verantwortliche Stelle ist:",
+    "verantwSt1":"52°North Initiative for Geospatial Open Source Software GmbH",
+    "verantwSt2":"Martin-Luther-King Weg 24",
+    "verantwSt3":"48155 Münster",
+    "verantwSt4":"info@52north.org",
+    "verantwSt5":"https://52north.org",
+    "verantwSt6":"Gesetzlicher Vertreter (Geschäftsführung):",
+    "verantwSt7":"Prof. Dr. Albert Remke",
+    "verantwSt8":"Prof. Dr. Andreas Wytzisk-Arens",
+    
+
+
+                    "dsSecTitle2":"Kontakt Datenschutzbeauftragte/r",
+
+    "dsPara6":"Wir haben für unser Unternehmen einen Datenschutzbeauftragten bestellt. Bei Fragen oder Anmerkungen bzgl. der Erhebung und Verarbeitung Ihrer personenbezogenen Daten, wenden Sie sich bitte an:",
+    "DSBeauftr1":"Henning Bredel",
+    "DSBeauftr2":"E-Mail: privacy@52north.org",
+    "DSBeauftr3":"Telefon: +49 251 396371 0",
+
+
+
+                    "dsSecTitle3":"Ihr Recht auf Auskunft, Berichtigung, Sperrung, Löschung",
+
+    "dsPara7":"Als betroffene Person haben Sie das Recht, auf Anfrage Auskunft darüber zu erhalten, welche Art von personenbezogenen Daten über Sie gespeichert sind und für welchen Zweck sie verwendet werden. Außerdem haben Sie ein Recht auf Berichtigung oder Löschung Ihrer personenbezogenen Daten oder auf Einschränkung der Verarbeitung sowie ein Widerspruchsrecht gegen diese Verarbeitung. Der Widerspruch kann sich auch nur auf eine bestimmte Verarbeitung oder Verwendung Ihrer personenbezogenen Daten beziehen.",
+    "dsPara8":"Sie können der Verwendung Ihrer personenbezogenen Daten jederzeit schriftlich oder per E-Mail an privacy@52north.org widersprechen.",
+    "dsPara9":"Sie haben auch das Recht, die Sie betreffenden personenbezogenen Daten, die Sie uns bereitgestellt haben, in einem strukturierten, gängigen und maschinenlesbaren Format zu erhalten. Auf Ihren Wunsch hin werden wir diese auch an eine andere von Ihnen benannte  Stelle übermitteln, soweit dies technisch machbar ist.",
+    "dsPara10":"Im Fall, dass Sie sich in Ihren Rechten nicht ausreichend durch unser Unternehmen unterstützt fühlen, haben Sie das Recht, sich mit einer Beschwerde an die Landesbeauftragten für Datenschutz und Informationsfreiheit Nordrhein-Westfalen (www.ldi.nrw.de) anzumelden.",
+
+
+
+                    "dsSecTitle4":"Zugriff auf die Website und Web-Dienste",
+
+    "dsPara11":"Jeder Zugriff auf unser Webangebot wird in Log-Dateien gespeichert. Die Informationen, die hierbei erhoben werden sind all jene, die über den Browser automatisch an uns übermittelt werden:", 
+        "dsAufz1.1":"Besuchte Seite auf unserer Domain",
+        "dsAufz1.2":"Datum und Uhrzeit der Anfrage",
+        "dsAufz1.3":"Art des Browsers und Version",
+        "dsAufz1.4":"verwendetes Betriebssystem",
+        "dsAufz1.5":"Referrer URL",
+        "dsAufz1.6":"Hostname des zugreifenden Endgeräts",
+        "dsAufz1.7":"IP-Adresse",
+    "dsPara13":"Die Daten werden für statistische Zwecke, sowie zum Zweck der Sicherung, Optimierung und Entstörung unseres Webangebots verwendet. Eine personenbezogene Auswertung oder Profilbildung erfolgt nicht.",
+    "dsPara14":"Wir behalten uns vor, Ihre Zugriffsdaten bei Angriffen oder sonstiger rechtswidriger Nutzung auszuwerten.",
+
+
+
+                    "dsSecTitle5":"Einrichten eines persönlichen Accounts",
+
+    "dsPara15":"Sie können Sie sich mit Hilfe der enviorCar Smartphone App oder auf der enviroCar Website als Nutzer registrieren.  Bei der Registrierung und Nutzung der enviroCar-Dienste werden folgende Daten gesammelt und so lange gespeichert, bis Ihr Account wieder gelöscht wird:",
+    "dsPara16":"Zusätzlich werden die Versionsnummern der Nutzungsbedingungen und der Datenschutzerklärung gespeichert, denen Sie zugestimmt haben.",
+    "dsPara17":"Der Account ermöglicht es Ihnen, ihre eigenen Daten zu verwalten und zu analysieren. Die übrigen Angaben des Nutzerprofils geben uns darüber hinaus die Möglichkeit, eine aggregierte Nutzerstatistik zu erstellen und zu erfahren, wie sich die enviroCar-Community zusammensetzt. Die übermittelten Daten dienen ausschließlich diesem Zweck und werden von 52°North nicht an Dritte weitergegeben.",
+    "dsPara18":"Die Kommunikation zwischen den Komponenten der enviroCar-Plattform ist verschlüsselt,  so dass Dritte keinen Zugang zu Ihren persönlichen Daten haben.",
+    "dsPara19":"Im Falle wichtiger Änderungen, etwa aus technischen Gründen, informieren wir Sie per E-Mail. Die E-Mail wird an die Adresse versendet, die bei der Registrierung angegeben wurde.",
+    "dsPara20":"Die Verarbeitung der bei der Registrierung eingegebenen Daten erfolgt auf Grundlage Ihrer Einwilligung (Art. 6 Abs. 1 lit. a DSGVO). Ein Widerruf Ihrer bereits erteilten Einwilligung ist jederzeit möglich. Für den Widerruf genügt eine formlose Mitteilung per E-Mail an enviroCar@52north.org. Die Rechtmäßigkeit der bereits erfolgten Datenverarbeitung bleibt vom Widerruf unberührt.",    
+
+
+
+                    "dsSecTitle6":"Erfassung und Publikation von Messfahrten",
+
+    "ZusatzMessfahrtenerf":"Bei der Aufzeichnung Ihrer Messfahrten werden folgende Daten mit dem Smartphone aufgenommen und gespeichert:",
+    
+    "dsSecTitle7":"Cookies",
+    "dsPara21":"Cookies werden von uns verwendet, um unsere Websites zu optimieren und die Nutzbarkeit zu verbessern.",
+    "dsPara22":"Cookies sind kleine Textdateien, die von Ihrem Browser beim Besuch von Webseiten und Anwendungen gespeichert werden. Cookies werden von Ihrem Browser heruntergeladen, wenn Sie zum ersten Mal eine bestimmte Website besuchen. Wenn Sie diese Website mit demselben Gerät erneut besuchen, werden die im Cookie gespeicherten Daten an die Website zurückgesendet, auf der sie erstellt wurden. Die Website erkennt dann den Webbrowser, mit dem sie bereits aufgerufen wurde, und optimiert den für Sie angezeigten Inhalt entsprechend. Sie können in den Datenschutzeinstellungen Ihres Browsers festlegen, wie Websites Cookies verwenden dürfen (weitere Informationen zum Konfigurieren der Cookie-Einstellungen finden Sie in der Hilfefunktion Ihres Browsers). Wenn Sie Cookies ganz deaktivieren, funktionieren die enviroCar-Websites und -Anwendungen unter bestimmten Umständen möglicherweise nicht mehr richtig. Weitere Informationen zu Cookies finden Sie unter:",
+
+
+
+                    "dsSecTitle8":"Nutzung externer Plattformen",
+
+        "dsTitle8subA":"a) Github",
+    "dsPara23":"Unsere Website verweist auf Software und Dokumentationen, die wir mit Hilfe des Online-Dienstes GitHub verwalten.",
+    "dsPara24":"Anbieter ist GitHub Inc., 88 Colin P Kelly Jr St, San Francisco, CA 94107, USA.",
+    "dsPara25":"Wenn Sie die GitHub-Seiten besuchen, wird eine Verbindung zu den Servern von GitHub hergestellt. Dabei wird dem GitHub-Server mitgeteilt, welche unserer Seiten Sie besucht haben. Zudem erlangt GitHub Ihre IP-Adresse. Dies gilt auch dann, wenn Sie nicht bei GitHub eingeloggt sind oder keinen Account bei GitHub besitzen. Diese Daten werden an den GitHub-Server in den USA übermittelt.",
+    "dsPara26":"Wenn Sie in Ihrem GitHub-Account eingeloggt sind, ermöglichen Sie GitHub, Ihr Surfverhalten direkt Ihrem persönlichen Profil zuzuordnen. Dies können Sie verhindern, indem Sie sich aus Ihrem GitHub-Account ausloggen.",
+    "dsPara27":"Die Datenschutzerklärung von GitHub finden Sie hier:",
+        "dsTitle8subB":"b) YouTube",
+            "dsPara28":"Unsere Website bettet Inhalte der Seite YouTube (Google) via iframe ein. Betreiber der Seiten ist die",
+            "dsPara29":"YouTube LLC, 901 Cherry Ave, San Bruno, CA 94066, USA",
+            "dsPara30":"Wenn Sie eine unserer, mit einem YouTube-iframe ausgestatteten Seiten besuchen, wird eine Verbindung zu den Servern von YouTube hergestellt. Dabei wird dem YouTube-Server mitgeteilt, welche unserer Seiten Sie besucht haben. Wenn Sie in Ihrem YouTube-Account eingeloggt sind, ermöglichen Sie YouTube, Ihr Surfverhalten direkt Ihrem persönlichen Profil zuzuordnen. Dies können Sie verhindern, indem Sie sich aus Ihrem YouTube-Account ausloggen.",
+            "dsPara31":"Die Einbindung der Videos erfolgt mit 'Erweitertem Datenschutzmodus', welcher (nach Google)erst Daten über die Besucher unserer Seite speichert, wenn diese das Video anklicken. Einfluss und Einsicht auf die beschriebene Funktionsweise haben wir aber nicht.",
+            "dsPara32":"Weitere Informationen zum Umgang von YouTube mit Nutzerdaten finden Sie in der Datenschutzerklärung von YouTube unter:", 
+        "dsTitle8subC":"c) Twitter",
+            "dsPara33":"52°North nutzt die Social Media Plattform Twitter zur Bereitstellung von Informationen über enviroCar sowie zur Interaktion mit der enviroCar Community:",
+            "dsPara34":"Wir machen darauf aufmerksam, dass Twitter die Daten ihrer Nutzerinnen und Nutzer entsprechend ihrer eigenen Datenschutzrichtlinie speichert und gegebenenfalls auch für geschäftliche Zwecke nutzt. 52°North hat keinen Einfluss auf die Datenerhebung und deren weitere Verwendung der Daten durch Twitter.",
+            "dsPara35":"Verantwortlich für die Verarbeitung personenbezogener Daten nach europäischer Rechtsprechung ist die:",
+            "dsPara36":"Twitter International Company, One Cumberland Place, Fenian Street, Dublin 2, D02 AX07, Irland:",
+            "dsPara37":"Angaben darüber, welche Daten durch Twitter verarbeitet werden und zu welchen Zwecken sie genutzt werden, finden Sie in der Datenschutzerklärung von Twitter:", 
+        "dsTitle8subD":"d) Facebook",
+            "dsPara38":"52°North nutzt die Social Media Plattform facebook zur Bereitstellung von Informationen über enviroCar sowie zur Interaktion mit der enviroCar Community:",
+            "dsPara39":"Wir machen darauf aufmerksam, dass facebook die Daten ihrer Nutzerinnen und Nutzer entsprechend ihrer eigenen Datenschutzrichtlinie speichert und gegebenenfalls auch für geschäftliche Zwecke nutzt. 52°North hat keinen Einfluss auf die Datenerhebung und deren weitere Verwendung der Daten durch facebook.",
+            "dsPara40":"Verantwortlich für die Verarbeitung personenbezogener Daten nach europäischer Rechtsprechung ist die:",
+            "dsPara41":"Facebook Ireland Ltd, 4 Grand Canal Square, Grand Canal Harbour, Dublin 2, Irland",
+            "dsPara42":"Angaben darüber, welche Daten durch Facebook verarbeitet werden und zu welchen Zwecken sie genutzt werden, finden Sie in der Datenschutzerklärung von facebook:",
+
+
+
+                    "dsTitle9":"Links auf externe Seiten",
+
+    "dsPara43":"Links auf externe Webseiten wurden von uns nach besten Wissen und größtmöglicher Sorgfalt erstellt. Sie stellen jedoch Zugang zu 'fremden Inhalten' dar, auf welche 52°North wenig bis keinen Einfluss hat. Für Schäden und Rechtsverletzungen aus der Nutzung 'fremder Inhalte' haftet ausschließlich der jeweilige Anbieter der Seite, auf die verwiesen wurde.",
+
+
+
+                    "dsTitle10":"Sonstige Kontakte",
+
+    "dsPara44":"Wenn Sich mit Fragen oder sonstigen Anliegen an uns wenden (z.B. in Papier- oder elektronischer Form) werden wir die von Ihnen übermittelten Daten solange speichern, wie wir diese zur Bearbeitung und Beantwortung Ihres Anliegens benötigen. Eine Weitergabe an Dritte erfolgt nicht ohne Ihre Einwilligung.",
+
+
+
+                    "dsTitle11":"Änderungen der Datenschutzerklärung",
+
+    "dsPara45":"Aufgrund von Veränderungen technischer, organisatorischer oder rechtlicher Rahmenbedingungen können gelegentlich Aktualisierungen der Datenschutzerklärung notwendig werden.  52°North behält sich daher vor, die  Datenschutzerklärung unter Beachtung der geltenden gesetzlichen Datenschutzbestimmungen anzupassen und fortzuschreiben. Es gilt die zum Zeitpunkt Ihres Besuchs abrufbare Fassung."
 }
+    
+
