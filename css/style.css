@@ -1729,7 +1729,7 @@ header {
 }
 .catch-phrase {
     color: #0065A0;
-    font-weight: 200 !important;
+    font-weight: bold !important; /* 200*/
 }
 .catch-phrase-heading {
     font-weight: 700;
