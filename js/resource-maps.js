@@ -9,53 +9,59 @@ function initialize() {
         center: [1000000, 6700000],
         zoom: 6
     });
-
-    var mapres1 = new ol.Map({
-        layers: [
-            defLayer,
+	
+	var layers = [defLayer,
             new ol.layer.Image({
                 source: new ol.source.ImageWMS({
-                    url: 'http://processing.envirocar.org:9090/geoserver/wms',
-                    port: 9090,
+                    url: 'http://processing.envirocar.org/geoserver/ec/wms',
                     params: {
-                        'LAYERS': 'cite:roadsegments',
-                        'STYLES': 'speedinterpolation'
+                        'LAYERS': 'ec:track_count',
                     },
                     ratio: 1,
                     serverType: 'geoserver'
-                })
-            })
-        ],
-        target: 'mapres1',
-        view: defView,
-        controls: ol.control.defaults({
-            zoom: true,
-            attribution: true,
-            rotate: true
-        }).extend([
-            new ol.control.FullScreen()
-        ])
-        ,interactions: ol.interaction.defaults({
-            mouseWheelZoom: false
-        })
-    }
-    );
+                }),
+				visible: true
+            }),
+            new ol.layer.Image({
+                source: new ol.source.ImageWMS({
+                    url: 'http://processing.envirocar.org/geoserver/ec/wms',
+                    params: {
+                        'LAYERS': 'ec:mean_speed',
+                    },
+                    ratio: 1,
+                    serverType: 'geoserver'
+                }),
+				visible: false
+            })];
+
+	// var layers = [defLayer,
+            // new ol.layer.Image({
+                // source: new ol.source.ImageWMS({
+                    // url: 'http://192.168.21.163:8080/geoserver/wms',
+                    // params: {
+                        // 'LAYERS': 'tb15-du:mean_speed',
+                    // },
+                    // ratio: 1,
+                    // serverType: 'geoserver'
+                // }),
+				// visible: true
+            // }),
+            // new ol.layer.Image({
+                // source: new ol.source.ImageWMS({
+                    // url: 'http://192.168.21.163:8080/geoserver/wms',
+                    // params: {
+                        // 'LAYERS': 'tb15-du:track_count',
+                    // },
+                    // ratio: 1,
+                    // serverType: 'geoserver'
+                // }),
+				// visible: false
+            // })];
+
+	
     var mapres2 = new ol.Map({
         target: 'mapres2',
-        layers: [defLayer,
-            new ol.layer.Image({
-                source: new ol.source.ImageWMS({
-                    url: 'http://processing.envirocar.org:9090/geoserver/wms',
-                    port: 9090,
-                    params: {
-                        'LAYERS': 'cite:roadsegments',
-                        'STYLES': 'co2interpolation'
-                    },
-                    ratio: 1,
-                    serverType: 'geoserver'
-                })
-            })
-        ],
+        layers:  layers,
         view: defView,
         controls: ol.control.defaults({
             zoom: true,
@@ -68,34 +74,15 @@ function initialize() {
             mouseWheelZoom: false
         })
     });
-    var mapres3 = new ol.Map({
-        target: 'mapres3',
-        layers: [defLayer,
-            new ol.layer.Image({
-                source: new ol.source.ImageWMS({
-                    url: 'http://processing.envirocar.org:9090/geoserver/wms',
-                    port: 9090,
-                    params: {
-                        'LAYERS': 'cite:roadsegments',
-                        'STYLES': 'consumptioninterpolation'
-                    },
-                    ratio: 1,
-                    serverType: 'geoserver'
-                })
-            })
-        ],
-        view: defView,
-        controls: ol.control.defaults({
-            zoom: true,
-            attribution: true,
-            rotate: true
-        }).extend([
-            new ol.control.FullScreen()
-        ])
-        ,interactions: ol.interaction.defaults({
-            mouseWheelZoom: false
-        })
-    });
+	
+	var select = document.getElementById('layer-select');
+    function onChange() {
+      var layerIndex = select.value;
+      for (var i = 1, ii = layers.length; i < ii; ++i) {
+        layers[i].setVisible(i== layerIndex);
+      }
+    }
+    select.addEventListener('change', onChange);
 }
 
 initialize();
