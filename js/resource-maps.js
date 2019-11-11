@@ -25,6 +25,23 @@ function initialize() {
               layer: 'ec:tc_ms',
             matrixSet: 'EPSG:4326',
             format: 'image/png',
+			//styles: "track-count-yellow-line-opacity",
+            projection: projection,
+              tileGrid: new ol.tilegrid.WMTS({
+                origin: ol.extent.getTopLeft(projectionExtent),
+              resolutions: resolutions,
+                matrixIds: matrixIds
+              })
+        })
+    });
+
+    tracksWMTS2 = new ol.layer.Tile({
+            source: new ol.source.WMTS({
+            url: 'https://processing.envirocar.org/geoserver/gwc/service/wmts',
+              layer: 'ec:mean_speed',
+            matrixSet: 'EPSG:4326',
+            format: 'image/png',
+			//styles: "mean-speed-color-map",
             projection: projection,
               tileGrid: new ol.tilegrid.WMTS({
                 origin: ol.extent.getTopLeft(projectionExtent),
@@ -36,9 +53,16 @@ function initialize() {
 	
     var defLayer = new ol.layer.Tile({
         source: new ol.source.OSM({
+            url: "https://{a-c}.basemaps.cartocdn.com/spotify_dark/{z}/{x}/{y}.png"
+        })
+    });
+	
+    var defLayer2 = new ol.layer.Tile({
+        source: new ol.source.OSM({
             url: "https://{a-c}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png"
         })
     });
+
 
     var defView = new ol.View({
         center: [1000000, 6700000],
@@ -46,6 +70,7 @@ function initialize() {
     });
 	
 	var layers = [defLayer,tracksWMTS];
+	var layers2 = [defLayer2,tracksWMTS2];
 	
 	// var layers = [defLayer,
             // new ol.layer.Image({
@@ -112,14 +137,22 @@ function initialize() {
         })
     });
 	
-	var select = document.getElementById('layer-select');
-    function onChange() {
-      var layerIndex = select.value;
-      for (var i = 1, ii = layers.length; i < ii; ++i) {
-        layers[i].setVisible(i== layerIndex);
-      }
-    }
-    select.addEventListener('change', onChange);
+    var mapres3 = new ol.Map({
+        target: 'mapres3',
+        layers:  layers2,
+        view: defView,
+        controls: ol.control.defaults({
+            zoom: true,
+            attribution: true,
+            rotate: true
+        }).extend([
+            new ol.control.FullScreen()
+        ])
+        ,interactions: ol.interaction.defaults({
+            mouseWheelZoom: false
+        })
+    });
+    
 }
 
 initialize();

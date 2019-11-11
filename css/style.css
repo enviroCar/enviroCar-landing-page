@@ -3097,5 +3097,10 @@ header {
 .third-map {
     float: left;
     height: 100%;
-    width: 33%;
+    width: 80%;
+}
+.third-map-legend-ext {
+    float: left;
+    height: 100%;
+    width: 50%;
 }
