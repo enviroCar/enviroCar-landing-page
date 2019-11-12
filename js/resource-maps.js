@@ -152,7 +152,7 @@ function initialize() {
             mouseWheelZoom: false
         })
     });
-    
+    	
 }
 
 initialize();
