@@ -34,9 +34,15 @@ function initialize() {
               })
         })
     });
-
-    tracksWMTS2 = new ol.layer.Tile({
-            source: new ol.source.WMTS({
+	
+	var wmsSource = new ol.source.TileWMS({
+      url: 'https://processing.envirocar.org/geoserver/wms',
+      params: {'LAYERS': 'ec:mean_speed', 'TILED': true},
+      serverType: 'geoserver',
+      crossOrigin: 'anonymous'
+    });
+	
+    var wmts2 =  new ol.source.WMTS({
             url: 'https://processing.envirocar.org/geoserver/gwc/service/wmts',
               layer: 'ec:mean_speed',
             matrixSet: 'EPSG:4326',
@@ -48,7 +54,10 @@ function initialize() {
               resolutions: resolutions,
                 matrixIds: matrixIds
               })
-        })
+    });
+
+    tracksWMTS2 = new ol.layer.Tile({
+		source: wmts2
     });
 	
     var defLayer = new ol.layer.Tile({
@@ -65,7 +74,8 @@ function initialize() {
 
 
     var defView = new ol.View({
-        center: [1000000, 6700000],
+        center: [9.968, 51.388],
+		projection : "EPSG:4326",
         zoom: 6
     });
 	
@@ -136,6 +146,18 @@ function initialize() {
             mouseWheelZoom: false
         })
     });
+	  
+	var container = document.getElementById('popup');
+    var content = document.getElementById('popup-content');
+    var closer = document.getElementById('popup-closer');
+   
+    var overlay = new ol.Overlay({
+      element: container,
+      autoPan: true,
+      autoPanAnimation: {
+        duration: 250
+      }
+    });
 	
     var mapres3 = new ol.Map({
         target: 'mapres3',
@@ -150,9 +172,34 @@ function initialize() {
         ])
         ,interactions: ol.interaction.defaults({
             mouseWheelZoom: false
-        })
+        }),
+		overlays: [overlay]
     });
-    	
+   
+    mapres3.on('singleclick', function(evt) {
+	  var coordinate = evt.coordinate;
+      var viewResolution = /** @type {number} */ (defView.getResolution());
+      var url = wmsSource.getGetFeatureInfoUrl(
+          coordinate, viewResolution, 'EPSG:4326',
+          {'INFO_FORMAT': 'text/html'});
+          overlay.setPosition(coordinate);
+          if (url) {
+            var parser = new ol.format.GeoJSON();
+            console.log(parser)
+            $.ajax({
+                  url: url,
+                }).then(function(response) {
+                   content.innerHTML = response;
+                });
+          }
+    });
+	  
+    closer.onclick = function() {
+      overlay.setPosition(undefined);
+      closer.blur();
+      return false;
+    };
+
 }
 
 initialize();

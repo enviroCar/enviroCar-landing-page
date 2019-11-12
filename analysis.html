@@ -37,8 +37,9 @@
         
         <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/i18next/8.1.0/i18next.min.js"></script>-->
         <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-i18next/1.2.0/jquery-i18next.min.js"></script>-->
-        <link rel="stylesheet" href="https://cdn.rawgit.com/openlayers/openlayers.github.io/master/en/v6.1.0/css/ol.css">
-        <script src="https://cdn.rawgit.com/openlayers/openlayers.github.io/master/en/v6.1.0/build/ol.js"></script>
+        <!-- <link rel="stylesheet" href="https://cdn.rawgit.com/openlayers/openlayers.github.io/master/en/v6.1.0/css/ol.css"> -->
+		<link rel="stylesheet" href="https://openlayers.org/en/v4.6.5/css/ol.css" type="text/css">
+        <script src="https://openlayers.org/en/v4.6.5/build/ol.js"></script>
         <script src="js/i18nextify.min.js"></script>
         <script src="js/i18nextXHRBackend.min.js"></script>
         <script>
@@ -48,6 +49,50 @@
                             loadPath: 'locales/{{lng}}/translation.json'
                         }});
         </script>
+		<style>
+          .ol-popup {
+            position: absolute;
+            background-color: white;
+            -webkit-filter: drop-shadow(0 1px 4px rgba(0,0,0,0.2));
+            filter: drop-shadow(0 1px 4px rgba(0,0,0,0.2));
+            padding: 15px;
+            border-radius: 10px;
+            border: 1px solid #cccccc;
+            bottom: 12px;
+            left: -50px;
+            min-width: 280px;
+          }
+          .ol-popup:after, .ol-popup:before {
+            top: 100%;
+            border: solid transparent;
+            content: " ";
+            height: 0;
+            width: 0;
+            position: absolute;
+            pointer-events: none;
+          }
+          .ol-popup:after {
+            border-top-color: white;
+            border-width: 10px;
+            left: 48px;
+            margin-left: -10px;
+          }
+          .ol-popup:before {
+            border-top-color: #cccccc;
+            border-width: 11px;
+            left: 48px;
+            margin-left: -11px;
+          }
+          .ol-popup-closer {
+            text-decoration: none;
+            position: absolute;
+            top: 2px;
+            right: 8px;
+          }
+          .ol-popup-closer:after {
+            content: "✖";
+          }
+    </style>
     </head>
 
     <body id="page-top" style="display: none; background-color: #fff;">
@@ -141,6 +186,10 @@
             <!-- <div id="" class="third-map noPadding" style="padding-right:8px !important;"></div> -->
             <div class="third-map-legend-ext"><div id="mapres2" class="row third-map mapres2 noPadding" style="padding-right:8px !important;"></div><img id="legend2" src="http://processing.envirocar.org/geoserver/ows?service=WMS&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=ec%3Atc_ms&LEGEND_OPTIONS=bgColor:000000;fontColor:FFFFFF"/></div>
             <div class="third-map-legend-ext"><div id="mapres3" class="row third-map mapres3 noPadding" style="padding-right:8px !important;"></div><img id="legend3" src="http://processing.envirocar.org/geoserver/ows?service=WMS&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=ec%3Amean_speed&LEGEND_OPTIONS=bgColor:000000;fontColor:FFFFFF"/></div>
+			<div id="popup" class="ol-popup">
+                <a href="#" id="popup-closer" class="ol-popup-closer"></a>
+            <div id="popup-content"></div>
+        </div>
         </div>
 
         <!-- Image Background Divider parallax -->
