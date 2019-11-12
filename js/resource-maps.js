@@ -42,6 +42,13 @@ function initialize() {
       crossOrigin: 'anonymous'
     });
 	
+	var wmsSource2 = new ol.source.TileWMS({
+      url: 'https://processing.envirocar.org/geoserver/wms',
+      params: {'LAYERS': 'ec:mean_speed', 'TILED': true},
+      serverType: 'geoserver',
+      crossOrigin: 'anonymous'
+    });
+	
     var wmts2 =  new ol.source.WMTS({
             url: 'https://processing.envirocar.org/geoserver/gwc/service/wmts',
               layer: 'ec:mean_speed',
@@ -81,71 +88,6 @@ function initialize() {
 	
 	var layers = [defLayer,tracksWMTS];
 	var layers2 = [defLayer2,tracksWMTS2];
-	
-	// var layers = [defLayer,
-            // new ol.layer.Image({
-                // source: new ol.source.ImageWMS({
-                    // url: 'http://processing.envirocar.org/geoserver/ec/wms',
-                    // params: {
-                        // 'LAYERS': 'ec:track_count',
-                    // },
-                    // ratio: 1,
-                    // serverType: 'geoserver'
-                // }),
-				// visible: true
-            // }),
-            // new ol.layer.Image({
-                // source: new ol.source.ImageWMS({
-                    // url: 'http://processing.envirocar.org/geoserver/ec/wms',
-                    // params: {
-                        // 'LAYERS': 'ec:mean_speed',
-                    // },
-                    // ratio: 1,
-                    // serverType: 'geoserver'
-                // }),
-				// visible: false
-            // })];
-
-	// var layers = [defLayer,
-            // new ol.layer.Image({
-                // source: new ol.source.ImageWMS({
-                    // url: 'http://192.168.21.163:8080/geoserver/wms',
-                    // params: {
-                        // 'LAYERS': 'tb15-du:mean_speed',
-                    // },
-                    // ratio: 1,
-                    // serverType: 'geoserver'
-                // }),
-				// visible: true
-            // }),
-            // new ol.layer.Image({
-                // source: new ol.source.ImageWMS({
-                    // url: 'http://192.168.21.163:8080/geoserver/wms',
-                    // params: {
-                        // 'LAYERS': 'tb15-du:track_count',
-                    // },
-                    // ratio: 1,
-                    // serverType: 'geoserver'
-                // }),
-				// visible: false
-            // })];
-
-	
-    var mapres2 = new ol.Map({
-        target: 'mapres2',
-        layers:  layers,
-        view: defView,
-        controls: ol.control.defaults({
-            zoom: true,
-            attribution: true,
-            rotate: true
-        }).extend([
-            new ol.control.FullScreen()
-        ])
-        ,interactions: ol.interaction.defaults({
-            mouseWheelZoom: false
-        })
-    });
 	  
 	var container = document.getElementById('popup');
     var content = document.getElementById('popup-content');
@@ -158,10 +100,22 @@ function initialize() {
         duration: 250
       }
     });
+		
+	var container2 = document.getElementById('popup2');
+    var content2 = document.getElementById('popup-content2');
+    var closer2 = document.getElementById('popup-closer2');
+   
+    var overlay2 = new ol.Overlay({
+      element: container2,
+      autoPan: true,
+      autoPanAnimation: {
+        duration: 250
+      }
+    });
 	
-    var mapres3 = new ol.Map({
-        target: 'mapres3',
-        layers:  layers2,
+    var mapres = new ol.Map({
+        target: 'mapres',
+        layers:  layers,
         view: defView,
         controls: ol.control.defaults({
             zoom: true,
@@ -175,8 +129,25 @@ function initialize() {
         }),
 		overlays: [overlay]
     });
+	
+    var mapres2 = new ol.Map({
+        target: 'mapres2',
+        layers:  layers2,
+        view: defView,
+        controls: ol.control.defaults({
+            zoom: true,
+            attribution: true,
+            rotate: true
+        }).extend([
+            new ol.control.FullScreen()
+        ])
+        ,interactions: ol.interaction.defaults({
+            mouseWheelZoom: false
+        }),
+		overlays: [overlay2]
+    });
    
-    mapres3.on('singleclick', function(evt) {
+    mapres.on('singleclick', function(evt) {
 	  var coordinate = evt.coordinate;
       var viewResolution = /** @type {number} */ (defView.getResolution());
       var url = wmsSource.getGetFeatureInfoUrl(
@@ -184,8 +155,6 @@ function initialize() {
           {'INFO_FORMAT': 'text/html'});
           overlay.setPosition(coordinate);
           if (url) {
-            var parser = new ol.format.GeoJSON();
-            console.log(parser)
             $.ajax({
                   url: url,
                 }).then(function(response) {
@@ -193,9 +162,31 @@ function initialize() {
                 });
           }
     });
+   
+    mapres2.on('singleclick', function(evt) {
+	  var coordinate = evt.coordinate;
+      var viewResolution = /** @type {number} */ (defView.getResolution());
+      var url = wmsSource2.getGetFeatureInfoUrl(
+          coordinate, viewResolution, 'EPSG:4326',
+          {'INFO_FORMAT': 'text/html'});
+          overlay2.setPosition(coordinate);
+          if (url) {
+            $.ajax({
+                  url: url,
+                }).then(function(response) {
+                   content2.innerHTML = response;
+                });
+          }
+    });
 	  
     closer.onclick = function() {
       overlay.setPosition(undefined);
+      closer.blur();
+      return false;
+    };
+	  
+    closer2.onclick = function() {
+      overlay2.setPosition(undefined);
       closer.blur();
       return false;
     };
