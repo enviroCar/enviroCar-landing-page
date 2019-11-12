@@ -37,7 +37,7 @@ function initialize() {
 	
 	var wmsSource = new ol.source.TileWMS({
       url: 'https://processing.envirocar.org/geoserver/wms',
-      params: {'LAYERS': 'ec:mean_speed', 'TILED': true},
+      params: {'LAYERS': 'ec:track_count', 'TILED': true},
       serverType: 'geoserver',
       crossOrigin: 'anonymous'
     });
