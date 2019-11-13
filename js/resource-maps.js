@@ -152,13 +152,18 @@ function initialize() {
       var viewResolution = /** @type {number} */ (defView.getResolution());
       var url = wmsSource.getGetFeatureInfoUrl(
           coordinate, viewResolution, 'EPSG:4326',
-          {'INFO_FORMAT': 'text/html'});
+          {'INFO_FORMAT': 'application/json', 'FEATURE_COUNT': 1});
           overlay.setPosition(coordinate);
           if (url) {
             $.ajax({
                   url: url,
                 }).then(function(response) {
-                   content.innerHTML = response;
+				    if(response.features.length > 0){
+					    overlay2.setPosition(coordinate);
+                        content2.innerHTML = "Track count: " + Math.round(response.features[0].properties.count);
+					} else {
+						overlay2.setPosition(undefined);
+					}
                 });
           }
     });
@@ -168,13 +173,18 @@ function initialize() {
       var viewResolution = /** @type {number} */ (defView.getResolution());
       var url = wmsSource2.getGetFeatureInfoUrl(
           coordinate, viewResolution, 'EPSG:4326',
-          {'INFO_FORMAT': 'text/html'});
-          overlay2.setPosition(coordinate);
+          {'INFO_FORMAT': 'application/json', 'FEATURE_COUNT': 1});
+          
           if (url) {
             $.ajax({
                   url: url,
                 }).then(function(response) {
-                   content2.innerHTML = response;
+				    if(response.features.length > 0){
+					    overlay2.setPosition(coordinate);
+                        content2.innerHTML = "Mean speed: " + Math.round(response.features[0].properties.mean_speed) + " km/h";
+					} else {
+						overlay2.setPosition(undefined);
+					}
                 });
           }
     });
