@@ -188,6 +188,43 @@ function initialize() {
           }
     });
 	  
+	jeoquery.defaultData.userName = 'envirocar';
+	
+	jeoquery.defaultLanguage = "de";
+	
+	var geolocatorTextField = document.getElementById('geolocator-text');
+	
+	$("#city").jeoCityAutoComplete();
+	
+	var geolocatorButton = document.getElementById('geolocator-button');
+	
+    geolocatorButton.onclick = function(evt) {
+	  var geolocatorText = document.getElementById('city').value;
+         
+          if (geolocatorText != "") {
+			var url = "http://api.geonames.org/searchJSON?q=" + geolocatorText + "&maxRows=10&username=envirocar";
+			  
+            $.ajax({
+                  url: url,
+                }).then(function(response) {
+				    if(response.geonames.length > 0){
+						
+						var lat = Number(response.geonames[0].lat);
+						var lng = Number(response.geonames[0].lng);
+						
+						var newView = new ol.View({
+                                    center: [lng, lat],
+	                            	projection : "EPSG:4326",
+                                    zoom: 12
+                                });						
+						mapres.setView(newView);
+						mapres2.setView(newView);
+
+					}
+                });
+          }
+    };
+	
     closer.onclick = function() {
       overlay.setPosition(undefined);
       closer.blur();

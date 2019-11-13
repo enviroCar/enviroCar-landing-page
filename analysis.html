@@ -26,22 +26,26 @@
         <!-- Custom styles for this template -->
         <link href="css/style.css" rel="stylesheet">
         <link href="css/bootstrap.copy.min.css" rel="stylesheet">
-        <script src="js/jquery.copy.min.js"></script>
+        <!-- <script src="js/jquery.copy.min.js"></script> -->
+		<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
         <script src="js/bootstrap.copy.min.js"></script>
         <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>-->
         <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
         <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
         <script src="js/i18next.copy.min.js"></script>
         <script src="js/jquery-i18next.min.js"></script>
-        <script src="http://tompi.github.io/jeoquery/jeoquery.js"></script>
         
         <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/i18next/8.1.0/i18next.min.js"></script>-->
         <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-i18next/1.2.0/jquery-i18next.min.js"></script>-->
         <!-- <link rel="stylesheet" href="https://cdn.rawgit.com/openlayers/openlayers.github.io/master/en/v6.1.0/css/ol.css"> -->
 		<link rel="stylesheet" href="https://openlayers.org/en/v4.6.5/css/ol.css" type="text/css">
+		<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/themes/redmond/jquery-ui.css"/>
         <script src="https://openlayers.org/en/v4.6.5/build/ol.js"></script>
         <script src="js/i18nextify.min.js"></script>
         <script src="js/i18nextXHRBackend.min.js"></script>
+        <script src="http://tompi.github.io/jeoquery/jeoquery.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/prettify/188.0.0/prettify.js"></script>
         <script>
             window.i18nextify
                     .init({
@@ -167,21 +171,14 @@
             </div>
         </section>
         <div class="col-12 row" style="background-color: #f3f3f3;">
-            <!-- <div class="col-4"> -->
-                <!-- <p class="section-heading product-text" style="text-align:center;background-color: #f3f3f3;">avgSpeed</p> -->
-            <!-- </div> -->
             <div class="col-6" style="background-color: #f3f3f3;">
                 <p class="section-heading product-text" style="text-align:center;background-color: #f3f3f3;">trackCount</p>
-				<!-- Layer: -->
-				<!-- <select id="layer-select"> -->
-                  <!-- <option value="1" selected>trackCount</option> -->
-                  <!-- <option value="2">meanSpeed</option> -->
-                <!-- </select> -->
             </div>
             <div class="col-6" style="background-color: #f3f3f3;">
                 <p class="section-heading product-text" style="text-align:center;background-color: #f3f3f3;">meanSpeed</p>
             </div>
         </div>
+		<div style="background-color:#f3f3f3; height:30px"><div style="width: 300px;margin: 0 auto;"><input class="input-large ui-autocomplete-input ui-corner-all" id="city" type="text"/><input type="button" id="geolocator-button" value="geolocate"/></div></div>
         <div style="height:60%; background-color:#f3f3f3;">
             <!-- <div id="" class="third-map noPadding" style="padding-right:8px !important;"></div> -->
             <div class="third-map-legend-ext"><div id="mapres" class="row third-map mapres noPadding" style="padding-right:8px !important;"></div><img id="legend2" src="http://processing.envirocar.org/geoserver/ows?service=WMS&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=ec%3Atc_ms&LEGEND_OPTIONS=bgColor:000000;fontColor:FFFFFF"/></div>
