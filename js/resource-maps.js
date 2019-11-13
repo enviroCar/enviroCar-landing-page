@@ -205,7 +205,7 @@ function initialize() {
 	  var geolocatorText = document.getElementById('city').value;
          
           if (geolocatorText != "") {
-			var url = "http://api.geonames.org/searchJSON?q=" + geolocatorText + "&maxRows=10&username=envirocar";
+			var url = jeoquery.geoNamesProtocol + "://" + jeoquery.geoNamesApiServer + "/searchJSON?q=" + geolocatorText + "&maxRows=10&username=envirocar";
 			  
             $.ajax({
                   url: url,
