@@ -153,16 +153,15 @@ function initialize() {
       var url = wmsSource.getGetFeatureInfoUrl(
           coordinate, viewResolution, 'EPSG:4326',
           {'INFO_FORMAT': 'application/json', 'FEATURE_COUNT': 1});
-          overlay.setPosition(coordinate);
           if (url) {
             $.ajax({
                   url: url,
                 }).then(function(response) {
 				    if(response.features.length > 0){
-					    overlay2.setPosition(coordinate);
-                        content2.innerHTML = "Track count: " + Math.round(response.features[0].properties.count);
+					    overlay.setPosition(coordinate);
+                        content.innerHTML = "Track count: " + Math.round(response.features[0].properties.count);
 					} else {
-						overlay2.setPosition(undefined);
+						overlay.setPosition(undefined);
 					}
                 });
           }
