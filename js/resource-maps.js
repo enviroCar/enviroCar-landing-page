@@ -189,8 +189,11 @@ function initialize() {
     });
 	  
 	jeoquery.defaultData.userName = 'envirocar';
-	
+		
 	jeoquery.defaultLanguage = "de";
+	
+	jeoquery.geoNamesApiServer = 'testbed.dev.52north.org/geonames';
+    jeoquery.geoNamesProtocol = 'https';
 	
 	var geolocatorTextField = document.getElementById('geolocator-text');
 	
