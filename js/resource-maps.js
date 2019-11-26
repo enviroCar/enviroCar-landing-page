@@ -201,32 +201,33 @@ function initialize() {
 	
 	var geolocatorButton = document.getElementById('geolocator-button');
 	
-    geolocatorButton.onclick = function(evt) {
-	  var geolocatorText = document.getElementById('city').value;
+	//TODO find other geolocation solution, response only contains wgs84 coordinates
+    // geolocatorButton.onclick = function(evt) {
+	  // var geolocatorText = document.getElementById('city').value;
          
-          if (geolocatorText != "") {
-			var url = jeoquery.geoNamesProtocol + "://" + jeoquery.geoNamesApiServer + "/searchJSON?q=" + geolocatorText + "&maxRows=10&username=envirocar";
+          // if (geolocatorText != "") {
+			// var url = jeoquery.geoNamesProtocol + "://" + jeoquery.geoNamesApiServer + "/searchJSON?q=" + geolocatorText + "&maxRows=10&username=envirocar";
 			  
-            $.ajax({
-                  url: url,
-                }).then(function(response) {
-				    if(response.geonames.length > 0){
+            // $.ajax({
+                  // url: url,
+                // }).then(function(response) {
+				    // if(response.geonames.length > 0){
 						
-						var lat = Number(response.geonames[0].lat);
-						var lng = Number(response.geonames[0].lng);
+						// var lat = Number(response.geonames[0].lat);
+						// var lng = Number(response.geonames[0].lng);
 						
-						var newView = new ol.View({
-                                    center: [lng, lat],
-	                            	projection : "EPSG:4326",
-                                    zoom: 12
-                                });						
-						mapres.setView(newView);
-						mapres2.setView(newView);
+						// var newView = new ol.View({
+                                    // center: [lng, lat],
+	                            	// projection : "EPSG:900913",
+                                    // zoom: 12
+                                // });						
+						// mapres.setView(newView);
+						// mapres2.setView(newView);
 
-					}
-                });
-          }
-    };
+					// }
+                // });
+          // }
+    // };
 	
     closer.onclick = function() {
       overlay.setPosition(undefined);
