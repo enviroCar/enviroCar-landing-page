@@ -1,35 +1,27 @@
 function initialize() {	
 	
-	var projection = ol.proj.get('EPSG:4326');
+	var projection = ol.proj.get('EPSG:900913');
     var projectionExtent = projection.getExtent();
-    var mapExtent =  [5.86307954788208 , 46.3067741394043, 16.2247009277344, 55.0529403686523];
+    var mapExtent =  [778004, 5967462, 1788456, 7394670];
     var matrixIds = new Array(22);
 
     for (var z = 0; z < 22; ++z) {
-      matrixIds[z] = "EPSG:4326:" + z;;
+      matrixIds[z] = "EPSG:900913:" + z;
     }
 	
-	resolutions = [
-      0.703125, 0.3515625, 0.17578125, 0.087890625,
-      0.0439453125, 0.02197265625, 0.010986328125,
-      0.0054931640625, 0.00274658203125, 0.001373291015625,
-      6.866455078125E-4, 3.4332275390625E-4, 1.71661376953125E-4,
-      8.58306884765625E-5, 4.291534423828125E-5, 2.1457672119140625E-5,
-        1.0728836059570312E-5, 5.364418029785156E-6, 2.682209014892578E-6,
-      1.341104507446289E-6, 6.705522537231445E-7, 3.3527612686157227E-7
-    ];
+    var resolutions = [156543.03390625, 78271.516953125, 39135.7584765625, 19567.87923828125, 9783.939619140625, 4891.9698095703125, 2445.9849047851562, 1222.9924523925781, 611.4962261962891, 305.74811309814453, 152.87405654907226, 76.43702827453613, 38.218514137268066, 19.109257068634033, 9.554628534317017, 4.777314267158508, 2.388657133579254, 1.194328566789627, 0.5971642833948135, 0.29858214169740677, 0.14929107084870338, 0.07464553542435169, 0.037322767712175846, 0.018661383856087923, 0.009330691928043961, 0.004665345964021981, 0.0023326729820109904, 0.0011663364910054952, 5.831682455027476E-4, 2.915841227513738E-4, 1.457920613756869E-4];
 
     tracksWMTS = new ol.layer.Tile({
             source: new ol.source.WMTS({
             url: 'https://processing.envirocar.org/geoserver/gwc/service/wmts',
               layer: 'ec:tc_ms',
-            matrixSet: 'EPSG:4326',
+            matrixSet: 'EPSG:900913',
             format: 'image/png',
 			//styles: "track-count-yellow-line-opacity",
             projection: projection,
               tileGrid: new ol.tilegrid.WMTS({
                 origin: ol.extent.getTopLeft(projectionExtent),
-              resolutions: resolutions,
+                resolutions: resolutions,
                 matrixIds: matrixIds
               })
         })
@@ -52,7 +44,7 @@ function initialize() {
     var wmts2 =  new ol.source.WMTS({
             url: 'https://processing.envirocar.org/geoserver/gwc/service/wmts',
               layer: 'ec:mean_speed',
-            matrixSet: 'EPSG:4326',
+            matrixSet: 'EPSG:900913',
             format: 'image/png',
 			//styles: "mean-speed-color-map",
             projection: projection,
@@ -81,13 +73,15 @@ function initialize() {
 
 
     var defView = new ol.View({
-        center: [9.968, 51.388],
-		projection : "EPSG:4326",
+        center: [1123883, 6673001],
+		projection : "EPSG:900913",
         zoom: 6
     });
 	
-	var layers = [defLayer,tracksWMTS];
-	var layers2 = [defLayer2,tracksWMTS2];
+	var layers = [defLayer, tracksWMTS];
+	var layers2 = [defLayer2,tracksWMTS2];	
+	//var layers = [defLayer];
+	//var layers2 = [defLayer2];
 	  
 	var container = document.getElementById('popup');
     var content = document.getElementById('popup-content');
@@ -151,7 +145,7 @@ function initialize() {
 	  var coordinate = evt.coordinate;
       var viewResolution = /** @type {number} */ (defView.getResolution());
       var url = wmsSource.getGetFeatureInfoUrl(
-          coordinate, viewResolution, 'EPSG:4326',
+          coordinate, viewResolution, 'EPSG:900913',
           {'INFO_FORMAT': 'application/json', 'FEATURE_COUNT': 1});
           if (url) {
             $.ajax({
@@ -171,7 +165,7 @@ function initialize() {
 	  var coordinate = evt.coordinate;
       var viewResolution = /** @type {number} */ (defView.getResolution());
       var url = wmsSource2.getGetFeatureInfoUrl(
-          coordinate, viewResolution, 'EPSG:4326',
+          coordinate, viewResolution, 'EPSG:900913',
           {'INFO_FORMAT': 'application/json', 'FEATURE_COUNT': 1});
           
           if (url) {
