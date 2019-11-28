@@ -41,6 +41,31 @@ function initialize() {
       crossOrigin: 'anonymous'
     });
 	
+	var wmsSource3 = new ol.source.TileWMS({
+      url: 'https://processing.envirocar.org/geoserver/wms',
+      params: {'LAYERS': 'ec:speed_comparison', 'TILED': true},
+      serverType: 'geoserver',
+      crossOrigin: 'anonymous'
+    });
+	
+    var wmts3 =  new ol.source.WMTS({
+            url: 'https://processing.envirocar.org/geoserver/gwc/service/wmts',
+              layer: 'ec:speed_comparison',
+            matrixSet: 'EPSG:900913',
+            format: 'image/png',
+			//styles: "mean-speed-color-map",
+            projection: projection,
+              tileGrid: new ol.tilegrid.WMTS({
+                origin: ol.extent.getTopLeft(projectionExtent),
+              resolutions: resolutions,
+                matrixIds: matrixIds
+              })
+    });
+
+    tracksWMTS3 = new ol.layer.Tile({
+		source: wmts3
+    });
+	
     var wmts2 =  new ol.source.WMTS({
             url: 'https://processing.envirocar.org/geoserver/gwc/service/wmts',
               layer: 'ec:mean_speed',
@@ -70,7 +95,12 @@ function initialize() {
             url: "https://{a-c}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png"
         })
     });
-
+	
+    var defLayer3 = new ol.layer.Tile({
+        source: new ol.source.OSM({
+            url: "https://{a-c}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png"
+        })
+    });
 
     var defView = new ol.View({
         center: [1123883, 6673001],
@@ -79,7 +109,8 @@ function initialize() {
     });
 	
 	var layers = [defLayer, tracksWMTS];
-	var layers2 = [defLayer2,tracksWMTS2];	
+	var layers2 = [defLayer2,tracksWMTS2];
+	var layers3 = [defLayer3,tracksWMTS3];
 	//var layers = [defLayer];
 	//var layers2 = [defLayer2];
 	  
@@ -101,6 +132,18 @@ function initialize() {
    
     var overlay2 = new ol.Overlay({
       element: container2,
+      autoPan: true,
+      autoPanAnimation: {
+        duration: 250
+      }
+    });
+	
+	var container3 = document.getElementById('popup3');
+    var content3 = document.getElementById('popup-content3');
+    var closer3 = document.getElementById('popup-closer3');
+   
+    var overlay3 = new ol.Overlay({
+      element: container3,
       autoPan: true,
       autoPanAnimation: {
         duration: 250
@@ -139,6 +182,23 @@ function initialize() {
             mouseWheelZoom: false
         }),
 		overlays: [overlay2]
+    });
+	
+    var mapres3 = new ol.Map({
+        target: 'mapres3',
+        layers:  layers3,
+        view: defView,
+        controls: ol.control.defaults({
+            zoom: true,
+            attribution: true,
+            rotate: true
+        }).extend([
+            new ol.control.FullScreen()
+        ])
+        ,interactions: ol.interaction.defaults({
+            mouseWheelZoom: false
+        }),
+		overlays: [overlay3]
     });
    
     mapres.on('singleclick', function(evt) {
@@ -181,6 +241,27 @@ function initialize() {
                 });
           }
     });
+   
+    // mapres3.on('singleclick', function(evt) {
+	  // var coordinate = evt.coordinate;
+      // var viewResolution = /** @type {number} */ (defView.getResolution());
+      // var url = wmsSource3.getGetFeatureInfoUrl(
+          // coordinate, viewResolution, 'EPSG:900913',
+          // {'INFO_FORMAT': 'application/json', 'FEATURE_COUNT': 1});
+          
+          // if (url) {
+            // $.ajax({
+                  // url: url,
+                // }).then(function(response) {
+				    // if(response.features.length > 0){
+					    // overlay3.setPosition(coordinate);
+                        // content3.innerHTML = "Mean speed: " + Math.round(response.features[0].properties.mean_speed) + " km/h";
+					// } else {
+						// overlay3.setPosition(undefined);
+					// }
+                // });
+          // }
+    // });
 	  
 	jeoquery.defaultData.userName = 'envirocar';
 		
@@ -231,6 +312,12 @@ function initialize() {
 	  
     closer2.onclick = function() {
       overlay2.setPosition(undefined);
+      closer.blur();
+      return false;
+    };
+	  
+    closer3.onclick = function() {
+      overlay3.setPosition(undefined);
       closer.blur();
       return false;
     };

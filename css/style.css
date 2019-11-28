@@ -3102,6 +3102,5 @@ header {
 }
 .third-map-legend-ext {
     float: left;
-    height: 100%;
-    width: 50%;
+    width: 80%;
 }

@@ -169,28 +169,37 @@
                 </div>
             </div>
         </section>
-        <div class="col-12 row" style="background-color: #f3f3f3;">
-            <div class="col-6" style="background-color: #f3f3f3;">
-                <p class="section-heading product-text" style="text-align:center;background-color: #f3f3f3;">trackCount</p>
-            </div>
-            <div class="col-6" style="background-color: #f3f3f3;">
-                <p class="section-heading product-text" style="text-align:center;background-color: #f3f3f3;">meanSpeed</p>
+        <div class="row" style="background-color: #f3f3f3; height: 900px">
+            <div class="col" style="background-color: #f3f3f3;">
+                <p class="section-heading product-text" style="text-align:center;background-color: #f3f3f3;">trackCount</p>				
+			   <div class="third-map-legend-ext"><div id="mapres" class="third-map mapres noPadding" style="padding-right:8px !important; height: 800px;"></div>
+			   <img id="legend2" src="http://processing.envirocar.org/geoserver/ows?service=WMS&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=ec%3Atc_ms&TRANSPARENT=true"/></div>
+               <div id="popup" class="ol-popup">
+                   <a href="#" id="popup-closer" class="ol-popup-closer"></a>
+               <div id="popup-content"></div>
+               </div>
             </div>
         </div>
-		<!--<div style="background-color:#f3f3f3; height:30px"><div style="width: 300px;margin: 0 auto;"><input class="input-large ui-autocomplete-input ui-corner-all" id="city" type="text"/><input type="button" id="geolocator-button" value="geolocate"/></div></div>-->
-        <div style="height:60%; background-color:#f3f3f3;">
-            <!-- <div id="" class="third-map noPadding" style="padding-right:8px !important;"></div> -->
-            <div class="third-map-legend-ext"><div id="mapres" class="row third-map mapres noPadding" style="padding-right:8px !important;"></div>
-			<img id="legend2" src="http://processing.envirocar.org/geoserver/ows?service=WMS&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=ec%3Atc_ms&TRANSPARENT=true"/></div>
-            <div id="popup" class="ol-popup">
-                <a href="#" id="popup-closer" class="ol-popup-closer"></a>
-            <div id="popup-content"></div>
+        <div class="row" style="background-color: #f3f3f3; height: 900px">
+            <div class="col" style="background-color: #f3f3f3;">
+                <p class="section-heading product-text" style="text-align:center;background-color: #f3f3f3;">meanSpeed</p>				
+			   <div class="third-map-legend-ext"><div id="mapres2" class="row third-map mapres2 noPadding" style="padding-right:8px !important; height: 800px"></div>
+			   <img id="legend3" src="http://processing.envirocar.org/geoserver/ows?service=WMS&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=ec%3Amean_speed&TRANSPARENT=true"/></div>
+			   <div id="popup2" class="ol-popup">
+                   <a href="#" id="popup-closer2" class="ol-popup-closer"></a>
+               <div id="popup-content2"></div>
+               </div>
             </div>
-			<div class="third-map-legend-ext"><div id="mapres2" class="row third-map mapres2 noPadding" style="padding-right:8px !important;"></div>
-			<img id="legend3" src="http://processing.envirocar.org/geoserver/ows?service=WMS&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=ec%3Amean_speed&TRANSPARENT=true"/></div>
-			<div id="popup2" class="ol-popup">
-                <a href="#" id="popup-closer2" class="ol-popup-closer"></a>
-            <div id="popup-content2"></div>
+        </div>
+        <div class="row" style="background-color: #f3f3f3; height: 900px">
+            <div class="col" style="background-color: #f3f3f3;">
+                <p class="section-heading product-text" style="text-align:center;background-color: #f3f3f3;">speedComparison</p>				
+			   <div class="third-map-legend-ext"><div id="mapres3" class="row third-map mapres3 noPadding" style="padding-right:8px !important; height: 800px"></div>
+			   <img id="legend4" src="http://processing.envirocar.org/geoserver/ows?service=WMS&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=ec%3Aspeed_comparison&TRANSPARENT=true"/></div>
+			   <div id="popup3" class="ol-popup">
+                   <a href="#" id="popup-closer3" class="ol-popup-closer"></a>
+               <div id="popup-content3"></div>
+               </div>
             </div>
         </div>
 
