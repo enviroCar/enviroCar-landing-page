@@ -31,21 +31,18 @@ function initialize() {
       url: 'https://processing.envirocar.org/geoserver/wms',
       params: {'LAYERS': 'ec:track_count', 'TILED': true},
       serverType: 'geoserver',
-      crossOrigin: 'anonymous'
     });
 	
 	var wmsSource2 = new ol.source.TileWMS({
       url: 'https://processing.envirocar.org/geoserver/wms',
       params: {'LAYERS': 'ec:mean_speed', 'TILED': true},
       serverType: 'geoserver',
-      crossOrigin: 'anonymous'
     });
 	
 	var wmsSource3 = new ol.source.TileWMS({
-      url: 'https://processing.envirocar.org/geoserver/wms',
-      params: {'LAYERS': 'ec:speed_comparison', 'TILED': true},
+      url: 'http://192.168.21.163:8080/geoserver/wms',
+      params: {'LAYERS': 'tb15-du:speed_comparison', 'TILED': true},
       serverType: 'geoserver',
-      crossOrigin: 'anonymous'
     });
 	
     var wmts3 =  new ol.source.WMTS({
@@ -242,26 +239,27 @@ function initialize() {
           }
     });
    
-    // mapres3.on('singleclick', function(evt) {
-	  // var coordinate = evt.coordinate;
-      // var viewResolution = /** @type {number} */ (defView.getResolution());
-      // var url = wmsSource3.getGetFeatureInfoUrl(
-          // coordinate, viewResolution, 'EPSG:900913',
-          // {'INFO_FORMAT': 'application/json', 'FEATURE_COUNT': 1});
+    mapres3.on('singleclick', function(evt) {
+	  var coordinate = evt.coordinate;
+      var viewResolution = /** @type {number} */ (defView.getResolution());
+      var url = wmsSource3.getGetFeatureInfoUrl(
+          coordinate, viewResolution, 'EPSG:900913',
+          {'INFO_FORMAT': 'application/json', 'FEATURE_COUNT': 1});
           
-          // if (url) {
-            // $.ajax({
-                  // url: url,
-                // }).then(function(response) {
-				    // if(response.features.length > 0){
-					    // overlay3.setPosition(coordinate);
-                        // content3.innerHTML = "Mean speed: " + Math.round(response.features[0].properties.mean_speed) + " km/h";
-					// } else {
-						// overlay3.setPosition(undefined);
-					// }
-                // });
-          // }
-    // });
+          if (url) {
+            $.ajax({
+                  url: url,
+                }).then(function(response) {
+				    if(response.features.length > 0){
+					    overlay3.setPosition(coordinate);
+                        content3.innerHTML = "<p>Mean speed: " + Math.round(response.features[0].properties.mean_speed) + " km/h</p></b>"
+						+ "<p>Max speed (forward): " + Math.round(response.features[0].properties.maxspeed_f	) + " km/h</p>";
+					} else {
+						overlay3.setPosition(undefined);
+					}
+                });
+          }
+    });
 	  
 	jeoquery.defaultData.userName = 'envirocar';
 		
