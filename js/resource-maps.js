@@ -40,8 +40,8 @@ function initialize() {
     });
 	
 	var wmsSource3 = new ol.source.TileWMS({
-      url: 'http://192.168.21.163:8080/geoserver/wms',
-      params: {'LAYERS': 'tb15-du:speed_comparison', 'TILED': true},
+      url: 'https://processing.envirocar.org/geoserver/wms',
+      params: {'LAYERS': 'ec:speed_comparison', 'TILED': true},
       serverType: 'geoserver',
     });
 	
@@ -253,7 +253,7 @@ function initialize() {
 				    if(response.features.length > 0){
 					    overlay3.setPosition(coordinate);
                         content3.innerHTML = "<p>Mean speed: " + Math.round(response.features[0].properties.mean_speed) + " km/h</p></b>"
-						+ "<p>Max speed (forward): " + Math.round(response.features[0].properties.maxspeed_f	) + " km/h</p>";
+						+ "<p>Max speed (forward): " + Math.round(response.features[0].properties.maxspeed_forward) + " km/h</p>";
 					} else {
 						overlay3.setPosition(undefined);
 					}
