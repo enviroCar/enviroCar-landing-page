@@ -5,7 +5,7 @@ numberMeasurements = 0;
 function getStatistics() {
   // get number users:
   var xmlHttp = new XMLHttpRequest();
-  xmlHttp.open("GET", "https://enviroCar.org/api/dev/", true);
+  xmlHttp.open("GET", "https://enviroCar.org/api/stable/", true);
   xmlHttp.setRequestHeader("Accept", "application/json");
   xmlHttp.onreadystatechange = function() {
     if (xmlHttp.readyState === 4 && xmlHttp.status === 200) {
