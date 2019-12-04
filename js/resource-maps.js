@@ -14,7 +14,7 @@ function initialize() {
     tracksWMTS = new ol.layer.Tile({
             source: new ol.source.WMTS({
             url: 'https://processing.envirocar.org/geoserver/gwc/service/wmts',
-              layer: 'ec:tc_ms',
+              layer: 'ec:track_count',
             matrixSet: 'EPSG:900913',
             format: 'image/png',
 			//styles: "track-count-yellow-line-opacity",
