@@ -99,52 +99,50 @@ function initialize() {
         })
     });
 	
-	setupMap("", wmsSource, tracksWMTS, function(response) {
-		            if(response.features.length > 0){
-			            overlay3.setPosition(coordinate);
-                        content3.innerHTML = "Track count: " + Math.round(response.features[0].properties.count);;
-			        } else {
-			        	overlay3.setPosition(undefined);
-			        }
-            });
+	setupMap("", wmsSource, tracksWMTS, [
+	    {
+	    	"start": "<p>Track count: ",
+	    	"propertyName": "count",
+	    	"end": ""
+	    }
+    ]);
 	
-	setupMap(2, wmsSource2, tracksWMTS2, function(response) {
-		            if(response.features.length > 0){
-			            overlay3.setPosition(coordinate);
-                        content3.innerHTML = "Average speed: " + Math.round(response.features[0].properties.mean_speed) + " km/h";
-			        } else {
-			        	overlay3.setPosition(undefined);
-			        }
-            });
+	setupMap(2, wmsSource2, tracksWMTS2, [
+	    {
+	    	"start": "<p>Average speed: ",
+	    	"propertyName": "count",
+	    	"end": " km/h"
+	    }
+    ]);
 	
-	setupMap(3, wmsSource3, tracksWMTS3, function(response) {
-		            if(response.features.length > 0){
-			            overlay3.setPosition(coordinate);
-                        content3.innerHTML = "<p>Average speed: " + Math.round(response.features[0].properties.mean_speed) + " km/h</p></b>"
-                        + "<p>Max speed (forward): " + Math.round(response.features[0].properties.maxspeed_forward) + " km/h</p>";
-			        } else {
-			        	overlay3.setPosition(undefined);
-			        }
-            });
+	setupMap(3, wmsSource3, tracksWMTS3, [
+	    {
+	    	"start": "<p>Average speed: ",
+	    	"propertyName": "mean_speed",
+	    	"end": " km/h</p></b>"
+	    },
+		{
+	    	"start": "<p>Max speed (forward):  ",
+	    	"propertyName": "maxspeed_forward",
+	    	"end": " km/h</p>"
+	    }
+    ]);
 	
-	setupMap(4, wmsSource4, tracksWMTS4, function(response) {
-		            if(response.features.length > 0){
-			            overlay3.setPosition(coordinate);
-                        content3.innerHTML = "Average co2 emissions: " + Math.round(response.features[0].properties.mean_co2) + " km/h";
-			        } else {
-			        	overlay3.setPosition(undefined);
-			        }
-            });
+	setupMap(4, wmsSource4, tracksWMTS4, [
+	    {
+	    	"start": "<p>Average co2 emissions: ",
+	    	"propertyName": "mean_co2",
+	    	"end": " kg/h"
+	    }
+    ]);
 	
-	setupMap(5, wmsSource5, tracksWMTS5, function(response) {
-		            if(response.features.length > 0){
-			            overlay3.setPosition(coordinate);
-                        content3.innerHTML = "Average consumption: " + Math.round(response.features[0].properties.mean_consumption) + " kg/h";
-			        } else {
-			        	overlay3.setPosition(undefined);
-			        }
-            });
-	
+	setupMap(5, wmsSource5, tracksWMTS5, [
+	    {
+	    	"start": "<p>Average consumption: ",
+	    	"propertyName": "mean_consumption",
+	    	"end": " l/h"
+	    }
+    ]);	
 	
 	jeoquery.defaultData.userName = 'envirocar';
 		
@@ -203,8 +201,8 @@ function createWMSSource(layername) {
     });	
 };
 
-function setupMap(mapNumber, wmsSource, mapLayer, responseFunction) {
-			
+function setupMap(mapNumber, wmsSource, mapLayer, propertyName) {
+	
 	var defLayer = new ol.layer.Tile({
         source: new ol.source.OSM({
             url: "https://{a-c}.basemaps.cartocdn.com/spotify_dark/{z}/{x}/{y}.png"
@@ -253,11 +251,24 @@ function setupMap(mapNumber, wmsSource, mapLayer, responseFunction) {
         coordinate, viewResolution, 'EPSG:900913',
         {'INFO_FORMAT': 'application/json', 'FEATURE_COUNT': 1});
         
-        if (url) {
-          $.ajax({
-                url: url,
-              }).then(responseFunction);
-        }
+    if (url) {
+      $.ajax({
+            url: url,
+          }).then(function(response) {
+	         if(response.features.length > 0){
+	          overlay3.setPosition(coordinate);			  
+			  var innerHTML = "";
+              var i;			  
+			  for (i = 0; i < propertyName.length; i++) {
+				  var text = propertyName[i];
+                  innerHTML = innerHTML + text.start + Math.round(response.features[0].properties[text.propertyName]) + text.end;
+              }
+              content3.innerHTML = innerHTML;
+	      } else {
+	      	overlay3.setPosition(undefined);
+	      }
+        });
+    }
     });
 	  
     closer3.onclick = function() {
