@@ -110,7 +110,7 @@ function initialize() {
 	setupMap(2, wmsSource2, tracksWMTS2, [
 	    {
 	    	"start": "<p>Average speed: ",
-	    	"propertyName": "count",
+	    	"propertyName": "mean_speed",
 	    	"end": " km/h"
 	    }
     ]);
