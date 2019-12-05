@@ -66,6 +66,8 @@
   "rsc.tracks": "Fahrten",
   "rsc.measures": "Messungen",
   "meanSpeed": "Durchschnittliche Geschwindigkeiten",
+  "meanCo2": "Durchschnittlicher Co2 Ausstoß",
+  "meanConsumption": "Durchschnittlicher Verbrauch",
   "trackCount": "Anzahl Tracks",
   "avgCO21": "Durchschnittliche CO",
   "avgCO22": " Emissionen",

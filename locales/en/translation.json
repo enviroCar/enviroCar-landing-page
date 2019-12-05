@@ -59,6 +59,8 @@
   "rsc.tracks": "Tracks",
   "rsc.measures": "Measurements",
   "meanSpeed": "Average velocities",
+  "meanCo2": "Average Co2 emission",
+  "meanConsumption": "Average consumption",
   "trackCount": "Track count",
   "avgCO21": "Average CO",
   "avgCO22": " emissions",
