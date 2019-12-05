@@ -45,7 +45,6 @@ function initialize() {
             layer: 'ec:track_count',
             matrixSet: 'EPSG:900913',
             format: 'image/png',
-			//styles: "track-count-yellow-line-opacity",
             projection: projection,
             tileGrid: tileGrid
         })
@@ -56,7 +55,6 @@ function initialize() {
               layer: 'ec:mean_speed',
             matrixSet: 'EPSG:900913',
             format: 'image/png',
-			//styles: "mean-speed-color-map",
             projection: projection,
               tileGrid: tileGrid
     });
@@ -71,7 +69,6 @@ function initialize() {
               layer: 'ec:speed_comparison',
             matrixSet: 'EPSG:900913',
             format: 'image/png',
-			//styles: "mean-speed-color-map",
             projection: projection,
             tileGrid: tileGrid
     });
@@ -86,7 +83,6 @@ function initialize() {
               layer: 'ec:mean_co2',
             matrixSet: 'EPSG:900913',
             format: 'image/png',
-			//styles: "track-count-yellow-line-opacity",
             projection: projection,
             tileGrid: tileGrid
         })
@@ -98,21 +94,56 @@ function initialize() {
               layer: 'ec:mean_consumption',
             matrixSet: 'EPSG:900913',
             format: 'image/png',
-			//styles: "track-count-yellow-line-opacity",
             projection: projection,
             tileGrid: tileGrid
         })
     });
 	
-	setupMap("", wmsSource, tracksWMTS);
+	setupMap("", wmsSource, tracksWMTS, function(response) {
+		            if(response.features.length > 0){
+			            overlay3.setPosition(coordinate);
+                        content3.innerHTML = "Track count: " + Math.round(response.features[0].properties.count);;
+			        } else {
+			        	overlay3.setPosition(undefined);
+			        }
+            });
 	
-	setupMap(2, wmsSource2, tracksWMTS2);
+	setupMap(2, wmsSource2, tracksWMTS2, function(response) {
+		            if(response.features.length > 0){
+			            overlay3.setPosition(coordinate);
+                        content3.innerHTML = "Average speed: " + Math.round(response.features[0].properties.mean_speed) + " km/h";
+			        } else {
+			        	overlay3.setPosition(undefined);
+			        }
+            });
 	
-	setupMap(3, wmsSource3, tracksWMTS3);
+	setupMap(3, wmsSource3, tracksWMTS3, function(response) {
+		            if(response.features.length > 0){
+			            overlay3.setPosition(coordinate);
+                        content3.innerHTML = "<p>Average speed: " + Math.round(response.features[0].properties.mean_speed) + " km/h</p></b>"
+                        + "<p>Max speed (forward): " + Math.round(response.features[0].properties.maxspeed_forward) + " km/h</p>";
+			        } else {
+			        	overlay3.setPosition(undefined);
+			        }
+            });
 	
-	setupMap(4, wmsSource4, tracksWMTS4);
+	setupMap(4, wmsSource4, tracksWMTS4, function(response) {
+		            if(response.features.length > 0){
+			            overlay3.setPosition(coordinate);
+                        content3.innerHTML = "Average co2 emissions: " + Math.round(response.features[0].properties.mean_co2) + " km/h";
+			        } else {
+			        	overlay3.setPosition(undefined);
+			        }
+            });
 	
-	setupMap(5, wmsSource5, tracksWMTS5);
+	setupMap(5, wmsSource5, tracksWMTS5, function(response) {
+		            if(response.features.length > 0){
+			            overlay3.setPosition(coordinate);
+                        content3.innerHTML = "Average consumption: " + Math.round(response.features[0].properties.mean_consumption) + " kg/h";
+			        } else {
+			        	overlay3.setPosition(undefined);
+			        }
+            });
 	
 	
 	jeoquery.defaultData.userName = 'envirocar';
@@ -172,7 +203,7 @@ function createWMSSource(layername) {
     });	
 };
 
-function setupMap(mapNumber, wmsSource, mapLayer) {
+function setupMap(mapNumber, wmsSource, mapLayer, responseFunction) {
 			
 	var defLayer = new ol.layer.Tile({
         source: new ol.source.OSM({
@@ -225,14 +256,7 @@ function setupMap(mapNumber, wmsSource, mapLayer) {
         if (url) {
           $.ajax({
                 url: url,
-              }).then(function(response) {
-		    if(response.features.length > 0){
-			    overlay3.setPosition(coordinate);
-                      content3.innerHTML = "<p>Mean co2: " + Math.round(response.features[0].properties.mean_speed) + " kg/h</p></b>";
-			} else {
-				overlay3.setPosition(undefined);
-			}
-              });
+              }).then(responseFunction);
         }
     });
 	  
