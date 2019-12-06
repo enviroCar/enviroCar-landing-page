@@ -98,6 +98,12 @@ function initialize() {
             tileGrid: tileGrid
         })
     });
+			
+    var defView = new ol.View({
+        center: [1123883, 6673001],
+		projection : "EPSG:900913",
+        zoom: 6
+    });
 	
 	setupMap("", wmsSource, tracksWMTS, [
 	    {
@@ -105,7 +111,7 @@ function initialize() {
 	    	"propertyName": "count",
 	    	"end": ""
 	    }
-    ]);
+    ], defView);
 	
 	setupMap(2, wmsSource2, tracksWMTS2, [
 	    {
@@ -113,7 +119,7 @@ function initialize() {
 	    	"propertyName": "mean_speed",
 	    	"end": " km/h"
 	    }
-    ]);
+    ], defView);
 	
 	setupMap(3, wmsSource3, tracksWMTS3, [
 	    {
@@ -126,7 +132,7 @@ function initialize() {
 	    	"propertyName": "maxspeed_forward",
 	    	"end": " km/h</p>"
 	    }
-    ]);
+    ], defView);
 	
 	setupMap(4, wmsSource4, tracksWMTS4, [
 	    {
@@ -134,7 +140,7 @@ function initialize() {
 	    	"propertyName": "mean_co2",
 	    	"end": " kg/h"
 	    }
-    ]);
+    ], defView);
 	
 	setupMap(5, wmsSource5, tracksWMTS5, [
 	    {
@@ -142,7 +148,7 @@ function initialize() {
 	    	"propertyName": "mean_consumption",
 	    	"end": " l/h"
 	    }
-    ]);	
+    ], defView);	
 	
 	jeoquery.defaultData.userName = 'envirocar';
 		
@@ -201,18 +207,12 @@ function createWMSSource(layername) {
     });	
 };
 
-function setupMap(mapNumber, wmsSource, mapLayer, propertyName) {
+function setupMap(mapNumber, wmsSource, mapLayer, propertyName, defView) {
 	
 	var defLayer = new ol.layer.Tile({
         source: new ol.source.OSM({
             url: "https://{a-c}.basemaps.cartocdn.com/spotify_dark/{z}/{x}/{y}.png"
         })
-    });
-			
-    var defView = new ol.View({
-        center: [1123883, 6673001],
-		projection : "EPSG:900913",
-        zoom: 6
     });
 	
 	var container3 = document.getElementById('popup' + mapNumber);
