@@ -138,15 +138,15 @@ function initialize() {
 	    {
 	    	"start": "<p>Average co2 emissions: ",
 	    	"propertyName": "mean_co2",
-	    	"end": " kg/h"
+	    	"end": " kg/100km"
 	    }
     ], defView);
 	
 	setupMap(5, wmsSource5, tracksWMTS5, [
 	    {
-	    	"start": "<p>Average consumption: ",
+	    	"start": "<p>Average fuel consumption: ",
 	    	"propertyName": "mean_consumption",
-	    	"end": " l/h"
+	    	"end": " l/100km"
 	    }
     ], defView);	
 	
