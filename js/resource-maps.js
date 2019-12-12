@@ -243,7 +243,7 @@ setTimeout(function () {
 
 function createWMSSource(layername) {
 	return new ol.source.TileWMS({
-      url: 'http://192.168.21.163:8080/geoserver/wms',
+      url: 'https://processing.envirocar.org/geoserver/wms',
       params: {'LAYERS': layername, 'TILED': true},
       serverType: 'geoserver',
     });	
