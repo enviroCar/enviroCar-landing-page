@@ -17,87 +17,27 @@ function initialize() {
                        matrixIds: matrixIds
                    });
 	
-	var wmsSource = new ol.source.TileWMS({
-      url: 'https://processing.envirocar.org/geoserver/wms',
-      params: {'LAYERS': 'ec:track_count', 'TILED': true},
-      serverType: 'geoserver',
-    });
+	var baseURL = 'https://processing.envirocar.org/geoserver';
 	
-	var wmsSource2 = new ol.source.TileWMS({
-      url: 'https://processing.envirocar.org/geoserver/wms',
-      params: {'LAYERS': 'ec:mean_speed', 'TILED': true},
-      serverType: 'geoserver',
-    });
+	var wmsSource = createWMSSource(baseURL, "ec:track_count");
 	
-	var wmsSource3 = new ol.source.TileWMS({
-      url: 'https://processing.envirocar.org/geoserver/wms',
-      params: {'LAYERS': 'ec:speed_comparison', 'TILED': true},
-      serverType: 'geoserver',
-    });	
+	var wmsSource2 = createWMSSource(baseURL, "ec:mean_speed");
 	
-	var wmsSource4 = createWMSSource("ec:mean_co2");
+	var wmsSource3 = createWMSSource(baseURL, "ec:speed_comparison");
 	
-	var wmsSource5 = createWMSSource("ec:mean_consumption");
+	var wmsSource4 = createWMSSource(baseURL, "ec:mean_co2");
 	
-    tracksWMTS = new ol.layer.Tile({
-            source: new ol.source.WMTS({
-            url: 'https://processing.envirocar.org/geoserver/gwc/service/wmts',
-            layer: 'ec:track_count',
-            matrixSet: 'EPSG:900913',
-            format: 'image/png',
-            projection: projection,
-            tileGrid: tileGrid
-        })
-    });
+	var wmsSource5 = createWMSSource(baseURL, "ec:mean_consumption");
 	
-    var wmts2 =  new ol.source.WMTS({
-            url: 'https://processing.envirocar.org/geoserver/gwc/service/wmts',
-              layer: 'ec:mean_speed',
-            matrixSet: 'EPSG:900913',
-            format: 'image/png',
-            projection: projection,
-              tileGrid: tileGrid
-    });
+    var tracksWMTS = createTile(baseURL, "ec:track_count", projection, tileGrid);
 
-    tracksWMTS2 = new ol.layer.Tile({
-		source: wmts2
-    });
+    var tracksWMTS2 = createTile(baseURL, "ec:mean_speed", projection, tileGrid);	
 	
+    var tracksWMTS3 = createTile(baseURL, "ec:speed_comparison", projection, tileGrid);
 	
-    var wmts3 =  new ol.source.WMTS({
-            url: 'https://processing.envirocar.org/geoserver/gwc/service/wmts',
-              layer: 'ec:speed_comparison',
-            matrixSet: 'EPSG:900913',
-            format: 'image/png',
-            projection: projection,
-            tileGrid: tileGrid
-    });
-
-    tracksWMTS3 = new ol.layer.Tile({
-		source: wmts3
-    });
+    var tracksWMTS4 = createTile(baseURL, "ec:mean_co2", projection, tileGrid);
 	
-    tracksWMTS4 = new ol.layer.Tile({
-            source: new ol.source.WMTS({
-            url: 'https://processing.envirocar.org/geoserver/gwc/service/wmts',
-              layer: 'ec:mean_co2',
-            matrixSet: 'EPSG:900913',
-            format: 'image/png',
-            projection: projection,
-            tileGrid: tileGrid
-        })
-    });
-	
-    tracksWMTS5 = new ol.layer.Tile({
-            source: new ol.source.WMTS({
-            url: 'https://processing.envirocar.org/geoserver/gwc/service/wmts',
-              layer: 'ec:mean_consumption',
-            matrixSet: 'EPSG:900913',
-            format: 'image/png',
-            projection: projection,
-            tileGrid: tileGrid
-        })
-    });
+    var tracksWMTS5 = createTile(baseURL, "ec:mean_consumption", projection, tileGrid);
 			
     var defView = new ol.View({
         center: [1123883, 6673001],
@@ -241,12 +181,25 @@ setTimeout(function () {
     }, 1000);
 }, 1000);
 
-function createWMSSource(layername) {
+function createWMSSource(baseURL, layername) {
 	return new ol.source.TileWMS({
-      url: 'https://processing.envirocar.org/geoserver/wms',
+      url: baseURL + '/wms',
       params: {'LAYERS': layername, 'TILED': true},
       serverType: 'geoserver',
     });	
+};
+
+function createTile(baseURL, layername, projection, tileGrid) {
+	return new ol.layer.Tile({
+            source: new ol.source.WMTS({
+            url: baseURL + '/gwc/service/wmts',
+            layer: layername,
+            matrixSet: 'EPSG:900913',
+            format: 'image/png',
+            projection: projection,
+            tileGrid: tileGrid
+        })
+    });
 };
 
 function setupMap(mapNumber, wmsSource, mapLayer, innerHTMLasJSON, defView) {
