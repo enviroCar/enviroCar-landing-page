@@ -154,7 +154,7 @@ function initialize() {
 	    {
 	    	"start": "<p>Average co2 emissions: ",
 	    	"propertyName": "mean_co2",
-			"digits" : 2,
+			"digits" : 1,
 	    	"end": " kg/100km</p></b>"
 	    },
 		{
@@ -175,7 +175,7 @@ function initialize() {
 	    {
 	    	"start": "<p>Average fuel consumption: ",
 	    	"propertyName": "mean_consumption",
-			"digits" : 2,
+			"digits" : 1,
 	    	"end": " l/100km</p></b>"
 	    },
 		{
