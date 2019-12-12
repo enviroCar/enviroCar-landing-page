@@ -107,8 +107,9 @@ function initialize() {
 	
 	setupMap("", wmsSource, tracksWMTS, [
 	    {
-	    	"start": "<p>Track count: ",
+	    	"start": "Track count: ",
 	    	"propertyName": "count",
+			"digits" : 0,
 	    	"end": ""
 	    }
     ], defView);
@@ -117,7 +118,14 @@ function initialize() {
 	    {
 	    	"start": "<p>Average speed: ",
 	    	"propertyName": "mean_speed",
-	    	"end": " km/h"
+			"digits" : 0,
+	    	"end": " km/h</p></b>"
+	    },
+	    {
+	    	"start": "<p>Track count: ",
+	    	"propertyName": "count",
+			"digits" : 0,
+	    	"end": ""
 	    }
     ], defView);
 	
@@ -125,12 +133,20 @@ function initialize() {
 	    {
 	    	"start": "<p>Average speed: ",
 	    	"propertyName": "mean_speed",
+			"digits" : 0,
 	    	"end": " km/h</p></b>"
 	    },
 		{
 	    	"start": "<p>Max speed (forward):  ",
-	    	"propertyName": "maxspeed_forward",
-	    	"end": " km/h</p>"
+	    	"propertyName": "maxspeed_f",
+			"digits" : 0,
+	    	"end": " km/h</p></b>"
+	    },
+	    {
+	    	"start": "<p>Track count: ",
+	    	"propertyName": "count",
+			"digits" : 0,
+	    	"end": "</p>"
 	    }
     ], defView);
 	
@@ -138,7 +154,20 @@ function initialize() {
 	    {
 	    	"start": "<p>Average co2 emissions: ",
 	    	"propertyName": "mean_co2",
-	    	"end": " kg/100km"
+			"digits" : 2,
+	    	"end": " kg/100km</p></b>"
+	    },
+		{
+	    	"start": "<p>Average speed: ",
+	    	"propertyName": "mean_speed",
+			"digits" : 0,
+	    	"end": " km/h</p></b>"
+	    },
+	    {
+	    	"start": "<p>Track count: ",
+	    	"propertyName": "count",
+			"digits" : 0,
+	    	"end": "</p>"
 	    }
     ], defView);
 	
@@ -146,7 +175,20 @@ function initialize() {
 	    {
 	    	"start": "<p>Average fuel consumption: ",
 	    	"propertyName": "mean_consumption",
-	    	"end": " l/100km"
+			"digits" : 2,
+	    	"end": " l/100km</p></b>"
+	    },
+		{
+	    	"start": "<p>Average speed: ",
+	    	"propertyName": "mean_speed",
+			"digits" : 0,
+	    	"end": " km/h</p></b>"
+	    },
+	    {
+	    	"start": "<p>Track count: ",
+	    	"propertyName": "count",
+			"digits" : 0,
+	    	"end": "</p>"
 	    }
     ], defView);	
 	
@@ -207,7 +249,7 @@ function createWMSSource(layername) {
     });	
 };
 
-function setupMap(mapNumber, wmsSource, mapLayer, propertyName, defView) {
+function setupMap(mapNumber, wmsSource, mapLayer, innerHTMLasJSON, defView) {
 	
 	var defLayer = new ol.layer.Tile({
         source: new ol.source.OSM({
@@ -259,9 +301,9 @@ function setupMap(mapNumber, wmsSource, mapLayer, propertyName, defView) {
 	          overlay.setPosition(coordinate);			  
 			  var innerHTML = "";
               var i;			  
-			  for (i = 0; i < propertyName.length; i++) {
-				  var text = propertyName[i];
-                  innerHTML = innerHTML + text.start + Math.round(response.features[0].properties[text.propertyName]) + text.end;
+			  for (i = 0; i < innerHTMLasJSON.length; i++) {
+				  var json = innerHTMLasJSON[i];
+                  innerHTML = innerHTML + json.start + response.features[0].properties[json.propertyName].toFixed(json.digits) + json.end;
               }
               content.innerHTML = innerHTML;
 	      } else {
