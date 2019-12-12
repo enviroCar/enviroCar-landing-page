@@ -138,7 +138,7 @@ function initialize() {
 	    },
 		{
 	    	"start": "<p>Max speed (forward):  ",
-	    	"propertyName": "maxspeed_f",
+	    	"propertyName": "maxspeed_forward",
 			"digits" : 0,
 	    	"end": " km/h</p></b>"
 	    },
