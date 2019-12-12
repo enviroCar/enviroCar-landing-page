@@ -201,7 +201,7 @@ setTimeout(function () {
 
 function createWMSSource(layername) {
 	return new ol.source.TileWMS({
-      url: 'https://processing.envirocar.org/geoserver/wms',
+      url: 'http://192.168.21.163:8080/geoserver/wms',
       params: {'LAYERS': layername, 'TILED': true},
       serverType: 'geoserver',
     });	
@@ -215,19 +215,19 @@ function setupMap(mapNumber, wmsSource, mapLayer, propertyName, defView) {
         })
     });
 	
-	var container3 = document.getElementById('popup' + mapNumber);
-    var content3 = document.getElementById('popup-content' + mapNumber);
-    var closer3 = document.getElementById('popup-closer' + mapNumber);
+	var container = document.getElementById('popup' + mapNumber);
+    var content = document.getElementById('popup-content' + mapNumber);
+    var closer = document.getElementById('popup-closer' + mapNumber);
    
-    var overlay3 = new ol.Overlay({
-      element: container3,
+    var overlay = new ol.Overlay({
+      element: container,
       autoPan: true,
       autoPanAnimation: {
         duration: 250
       }
     });
 	
-    var mapres3 = new ol.Map({
+    var mapres = new ol.Map({
         target: 'mapres' + mapNumber,
         layers:  [defLayer, mapLayer],
         view: defView,
@@ -241,10 +241,10 @@ function setupMap(mapNumber, wmsSource, mapLayer, propertyName, defView) {
         ,interactions: ol.interaction.defaults({
             mouseWheelZoom: false
         }),
-		overlays: [overlay3]
+		overlays: [overlay]
     });
 	
-	mapres3.on('singleclick', function(evt) {
+	mapres.on('singleclick', function(evt) {
 	var coordinate = evt.coordinate;
     var viewResolution = /** @type {number} */ (defView.getResolution());
     var url = wmsSource.getGetFeatureInfoUrl(
@@ -256,24 +256,24 @@ function setupMap(mapNumber, wmsSource, mapLayer, propertyName, defView) {
             url: url,
           }).then(function(response) {
 	         if(response.features.length > 0){
-	          overlay3.setPosition(coordinate);			  
+	          overlay.setPosition(coordinate);			  
 			  var innerHTML = "";
               var i;			  
 			  for (i = 0; i < propertyName.length; i++) {
 				  var text = propertyName[i];
                   innerHTML = innerHTML + text.start + Math.round(response.features[0].properties[text.propertyName]) + text.end;
               }
-              content3.innerHTML = innerHTML;
+              content.innerHTML = innerHTML;
 	      } else {
-	      	overlay3.setPosition(undefined);
+	      	overlay.setPosition(undefined);
 	      }
         });
     }
     });
 	  
-    closer3.onclick = function() {
-      overlay3.setPosition(undefined);
-      closer3.blur();
+    closer.onclick = function() {
+      overlay.setPosition(undefined);
+      closer.blur();
       return false;
     };
 
