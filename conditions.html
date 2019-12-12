@@ -24,6 +24,9 @@
         <link href="css/lato-font.css" rel="stylesheet" type="text/css">
         <link href="css/open-sans-font.css" rel="stylesheet" type="text/css">
         
+         <!--This stylesheet is for the footer icons-->
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+
         <!-- Custom styles for this template -->
         <link href="css/style.css" rel="stylesheet">
         <link href="css/bootstrap.copy.min.css" rel="stylesheet">
@@ -52,7 +55,7 @@
         <!-- Navigation Bar -->
         <nav class="navbar fixed-top navbar-dark bg-primary navbar-expand-lg navbar-expand-md" style="position: fixed; top: 0; border-bottom: solid 1px #0065A0;" id="mainNav">
             <a style="padding: 0;" class="navbar-brand js-scroll-trigger" href="#page-top">
-                <img style="height: 80%; width: auto;" alt="enviroCar logo" src="assets/logo_white.png">
+                <img style="height: 80%; width: auto;" alt="enviroCar logo" src="assets/logo_white.png" onclick="openSubpage('index.html')">
             </a>
             <button class="navbar-toggler ml-auto navbar-dark" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -75,8 +78,8 @@
                         <a class="nav-link js-scroll-trigger" onclick="openSubpage('resources.html')">nav.resources</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="https://envirocar.org/app">
-                            <img src="assets/login_white.png"/>nav.login</a>
+                        <a class="nav-link js-scroll-trigger" href="https://envirocar.org/app/">
+                            <img src="assets/login_white.png"/>my enviroCar</a>
 <!--                        <a class="nav-link js-scroll-trigger" onclick="openSubpage('under_construction.html')">
                             <img src="assets/login_white.png"/>nav.login</a>-->
                     </li>
@@ -372,40 +375,49 @@
 
 
     
-                                                        <!--Footer Section-->
-
-        <footer class="bg-primary">
-            <div class="row footerdiv">
-                <div class="row col-12" style="margin: auto;">
-
-                    <div class="row col-xs-12 col-sm-12 col-md-4 col-lg-2 col-4">
-                        <span class="helper"></span>
-                        <a class="js-scroll-trigger col-md-12 col-10 noPadding" href="#page-top" style="margin:auto;width: 100%; height: auto;">
-                            <img class="footer-logo" style="width: 100%; display: block; margin: 0;" src="assets/logo_white.png" alt="enviroCar logo white inverse"/>
-                        </a>
-                    </div>
-                    <div class="spaceholder col-lg-2 col-md-2 hidden-sm hidden-xs"></div>
-                    <div class="footer-item col-xs-6 col-sm-6 col-md-4 col-lg-4">
-                        <h3>ft.background</h3>
-                        <ul>
-                            <li><a class="footerLink" onclick="openSubpage('about.html')">ft.about</a></li>
-                            <li><a class="footerLink" onclick="openSubpage('press.html')">ft.press</a></li>
-                            <li><a class="footerLink" onclick="openSubpage('faq.html')">ft.faq</a></li>
-                            <li><a class="footerLink" onclick="openSubpage('imprint.html')">ft.imprint</a></li>
-                            <li><a class="footerLink" onclick="openSubpage('TermsOfUse.html')">ft.TermsOfUse</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-item col-xs-6 col-sm-6 col-md-4 col-lg-4">
-                        <h3>ft.follow</h3>
-                        <ul>
-                            <li><a href="https://twitter.com/enviroCar_org" target="_blank">Twitter</a></li>
-                            <li><a href="https://www.facebook.com/enviroCar/" target="_blank">Facebook</a></li>
-                            <li><a href="https://github.com/enviroCar" target="_blank">GitHub</a></li>
-                        </ul>
-                    </div>
-                </div>
+ <!--Footer-->
+ <footer class="bg-primary">
+    <div class="row footerdiv">    
+        <!--leerer Platz links im Footer-->
+            <div class="spaceholder col-lg-2 col-md-2 hidden-sm hidden-xs"></div>
+            <!--1. column-->
+            <div class="footer-item col-xs-3 col-sm-3 col-md-2 col-lg-2" >
+                <!-- <h3>ft.background</h3> -->
+                <ul style="font-size: 2rem;">
+                    <li><a class="footerLink"onclick="openSubpage('about.html')">ft.about</a></li>
+                </ul>
             </div>
-        </footer>
+            <!--2. column-->
+            <div class="footer-item col-xs-3 col-sm-3 col-md-2 col-lg-2" >
+                <ul style="font-size: 2rem;">
+                    <li><a class="footerLink" onclick="openSubpage('faq.html')">ft.faq</a></li>
+                    <li><a class="footerLink" href="https://blog.52north.org/category/envirocar-2/">Blog</a></li>
+                </ul>
+            </div>
+            <!--3. column-->
+            <div class="footer-item col-xs-3 col-sm-3 col-md-2 col-lg-2" >
+                <ul style="font-size: 2rem;">
+                    <li><a class="footerLink" onclick="openSubpage('imprint.html')">ft.imprint</a></li>
+                    <li><a class="footerLink" onclick="openSubpage('conditions.html')">ft.terms</a></li>
+                    <li><a class="footerLink" onclick="openSubpage('TermsOfUse.html')">ft.TermsOfUse</a></li>
+                </ul>
+            </div>
+            <!--4. column: Icons-->
+            <div class="footer-item col-xs-3 col-sm-3 col-md-2 col-lg-2">
+                <ul>   
+                    <li><a href="https://twitter.com/enviroCar_org"><i class="fa fa-twitter fa-2x " ></i></a></li>
+                    <li><a href="https://www.facebook.com/enviroCar/"><i class="fa fa-facebook fa-2x"></i></a></li>
+                    <li><a href="https://github.com/enviroCar"><i class="fa fa-github fa-2x"></i></a></li>
+                </ul>   
+            </div>
+            <!--leerer Platz rechts im Footer-->
+            <div class="spaceholder col-lg-2 col-md-2 hidden-sm hidden-xs"></div>
+            <!--Copyright Section-->
+            <div class="footer-copyright text-center py-3">© 2019 Copyright by
+                <a href="https://52north.org/software/software-projects/envirocar/"> 52°North Initiative for Geospatial Open Source Software GmbH. All Rights Reserved.</a>
+              </div>
+        </div>   
+</footer>
 
         <!-- Bootstrap core JavaScript -->
         <!--<script src="js/jquery.min.js"></script>-->

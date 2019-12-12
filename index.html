@@ -14,27 +14,20 @@
         <link href="css/bootstrap.min.css" rel="stylesheet">
 
         <!-- Custom fonts for this template -->
-        <!--<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">-->
-        <!--<link href="https://fonts.googleapis.com/css?family=Roboto:200,300,400,700,200light,300light,400light,700light" rel="stylesheet">-->
-        <!--<link href="https://fonts.googleapis.com/css?family=Open+Sans:200,300,400,700,200light,300light,400light,700light" rel="stylesheet">-->
-        <!--<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">-->
         <link href="css/material-icons.css" rel="stylesheet">
         <link href="css/lato-font.css" rel="stylesheet" type="text/css">
         <link href="css/open-sans-font.css" rel="stylesheet" type="text/css">
         
+        <!--Stylesheet for the footer icons-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+
         <!-- Custom styles for this template -->
         <link href="css/style.css" rel="stylesheet">
         <link href="css/bootstrap.copy.min.css" rel="stylesheet">
         <script src="js/jquery.copy.min.js"></script>
         <script src="js/bootstrap.copy.min.js"></script>
-        <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>-->
-        <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
-        <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
         <script src="js/i18next.copy.min.js"></script>
         <script src="js/jquery-i18next.min.js"></script>
-        
-        <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/i18next/8.1.0/i18next.min.js"></script>-->
-        <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-i18next/1.2.0/jquery-i18next.min.js"></script>-->
         <script src="js/i18nextify.min.js"></script>
         <script src="js/i18nextXHRBackend.min.js"></script>
         <script>
@@ -51,7 +44,7 @@
         <!-- Navigation Bar -->
         <nav class="navbar fixed-top navbar-dark bg-primary navbar-expand-lg navbar-expand-md" style="position: fixed; top: 0; border-bottom: solid 1px #0065A0;" id="mainNav">
             <a style="padding: 0;" class="navbar-brand js-scroll-trigger" href="#page-top">
-                <img style="width: auto;" alt="enviroCar logo" src="assets/logo_white.png">
+                <img style="width: auto;" alt="enviroCar logo" src="assets/logo_white.png" onclick="openSubpage('index.html')">
             </a>
             <button class="navbar-toggler ml-auto navbar-dark" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -74,10 +67,8 @@
                         <a class="nav-link js-scroll-trigger" onclick="openSubpage('resources.html')">nav.resources</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="/app">
-                            <img src="assets/login_white.png"/>nav.login</a>
-<!--                        <a class="nav-link js-scroll-trigger" onclick="openSubpage('under_construction.html')">
-                            <img src="assets/login_white.png"/>nav.login</a>-->
+                        <a class="nav-link js-scroll-trigger" href="https://envirocar.org/app/">
+                            <img src="assets/login_white.png"/>my enviroCar</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">nav.language</a>
@@ -91,14 +82,8 @@
         </nav>
         <div class="placeholder" style="height: 50px;"></div>
 
-        <!-- Image Background Divider -->
-        <!--        <div style="width: 100%; height: 75%;">
-                    <img id="mainbanner" src="assets/pexels3b.jpg" style="width: 100%; height: 100%;">
-                    <div class="transbox">
-                        <img alt="enviroCar logo" src="assets/logo_white.png">
-                        <p>Die <strong style="color: #ffffbb;">Citizen-Science</strong> cs.text</p>
-                    </div>
-                </div>-->
+        
+
         <!-- Image Background Divider -->
         <div style="
              width: 100%; 
@@ -188,13 +173,7 @@
                     <div class="scr5select"></div>
                 </div>
             </div>
-            <!--            <img id="banner-phone" src="assets/banner-phone.png" style="
-                             z-index: 200;
-                             height: 90%;
-                             width: auto;
-                             position: absolute;
-                             right: 53%;
-                             bottom: -4%;">-->
+            
             <div class="transbox">
                 <img alt="enviroCar logo" src="assets/logo_white.png">
                 <p>Die <strong style="color: #ffffbb;">Citizen-Science</strong> cs.text</p>
@@ -229,7 +208,6 @@
             <hr class="col-6 section-heading-spacer">
             <div class="row row-eq-height container-fluid col-12 nomargin">
                 <div class="container-fluid col-lg-5 col-md-5 col-sm-12 col-12 noPadding nomargin img-frame">
-                    <!--<img class="img-fluid" src="assets/ec_platform_overview.png" alt="">-->
                     <img class="img-fluid" src="{{envirocar_platform}}" alt="">
                 </div>
                 <div class="col-lg-1 col-md-1 hidden-sm hidden-xs col-0"></div>
@@ -276,11 +254,11 @@
             <!--Collect-->
                     <div class="col-lg-4 col-md-4 col-sm-4 portfolio-item">
                         <div class="card card-1 card-anim card-step">
-                            <a class="js-scroll-trigger" href="#collect"><div style="position:relative;"><img class="card-img-top" src="assets/home_1.png" alt="">
+                            <a class="js-scroll-trigger" onclick="openSubpage('collect.html')"><div style="position:relative;"><img class="card-img-top" src="assets/home_1.png" alt="">
                                     <img class="card-img-step" src="assets/step_1.png"></div></a>
                             <div class="card-body">
                                 <h4 class="card-title card-step-title">
-                                    <a class="js-scroll-trigger" href="#collect">collect_data</a>
+                                    <a class="js-scroll-trigger" onclick="openSubpage('collect.html')">collect_data</a>
                                 </h4>
                                 <p class="card-text card-step-text">
                                     collect_data2</p>
@@ -290,11 +268,11 @@
             <!--Share-->
                     <div class="col-lg-4 col-md-4 col-sm-4 portfolio-item">
                         <div class="card card-1 card-anim card-step">
-                            <a class="js-scroll-trigger" href="#share"><div style="position:relative;"><img class="card-img-top" src="assets/home_3.png" alt="">
+                            <a class="js-scroll-trigger" onclick="openSubpage('share.html')"><div style="position:relative;"><img class="card-img-top" src="assets/home_3.png" alt="">
                                     <img class="card-img-step" src="assets/step_2.png"></div></a>
                             <div class="card-body">
                                 <h4 class="card-title card-step-title">
-                                    <a class="js-scroll-trigger" href="#share">share_data</a>
+                                    <a class="js-scroll-trigger" onclick="openSubpage('share.html')">share_data</a>
                                 </h4>
                                 <p class="card-text card-step-text">
                                     share_data2
@@ -305,11 +283,11 @@
             <!--Analyze--> 
                     <div class="col-lg-4 col-md-4 col-sm-4 portfolio-item">
                         <div class="card card-1 card-anim card-step">
-                            <a class="js-scroll-trigger" href="#analysis"><div style="position:relative;"><img class="card-img-top" src="assets/home_2.png" alt="">
+                            <a class="js-scroll-trigger" onclick="openSubpage('analysis.html')"><div style="position:relative;"><img class="card-img-top" src="assets/home_2.png" alt="">
                                     <img class="card-img-step" src="assets/step_3.png"></div></a>
                             <div class="card-body">
                                 <h4 class="card-title card-step-title">
-                                    <a class="js-scroll-trigger" href="#analysis">analyse_data</a>
+                                    <a class="js-scroll-trigger" onclick="openSubpage('analysis.html')">analyse_data</a>
                                 </h4>
                                 <p class="card-text card-step-text">
                                     analyse_data2
@@ -341,8 +319,8 @@
 
 
 
-        <!-- Image Background Divider parallax: Collect -->
-        <div class="parallax parallax-two"></div>
+                                        <!-- Image Background Divider parallax: Collect -->
+        <!-- <div class="parallax parallax-two"></div>
         <section id="collect" style="background-color: #fff;">
             <div class="container-fluid row col-12 nomargin">
                 <h2 class="section-heading col-8" style="text-align: center; margin:auto;">platform.app</h2>
@@ -353,9 +331,9 @@
                     <div>
                         <p class="section-lead nomargin">platform.app1<a href="https://www.amazon.de/Cartrend-80290-Bluetooth-Controller-Smartphones/dp/B00CCZJPCU/ref=sr_1_2?ie=UTF8&qid=1513252484&sr=8-2&keywords=cartrend+obd2">
                                 platform.app2
-                            </a>platform.app3</p>
-                        <!-- apple store button -->
-                        <div style="height: 70px;">
+                            </a>platform.app3</p> -->
+                        
+                        <!-- <div style="height: 70px;">
                             <a class="btn btn-lg big-btn android-btn" href="https://play.google.com/store/apps/details?id=org.envirocar.app&hl=de" target="_blank">
                                 <img width="60" class="pull-left" src="assets/google_play_04.png"><div class="btn-text"><small>GET IT ON</small><br><strong>Google Play</strong></div></a>
                         </div>
@@ -367,13 +345,13 @@
                     <img class="img-fluid" src="{{main_app_2}}" alt="">
                 </div>
             </div>
-        </section>
+        </section> -->
 
 
 
 
-        <!-- Image Background Divider parallax: Share -->
-        <div class="parallax parallax-three"></div>
+                                        <!-- Image Background Divider parallax: Share -->
+        <!-- <div class="parallax parallax-three"></div>
         <section id="share" class="sectionShare" style="background-color: #fff;">
             <div class="container-fluid row col-12 nomargin">
                 <h2 class="section-heading col-8" style="text-align: center; margin:auto;">share</h2>
@@ -404,11 +382,11 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
 
 
-        <!-- Image Background Divider parallax: Analyze -->
-        <div class="parallax parallax-one"></div>
+                                        <!-- Image Background Divider parallax: Analyze -->
+        <!-- <div class="parallax parallax-one"></div>
         <section id="analysis" class="sectionAnalysis" style="background-color: #fff;">
             <div class="container-fluid row col-12 nomargin">
                 <h2 class="section-heading col-8" style="text-align: center; margin:auto;">analyse1</h2>
@@ -425,7 +403,7 @@
                     <img class="img-fluid" src="{{analyse2_img}}" alt="">
                 </div>
             </div>
-        </section>
+        </section> -->
 
 
 
@@ -509,6 +487,33 @@
         <section id= "press" class="sectionPress" style="background-color: #FFF;">
             <h2 class="section-heading" style="text-align: center;">press</h2>
             <hr class="col-6 section-heading-spacer" style="padding-bottom: 32px;">
+
+
+            <!--TSC 17.06.2019-->
+            <div class="posts row">
+                    <div class="col-xl-8 col-lg-10 col-md-11 col-sm-12 col-12" style="margin: auto;">
+                        <div class="row col-12 nomargin noPadding">
+                            <div class="col-sm-3 col-12 noPadding">
+                                <img class="press-pic" src="/assets/presse/tsc_website.png" alt="Rheinische Post RP-online enviroCar Die Lehren des grüne-Welle-Experiments"/>
+                            </div>
+                            <div class="col-sm-9 noPadding">
+                                <div class="content section-lead" style="margin-left: 24px;">
+                                    <h2 class="press-heading" style="clear:both">CITRAM in Hamm, Krefeld und Chemnitz gestartet 
+                                            – Smartphone‐App soll Autofahrer in Grünen  Wellen assistieren und Städte bei der Qualitätssicherung unterstützen
+                                            </h2>
+                                    <p class="section-lead">CITRAM greift aktuelle  Probleme des städtischen Verkehrsmanagements auf und erforscht in der Zusammenarbeit mit  Bürgern und Mitarbeitern der Städte Hamm, Krefeld und Chemnitz neue Wege zur Unterstützung der  Qualitätssicherung der Ampelsteuerungen. Gleichzeitig bietet es den engagierten Bürgern in  Chemnitz, Krefeld und Hamm über eine Smartphone‐App die Möglichkeit, ihr Fahrverhalten an Grüne  Wellen anzupassen und umweltschonend und treibstoffsparend zu fahren.  
+                                            <br>
+                                        <a class="press-link" href="https://www.mvup.de/2019/06/17/citram-in-hamm-krefeld-und-chemnitz-gestartet/" target="_blank">TSC, Beratende Ingenieure für Verkehrswesen vom 17. Juni 2019</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="clear nomargin section-heading-spacer">
+                        <div class="authordiv">
+                            <span class="date">17. Juni 2019</span>von<span class="author">TSC Beratende Ingenieure</span>
+                        </div>
+                    </div>
+                </div>
+
             <div class="posts row">
                 <div class="col-xl-8 col-lg-10 col-md-11 col-sm-12 col-12" style="margin: auto;">
                     <div class="row col-12 nomargin noPadding">
@@ -543,7 +548,7 @@
                             <div class="content section-lead" style="margin-left: 24px;">
                                 <h2 class="press-heading" style="clear:both">press.second</h2>
                                 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/2RUUGFoh2zI?start=1107&end=1290" frameborder="0" allowfullscreen></iframe><br>
-                                <a class="press-link" href="https://www.youtube-nocookie.com/watch?time_continue=1313&v=2RUUGFoh2zI#t=18m27s" target="_blank">Andreas Turnsek in “WDR Lokalzeit Düsseldorf” Bericht vom 19.09.2017</a>
+                                <a class="press-link" href="https://www.youtube.com/watch?v=2RUUGFoh2zI" target="_blank">Andreas Turnsek in “WDR Lokalzeit Düsseldorf” Bericht vom 19.09.2017</a>
                             </div>
                         </div>
                     </div>
@@ -583,9 +588,6 @@
             </div>
         </section>
 
-
-
-
         <!-- Image Background Divider parallax: Partner -->
         <div class="parallax parallax-six"></div>
         <section id="partner" class="sectionPartner" style="background-color: #fff;">
@@ -605,41 +607,45 @@
         </section>     
 
 
-
-        <!--Footer-->>
-        <footer class="bg-primary">
-            <div class="row footerdiv">
-                <div class="row col-12" style="margin: auto;">
-
-                    <div class="row col-xs-12 col-sm-12 col-md-4 col-lg-2 col-4">
-                        <span class="helper"></span>
-                        <a class="js-scroll-trigger col-md-12 col-10 noPadding" href="#page-top" style="margin:auto;width: 100%; height: auto;">
-                            <img class="footer-logo" style="width: 100%; display: block; margin: 0;" src="assets/logo_white.png" alt="enviroCar logo white inverse"/>
-                        </a>
-                    </div>
-                    <div class="spaceholder col-lg-2 col-md-2 hidden-sm hidden-xs"></div>
-                    <div class="footer-item col-xs-6 col-sm-6 col-md-4 col-lg-4">
-                        <h3>ft.background</h3>
-                        <ul>
-                            <li><a class="footerLink" onclick="openSubpage('about.html')">ft.about</a></li>
-                            <li><a class="footerLink" onclick="openSubpage('press.html')">ft.press</a></li>
-                            <li><a class="footerLink" onclick="openSubpage('faq.html')">ft.faq</a></li>
-                            <li><a class="footerLink" onclick="openSubpage('imprint.html')">ft.imprint</a></li>
-                            <li><a class="footerLink" onclick="openSubpage('conditions.html')">ft.terms</a></li>
-                            <li><a class="footerLink" onclick="openSubpage('TermsOfUse.html')">ft.TermsOfUse</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-item col-xs-6 col-sm-6 col-md-4 col-lg-4">
-                        <h3>ft.follow</h3>
-                        <ul>
-                            <li><a href="https://twitter.com/enviroCar_org" target="_blank">Twitter</a></li>
-                            <li><a href="https://www.facebook.com/enviroCar/" target="_blank">Facebook</a></li>
-                            <li><a href="https://github.com/enviroCar" target="_blank">GitHub</a></li>
-                        </ul>
-                    </div>
+<!--Footer-->
+<footer class="bg-primary">
+        <div class="row footerdiv">   
+            <!--leerer Platz links im Footer-->
+                <div class="spaceholder col-lg-2 col-md-2 hidden-sm hidden-xs"></div>
+                <div class="footer-item col-xs-3 col-sm-3 col-md-2 col-lg-2" >
+                    <ul style="font-size: 2rem;">
+                        <li><a class="footerLink"onclick="openSubpage('about.html')">ft.about</a></li>
+                    </ul>
                 </div>
-            </div>
-        </footer>
+                <div class="footer-item col-xs-3 col-sm-3 col-md-2 col-lg-2" >
+                    <ul style="font-size: 2rem;">
+                        <li><a class="footerLink" onclick="openSubpage('faq.html')">ft.faq</a></li>
+                        <li><a class="footerLink" href="https://blog.52north.org/category/envirocar-2/">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-item col-xs-3 col-sm-3 col-md-2 col-lg-2" >
+                    <!-- <h3>ft.follow</h3> -->
+                    <ul style="font-size: 2rem;">
+                        <li><a class="footerLink" onclick="openSubpage('imprint.html')">ft.imprint</a></li>
+                        <li><a class="footerLink" onclick="openSubpage('conditions.html')">ft.terms</a></li>
+                        <li><a class="footerLink" onclick="openSubpage('TermsOfUse.html')">ft.TermsOfUse</a></li>
+                    </ul>
+                </div>
+                <div class="footer-item col-xs-3 col-sm-3 col-md-2 col-lg-2">
+                    <ul>   
+                        <li><a href="https://twitter.com/enviroCar_org"><i class="fa fa-twitter fa-2x " ></i></a></li>
+                        <li><a href="https://www.facebook.com/enviroCar/"><i class="fa fa-facebook fa-2x"></i></a></li>
+                        <li><a href="https://github.com/enviroCar"><i class="fa fa-github fa-2x"></i></a></li>
+                    </ul>   
+                </div>
+                <!--leerer Platz rechts im Footer-->
+                <div class="spaceholder col-lg-2 col-md-2 hidden-sm hidden-xs"></div>
+                <!--Copyright Section-->
+                <div class="footer-copyright text-center py-3">© 2019 Copyright by
+                    <a href="https://52north.org/software/software-projects/envirocar/">52°North Initiative for Geospatial Open Source Software GmbH. All Rights Reserved.</a>
+                  </div>
+            </div>        
+    </footer>
 
         <!-- Bootstrap core JavaScript -->
         <script src="js/jquery.easing.1.3.min.js"></script>

@@ -15,27 +15,21 @@
         <link href="css/bootstrap.min.css" rel="stylesheet">
 
         <!-- Custom fonts for this template -->
-        <!--<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">-->
-        <!--<link href="https://fonts.googleapis.com/css?family=Roboto:200,300,400,700,200light,300light,400light,700light" rel="stylesheet">-->
-        <!--<link href="https://fonts.googleapis.com/css?family=Open+Sans:200,300,400,700,200light,300light,400light,700light" rel="stylesheet">-->
-        <!--<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">-->
         <link href="css/material-icons.css" rel="stylesheet">
         <link href="css/lato-font.css" rel="stylesheet" type="text/css">
         <link href="css/open-sans-font.css" rel="stylesheet" type="text/css">
         
+        <!--This stylesheet is for the footer icons-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+
         <!-- Custom styles for this template -->
         <link href="css/style.css" rel="stylesheet">
         <link href="css/bootstrap.copy.min.css" rel="stylesheet">
         <script src="js/jquery.copy.min.js"></script>
         <script src="js/bootstrap.copy.min.js"></script>
-        <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>-->
-        <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
-        <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
         <script src="js/i18next.copy.min.js"></script>
         <script src="js/jquery-i18next.min.js"></script>
         
-        <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/i18next/8.1.0/i18next.min.js"></script>-->
-        <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-i18next/1.2.0/jquery-i18next.min.js"></script>-->
         <link rel="stylesheet" href="https://openlayers.org/en/v4.6.2/css/ol.css">
         <script src="https://openlayers.org/en/v4.6.2/build/ol.js"></script>
         <script type="text/javascript" src="http://www.openlayers.org/api/OpenLayers.js"></script>
@@ -56,7 +50,7 @@
         <!-- Navigation Bar -->
         <nav class="navbar fixed-top navbar-dark bg-primary navbar-expand-lg navbar-expand-md" style="position: fixed; top: 0; border-bottom: solid 1px #0065A0;" id="mainNav">
             <a style="padding: 0;" class="navbar-brand js-scroll-trigger" href="#page-top">
-                <img style="height: 80%; width: auto;" alt="enviroCar logo" src="assets/logo_white.png">
+                <img style="height: 80%; width: auto;" alt="enviroCar logo" src="assets/logo_white.png" onclick="openSubpage('index.html')" >
             </a>
             <button class="navbar-toggler ml-auto navbar-dark" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -79,10 +73,8 @@
                         <a class="nav-link js-scroll-trigger" onclick="openSubpage('resources.html')">nav.resources</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="https://envirocar.org/app">
-                            <img src="assets/login_white.png"/>nav.login</a>
-<!--                        <a class="nav-link js-scroll-trigger" onclick="openSubpage('under_construction.html')">
-                            <img src="assets/login_white.png"/>nav.login</a>-->
+                        <a class="nav-link js-scroll-trigger" href="https://envirocar.org/app/">
+                            <img src="assets/login_white.png"/>my enviroCar</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">nav.language</a>
@@ -106,7 +98,57 @@
             </div>
         </section>
 
-        <!-- Image Background Divider parallax -->
+<!-- Image Background Divider parallax -->
+<div class="parallax parallax-ana2"></div>
+
+<!-- WebApp -->
+<section id="webapp" class="sectionWebApp" style="background-color: #fff;">
+    <hr class="col-6 section-heading-spacer" style="text-align: center;">
+    <div class="container-fluid row col-12 noPadding nomargin">
+        <div class="row container-fluid col-lg-12 col-md-12 col-sm-12 col-12 noPadding nomargin">
+            <div class="col-lg-2 col-md-2 col-sm-1 col-0 noPadding"></div>
+            <div class="col-lg-8 col-md-8 col-sm-10 col-12 mr-auto noPadding" style="text-align: center;">
+                <div class="clearfix"></div>
+                <h2 class="section-heading">My enviroCar</h2>
+                <p class="section-lead" style="margin-bottom: 36px;">ana.wa6</p>
+                <a href="https://envirocar.org/app/" class="btn btn-primary btn-lg">Login to my enviroCar</a>
+                <br> 
+                <br> 
+                <br>   
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-1 col-0 noPadding"></div>
+        </div>
+        <div class="row container-fluid col-lg-12 col-md-12 col-sm-12 col-12 noPadding nomargin">
+            <div class="row container-fluid col-lg-7 col-md-7 col-sm-12 col-12 noPadding nomargin">
+                <div class="col-lg-1 col-md-0 col-sm-0 col-1 noPadding"></div>
+                <div class="col-lg-10 col-md-11 col-sm-11 col-10 mr-auto img-frame-1 noPadding">
+                    <!--<span class="helper"></span>-->
+                    <img id="webapp_img" src="{{ana.webapp.img}}" alt="">
+                </div>
+                <div class="col-lg-1 col-md-1 col-sm-1 col-1 noPadding"></div>
+            </div>
+            <div class="row container-fluid col-lg-5 col-md-5 col-sm-12 col-12 noPadding nomargin">
+                <div class="hidden-lg hidden-md col-sm-1 col-1 noPadding"></div>
+                <div class="col-lg-11 col-md-11 col-sm-10 col-10 mr-auto noPadding nomargin">
+                    <ul class="lead ec-feature-list" style="list-style-type: none; padding-left: 0px;">
+                        <li class="dashboard_item" id="dashboard_1"><img id="db_1" class='ec-features-2' src="assets/people.png">ana.wp1</li>
+                        <li class="dashboard_item" id="dashboard_2"><img id="db_2" class='ec-features-2' src="assets/map.png">ana.wp2</li>
+                        <li class="dashboard_item" id="dashboard_3"><img id="db_3" class='ec-features-2' src="assets/world_map.png">ana.wp3</li>
+                        <li class="dashboard_item" id="dashboard_4"><img id="db_4" class='ec-features-2' src="assets/weekday.png">ana.wp4</li>
+                        <li class="dashboard_item" id="dashboard_5"><img id="db_5" class='ec-features-2' src="assets/speed.png">ana.wp5</li>
+                        <li class="dashboard_item" id="calendar_1"><img id="db_6" class='ec-features-2' src="assets/calendar.png">ana.wp6</li>
+                        <li class="dashboard_item" id="calendar_2"><img id="db_7" class='ec-features-2' src="assets/filter.png">ana.wp7</li>
+                        <li class="dashboard_item" id="track_1"><img id="db_8" class='ec-features-2' src="assets/anal1.png">ana.wp8</li>
+                        <li class="dashboard_item" id="track_2"><img id="db_9" class='ec-features-2' src="assets/anal2.png">ana.wp9</li>
+                    </ul>
+                </div>
+                <div class="col-lg-1 col-md-1 col-sm-1 col-1 noPadding"></div>
+            </div>
+        </div>
+    </div>
+</section>
+        
+<!-- Image Background Divider parallax -->
         <div class="parallax parallax-ana1"></div>
 
         <!-- Maps -->
@@ -139,52 +181,7 @@
             <div id="mapres3" class="row third-map mapres3 noPadding"></div>
         </div>
 
-        <!-- Image Background Divider parallax -->
-        <div class="parallax parallax-ana2"></div>
-
-        <!-- WebApp -->
-        <section id="webapp" class="sectionWebApp" style="background-color: #fff;">
-            <hr class="col-6 section-heading-spacer" style="text-align: center;">
-            <div class="container-fluid row col-12 noPadding nomargin">
-                <div class="row container-fluid col-lg-12 col-md-12 col-sm-12 col-12 noPadding nomargin">
-                    <div class="col-lg-2 col-md-2 col-sm-1 col-0 noPadding"></div>
-                    <div class="col-lg-8 col-md-8 col-sm-10 col-12 mr-auto noPadding" style="text-align: center;">
-                        <div class="clearfix"></div>
-                        <h2 class="section-heading">Web App</h2>
-                        <p class="section-lead" style="margin-bottom: 36px;">ana.wa6<br>
-                        </p>
-                    </div>
-                    <div class="col-lg-2 col-md-2 col-sm-1 col-0 noPadding"></div>
-                </div>
-                <div class="row container-fluid col-lg-12 col-md-12 col-sm-12 col-12 noPadding nomargin">
-                    <div class="row container-fluid col-lg-7 col-md-7 col-sm-12 col-12 noPadding nomargin">
-                        <div class="col-lg-1 col-md-0 col-sm-0 col-1 noPadding"></div>
-                        <div class="col-lg-10 col-md-11 col-sm-11 col-10 mr-auto img-frame-1 noPadding">
-                            <!--<span class="helper"></span>-->
-                            <img id="webapp_img" src="{{ana.webapp.img}}" alt="">
-                        </div>
-                        <div class="col-lg-1 col-md-1 col-sm-1 col-1 noPadding"></div>
-                    </div>
-                    <div class="row container-fluid col-lg-5 col-md-5 col-sm-12 col-12 noPadding nomargin">
-                        <div class="hidden-lg hidden-md col-sm-1 col-1 noPadding"></div>
-                        <div class="col-lg-11 col-md-11 col-sm-10 col-10 mr-auto noPadding nomargin">
-                            <ul class="lead ec-feature-list" style="list-style-type: none; padding-left: 0px;">
-                                <li class="dashboard_item" id="dashboard_1"><img id="db_1" class='ec-features-2' src="assets/people.png">ana.wp1</li>
-                                <li class="dashboard_item" id="dashboard_2"><img id="db_2" class='ec-features-2' src="assets/map.png">ana.wp2</li>
-                                <li class="dashboard_item" id="dashboard_3"><img id="db_3" class='ec-features-2' src="assets/world_map.png">ana.wp3</li>
-                                <li class="dashboard_item" id="dashboard_4"><img id="db_4" class='ec-features-2' src="assets/weekday.png">ana.wp4</li>
-                                <li class="dashboard_item" id="dashboard_5"><img id="db_5" class='ec-features-2' src="assets/speed.png">ana.wp5</li>
-                                <li class="dashboard_item" id="calendar_1"><img id="db_6" class='ec-features-2' src="assets/calendar.png">ana.wp6</li>
-                                <li class="dashboard_item" id="calendar_2"><img id="db_7" class='ec-features-2' src="assets/filter.png">ana.wp7</li>
-                                <li class="dashboard_item" id="track_1"><img id="db_8" class='ec-features-2' src="assets/anal1.png">ana.wp8</li>
-                                <li class="dashboard_item" id="track_2"><img id="db_9" class='ec-features-2' src="assets/anal2.png">ana.wp9</li>
-                            </ul>
-                        </div>
-                        <div class="col-lg-1 col-md-1 col-sm-1 col-1 noPadding"></div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        
 
         <!-- Image Background Divider parallax -->
         <!--<div class="parallax parallax-ana3"></div>-->
@@ -261,7 +258,7 @@
                                 <div class="card card-1 card-anim card-step card-tool">
                                     <a target="_blank" href="https://github.com/enviroCar/enviroCaR">
                                         <div style="position:relative;">
-                                            <img class="card-tool-img" src="assets/products/GitHub-Mark.png" alt="">
+                                            <img class="card-tool-img" src="/assets/GithubPic.png" alt="">
                                         </div></a>
                                     <div class="card-body">
                                         <h4 class="card-title card-step-title">
@@ -283,7 +280,7 @@
                                 <div class="card card-1 card-anim card-step card-tool">
                                     <a target="_blank"  href="https://github.com/enviroCar/tsc">
                                         <div style="position:relative;">
-                                            <img class="card-tool-img" src="assets/products/GitHub-Mark.png" alt="">
+                                            <img class="card-tool-img" src="/assets/GithubPic.png" alt="">
                                         </div></a>
                                     <div class="card-body">
                                         <h4 class="card-title card-step-title">
@@ -302,39 +299,49 @@
             </div>
         </section>
 
-        <footer class="bg-primary">
-            <div class="row footerdiv">
-                <div class="row col-12" style="margin: auto;">
-
-                    <div class="row col-xs-12 col-sm-12 col-md-4 col-lg-2 col-4">
-                        <span class="helper"></span>
-                        <a class="js-scroll-trigger col-md-12 col-10 noPadding" href="#page-top" style="margin:auto;width: 100%; height: auto;">
-                            <img class="footer-logo" style="width: 100%; display: block; margin: 0;" src="assets/logo_white.png" alt="enviroCar logo white inverse"/>
-                        </a>
-                    </div>
-                    <div class="spaceholder col-lg-2 col-md-2 hidden-sm hidden-xs"></div>
-                    <div class="footer-item col-xs-6 col-sm-6 col-md-4 col-lg-4">
-                        <h3>ft.background</h3>
-                        <ul>
-                            <li><a class="footerLink"onclick="openSubpage('about.html')">ft.about</a></li>
-                            <li><a class="footerLink" onclick="openSubpage('press.html')">ft.press</a></li>
-                            <li><a class="footerLink" onclick="openSubpage('faq.html')">ft.faq</a></li>
-                            <li><a class="footerLink" onclick="openSubpage('imprint.html')">ft.imprint</a></li>
-                            <li><a class="footerLink" onclick="openSubpage('conditions.html')">ft.terms</a></li>
-                            <li><a class="footerLink" onclick="openSubpage('TermsOfUse.html')">ft.TermsOfUse</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-item col-xs-6 col-sm-6 col-md-4 col-lg-4">
-                        <h3>ft.follow</h3>
-                        <ul>
-                            <li><a href="https://twitter.com/enviroCar_org" target="_blank">Twitter</a></li>
-                            <li><a href="https://www.facebook.com/enviroCar/" target="_blank">Facebook</a></li>
-                            <li><a href="https://github.com/enviroCar" target="_blank">GitHub</a></li>
-                        </ul>
-                    </div>
-                </div>
+<!--Footer-->
+<footer class="bg-primary">
+    <div class="row footerdiv">    
+        <!--leerer Platz links im Footer-->
+            <div class="spaceholder col-lg-2 col-md-2 hidden-sm hidden-xs"></div>
+            <!--1. column-->
+            <div class="footer-item col-xs-3 col-sm-3 col-md-2 col-lg-2" >
+                <!-- <h3>ft.background</h3> -->
+                <ul style="font-size: 2rem;">
+                    <li><a class="footerLink"onclick="openSubpage('about.html')">ft.about</a></li>
+                </ul>
             </div>
-        </footer>
+            <!--2. column-->
+            <div class="footer-item col-xs-3 col-sm-3 col-md-2 col-lg-2" >
+                <ul style="font-size: 2rem;">
+                    <li><a class="footerLink" onclick="openSubpage('faq.html')">ft.faq</a></li>
+                    <li><a class="footerLink" href="https://blog.52north.org/category/envirocar-2/">Blog</a></li>
+                </ul>
+            </div>
+            <!--3. column-->
+            <div class="footer-item col-xs-3 col-sm-3 col-md-2 col-lg-2" >
+                <ul style="font-size: 2rem;">
+                    <li><a class="footerLink" onclick="openSubpage('imprint.html')">ft.imprint</a></li>
+                    <li><a class="footerLink" onclick="openSubpage('conditions.html')">ft.terms</a></li>
+                    <li><a class="footerLink" onclick="openSubpage('TermsOfUse.html')">ft.TermsOfUse</a></li>
+                </ul>
+            </div>
+            <!--4. column: Icons-->
+            <div class="footer-item col-xs-3 col-sm-3 col-md-2 col-lg-2">
+                <ul>   
+                    <li><a href="https://twitter.com/enviroCar_org"><i class="fa fa-twitter fa-2x " ></i></a></li>
+                    <li><a href="https://www.facebook.com/enviroCar/"><i class="fa fa-facebook fa-2x"></i></a></li>
+                    <li><a href="https://github.com/enviroCar"><i class="fa fa-github fa-2x"></i></a></li>
+                </ul>   
+            </div>
+            <!--leerer Platz rechts im Footer-->
+            <div class="spaceholder col-lg-2 col-md-2 hidden-sm hidden-xs"></div>
+            <!--Copyright Section-->
+            <div class="footer-copyright text-center py-3">© 2019 Copyright by
+                <a href="https://52north.org/software/software-projects/envirocar/"> 52°North Initiative for Geospatial Open Source Software GmbH. All Rights Reserved.</a>
+              </div>
+        </div>   
+</footer>
 
         <!-- Bootstrap core JavaScript -->
         <script src="js/jquery.easing.1.3.min.js"></script>
