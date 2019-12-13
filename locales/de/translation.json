@@ -87,7 +87,6 @@
     "meanSpeedText2": "Die Mittelwerte wurden aus der Menge aller Einzelmessungen gewonnen, die dem jeweiligen Straßensegment zugeordnet werden konnten.",
 
 
-
     "speedComparison": "Relative Geschwindigkeit",
     "speedComparisonText1":"Die Karte zeigt die mittlere Geschwindigkeit im Verhältnis zur erlaubten Höchstgeschwindigkeit für das jeweilige Straßensegment. ",
     "speedComparisonText2":"Der OSM-Datenbestand bietet für einige Straßensegmente auch Informationen zur erlaubten Höchstgeschwindigkeit.",

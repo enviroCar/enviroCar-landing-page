@@ -62,19 +62,32 @@
     "avgCO21": "Average CO",
     "avgCO22": " emissions",
     
-    "avgConsumption": "Average fuel consumptions",
+    "avgConsumption": "Fuel consumption",
+    "avgConsumptionText1": "The map shows the averaged estimates of the fuel.",
+    "avgConsumptionText2": "Data collection with enviroCar also estimates fuel consumption.",
+
+
     
-    
+    "trackCount": "Track count",
+    "trackCountText":"The map is based on the Open Streetmap dataset and shows the number of trips per segment taken along the segment in whole or in part.",
+    "geolocate": "Jump to",
+
+
     "meanSpeed": "Average velocities",
     "meanSpeedText1": "The map shows the average speed of the contributed tracks per OSM road segment. ",
     "meanSpeedText2": "The mean values were obtained from the amount of all individual measurements that could be assigned to the respective road segment.Please be aware that the data may have been collected at very different times of the day, weekdays and traffic situations and that a thorough statistical sampling and data preparation is required for a reliable assessment of the actual traffic conditions",
+    
+ 
+    "speedComparison": "Relative speed",
+    "speedComparisonText1":"The map shows the average speed in relation to the maximum speed allowed for each road segment.",
+    "speedComparisonText2":"The OSM database also provides speed limit information for some road segments.",
+    "speedComparisonText3":"The idea behind the color scheme is that speeds close to the permitted maximum speed (from 90%) also correspond to the (allowed) desired speed.",
+    "speedComparisonText4":"Deviations from this can have many causes, e.g. frequent traffic jams, construction sites, general road conditions, changes to the maximum speed allowed.",
 
+    "meanCo2": "Co2 Emission",
+    "meanCo2Text1": "The map shows the averaged estimates of CO2 emissions.",
+    "meanCo2Text2": "Data collection with enviroCar also estimates energy consumption and associated CO2 emissions.",
 
-    "meanCo2": "Average Co2 emission",
-    "trackCount": "Track count",
-    "trackCountText":"Die Karte verwendet den Open Streetmap-Datenbestand und zeigt die Anzahl der Fahrten je Segment, die das Segment ganz oder teilweise befahren haben.",
-    "geolocate": "Jump to",
-    "speedComparison": "Speed comparison",
 
 
     "press": "Press (German articles)",
