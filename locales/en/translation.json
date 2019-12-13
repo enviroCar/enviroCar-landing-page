@@ -75,7 +75,7 @@
 
     "meanSpeed": "Average speed",
     "meanSpeedText1": "The map shows the average speed of the contributed tracks per OSM road segment. ",
-    "meanSpeedText2": "The mean values were obtained from the amount of all individual measurements that could be assigned to the respective road segment.Please be aware that the data may have been collected at very different times of the day, weekdays and traffic situations and that a thorough statistical sampling and data preparation is required for a reliable assessment of the actual traffic conditions",
+    "meanSpeedText2": "The mean values were obtained from the amount of all individual measurements that could be assigned to the respective road segment.",
     
  
     "speedComparison": "Relative speed",
@@ -87,7 +87,6 @@
     "meanCo2": "Co2 Emission",
     "meanCo2Text1": "The map shows the averaged estimates of CO2 emissions.",
     "meanCo2Text2": "Data collection with enviroCar also estimates energy consumption and associated CO2 emissions.",
-
 
 
     "press": "Press (German articles)",
@@ -225,7 +224,7 @@
     "ana.wp8": "Map and time series charts",
     "ana.wp9": "Track details",
     "ana.mp1": "Maps and Analysis",
-    "ana.mp2": "enviroCar offers different views and statistics about your own rides. Explore and analyze the data in different maps, which show the complete enviroCar dataset or a subset of the data. ",
+    "ana.mp2": "enviroCar offers different views and statistics about your own rides. Explore and analyze the data in different maps, which show the complete enviroCar dataset or a subset of the data. Please be aware that the data may have been collected at very different times of the day, weekdays and traffic situations and that a thorough statistical sampling and data preparation is required for a reliable assessment of the actual traffic conditions. ",
     "ana.mp6": "Interactive map with aggregated speed values",
     "ana.mp7": "Hot-Spot Analysis",
     "ana.mp8": "Aggregated speed measurements",
