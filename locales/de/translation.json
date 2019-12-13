@@ -68,12 +68,42 @@
     "avgSpeed": "Durchschnittliche Geschwindigkeiten",
     "avgCO21": "Durchschnittliche CO",
     "avgCO22": " Emissionen",
-    "avgConsumption": "Durchschnittliche Treibstoffverbrauche",
-    "meanSpeed": "Durchschnittliche Geschwindigkeiten",
-    "meanCo2": "Durchschnittlicher Co2 Ausstoß",
-    "trackCount": "Anzahl Tracks",
+
+
+    
+
+
+    
+
+
+    
+    "trackCount": "Anzahl der Fahrten",
+    "trackCountText":"Die Karte verwendet den Open Streetmap-Datenbestand und zeigt die Anzahl der Fahrten je Segment, die das Segment ganz oder teilweise befahren haben.",
     "geolocate": "Springe zu",
-    "speedComparison": "Geschwindigkeitsvergleich",
+
+
+    "meanSpeed": "Durchschnittliche Geschwindigkeiten",
+    "meanSpeedText1": "Die Karte zeigt die mittleren Geschwindigkeiten der beigetragenen Fahrten je OSM Straßensegment. ",
+    "meanSpeedText2": "Die Mittelwerte wurden aus der Menge aller Einzelmessungen gewonnen, die dem jeweiligen Straßensegment zugeordnet werden konnten.",
+
+
+
+    "speedComparison": "Relative Geschwindigkeit",
+    "speedComparisonText1":"Die Karte zeigt die mittlere Geschwindigkeit im Verhältnis zur erlaubten Höchstgeschwindigkeit für das jeweilige Straßensegment. ",
+    "speedComparisonText2":"Der OSM-Datenbestand bietet für einige Straßensegmente auch Informationen zur erlaubten Höchstgeschwindigkeit.",
+    "speedComparisonText3":"Die Idee bei der Farbgebung ist, dass Geschwindigkeiten nahe der erlaubten Höchstgeschwindigkeit (ab 90%) auch der (erlaubten) Wunschgeschwindigkeit entsprechen. ",
+    "speedComparisonText4":"Abweichungen hiervon können viele Ursachen haben, z.B. häufige Staus, Baustellen, allg. Straßenverhältnisse, Änderungen der erlaubten Höchstgeschwindigkeit.",
+
+    "meanCo2": "Co2 Emission",
+    "meanCo2Text1": "Die Karte zeigt die gemittelten Schätzwerte der CO2 Emission.",
+    "meanCo2Text2": "Bei der Datenerfassung mit enviroCar wird der Energieverbrauch und die damit verbundene CO2 Emission geschätzt.",
+    
+    "avgConsumption": "Treibstoffverbrauch",
+    "avgConsumptionText1": "Die Karte zeigt die gemittelten Schätzwerte des Treibstoffverbrauchs.",
+    "avgConsumptionText2": "Bei der Datenerfassung mit enviroCar wird auch der Treibstoffverbrauch geschätzt. Die Karte zeigt die gemittelten Schätzwerte der Stichprobe. ",
+
+
+
 
     "press": "Presse",
     "von": " by ",
@@ -221,7 +251,8 @@
     "ana.wp8": "Karte und Zeitreihendiagramm",
     "ana.wp9": "Streckendetails",
     "ana.mp1": "Karten und Analysen",
-    "ana.mp2": "enviroCar bietet unterschiedliche Sichten auf und Statistiken über Deine eigenen Fahrten. In unterschiedlichen Karten, die den Gesamtdatensatz oder einen Teilbereich aller Daten zeigen, kannst Du die enviroCar Fahrten weiter explorieren und analysieren. ",
+    "ana.mp2": "enviroCar bietet unterschiedliche Sichten auf und Statistiken über Deine eigenen Fahrten. In unterschiedlichen Karten, die den Gesamtdatensatz oder einen Teilbereich aller Daten zeigen, kannst Du die enviroCar Fahrten weiter explorieren und analysieren. Bitte beachte, dass die Daten zu sehr unterschiedlichen Tageszeiten, Wochentagen und Verkehrssituationen erfasst worden sein können und dass für eine belastbare Aussage zu den tatsächlichen Verkehrsverhältnissen eine sorgfältige statistische Stichprobenauswahl und Datenvorbereitung erforderlich ist.",
+    
     "ana.mp6": "Interaktive aggregierte Geschwindigkeitskarte",
     "ana.mp7": "Hot-Spot Analysen",
     "ana.mp8": "Aggregierte Geschwindigkeitsmessungen",
