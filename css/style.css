@@ -1194,14 +1194,15 @@ iframe {
     transition: all 0.2s;
 }
 .ol-control button {
-    background-color: #FFFF00 !important;
-    color: #444 !important;
+    background-color: #0065A0 !important;
+    color: #fff !important;
     margin: 3px !important;
     height: 2em !important;
     width: 2em !important;
 }
-.ol-control button:hover {
-    background-color: #FF8800 !important;
+.ol-control button:hover {    
+    background-color: #F3F3F3 !important;
+    color: rgba(0,101,160,0.7) !important;
     margin: 3px !important;
 }
 .ol-zoom.ol-unselectable.ol-control {
@@ -3097,5 +3098,9 @@ header {
 .third-map {
     float: left;
     height: 100%;
-    width: 33%;
+    width: 80%;
+}
+.third-map-legend-ext {
+    float: left;
+    width: 100%;
 }

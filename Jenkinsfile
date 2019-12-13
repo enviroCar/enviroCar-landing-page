@@ -6,12 +6,11 @@ node {
   }
 
   stage('Build image') {
-    app = docker.build("ec-components/landingpage")
+    app = docker.build("envirocar/landingpage")
   }
 
   stage('Push image') {
     docker.withRegistry('http://registry:5000') {
-      app.push("${env.BUILD_NUMBER}")
       app.push("latest")
     }
   }
