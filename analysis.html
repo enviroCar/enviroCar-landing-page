@@ -31,19 +31,10 @@
         <script src="js/i18next.copy.min.js"></script>
         <script src="js/jquery-i18next.min.js"></script>
         
-<<<<<<< HEAD
-        <link rel="stylesheet" href="https://openlayers.org/en/v4.6.2/css/ol.css">
-        <script src="https://openlayers.org/en/v4.6.2/build/ol.js"></script>
-        <script type="text/javascript" src="http://www.openlayers.org/api/OpenLayers.js"></script>
         <script type="text/javascript" src="http://maps.stamen.com/js/tile.stamen.js?v1.3.0"></script>
-=======
-        <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/i18next/8.1.0/i18next.min.js"></script>-->
-        <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-i18next/1.2.0/jquery-i18next.min.js"></script>-->
-        <!-- <link rel="stylesheet" href="https://cdn.rawgit.com/openlayers/openlayers.github.io/master/en/v6.1.0/css/ol.css"> -->
 		<link rel="stylesheet" href="https://openlayers.org/en/v4.6.5/css/ol.css" type="text/css">
 		<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/themes/redmond/jquery-ui.css"/>
         <script src="https://openlayers.org/en/v4.6.5/build/ol.js"></script>
->>>>>>> 989f70a434f738d0bc4fd36e89b517ad2e9aaea1
         <script src="js/i18nextify.min.js"></script>
         <script src="js/jeoquery.js"></script>
         <script src="js/jquery-ui.min.js"></script>
@@ -152,6 +143,76 @@
                 </p>
             </div>
         </section>
+
+      <!-- Maps -->
+        <section style="background-color:#f3f3f3;">
+            <hr class="col-6 section-heading-spacer" style="text-align: center;">
+            <div id="maps" class="container" style="min-width: 70% !important;">
+                <div class="col-12 ml-auto" style="padding-bottom: 35px;">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading" style="padding-bottom: 24px; text-align: center;">ana.mp1</h2>
+                    <p class="section-lead" style="text-align: center;"><!--<strong>enviroCar</strong>ana.mp2<br>-->
+                        ana.mp2
+                    </p>
+                </div>
+            </div>
+        </section>
+       
+        <div class="row" style="background-color: #f3f3f3; height: 650px">
+            <div class="col" style="background-color: #f3f3f3;">
+                <p class="section-heading product-text" style="text-align:center;background-color: #f3f3f3;">trackCount</p>
+               <div class="third-map-legend-ext"><div id="mapres" class="third-map mapres noPadding" style="padding-right:8px !important; height: 500px;"></div>
+               <img id="legend2" src="http://processing.envirocar.org/geoserver/ows?service=WMS&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=ec%3Atrack_count&TRANSPARENT=true"/></div>
+               <div id="popup" class="ol-popup" style="width:200px">
+                   <a href="#" id="popup-closer" class="ol-popup-closer"></a>
+               <div id="popup-content"></div>
+               </div>
+            </div>
+        </div>
+        <div class="row" style="background-color: #f3f3f3; height: 650px">
+            <div class="col" style="background-color: #f3f3f3;">
+                <p class="section-heading product-text" style="text-align:center;background-color: #f3f3f3;">meanSpeed</p>
+               <div class="third-map-legend-ext"><div id="mapres2" class="row third-map mapres2 noPadding" style="padding-right:8px !important; height: 500px"></div>
+               <img id="legend3" src="http://processing.envirocar.org/geoserver/ows?service=WMS&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=ec%3Amean_speed&TRANSPARENT=true"/></div>
+               <div id="popup2" class="ol-popup" style="width:250px">
+                   <a href="#" id="popup-closer2" class="ol-popup-closer"></a>
+               <div id="popup-content2"></div>
+               </div>
+            </div>
+        </div>
+        <div class="row" style="background-color: #f3f3f3; height: 650px">
+            <div class="col" style="background-color: #f3f3f3;">
+                <p class="section-heading product-text" style="text-align:center;background-color: #f3f3f3;">speedComparison</p>
+               <div class="third-map-legend-ext"><div id="mapres3" class="row third-map mapres3 noPadding" style="padding-right:8px !important; height: 500px"></div>
+               <img id="legend4" src="http://processing.envirocar.org/geoserver/ows?service=WMS&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=ec%3Aspeed_comparison&TRANSPARENT=true"/></div>
+               <div id="popup3" class="ol-popup" style="width:250px">
+                   <a href="#" id="popup-closer3" class="ol-popup-closer"></a>
+               <div id="popup-content3"></div>
+               </div>
+            </div>
+        </div>
+        <div class="row" style="background-color: #f3f3f3; height: 650px">
+            <div class="col" style="background-color: #f3f3f3;">
+                <p class="section-heading product-text" style="text-align:center;background-color: #f3f3f3;">meanCo2</p>
+               <div class="third-map-legend-ext"><div id="mapres4" class="row third-map mapres4 noPadding" style="padding-right:8px !important; height: 500px"></div>
+               <img id="legend5" src="http://processing.envirocar.org/geoserver/ows?service=WMS&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=ec%3Amean_co2&TRANSPARENT=true"/></div>
+               <div id="popup4" class="ol-popup" style="width:300px">
+                   <a href="#" id="popup-closer4" class="ol-popup-closer"></a>
+               <div id="popup-content4"></div>
+               </div>
+            </div>
+        </div>
+        <div class="row" style="background-color: #f3f3f3; height: 650px">
+            <div class="col" style="background-color: #f3f3f3;">
+                <p class="section-heading product-text" style="text-align:center;background-color: #f3f3f3;">avgConsumption</p>
+               <div class="third-map-legend-ext"><div id="mapres5" class="row third-map mapres5 noPadding" style="padding-right:8px !important; height: 500px"></div>
+               <img id="legend6" src="http://processing.envirocar.org/geoserver/ows?service=WMS&request=GetLegendGraphic&format=image%2Fpng&width=20&height=20&layer=ec%3Amean_consumption&TRANSPARENT=true"/></div>
+               <div id="popup5" class="ol-popup" style="width:300px">
+                   <a href="#" id="popup-closer5" class="ol-popup-closer"></a>
+               <div id="popup-content5"></div>
+               </div>
+            </div>
+        </div>
 
 <!-- Image Background Divider parallax -->
 <div class="parallax parallax-ana2"></div>
