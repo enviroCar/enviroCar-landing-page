@@ -61,7 +61,15 @@
     "avgSpeed": "Average velocities",
     "avgCO21": "Average CO",
     "avgCO22": " emissions",
+    
     "avgConsumption": "Average fuel consumptions",
+    "meanSpeed": "Average velocities",
+    "meanCo2": "Average Co2 emission",
+    "trackCount": "Track count",
+    "geolocate": "Jump to",
+    "speedComparison": "Speed comparison",
+
+
     "press": "Press (German articles)",
     "von": " by ",
     "press.showall": "Show all",

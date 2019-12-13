@@ -69,6 +69,11 @@
     "avgCO21": "Durchschnittliche CO",
     "avgCO22": " Emissionen",
     "avgConsumption": "Durchschnittliche Treibstoffverbrauche",
+    "meanSpeed": "Durchschnittliche Geschwindigkeiten",
+    "meanCo2": "Durchschnittlicher Co2 Ausstoß",
+    "trackCount": "Anzahl Tracks",
+    "geolocate": "Springe zu",
+    "speedComparison": "Geschwindigkeitsvergleich",
 
     "press": "Presse",
     "von": " by ",
