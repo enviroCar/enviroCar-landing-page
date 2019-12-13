@@ -73,7 +73,7 @@
     "geolocate": "Jump to",
 
 
-    "meanSpeed": "Average velocities",
+    "meanSpeed": "Average speed",
     "meanSpeedText1": "The map shows the average speed of the contributed tracks per OSM road segment. ",
     "meanSpeedText2": "The mean values were obtained from the amount of all individual measurements that could be assigned to the respective road segment.Please be aware that the data may have been collected at very different times of the day, weekdays and traffic situations and that a thorough statistical sampling and data preparation is required for a reliable assessment of the actual traffic conditions",
     

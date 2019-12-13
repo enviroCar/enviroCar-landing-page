@@ -91,7 +91,7 @@
     "speedComparisonText1":"Die Karte zeigt die mittlere Geschwindigkeit im Verhältnis zur erlaubten Höchstgeschwindigkeit für das jeweilige Straßensegment. ",
     "speedComparisonText2":"Der OSM-Datenbestand bietet für einige Straßensegmente auch Informationen zur erlaubten Höchstgeschwindigkeit.",
     "speedComparisonText3":"Die Idee bei der Farbgebung ist, dass Geschwindigkeiten nahe der erlaubten Höchstgeschwindigkeit (ab 90%) auch der (erlaubten) Wunschgeschwindigkeit entsprechen. ",
-    "speedComparisonText4":"Abweichungen hiervon können viele Ursachen haben, z.B. häufige Staus, Baustellen, allg. Straßenverhältnisse, Änderungen der erlaubten Höchstgeschwindigkeit.",
+    "speedComparisonText4":"Abweichungen hiervon können viele Ursachen haben, z.B. häufige Staus, Baustellen, allgemeine Straßenverhältnisse, Änderungen der erlaubten Höchstgeschwindigkeit.",
 
     "meanCo2": "Co2 Emission",
     "meanCo2Text1": "Die Karte zeigt die gemittelten Schätzwerte der CO2 Emission.",
