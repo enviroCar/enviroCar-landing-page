@@ -141,7 +141,7 @@
     "collect5": "OBDLink LX Bluetooth",
     "collect6": "empfehlen.",
     "collect7": "Fahrzeug",
-    "collect8": "Die OBD-II Schnittstelle befindet sich im Fußraum des Fahrzeugs - bei den meißten Fahrzeugen direkt unter dem Lenkrad. Das Vorhandensein der Adapterschnittstelle in Fahrzeugen ist gesetzlich vorgeschrieben.",
+    "collect8": "Die OBD-II Schnittstelle befindet sich im Fußraum des Fahrzeugs - bei den meisten Fahrzeugen direkt unter dem Lenkrad. Das Vorhandensein der Adapterschnittstelle in Fahrzeugen ist gesetzlich vorgeschrieben.",
     "collect.app": "Android App",
     "collect9": "Die enviroCar App empfängt die Sensordaten des Fahrzeugs und erweiteret die Daten um GPS Positionsdaten. Die App ist für Android Smartphones verfügbar und erfordert eine Android-Version von 4.1 oder höher.",
     "collect10": "Um eine Verbindung mit dem in Dein Fahrzeug eingesteckten OBD-II Adapter herzustellen, musst Du Bluetooth aktivieren und als Pairing-Gerät den Adapter auswählen. Fertig!",
