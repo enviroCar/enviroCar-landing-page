@@ -44,7 +44,15 @@
     "analyse2_img": "assets/app_4_en.png",
     "ana.txt1": "Use the ",
     "ana.txt2": " to explore your tracks' sensor data.",
+    
     "ana2": "enviroCar offers views of individual tracks and interactive maps based on the enviroCar community’s data sets. There are also many possibilities to download, explore and analyze the track data without statistics knowledge in Excel or professional proficiency in R or other programming languages.",
+    "ana2_1":"enviroCar offers various ways to download and analyze driving data with tools such as R, Python, ArcGIS or QGIS or simply with EXCEL. The interactive maps on this page provide first insights about the dataset and might serve as inspiration for further analysis.*",
+    "ana2_2":"The interactive maps on this page provide first insights about the dataset and might serve as inspiration for further analysis.",
+    "ana2_3":"* Please be aware that the data may have been collected at very different times of the day, weekdays and traffic situations. A and that a thorough statistical sampling and data preparation is required for a reliable assessment of the actual traffic conditions.",
+    "ana2_4":"If required, we are happy to assist you with professional services.",
+    
+    
+    
     "ana.speeds": "Speed",
     "ana.fuels": "Consumption",
     "ana.co2": "CO2 emissions",
@@ -84,7 +92,7 @@
     "speedComparisonText3":"The idea behind the color scheme is that speeds close to the permitted maximum speed (from 90%) also correspond to the (allowed) desired speed.",
     "speedComparisonText4":"Deviations from this can have many causes, e.g. frequent traffic jams, construction sites, general road conditions, changes to the maximum speed allowed.",
 
-    "meanCo2": "Co2 Emission",
+    "meanCo2": "CO2 Emission",
     "meanCo2Text1": "The map shows the averaged estimates of CO2 emissions.",
     "meanCo2Text2": "Data collection with enviroCar also estimates energy consumption and associated CO2 emissions.",
 
@@ -223,7 +231,7 @@
     "ana.wp7": "Track Listing with filtering options",
     "ana.wp8": "Map and time series charts",
     "ana.wp9": "Track details",
-    "ana.mp1": "Maps and Analysis",
+    "ana.mp1": "Maps",
     "ana.mp2": "enviroCar offers different views and statistics about your own rides. Explore and analyze the data in different maps, which show the complete enviroCar dataset or a subset of the data. Please be aware that the data may have been collected at very different times of the day, weekdays and traffic situations and that a thorough statistical sampling and data preparation is required for a reliable assessment of the actual traffic conditions. ",
     "ana.mp6": "Interactive map with aggregated speed values",
     "ana.mp7": "Hot-Spot Analysis",

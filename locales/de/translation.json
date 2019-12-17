@@ -93,7 +93,7 @@
     "speedComparisonText3":"Die Idee bei der Farbgebung ist, dass Geschwindigkeiten nahe der erlaubten Höchstgeschwindigkeit (ab 90%) auch der (erlaubten) Wunschgeschwindigkeit entsprechen. ",
     "speedComparisonText4":"Abweichungen hiervon können viele Ursachen haben, z.B. häufige Staus, Baustellen, allgemeine Straßenverhältnisse, Änderungen der erlaubten Höchstgeschwindigkeit.",
 
-    "meanCo2": "Co2 Emission",
+    "meanCo2": "CO2 Emission",
     "meanCo2Text1": "Die Karte zeigt die gemittelten Schätzwerte der CO2 Emission.",
     "meanCo2Text2": "Bei der Datenerfassung mit enviroCar wird der Energieverbrauch und die damit verbundene CO2 Emission geschätzt.",
     
@@ -214,6 +214,11 @@
 
     "ana1": "Analysieren",
     "ana2": "enviroCar bietet Sichten auf einzelne Fahrten, interaktive Karten zu analysierten enviroCar Gemeinschaftsdatensätzen, und viele Möglichkeiten die Fahrtdaten ohne Statistikkenntnisse in Excel oder professionell in R oder in weiteren Programmiersprachen herunterzuladen, zu explorieren, und zu analysieren.",
+    "ana2_1":"enviroCar bietet Dir verschiedene Möglichkeiten, Fahrdaten herunterzuladen und mit Werkzeugen wir R, Python, ArcGIS oder QGIS oder einfach mit einer Tabellenkalkulation zu analysieren. Die interaktiven Karten auf dieser Seite liefern erste Informationen über den Datenbestand und dienen gegebenenfalls als Anregung für weitere Analysen.*",
+    "ana2_2":"Die interaktiven Karten* auf dieser Seite liefern erste Informationen über den Datenbestand und dienen gegebenenfalls als Anregung für weitere Analysen.",
+    "ana2_3":"* Bitte beachte, dass die Daten zu sehr unterschiedlichen Tageszeiten, Wochentagen und Verkehrssituationen erfasst worden sein können und dass für eine belastbare Aussage zu den tatsächlichen Verkehrsverhältnissen eine sorgfältige statistische Stichprobenauswahl und Datenvorbereitung erforderlich ist.",
+    "ana2_4":"Bei Bedarf unterstützen wir Dich gern durch professionelle Dienstleistungen.",
+    
     "ana3": "Gewinne einen Eindruck über die Präsenz hochgeladener ",
     "ana3b": "enviroCar Fahrten",
     "ana3c": " weltweit.",
@@ -249,7 +254,7 @@
     "ana.wp7": "Liste mit Filtern",
     "ana.wp8": "Karte und Zeitreihendiagramm",
     "ana.wp9": "Streckendetails",
-    "ana.mp1": "Karten und Analysen",
+    "ana.mp1": "Karten",
     "ana.mp2": "enviroCar bietet unterschiedliche Sichten auf und Statistiken über Deine eigenen Fahrten. In unterschiedlichen Karten, die den Gesamtdatensatz oder einen Teilbereich aller Daten zeigen, kannst Du die enviroCar Fahrten weiter explorieren und analysieren. Bitte beachte, dass die Daten zu sehr unterschiedlichen Tageszeiten, Wochentagen und Verkehrssituationen erfasst worden sein können und dass für eine belastbare Aussage zu den tatsächlichen Verkehrsverhältnissen eine sorgfältige statistische Stichprobenauswahl und Datenvorbereitung erforderlich ist.",
     
     "ana.mp6": "Interaktive aggregierte Geschwindigkeitskarte",
