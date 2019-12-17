@@ -46,7 +46,7 @@
     "ana.txt2": " to explore your tracks' sensor data.",
     
     "ana2": "enviroCar offers views of individual tracks and interactive maps based on the enviroCar community’s data sets. There are also many possibilities to download, explore and analyze the track data without statistics knowledge in Excel or professional proficiency in R or other programming languages.",
-    "ana2_1":"enviroCar offers various ways to download and analyze driving data with tools such as R, Python, ArcGIS or QGIS or simply with EXCEL. The interactive maps on this page provide first insights about the dataset and might serve as inspiration for further analysis.*",
+    "ana2_1":"enviroCar offers various ways to download and analyze driving data with tools such as R, Python, ArcGIS or QGIS or simply with Excel. The interactive maps on this page provide first insights about the dataset and might serve as inspiration for further analysis.*",
     "ana2_2":"The interactive maps on this page provide first insights about the dataset and might serve as inspiration for further analysis.",
     "ana2_3":"* Please be aware that the data may have been collected at very different times of the day, weekdays and traffic situations. A and that a thorough statistical sampling and data preparation is required for a reliable assessment of the actual traffic conditions.",
     "ana2_4":"If required, we are happy to assist you with professional services.",
@@ -77,7 +77,7 @@
 
     
     "trackCount": "Track count",
-    "trackCountText":"The map is based on the Open Streetmap dataset and shows the number of trips per segment taken along the segment in whole or in part.",
+    "trackCountText":"The map is based on the OpenStreetMap dataset and shows the number of trips per segment taken along the segment in whole or in part.",
     "geolocate": "Jump to",
 
 
@@ -208,9 +208,26 @@
     "ana3b": "enviroCar tracks",
     "ana3c": " worldwide.",
     "ana.wa4": "Analysetools",
-    "ana.wa6": "The web application offers extensive features for viewing your data. Log on to the website to access the web application.",
+    "ana.wa6": "My enviroCar provides you with the opportunity to take a closer look at your own data and carry out further interesting analyses.",
+    
     "res1": "Resources",
-    "res2": "enviroCars data are available as Open Data. The access is standardized and descibed below. enviroCar is built in several components. These components are available as Open Source.",
+    "res1_2": "The data collected and analysed by enviroCar is available as ",
+    "res1_3": "Open Data",
+    "res1_4": ". The access is standardized and descibed below. enviroCar is built in several components. These components are available as Open Source.",
+    
+    "res3": "Documentation",
+    "res3_1": "The API of the enviroCar server supports selective access to anonymised tracks using via HTTP. As such, you can access tracks, measures as well as relevant statistics. Further, spatial and time filters are available which help you accessing only those data which are of interest for you. A detailed description of the API you can find",
+    "res3_2": "here",
+
+    "res4": "Blog",
+    "res4_1": "On the enviroCar blog you get information about activities and topics of the enviroCar community. Do you have experiences with the use of enviroCar or are you participating in its development?",
+    "res4_2": "Share your experience/opinion on the",
+    "res4_3": " enviroCar Blog",
+    
+    "res5": "Publications",
+    "res5_1": "There is a growing community which uses enviroCar within diverse fields of interests, e.g. traffic management, mobility, citizen science or smart cities.",
+    "res5_2": "Click the button below to see relevant publications.",
+
     "ana.webapp.img": "assets/webapp/dashboard_1_en.PNG",
     "ana.webapp.img1": "assets/webapp/dashboard_1_en.PNG",
     "ana.webapp.img2": "assets/webapp/dashboard_2_en.png",

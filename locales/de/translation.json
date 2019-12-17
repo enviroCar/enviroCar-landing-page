@@ -78,7 +78,7 @@
 
     
     "trackCount": "Anzahl der Fahrten",
-    "trackCountText":"Die Karte verwendet den Open Streetmap-Datenbestand und zeigt die Anzahl der Fahrten je Segment, die das Segment ganz oder teilweise befahren haben.",
+    "trackCountText":"Die Karte verwendet den OpenStreetMap-Datenbestand und zeigt die Anzahl der Fahrten je Segment, die das Segment ganz oder teilweise befahren haben.",
     "geolocate": "Springe zu",
 
 
@@ -228,10 +228,30 @@
     "ana.wa3": "Aggregierte Karten zeigen analysierte Community Fahrtdaten",
     "ana.wa4": "Analysetools",
     "ana.wa5": "Freie Tools zur weiteren Analyse",
-    "ana.wa6": "Welcher Weg ist zur Hauptverkehrszeit schneller und umweltschonender? Wieviel CO2 produziert Dein Fahrzeug? my enviroCar bietet umfangreiche Features für unterschiedliche Sichten auf Deine gesammelten Daten.",
+    "ana.wa6": "My enviroCar bietet Dir die Möglichkeit, Deine eigenen Daten genauer unter die Lupe zu nehmen und weitere interessante Analysen durchzuführen.",
 
-    "res1": "Ressourcen",
-    "res2": "Die enviroCar Daten werden frei verfügbar als Open Data bereitgestellt. Der Zugriff erfolgt standardisiert und wird unten beschrieben. Die enviroCar Plattform besteht aus mehreren Komponenten. Diese Komponenten sind als Open Source verfügbar.",
+
+
+    "res1": "Resourcen",
+    "res1_2": "Die enviroCar Daten werden frei verfügbar als  ",
+    "res1_3": "Open Data",
+    "res1_4": " bereitgestellt. Der Zugriff erfolgt standardisiert und wird unten beschrieben. Die enviroCar Plattform besteht aus mehreren Komponenten. Diese Komponenten sind als Open Source verfügbar.",
+
+
+
+    "res3": "Dokumentation",
+    "res3_1": "Die API des enviroCar Servers unterstützt den selektiven Zugriff auf anonymisierte Messfahrten (Tracks). Du kannst per HTTP auf die Tracks, die Messungen und zugehörige Statistiken zugreifen. Für die Selektion können räumliche und zeitliche Filter verwendet werden.Eine detaillierte Beschreibung der API findest Du",
+    "res3_2": "hier",
+    
+    "res4": "Blog",
+    "res4_1": "Hier findest Du Infos über aktuelle Aktivitäten/Themen der enviroCar Community. Möchtest Du auch etwas über deine Erfahrungen/Entwicklungen mit enviroCar mitteilen?",
+    "res4_2": "Hier gehts zum",
+    "res4_3": " enviroCar Blog",
+
+    "res5": "Publikationen",
+    "res5_1": "Es gibt eine wachsende Community, die enviroCar in diversen Themenfelder einsetzt, e.g. Verkehr, Mobilität, Citizen Science oder SmartCities.",
+    "res5_2": "Hierzu wurde einiges schon veröffentlicht.",
+    
 
     "ana.webapp.img": "assets/webapp/dashboard_1_de.PNG",
     "ana.webapp.img1": "assets/webapp/dashboard_1_de.PNG",
