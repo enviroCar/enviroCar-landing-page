@@ -108,7 +108,17 @@
     "press.sixth": "Quality analysis service - Moenchengladbach",
     "press.seventh": "Traffic flow quality analysis",
     "press.aight": "A server for Geodata",
+    
     "funding": "Projects & Funding",
+    "funding.citram.title":"CITRAM - Citizen Science for Traffic Management",
+    "funding.citram.text1":"Die enviroCar Plattform dient als Grundlage für die Bürgerbeteiligung und Erhebung von xFCD im CITRAM Projekt",
+    "funding.citram.text2":" (citram.de) ",
+    "funding.citram.text3":". Aktuelle Probleme des städtischen Verkehrsmanagements werden aufgegriffen und mittels neuer Lösungswege behoben.",
+    "funding.citram.text4":"Das Projekt CITRAM wird im Rahmen der Förderrichtlinie Modernitätsfonds",
+    "funding.citram.text5":"(mFUND)",
+    "funding.citram.text6":" durch das Bundesministerium für Verkehr und digitale Infrastruktur",
+    "funding.citram.text7":" (BMVI) ",
+    "funding.citram.text8":"gefördert.",
     "funding.bigiot.title": "BIG IoT Enabler",
     "funding.bigiot.desc": "enviroCar was successfully applied in the First Open Call of the EC funded BIG IoT project. Thus, the enviroCar project is one of the first projects to appear on the BIG IoT marketplace.",
     "funding.bigiot.ack": "This project has received funding from the European Union's Horizon 2020 research and innovation programme under grant agreement No 688038.",
@@ -116,6 +126,9 @@
     "funding.tscmg.desc": "The enviroCar platform was successfully used in traffic flow evaluation along major traffic roads in the city of Moenchengladbach. Approximately 150 citizens actively collected data using enviroCar. 52°North supported Traffic System Consulting GmbH by assuring quality of services and data and preparing the data for analysis.",
     "funding.indiegogo.title": "Funding by IndieGoGo Campaign",
     "funding.indiegogo.desc": "enviroCar has been funded successfully via an IndieGoGo-Campaign. 55 contributors donated financially or recorded the first tracks voluntary. This funding has laid the foundation of the enviroCar platform development.",
+    
+    
+    
     "ft.background": "Background",
     "ft.about": "About us",
     "ft.press": "Press",
