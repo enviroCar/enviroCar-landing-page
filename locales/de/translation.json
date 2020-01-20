@@ -244,24 +244,26 @@
 
 
 
-    "res1": "Resourcen",
+    "res1": "Ressourcen",
     "res1_2": "Die enviroCar Daten werden frei verfügbar als  ",
     "res1_3": "Open Data",
-    "res1_4": " bereitgestellt. Der Zugriff erfolgt standardisiert und wird unten beschrieben. Die enviroCar Plattform besteht aus mehreren Komponenten. Diese Komponenten sind als Open Source verfügbar.",
-
+    "res1_4": " bereitgestellt. Der Zugriff erfolgt standardisiert und wird unten beschrieben.",
+    "res1_5":"Die enviroCar Plattform besteht aus mehreren Komponenten. Auch diese sind als Open Source verfügbar.",
 
 
     "res3": "Dokumentation",
-    "res3_1": "Die API des enviroCar Servers unterstützt den selektiven Zugriff auf anonymisierte Messfahrten (Tracks). Du kannst per HTTP auf die Tracks, die Messungen und zugehörige Statistiken zugreifen. Für die Selektion können räumliche und zeitliche Filter verwendet werden.Eine detaillierte Beschreibung der API findest Du",
+    "res3_1": "Die API des enviroCar Servers unterstützt den selektiven Zugriff auf anonymisierte Messfahrten (Fahrten). Du kannst per HTTP auf die Fahrten, die Messungen und zugehörige Statistiken zugreifen. Für die Selektion können räumliche und zeitliche Filter verwendet werden.",
+    "res3_11":"Eine detaillierte Beschreibung der API findest Du ",
     "res3_2": "hier",
     
     "res4": "Blog",
-    "res4_1": "Hier findest Du Infos über aktuelle Aktivitäten/Themen der enviroCar Community. Möchtest Du auch etwas über deine Erfahrungen/Entwicklungen mit enviroCar mitteilen?",
+    "res4_1":"Die enviroCar Community befasst sich mit verschiedenen Themen rund um das Auto und die Umwelt. Hier werden über aktuelle Aktivitäten/Themen  berichtet.",
+    "res4_11": "Möchtest Du auch etwas über deine Erfahrungen/Entwicklungen mit enviroCar mitteilen? Schreib uns an",
     "res4_2": "Hier gehts zum",
     "res4_3": " enviroCar Blog",
 
     "res5": "Publikationen",
-    "res5_1": "Es gibt eine wachsende Community, die enviroCar in diversen Themenfelder einsetzt, e.g. Verkehr, Mobilität, Citizen Science oder SmartCities.",
+    "res5_1": "Es gibt eine wachsende Community, die enviroCar in diversen Themenfelder einsetzt, z.B. Verkehr, Mobilität, Citizen Science oder SmartCities.",
     "res5_2": "Hierzu wurde einiges schon veröffentlicht.",
     
 

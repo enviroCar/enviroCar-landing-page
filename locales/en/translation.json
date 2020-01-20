@@ -48,7 +48,7 @@
     "ana2": "enviroCar offers views of individual tracks and interactive maps based on the enviroCar community’s data sets. There are also many possibilities to download, explore and analyze the track data without statistics knowledge in Excel or professional proficiency in R or other programming languages.",
     "ana2_1":"enviroCar offers various ways to download and analyze driving data with tools such as R, Python, ArcGIS or QGIS or simply with Excel. The interactive maps on this page provide first insights about the dataset and might serve as inspiration for further analysis.*",
     "ana2_2":"The interactive maps on this page provide first insights about the dataset and might serve as inspiration for further analysis.",
-    "ana2_3":"* Please be aware that the data may have been collected at very different times of the day, weekdays and traffic situations. A and that a thorough statistical sampling and data preparation is required for a reliable assessment of the actual traffic conditions.",
+    "ana2_3":"* Please note that the data may have been collected at very different times of the day, weekdays and traffic situations. A thorough statistical sampling and data preparation is required for a reliable assessment of the actual traffic conditions.",
     "ana2_4":"If required, we are happy to assist you with professional services.",
     
     
@@ -83,13 +83,13 @@
 
     "meanSpeed": "Average speed",
     "meanSpeedText1": "The map shows the average speed of the contributed tracks per OSM road segment. ",
-    "meanSpeedText2": "The mean values were obtained from the amount of all individual measurements that could be assigned to the respective road segment.",
+    "meanSpeedText2": "The mean values were obtained from the amount of all individual measurements assigned to the respective road segment.",
     
  
     "speedComparison": "Relative speed",
-    "speedComparisonText1":"The map shows the average speed in relation to the maximum speed allowed for each road segment.",
+    "speedComparisonText1":"The map shows the average speed in relation to the speed limit for each road segment.",
     "speedComparisonText2":"The OSM database also provides speed limit information for some road segments.",
-    "speedComparisonText3":"The idea behind the color scheme is that speeds close to the permitted maximum speed (from 90%) also correspond to the (allowed) desired speed.",
+    "speedComparisonText3":"The idea behind the color scheme is that speeds close to the speed limit (from 90% and up) also correspond to the (allowed) desired speed.",
     "speedComparisonText4":"Deviations from this can have many causes, e.g. frequent traffic jams, construction sites, general road conditions, changes to the maximum speed allowed.",
 
     "meanCo2": "CO2 Emission",
@@ -226,20 +226,24 @@
     "res1": "Resources",
     "res1_2": "The data collected and analysed by enviroCar is available as ",
     "res1_3": "Open Data",
-    "res1_4": ". The access is standardized and descibed below. enviroCar is built in several components. These components are available as Open Source.",
-    
+    "res1_4": ". The access is standardized and described below.",
+    "res1_5": "enviroCar is made up of several components which are also available as Open Source.",
+
     "res3": "Documentation",
     "res3_1": "The enviroCar server API supports selective access to anonymized tracks using the HTTP protocol. You can access tracks, measurements and relevant statistics. In addition, spatial and temporal filters are available which help access data of interest. You can find a detailed description of the API ",
+    "res3_11":"You can find a detailed description of the API ",
     "res3_2": "here",
 
     "res4": "Blog",
-    "res4_1": "On the enviroCar blog you get information about activities and topics of the enviroCar community. Do you have experiences with the use of enviroCar or are you participating in its development?",
-    "res4_2": "Share your experience/opinion on the",
+    "res4_1": "The enviroCar community addresses a number of topics concerning vehicles/traffic and their environmental impacts. We report on current activities/topics in our blog.",
+    "res4_11":"Would you like to share your enviroCar experience/developments with us? Contact ",
+    "res4_12": "enviroCar@52north.org",
+    "res4_2": "Check out the",
     "res4_3": " enviroCar Blog",
     
     "res5": "Publications",
-    "res5_1": "There is a growing community which uses enviroCar within diverse fields of interests, e.g. traffic management, mobility, citizen science or smart cities.",
-    "res5_2": "Click the button below to see relevant publications.",
+    "res5_1": "There is a growing community, which uses enviroCar within diverse fields of interests, e.g. traffic management, mobility, citizen science or smart cities.",
+    "res5_2": "Check out what as been published about enviroCar.",
 
     "ana.webapp.img": "assets/webapp/dashboard_1_en.PNG",
     "ana.webapp.img1": "assets/webapp/dashboard_1_en.PNG",
