@@ -233,7 +233,7 @@
     "res1_5": "enviroCar is made up of several components which are also available as Open Source.",
 
     "res3": "Documentation",
-    "res3_1": "The enviroCar server API supports selective access to anonymized tracks using the HTTP protocol. You can access tracks, measurements and relevant statistics. In addition, spatial and temporal filters are available which help access data of interest. You can find a detailed description of the API ",
+    "res3_1": "The enviroCar server API supports selective access to anonymized tracks using the HTTP protocol. You can access tracks, measurements and relevant statistics. In addition, spatial and temporal filters are available which help access data of interest.",
     "res3_11":"You can find a detailed description of the API ",
     "res3_2": "here",
 
