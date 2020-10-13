@@ -280,6 +280,8 @@
     "ana.atb2": " for further analysis are available in GitHub.",
     "ana.at3": "Analyze enviroCar tracks and data with ",
     "ana.at4": "Use additional libraries and tools in your Java code.",
+    "ana.at5": "Analyze enviroCar tracks and data with ",
+
     "pf.datacoll": "Data Collection",
     "pf.dtc1": "Collect your track data with the app ",
     "pf.dtc7": "enviroCar uses ordinary Bluetooth OBD-II Adapters. Plug the adapter in to your car, connect it to your smartphone via Bluetooth, run the app and start driving.",
