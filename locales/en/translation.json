@@ -74,10 +74,12 @@
     "avgConsumptionText1": "The map shows the averaged estimates of the fuel.",
     "avgConsumptionText2": "Data collection with enviroCar also estimates fuel consumption.",
 
-    "hotspotsChemnitz": "HotSpots in the city of Chemnitz",
-    "hotspotsChemnitzText1": "The map shows HotSpots in the city of Chemnitz",
-    "hotspotsChemnitzText2": "The HotSpots are based on a small data sample collected during a short term study with a duration of two months. Therefore the map gives only a first impression of traffic activity.",
     
+    "hotspotsChemnitz": "HotSpot analysis",
+    "hotspotsChemnitzText1": "The map shows the envirocar HotSpot analysis using the example of the derived CO2 emissions (kg/h) in the city of Chemnitz ",
+    "hotspotsChemnitzText2": "HotSpots are based on a small, non-representative data sample collected during a short term study with a duration of two months. Therefore the map should merely be handled as illustrative example for the HotSpot analysis.",
+
+
     "trackCount": "Track count",
     "trackCountText":"The map is based on the OpenStreetMap dataset and shows the number of trips per segment taken along the segment in whole or in part.",
     "geolocate": "Jump to",

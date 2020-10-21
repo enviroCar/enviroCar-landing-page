@@ -101,9 +101,9 @@
     "avgConsumptionText1": "Die Karte zeigt die gemittelten Schätzwerte des Treibstoffverbrauchs.",
     "avgConsumptionText2": "Bei der Datenerfassung mit enviroCar wird auch der Treibstoffverbrauch geschätzt. Die Karte zeigt die gemittelten Schätzwerte der Stichprobe. ",
 
-    "hotspotsChemnitz": "HotSpots in Chemnitz",
-    "hotspotsChemnitzText1": "Die Karte zeigt HotSpots in der Stadt Chemnitz",
-    "hotspotsChemnitzText2": "Die HotSpots wurden ermittelt in einer stichprobenartigen Kurzzeitstudie und dienen daher lediglich als ersten Einblick in die Verkehrsaktivität.",
+    "hotspotsChemnitz": "Beispiel einer HotSpot-Analyse in Chemnitz",
+    "hotspotsChemnitzText1": "Die Karte zeigt eine beispielhafte HotSpot-Analyse der abgeleiteten CO2 Emissionen (in kg/h) aus enviroCar-Daten",
+    "hotspotsChemnitzText2": "Die HotSpots wurden aus den abgeleiteten CO2-Emissionen (in kg/h) einer nicht repräsentativen Kurzzeitstudie ermittelt und dienen daher lediglich der Illustration einer HotSpot-Analyse der envirocar-Daten.",
 
 
     "press": "Presse",

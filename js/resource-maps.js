@@ -313,4 +313,5 @@ function setupMap(mapNumber, wmsSource, mapLayer, innerHTMLasJSON, defView) {
 
 };
 
+
 initialize();
