@@ -18,6 +18,7 @@ function initialize() {
                    });
 	
 	var baseURL = 'https://processing.envirocar.org/geoserver';
+
 	
 	var wmsSource = createWMSSource(baseURL, "ec:track_count");
 	
@@ -29,6 +30,11 @@ function initialize() {
 	
 	var wmsSource5 = createWMSSource(baseURL, "ec:mean_consumption");
 	
+	// Chemnitz Hotspots
+	var wmsSource6 = createWMSSource(baseURL, "ec:hotspot_index_chemnitz_all_data_kgh");
+
+
+
     var tracksWMTS = createTile(baseURL, "ec:track_count", projection, tileGrid);
 
     var tracksWMTS2 = createTile(baseURL, "ec:mean_speed", projection, tileGrid);	
@@ -37,12 +43,23 @@ function initialize() {
 	
     var tracksWMTS4 = createTile(baseURL, "ec:mean_co2", projection, tileGrid);
 	
-    var tracksWMTS5 = createTile(baseURL, "ec:mean_consumption", projection, tileGrid);
+	var tracksWMTS5 = createTile(baseURL, "ec:mean_consumption", projection, tileGrid);
+
+	// Chemnitz Hotspots
+	var tracksWMTS6 = createTile(baseURL, "ec:hotspot_index_chemnitz_all_data_kgh", projection, tileGrid);
+
 			
     var defView = new ol.View({
         center: [1123883, 6673001],
 		projection : "EPSG:900913",
         zoom: 6
+	});
+	
+	// Chemnitz Hotspots
+	var defViewChemnitz = new ol.View({
+        center: [1438247.82104910, 6591277.60324592],
+		projection : "EPSG:900913",
+        zoom: 12
     });
 	
 	setupMap("", wmsSource, tracksWMTS, [
@@ -130,7 +147,29 @@ function initialize() {
 			"digits" : 0,
 	    	"end": "</p>"
 	    }
-    ], defView);	
+	], defView);	
+	
+	// Chemnitz Hotspots
+	setupMap(6, wmsSource6, tracksWMTS6, [
+	    {
+	    	"start": "<p>Average fuel consumption: ",
+	    	"propertyName": "mean_consumption",
+			"digits" : 1,
+	    	"end": " l/100km</p></b>"
+	    },
+		{
+	    	"start": "<p>Average speed: ",
+	    	"propertyName": "mean_speed",
+			"digits" : 0,
+	    	"end": " km/h</p></b>"
+	    },
+	    {
+	    	"start": "<p>Track count: ",
+	    	"propertyName": "count",
+			"digits" : 0,
+	    	"end": "</p>"
+	    }
+	], defViewChemnitz);
 	
 	jeoquery.defaultData.userName = 'envirocar';
 		
