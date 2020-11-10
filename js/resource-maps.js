@@ -46,7 +46,7 @@ function initialize() {
 	var tracksWMTS5 = createTile(baseURL, "ec:mean_consumption", projection, tileGrid);
 
 	// Chemnitz Hotspots
-	var tracksWMTS6 = createTile(baseURL, "ec:hotspot_index_chemnitz_all_data_kgh", projection, tileGrid);
+	var tracksWMTS6 = createTile(baseURL, "ec:hotspot_index_chemnitz_KW26_34_kgkm", projection, tileGrid);
 
 			
     var defView = new ol.View({

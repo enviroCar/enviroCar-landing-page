@@ -76,7 +76,7 @@
 
     
     "hotspotsChemnitz": "HotSpot analysis",
-    "hotspotsChemnitzText1": "The map shows the envirocar HotSpot analysis using the example of the derived CO2 emissions (kg/h) in the city of Chemnitz ",
+    "hotspotsChemnitzText1": "The map shows the envirocar HotSpot analysis using the example of the derived CO2 emissions (kg/h) normalized with vehicle speed (km/h) in the city of Chemnitz ",
     "hotspotsChemnitzText2": "HotSpots are based on a small, non-representative data sample collected during a short term study with a duration of two months. Therefore the map should merely be handled as illustrative example for the HotSpot analysis.",
 
 
