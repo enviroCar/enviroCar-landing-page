@@ -103,7 +103,8 @@
 
     "hotspotsChemnitz": "Beispiel einer HotSpot-Analyse in Chemnitz",
     "hotspotsChemnitzText1": "Die Karte zeigt eine beispielhafte HotSpot-Analyse der abgeleiteten CO2 Emissionen (in kg/km) normalisiert über die Fahrzeuggeschwindigkeit (km/h) aus enviroCar-Daten",
-    "hotspotsChemnitzText2": "Die HotSpots wurden aus den abgeleiteten CO2-Emissionen (in kg/h) normalisiert über die Fahrzeuggeschwindigkeit (km/h) einer nicht repräsentativen Kurzzeitstudie ermittelt und dienen daher lediglich der Illustration einer HotSpot-Analyse der envirocar-Daten.",
+    "hotspotsChemnitzText2": "Die HotSpots wurden aus den abgeleiteten CO2-Emissionen (in kg/h) normalisiert über die Fahrzeuggeschwindigkeit (km/h) einer nicht repräsentativen Kurzzeitstudie ermittelt.",
+    "hotspotsChemnitzText3": " Daher dienen sie lediglich der Illustration einer HotSpot-Analyse der envirocar-Daten.",
 
 
     "press": "Presse",
