@@ -416,7 +416,7 @@
     "faq.qo25": " to clarify any further questions.",
     "faq.qo26": "enviroCar Team at 52°North",
     "ipt1": "Legal notice",
-    "ipt2": "52° North Initiative for Geospatial Open Source Software GmbH",
+    "ipt2": "52° North Spatial Information Research GmbH",
     "ipt3": "Martin-Luther-King-Weg 24",
     "ipt4": "48155 Muenster, Germany",
     "ipt5": "Telefon: +49 (0)251 396371-0",
@@ -559,7 +559,7 @@
                                                 "touTitle2": "Special Terms of Use",
 
     "touPara8":"enviroCar is an open Citizen Science platform that enables citizens, scientists and traffic engineers to collect data from moving vehicles and use this data to answer questions about the efficiency and sustainability of traffic.",
-    "touPara9": "The enviroCar websites and services are operated by 52°North, Initiative for Geospatial Open Source Software GmbH, Martin-Luther-King-Weg 24, 48155 Münster, Germany.",
+    "touPara9": "The enviroCar websites and services are operated by 52°North Spatial Information Research GmbH, Martin-Luther-King-Weg 24, 48155 Münster, Germany.",
     "touPara10": "We appreciate your interest in using enviroCar and your willingness to contribute your own data to this Citizen Science Platform. The Special Terms of Use are intended to provide a clear legal and organizational framework for the use of the Services and for the provision of your driving data.",
     "touPara11":"Therefore, the confirmation of the Special Terms of Use and the Data Privacy Statement is a prerequisite to use the features and content of the enviroCar websites and services that require registration on the enviroCar platform.",
         "touAufz1":"This concerns:",
@@ -683,7 +683,7 @@
                     "dsSecTitle1":"Responsible Institution",
 
     "dsPara5":"The institution responsible for the data handling is:",
-    "verantwSt1":"52°North Initiative for Geospatial Open Source Software GmbH",
+    "verantwSt1":"52°North Spatial Information Research GmbH",
     "verantwSt2":"Martin-Luther-King Weg 24",
     "verantwSt3":"48155 Münster",
     "verantwSt4":"info@52north.org",
