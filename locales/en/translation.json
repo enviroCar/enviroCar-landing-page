@@ -44,15 +44,15 @@
     "analyse2_img": "assets/app_4_en.png",
     "ana.txt1": "Use the ",
     "ana.txt2": " to explore your tracks' sensor data.",
-    
+
     "ana2": "enviroCar offers views of individual tracks and interactive maps based on the enviroCar community’s data sets. There are also many possibilities to download, explore and analyze the track data without statistics knowledge in Excel or professional proficiency in R or other programming languages.",
     "ana2_1":"enviroCar offers various ways to download and analyze driving data with tools such as R, Python, ArcGIS or QGIS or simply with Excel. The interactive maps on this page provide first insights about the dataset and might serve as inspiration for further analysis.*",
     "ana2_2":"The interactive maps on this page provide first insights about the dataset and might serve as inspiration for further analysis.",
     "ana2_3":"* Please note that the data may have been collected at very different times of the day, weekdays and traffic situations. A thorough statistical sampling and data preparation is required for a reliable assessment of the actual traffic conditions.",
     "ana2_4":"If required, we are happy to assist you with professional services.",
-    
-    
-    
+
+
+
     "ana.speeds": "Speed",
     "ana.fuels": "Consumption",
     "ana.co2": "CO2 emissions",
@@ -69,12 +69,12 @@
     "avgSpeed": "Average velocities",
     "avgCO21": "Average CO",
     "avgCO22": " emissions",
-    
+
     "avgConsumption": "Fuel consumption",
     "avgConsumptionText1": "The map shows the averaged estimates of the fuel.",
     "avgConsumptionText2": "Data collection with enviroCar also estimates fuel consumption.",
 
-    
+
     "hotspotsChemnitz": "HotSpot analysis",
     "hotspotsChemnitzText1": "The map shows the envirocar HotSpot analysis using the example of the derived CO2 emissions (kg/h) normalized with vehicle speed (km/h) in the city of Chemnitz ",
     "hotspotsChemnitzText2": "HotSpots are based on a small, non-representative data sample collected during a short term study with a duration of two months. ",
@@ -89,8 +89,8 @@
     "meanSpeed": "Average speed",
     "meanSpeedText1": "The map shows the average speed of the contributed tracks per OSM road segment. ",
     "meanSpeedText2": "The mean values were obtained from the amount of all individual measurements assigned to the respective road segment.",
-    
- 
+
+
     "speedComparison": "Relative speed",
     "speedComparisonText1":"The map shows the average speed in relation to the speed limit for each road segment.",
     "speedComparisonText2":"The OSM database also provides speed limit information for some road segments.",
@@ -113,7 +113,7 @@
     "press.sixth": "Quality analysis service - Moenchengladbach",
     "press.seventh": "Traffic flow quality analysis",
     "press.aight": "A server for Geodata",
-    
+
     "funding": "Projects and Funding",
     "funding.citram.title":"CITRAM - Citizen Science for Traffic Management",
     "funding.citram.text1":"The enviroCar platform serves to enable citizen participation and collection of xFCD (extended floating car data) within the",
@@ -131,9 +131,9 @@
     "funding.tscmg.desc": "The enviroCar platform was successfully used in traffic flow evaluation along major traffic roads in the city of Moenchengladbach. Approximately 150 citizens actively collected data using enviroCar. 52°North supported Traffic System Consulting GmbH by assuring quality of services and data and preparing the data for analysis.",
     "funding.indiegogo.title": "Funding by IndieGoGo Campaign",
     "funding.indiegogo.desc": "enviroCar has been funded successfully via an IndieGoGo-Campaign. 55 contributors donated financially or recorded the first tracks voluntary. This funding has laid the foundation of the enviroCar platform development.",
-    
-    
-    
+
+
+
     "ft.background": "Background",
     "ft.about": "About us",
     "ft.press": "Press",
@@ -230,7 +230,7 @@
     "ana3c": " worldwide.",
     "ana.wa4": "Analysetools",
     "ana.wa6": "My enviroCar provides you with the opportunity to take a closer look at your own data and carry out further interesting analyses.",
-    
+
     "res1": "Resources",
     "res1_2": "The data collected and analysed by enviroCar is available as ",
     "res1_3": "Open Data",
@@ -248,7 +248,7 @@
     "res4_12": "enviroCar@52north.org",
     "res4_2": "Check out the",
     "res4_3": " enviroCar Blog",
-    
+
     "res5": "Publications",
     "res5_1": "There is a growing community, which uses enviroCar within diverse fields of interests, e.g. traffic management, mobility, citizen science or smart cities.",
     "res5_2": "Check out what as been published about enviroCar.",
@@ -481,12 +481,12 @@
     "datap9f": "Communication between the enviroCar App, the enviroCar server and the enviroCar website is encrypted so that no third party can access your data.",
     "datap10f": "2. Upload mobility data to enviroCar server",
     "datap11f": "When you upload your data to the enviroCar server (option: \"Upload Track as Open Data\"), you agree to publish the measured data as anonymous Open Data and allow third parties to use the data in accordance with the Open Database License (ODbL), e.g. the statistical analysis of historical data for scientific purposes.",
-    "datap12f": "Data which is downloaded from the enviroCar server contains no user information. The enviroCar App has an option in \"Settings\" with which you can cut off the beginning and end of your tracks so that the point of departure and the destination are obscured. ", 
+    "datap12f": "Data which is downloaded from the enviroCar server contains no user information. The enviroCar App has an option in \"Settings\" with which you can cut off the beginning and end of your tracks so that the point of departure and the destination are obscured. ",
     "datap13f": "3. Usage of the mobility data",
     "datap14f": "Data available via the enviroCar API can be used by third parties in accordance with the Open Database License ODbL. This means you are allowed to copy and redistribute this database, create works from this database and modify copies of this database, as long as you mention the source of the data (use \"Source: 52°North enviroCar Server\"), share copies or modified copies of this database in accordance with the ODbL and keep your database open and accessible (you are not allowed to protect it with Digital Rights Managements (DRM) measures if it is not simultaneously available as a DRM free version).",
     "datap15f": "",
     "datap1g": "Cookies",
-    "datap2g": "Cookies are used to optimize a website and to enhance your user experience. Cookies are small text files which are stored by your browser when you visit web pages and applications. Cookies are downloaded by your browser the first time you visit a particular website. When you revisit this website with the same device, the data stored in the cookie is sent back to the website that created it. The website then recognizes web browser with which it was already invoked, and optimizes the content displayed for you accordingly. You can specify how websites use cookies through the privacy settings in your browser (for more information on configuring cookie settings, refer to the help function of your browser). If you disable cookies altogether, the enviroCar websites and applications may no longer function correctly under certain circumstances. More information about cookies can be found at: http://www.allaboutcookies.org/.", 
+    "datap2g": "Cookies are used to optimize a website and to enhance your user experience. Cookies are small text files which are stored by your browser when you visit web pages and applications. Cookies are downloaded by your browser the first time you visit a particular website. When you revisit this website with the same device, the data stored in the cookie is sent back to the website that created it. The website then recognizes web browser with which it was already invoked, and optimizes the content displayed for you accordingly. You can specify how websites use cookies through the privacy settings in your browser (for more information on configuring cookie settings, refer to the help function of your browser). If you disable cookies altogether, the enviroCar websites and applications may no longer function correctly under certain circumstances. More information about cookies can be found at: http://www.allaboutcookies.org/.",
     "datap3g": "",
     "datap1h": "Embedded Content",
     "datap2h": "1. YouTube",
@@ -503,15 +503,15 @@
     "datap3j": "enviroCar.org has no influence on the data collection and further usage of these data and has no insights in these platforms about the amount and duration of storing personal data, about  deleting the personal data and whether these data are analyzed or transferred to third parties.",
     "datap4j": "",
     "datap1k": "Other contacts",
-    "datap2k": "If you contact us directly, we are storing your transmitted personal data for communication purposes as long as we need them to respond to your request. In no case, your personal data is transferred to a third party without your confirmation. ", 
+    "datap2k": "If you contact us directly, we are storing your transmitted personal data for communication purposes as long as we need them to respond to your request. In no case, your personal data is transferred to a third party without your confirmation. ",
     "datap1l": "Changes to the data privacy regulation",
     "datap2l": "Due to technical or organizational needs, the data privacy statement may need to be changed. In case of a change, the new data privacy regulation applies with your next visit on our Website.",
     "datap1m": "Objection against advertising emails",
-    "datap2m": "The usage of contact data for delivering advertising mails and other information unless explicitly requested is not allowed. In case of violating this, we will reserve the right to take legal action.", 
+    "datap2m": "The usage of contact data for delivering advertising mails and other information unless explicitly requested is not allowed. In case of violating this, we will reserve the right to take legal action.",
 
     "ud1": "Under maintenance...",
     "ud2": "We are working on some last issues regarding the new GDPR.",
-    "ud3": "Sorry for the inconvenience.", 
+    "ud3": "Sorry for the inconvenience.",
 
 
 
@@ -522,10 +522,10 @@
 
                                                 "touTitle": "General Terms of Use",
 
-    "touPara1": "enviroCar is an open Citizen Science platform that enables citizens, scientists and traffic engineers to collect data from moving vehicles and use this data to answer questions about the efficiency and sustainability of traffic. The enviroCar websites and services are operated by 52°North, Initiative for Geospatial Open Source Software GmbH, Martin-Luther-King-Weg 24, 48155 Münster, Germany.",
+    "touPara1": "enviroCar is an open Citizen Science platform that enables citizens, scientists and traffic engineers to collect data from moving vehicles and use this data to answer questions about the efficiency and sustainability of traffic. The enviroCar websites and services are operated by 52°North Spatial Information Research GmbH, Martin-Luther-King-Weg 24, 48155 Münster, Germany.",
     "touPara2": "You will find the the enviroCar websites’ and services’ General Terms of Use of below. These are updated from time to time. When using the enviroCar website, you accept the current version of the general terms of use even if no explicit consent is requested. The place of performance and jurisdiction is Münster in North Rhine-Westphalia, Germany.",
     "touPara3": "If you wish to use the services and functions of the platform that are only accessible to registered users, you must additionally agree to the Special Terms of Use (see below 'Special Terms of Use'). This is done during registration and later with changes of the Special Terms of Use.",
-    
+
 
 
                 "touSecTitle1": "Liability and Warranties",
@@ -534,13 +534,13 @@
     "touPara5":"Also, despite all efforts and safety measures, we can not 100% rule out that the use of the websites and services could cause damages, e.g. due to cyber attacks and misuse of our technical equipment by third parties. 52°North and its representatives are not liable for any damages resulting from the use of the enviroCar websites and services, unless they are the result of intent or gross negligence. In the event of injury to life, limb or health, we do not exclude liability for simple negligence.",
     "touPara6":"We do not guarantee the up-to-dateness, correctness, completeness or usability of the data and contents of the enviroCar websites and services. Any use is at your own risk.",
     "touPara7": "52°North is not liable for third-party content that can be accessed via the enviroCar website - for example, through links to external websites. We dissociate ourselves from all content that has criminal or liability relevance or violates good customs or morals. As soon as we receive references to such content, we will remove it immediately from the enviroCar websites and services.",
-    
+
 
 
                 "touTitleDataP": "Data Privacy",
 
     "touTitleDataPP1":"52°North takes your concerns about the protection of personal data very seriously. We inform about our privacy policy for the enviroCar websites and services in the",
-    "LinkDatenschutzerklärung":"enviroCar Privacy Policy", 
+    "LinkDatenschutzerklärung":"enviroCar Privacy Policy",
 
 
 
@@ -574,17 +574,17 @@
         "Aufz2.1": "If you",
             "Aufz2a": "evoke your agreement to the Special Terms of Use or the Data Privacy Statement or",
             "Aufz2b": "refuse to consent to any subsequent update of the Special Terms of Use or the Data Privacy Statement",
-            "Aufz2.2":"your account will be suspended until the revocation is withdrawn or the required consent is granted. This is necessary since there is no binding agreement between us regarding the further use of the enviroCar platform without your consent. Account suspension may be revoked at any time if an agreement can be established again (for example, by clarifying questions or by adjusting and confirming updated Terms of Use).",    
+            "Aufz2.2":"your account will be suspended until the revocation is withdrawn or the required consent is granted. This is necessary since there is no binding agreement between us regarding the further use of the enviroCar platform without your consent. Account suspension may be revoked at any time if an agreement can be established again (for example, by clarifying questions or by adjusting and confirming updated Terms of Use).",
     "touPara16":"Unless you reactivate your suspended account within three months, your account information will be permanently deleted. The driving data, which you have previously published under the ODbL license as Open Data, remain in the system. ",
-    
 
-    
+
+
                     "touSecTitle2":"Setting up your personal Account",
 
     "touPara17": "You can register as an enviroCar user using the enviorCar smartphone app or the enviroCar WebApp and create your own personal account. Registration is only for natural persons, not for legal entities such as Companies, universities or other public bodies. The rights and obligations associated with the registration of your personal account may not be transferred to other persons.",
     "touPara18":"If you use the enviroCar websites or services for any company or organization, by agreeing to these Special Terms of Use, you make a binding declaration that the company or organization you are a representing also accepts these Terms of Use.",
     "touPara19":"The configured account allows us to give you access to your own driving data so that you can manage and analyze it.",
-    "touPara20":"When you register and use the enviroCar services, we collect and store the following account information until the account is deleted:",  
+    "touPara20":"When you register and use the enviroCar services, we collect and store the following account information until the account is deleted:",
         "Aufz3":"Required Fields",
             "Aufz3.1":"Your chosen username (pseudonym)",
             "Aufz3.2": "The specified email address",
@@ -612,12 +612,12 @@
     "touSecTitle3subb": "b) Publication of the data using the smartphone app and analysis of the data on the enviroCar server",
         "touPara23":"By uploading data from the enviroCar app to the enviroCar server (option: 'Upload data as open data'), you agree to have your driving data published in an anonymous form as open data and that we and third parties may use it in accordance with the Open Database License (ODbL). See for more information:",
         "touPara24":"You help scientists and traffic planners gain important data for their work when you publish your data. At the same time, uploading it enables you to use the enviroCar platform's advanced capabilities to analyze your own data.",
-        "touPara25":"Your enviroCar account contains a reference to all the tracks you have published as Open Data. As a result, you have the opportunity to manage your own data and analyze it using the platform's resources. You can delete some or all of your driving data from the enviroCar platform at any time. You also have the option to delete your account. All driving data, which have already been downloaded by third parties as Open Data, can still be used by them in accordance with the ODbL.",   
+        "touPara25":"Your enviroCar account contains a reference to all the tracks you have published as Open Data. As a result, you have the opportunity to manage your own data and analyze it using the platform's resources. You can delete some or all of your driving data from the enviroCar platform at any time. You also have the option to delete your account. All driving data, which have already been downloaded by third parties as Open Data, can still be used by them in accordance with the ODbL.",
     "touSecTitle3subc": "c) Use of the published data by third parties",
         "touPara26":"The data that you have uploaded to the enviroCar server (option: 'Upload driving data as open data') can be downloaded from there via various interfaces may be used by third parties in accordance with the Open Database License (ODbL). We permit the copying of the data, its distribution and the derivation of new data from the database.",
         "touPara27":"When disclosing the data to third parties, you must specify where the data came from ('Source: enviroCar contributors'). Each copied, modified or supplemented version of the database must be made accessible itself in accordance with the ODbL. The ODbL’s binding text can be found here: ",
         "touPara28":"There is no reference to your account in the driving data that you publish as open data, thus  other users have no information about this relationship. Please note, it may be possible to draw conclusions about the author without this information. The data itself may contain such individual characteristics that a relationship to specific persons is obvious. For example, this is the case when a rare type of vehicle moves between a person’s living and working locations and this person is known to have this type of vehicle.To complicate such conclusions, there is an option to adjust the data recording so that it starts and ends with a minimum distance or duration from the start or destination of your journey.",
-    
+
 
 
                     "touSecTitle4":"Deleting your account",
@@ -645,7 +645,7 @@
     "touPara33":"52°North reserves the right to change, suspend or terminate the enviroCar websites and services or any part thereof at any time with or without notice.You understand that we do not warrant for any damages that you or any third party may incur as a result of any change, suspension or termination of any enviroCar website or service.We therefore recommend that you do not use the enviroCar platform as the sole storage location for your data and content.",
     "touPara34":"At 52°North, we are not responsible for verifying or ensuring the quality of the data and analytics provided through the enviroCar websites and services. However, we may, at our discretion, remove data and content from the enviroCar platform at any time if we believe the quality of the data is in conflict with the objectives of the Citizen Science Platform.",
     "touPara35":"To the extent permitted by applicable law, 52°North disclaims all warranties, including any warranties, express or implied, with respect to the operation of the platform, the quality of the data, analysis and visualizations or their suitability for a particular purpose.",
-    "touPara36":"Also, despite of all efforts and safety measures, we cannot 100% rule out that the use of the websites and services could cause damages, e.g. due to cyber attacks and misuse of our technical equipment by third parties. 52°North uses commercially reasonable measures and industry standards to ensure the safety of the enviroCar websites and services. Despite these measures, we can not guarantee that unauthorized persons can not bypass our security measures.", 
+    "touPara36":"Also, despite of all efforts and safety measures, we cannot 100% rule out that the use of the websites and services could cause damages, e.g. due to cyber attacks and misuse of our technical equipment by third parties. 52°North uses commercially reasonable measures and industry standards to ensure the safety of the enviroCar websites and services. Despite these measures, we can not guarantee that unauthorized persons can not bypass our security measures.",
     "touPara37":"Your access to some of our websites, services and content is protected by passwords that are only accessible to you. To ensure the security of your information, you must keep your usernames and passwords strictly confidential and not disclose them to third parties. You are solely responsible for all activities accessing our websites and services using your username and password before informing us of the loss of confidentiality of your passwords. Therefore, if you become aware of a breach of the confidentiality of your password or a breach of security of the enviroCar websites or services, you must immediately notify us.",
     "touPara38":"You represent and warrant that you will not use the enviroCar Websites and Services to violate any applicable local, national or international law. Any violations of applicable law and the provisions of the Special Terms of Use may result in the immediate blocking of your account.",
     "touPara39":"You warrant that you will not operate the enviroCar mobileApp while driving if you drive the vehicle yourself. According to the legal regulations for the safe operation of vehicles and for your own safety this is expressly forbidden.",
@@ -655,13 +655,13 @@
     "touPara43":"52°North is not liable for third-party content that can be accessed via the enviroCar website - for example, through links to external websites. We dissociate ourselves from all content which has criminal or liability relevance or violates good customs or morals. As soon as we receive references to such content, we will remove it immediately from the enviroCar websites and services.",
 
 
-    
+
                     "touSecTitle6":"Other Provisions",
 
     "touPara44":"Should any provision of the Special Terms of Use be ineffective, the validity of the remaining provisions shall remain unaffected. The parties undertake to replace the invalid provision with an effective provision as closely as possible.",
     "touPara45":"Any side agreements, changes of or amendments to the Special Terms of Use must be in written form to be valid.",
     "touPara46":"THe place of performance and jurisdiction is Münster in North Rhine-Westphalia, Germany.",
-    "touPara47":"If you have any questions or comments regarding the enviroCar websites' and services', please contact us by email: ",    
+    "touPara47":"If you have any questions or comments regarding the enviroCar websites' and services', please contact us by email: ",
 
 
 
@@ -767,11 +767,11 @@
         "dsPara31":"The integration of YouTube videos is done in the extended data protection mode, which (according to Google) only stores data about visitors, if the video is clicked. We are not able to influence or inspect this functionality.",
         "dsPara32":"Further information about how YouTube stores and uses user data can be found in the data protection declaration of Google at:",
     "dsTitle8subC":"c) Twitter",
-        "dsPara33":"52°North uses the social media platform Twitter to provide information about enviroCar and to interact with the enviroCar community:", 
-        "dsPara34":"Please note that Twitter stores users' information in accordance with its own privacy policy and may also use it for business purposes. 52°North has no influence on the data collection and its further use by Twitter.", 
-        "dsPara35":"Responsible for the processing of personal data according to European legislation is:", 
-        "dsPara36":"Twitter International Company, One Cumberland Place, Fenian Street, Dublin 2, D02 AX07, Ireland", 
-        "dsPara37":"Information about what data is processed by Twitter and for what purposes it is used, see the privacy policy of Twitter:", 
+        "dsPara33":"52°North uses the social media platform Twitter to provide information about enviroCar and to interact with the enviroCar community:",
+        "dsPara34":"Please note that Twitter stores users' information in accordance with its own privacy policy and may also use it for business purposes. 52°North has no influence on the data collection and its further use by Twitter.",
+        "dsPara35":"Responsible for the processing of personal data according to European legislation is:",
+        "dsPara36":"Twitter International Company, One Cumberland Place, Fenian Street, Dublin 2, D02 AX07, Ireland",
+        "dsPara37":"Information about what data is processed by Twitter and for what purposes it is used, see the privacy policy of Twitter:",
     "dsTitle8subD":"d) Facebook",
         "dsPara38":"52° North uses the social media platform facebook to provide information about enviroCar and to interact with the enviroCar community:",
         "dsPara39":"We would like to point out that Facebook stores the data of its users in accordance with its own privacy policy and may also use it for business purposes. 52°North has no influence on the data collection and its further use by facebook.",
@@ -784,7 +784,7 @@
                         "dsTitle9":"Links to external Websites",
 
     "dsPara43":"Links to external websites were created by us to the best of our knowledge and the greatest possible care. However, they do provide access to 'foreign content' that 52°North has little to no influence on. For damages and violations of rights arising from the use of 'third-party content', the respective provider of the page referred to is solely liable.",
-    
+
 
 
                         "dsTitle10":"Other contacts",
