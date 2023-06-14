@@ -693,7 +693,7 @@
                 <!--leerer Platz rechts im Footer-->
                 <div class="spaceholder col-lg-2 col-md-2 hidden-sm hidden-xs"></div>
                 <!--Copyright Section-->
-                <div class="footer-copyright text-center py-3">© 2021 Copyright by 52°North Spatial Information Research GmbH. All Rights Reserved.
+                <div class="footer-copyright text-center py-3">© <span id="year">2021</span> Copyright by 52°North Spatial Information Research GmbH. All Rights Reserved.
                 </div>
             </div>
     </footer>
@@ -714,8 +714,13 @@
                                         $(this).load(file);
                                     });
                                 });
-        </script>
 
+                            //    var currentYear=new Date().getFullYear()
+                            //    var copyrightYear=document.getElementById('year')
+                            //    copyrightYear.innerHTML=currentYear
+                               
+        </script>
+<script src="js/copyrightyear.js"></script>
 
     </body>
 
