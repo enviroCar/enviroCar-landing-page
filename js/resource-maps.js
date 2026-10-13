@@ -245,7 +245,7 @@ function setupMap(mapNumber, wmsSource, mapLayer, innerHTMLasJSON, defView) {
 	
 	var defLayer = new ol.layer.Tile({
         source: new ol.source.OSM({
-            url: "https://{a-c}.basemaps.cartocdn.com/spotify_dark/{z}/{x}/{y}.png"
+            url: "https://tile.openstreetmap.org/{z}/{x}/{y}.png"
         })
     });
 	
